@@ -1,0 +1,41 @@
+.App .courses-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+.App .courses-wrapper .course {
+  width: min(100%, 400px);
+  padding-bottom: 40px;
+}
+.App .courses-wrapper .course .frame {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-color: #eee;
+}
+.App .courses-wrapper .course .courses-list {
+  padding: 15px 0;
+}
+.App .courses-wrapper .course .courses-list li {
+  position: relative;
+  padding-left: 40px;
+  line-height: 1.2;
+}
+.App .courses-wrapper .course .courses-list li span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.App .courses-wrapper .course .courses-list li + li {
+  margin-top: 10px;
+}
+.App .courses-wrapper .course button {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #aaa;
+  border-radius: 9999px;
+}/*# sourceMappingURL=App.css.map */
