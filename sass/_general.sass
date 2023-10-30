@@ -1,0 +1,27 @@
+/* Theme Name: shiramine-shrine */
+
+@use 'forwards' as fw
+
+// WEBフォントのインポート
+// Noto Sans JP
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100200300400500600700900&display=swap')
+// Noto Serif JP
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200300400500600700900&display=swap')
+
+// general style
+:root
+  font-size: 100% // => 16px
+  scroll-behavior: smooth
+  body
+    width: 100%
+    margin: 0 auto
+    font-family: fw.$noto-gth, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Hiragino Sans", "メイリオ", "Meiryo", sans-serif
+    border: none
+    line-height: 1
+    font-feature-settings: "palt"
+    color: fw.$black
+    h2
+      font-size: 1.7rem
+      font-weight: 300
+      line-height: 1
+      text-align: center

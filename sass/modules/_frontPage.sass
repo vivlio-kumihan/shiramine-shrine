@@ -1,0 +1,29 @@
+@use '../forwards' as fw
+@use '../media-query' as *
+
+.home
+  width: min(100%, 1200px)
+  padding: 2rem
+  +min(sm)
+  +min(md)
+  +min(lg)
+    background-color: #eee
+  +min(xl)
+
+  // test sample
+  //   padding: 2rem
+  //   background-color: #ccc
+  //   +min(sm)
+  //     background-color: yellow
+  //   +min(md)
+  //     background-color: blue
+  //   +min(lg)
+  //     background-color: green
+  //   +min(xl)
+  //     background-color: red
+  //   .box
+  //     width: 50px
+  //     aspect-ratio: 1
+  //     background-color: inherit
+  //     +min(lg)
+  //       background-color: black
