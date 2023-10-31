@@ -26,7 +26,7 @@
     </div>
     <div class="banners">
       <div class="wrapper">
-        <img class="jsjapan" src="<?php echo get_template_directory_uri(); ?>/img/path-to-file" alt="">
+        <!-- <img class="jsjapan" src="<?php echo get_template_directory_uri(); ?>/img/path-to-file" alt=""> -->
       </div>
     </div>
     <div class="copyright">

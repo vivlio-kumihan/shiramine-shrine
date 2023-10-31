@@ -2,50 +2,17 @@
 // ダッシュボードの投稿のサイドバーにアイキャッチ画像を付与。
 add_theme_support('post-thumbnails');
 
-if (function_exists('register_sidebar')) {
-  register_sidebar(array(
-    'name'          => 'ブログ・サイドバー',
-    'id'            => 'sidebar-blog',
-    'description'   => 'ブログ・サイドバーの説明を入れます。',
-    'class'         => 'sidebar-blog',
-    'before_widget' => '<div class="widget">',
-    'after_widget' => '</div>',
-    'before_title' => '<h2>',
-    'after_title' => '</h2>',
+
+// ダッシュボードのウィジェットの登録
+function theme_slug_widgets_init() {
+  register_sidebar(1, array(
+    'name' => 'サイドバー', //ウィジェットの名前を入力
+    'id' => 'sidebar', //ウィジェットに付けるid名を入力
   ));
-  register_sidebar(array(
-    'name'          => '刊行案内・サイドバー',
-    'id'            => 'sidebar-publications-catalog',
-    'description'   => '刊行案内・サイドバーの説明を入れます。',
-    'class'         => 'sidebar-publications-catalog',
-    'before_widget' => '<div class="widget">',
-    'after_widget' => '</div>',
-    'before_title' => '<h2>',
-    'after_title' => '</h2>',
-  ));
-}
+};
+add_action('widgets_init', 'theme_slug_widgets_init');
 
-
-// ウィジェットでのサイドバーの登録方法の古い分
-// // ダッシュボードのウィジェットの登録
-// function theme_slug_widgets_init() {
-//   register_sidebar(1, array(
-//     'name' => 'サイドバー', //ウィジェットの名前を入力
-//     'id' => 'sidebar', //ウィジェットに付けるid名を入力
-//   ));
-// };
-// add_action('widgets_init', 'theme_slug_widgets_init');
-
-// function create_publications_catalog_sidebar() {
-//   register_sidebars(1, array(
-//     'name' => 'サイドバー刊行案内',
-//     'id' => 'sidebar-publications-catalog',
-//     'description' => '刊行案内のサイドバーのウィジットエリアです。',
-//   ));
-// }
-// add_action('widgets_init', 'create_publications_catalog_sidebar');
-
-
+// JavaScriptを仕込む
 function my_script()
 {
   wp_enqueue_script(

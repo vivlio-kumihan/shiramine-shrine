@@ -1,10 +1,5 @@
-<?php
-$ogType = is_front_page() || is_home() ? "website" : "article";
-?>
 <!DOCTYPE html>
 <html lang="ja">
-
-<!-- <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# <?php echo $ogType; ?>: http://ogp.me/ns/<?php echo $ogType; ?>#"> -->
 
 <head>
   <meta charset="UTF-8">
@@ -20,30 +15,19 @@ $ogType = is_front_page() || is_home() ? "website" : "article";
 </head>
 
 <body <?php echo body_class(); ?>>
-  <header>
-    <div class="upper">
-      <div class="logo">
-        <!-- <a href="<?php echo esc_url(home_url()); ?>">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/logo-square.jpg" alt="北斗書房のロゴ画像">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="組織名">
-        </a> -->
-      </div>
-      <!-- <ul class="upper-link">
-        <li><span>お電話でのお問い合わせ</span><br>075-791-6125</li>
-        <li class="to-link-simple-round"><a href="">お問い合わせ→</a></li>
-      </ul> -->
+  <header id="header">
+    <div class="logo">
+      <a href="<?php echo esc_url(home_url()); ?>">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/logo_siramine.png" alt="白峯神宮のロゴ画像">
+      </a>
     </div>
-    <nav class="global-nav">
-      gloval navigation
-      hogehogehoge
-      
+    <nav class="global-menu">
       <?php
-      // wp_nav_menu(array(
-      //   'theme_location' => 'global-menu',
-      //   'container'      => '',
-      //   'depth'          => 1,
-      // ));
+      wp_nav_menu(array(
+        'theme_location' => 'global-menu',
+        'container'      => '',
+        'depth'          => 1,
+      ));
       ?>
     </nav>
-
   </header>

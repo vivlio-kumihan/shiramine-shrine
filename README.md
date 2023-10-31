@@ -44,7 +44,7 @@ functions.php
 - __日本語化__
   - `WP Multibyte --Patch WordPress`: 日本語版パッケージのためのマルチバイト機能の拡張をする。
 - __セキュリティ__
-  - `SiteGuard WP Plugin`　
+  - `SiteGuard WP Plugin`
     - インストールされたら左サイドバーに`SiteGuard`のアイコンが現れるので、そこから設定に入る。
     - 管理・制作の負担になる設定項目はチェックを外す。
       - ログインページ変更
@@ -528,7 +528,7 @@ a
 - 投稿ページは => `single.php`
 - 固定ページは => `page.php`
 
-#### 投稿ページ　single.php
+#### 投稿ページ single.php
 HTML上で投稿記事の領域をクリックすると投稿内容の詳細ページへ飛ぶ仕様になっている。飛んだページ`single.php`のインスタンスが持っている関数を使ってフォーマットを編集する。こんな考え方がいいのかわからんが。。。
 
 __ページの全体レイアウトの整理__
@@ -640,7 +640,7 @@ __以下の要素を出力する関数でレイアウトしたサンプル__
 </main>
 ```
 
-#### 固定ページ　page.php
+#### 固定ページ page.php
 
 WEBサイトでは`ホーム`（WPでは`front-page.php`）と複数コンテンツを有するページ（`work`, `about`, `info`, `contact` etc...）で構成される。
 `WP`は、これらの`ルーティング`を統括する機能を持つ。編集は、ダッシュボード／固定ページで行こなう。（なお、`archive.php`, `category.php`, `single.php`はデフォルトでルーティングは解決されている。）
@@ -1022,13 +1022,13 @@ __`メニュー設定／メニューの位置`では、必ず`同じ名称`を�
   position: relative
   // min-heightが肝
   min-height: 100vh // footerの高さ
-  padding-bottom: 100px　// footerの高さ
+  padding-bottom: 100px // footerの高さ
   footer
     position: absolute
     bottom: 0
     left: 0
     width: 100%
-    height: 100px　// ここに注意
+    height: 100px // ここに注意
     color: #fff
     background-color: #333
 ```
@@ -1037,7 +1037,7 @@ __`メニュー設定／メニューの位置`では、必ず`同じ名称`を�
 
 <hr style="border: 5px dotted #aaa; background-color: transparent">
 
-##　カテゴリー名を出力する
+## カテゴリー名を出力する
 
 カテゴリー名を任意の順番で出力する。
 
@@ -1204,7 +1204,7 @@ WPダッシュボード／固定ページから
 
 <hr style="border: 5px dotted #aaa; background-color: transparent">
 
-## tag　out
+## tag out
 
 ```html
 <ul>
