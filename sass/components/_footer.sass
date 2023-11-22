@@ -1,0 +1,119 @@
+@use '../forwards' as fw
+@use '../media-query' as *
+
+.home
+  footer
+    width: 100%
+    font-size: .875rem
+    .logo-space
+      display: flex
+      align-items: center
+      gap: 10px
+      margin-left: 8%
+      .logo
+        width: calc(60px * 0.85)
+        aspect-ratio: 1
+        object-fit: contain
+      p
+        font-size: .75rem
+        font-weight: 600
+        line-height: 1.5
+        span
+          font-size: 1.85rem
+          line-height: 1em
+      
+
+    .wrapper
+      background-color: #f6f6f6
+      width: min(1680px, 100%)
+      margin: 0 auto
+      padding: 60px 0
+
+      .wrapper-grid
+        display: grid
+        grid-template-columns: 1.5fr 2.5fr 1fr
+        padding: 0 7%
+        .footer-left-links
+          padding-left: 70px
+          ul
+            + ul
+              margin-top: 15px
+            .access-tel-fax
+              font-size: 1.75rem
+              line-height: 1.25em
+              letter-spacing: .1em
+              span
+                font-size: 1.65rem
+                &.en-tume01
+                  letter-spacing: 0.075em
+            &:nth-of-type(1)
+              line-height: 1.5em
+            &:nth-of-type(2), &:nth-of-type(3)
+              display: flex
+              gap: 10px
+            &:nth-of-type(3)
+              margin-top: 50px
+              li
+                position: relative
+                &.icon-instagram 
+                  &::before
+                    +fw.positionAbsoluteCTL($top: true)
+                    left: 0
+                    +fw.fontAwesome("\f16d", $fontSize: 2rem, $fontFamily: Blands)
+                &.icon-twitter 
+                  position: relative
+                  &::before
+                    +fw.positionAbsoluteCTL($top: true)
+                    left: 50px
+                    +fw.fontAwesome("\e61b", $fontSize: 2rem, $fontFamily: Blands)
+        .footer-center-links
+          display: flex
+          column-gap: 160px
+          ul
+            li
+              + li
+                margin-top: 2rem
+              h2
+                font-size: .875rem
+                font-weight: 500
+                text-align: left
+              div
+                width: 100%
+                position: relative
+                padding: 1em 0 0 2em
+                line-height: 1.2
+                &::before
+                  +fw.positionAbsoluteCTL($top: true)
+                  top: 22px
+                  left: 1rem
+                  content: ""
+                  width: 0
+                  height: 0
+                  border-style: solid
+                  border-top: 7px solid transparent
+                  border-bottom: 7px solid transparent
+                  border-left: 9px solid #D9341C
+                  border-right: 0
+                a
+                  display: block
+                  height: 100%
+        .footer-right-links
+          .banner
+            li
+              + li
+                margin-top: 30px
+              a
+                display: block
+                width: 100%
+                img
+                  width: 100%
+                  object-fit: cover
+
+      .copyright
+        margin-top: 80px
+        text-align: center
+        font-size: .8rem
+  +min(sm)
+  +min(md)
+  +min(lg)
+  +min(xl)

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Theme Name: shiramine-shrine */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap");
@@ -9,7 +8,7 @@
 :root body {
   width: 100%;
   margin: 0 auto;
-  font-family: "Noto Sans JP", sans-serif, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Hiragino Sans", "メイリオ", "Meiryo", sans-serif;
+  font-family: "Noto Serif JP", serif, "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
   border: none;
   line-height: 1;
   font-feature-settings: "palt";
@@ -24,37 +23,241 @@
 
 .home header {
   position: fixed;
-  top: -100%;
+  top: 0;
   left: 0;
   width: 100%;
+  height: 100px;
   padding: 0 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
   box-shadow: 0 3px 5px #eee;
+  transform: translateY(-100%);
   transition: 0.5s;
+  opacity: 0.8;
+  z-index: 100;
 }
 .home header.fixed-appear {
-  top: 0;
+  transform: translateY(0);
 }
-.home header .logo a {
-  display: block;
+.home header .logo-space {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 8%;
 }
-.home header .logo a img {
-  width: 100px;
+.home header .logo-space .logo {
+  width: 60px;
+  aspect-ratio: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
-.home header .global-menu ul {
+.home header .logo-space p {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.home header .logo-space p span {
+  font-size: 1.85rem;
+  line-height: 1em;
+}
+.home header .global-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
+  font-size: 0.95rem;
+}
+.home header .global-menu .upper ul, .home header .global-menu .lower ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
   font-size: 0.9rem;
 }
-.home header .global-menu ul li a {
+.home header .global-menu .upper ul li a, .home header .global-menu .lower ul li a {
   display: block;
-  padding: 30px 0;
+}
+.home header .global-menu .upper ul {
+  justify-content: flex-end;
+  gap: 5px;
+}
+.home header .global-menu .upper ul li:nth-of-type(3) {
+  margin-left: 5px;
+}
+.home header .global-menu .upper ul .language {
+  position: relative;
+  margin-left: 40px;
+  background-color: #fff;
+  border-radius: 999px;
+  box-shadow: 0 2px 5px #aaa;
+}
+.home header .global-menu .upper ul .language::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "\f078";
+  font-size: 0.6rem;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  right: 5px;
+}
+.home header .global-menu .upper ul .language a {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 2px 18px 2px 7px;
+  font-size: 0.75rem;
+  line-height: 1em;
+}
+.home header .global-menu .upper ul .language a span img {
+  width: 17px;
 }
 .home {
   height: 200vh;
+}
+.home footer {
+  width: 100%;
+  font-size: 0.875rem;
+}
+.home footer .logo-space {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 8%;
+}
+.home footer .logo-space .logo {
+  width: 51px;
+  aspect-ratio: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.home footer .logo-space p {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.home footer .logo-space p span {
+  font-size: 1.85rem;
+  line-height: 1em;
+}
+.home footer .wrapper {
+  background-color: #f6f6f6;
+  width: min(1680px, 100%);
+  margin: 0 auto;
+  padding: 60px 0;
+}
+.home footer .wrapper .wrapper-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr 1fr;
+  padding: 0 7%;
+}
+.home footer .wrapper .wrapper-grid .footer-left-links {
+  padding-left: 70px;
+}
+.home footer .wrapper .wrapper-grid .footer-left-links ul + ul {
+  margin-top: 15px;
+}
+.home footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax {
+  font-size: 1.75rem;
+  line-height: 1.25em;
+  letter-spacing: 0.1em;
+}
+.home footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span {
+  font-size: 1.65rem;
+}
+.home footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span.en-tume01 {
+  letter-spacing: 0.075em;
+}
+.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(1) {
+  line-height: 1.5em;
+}
+.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(2), .home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) {
+  display: flex;
+  gap: 10px;
+}
+.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) {
+  margin-top: 50px;
+}
+.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li {
+  position: relative;
+}
+.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li.icon-instagram::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  content: "\f16d";
+  font-size: 2rem;
+  font-family: "Font Awesome 6 Blands";
+  font-weight: 900;
+}
+.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li.icon-twitter {
+  position: relative;
+}
+.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li.icon-twitter::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50px;
+  content: "\e61b";
+  font-size: 2rem;
+  font-family: "Font Awesome 6 Blands";
+  font-weight: 900;
+}
+.home footer .wrapper .wrapper-grid .footer-center-links {
+  display: flex;
+  -moz-column-gap: 160px;
+       column-gap: 160px;
+}
+.home footer .wrapper .wrapper-grid .footer-center-links ul li + li {
+  margin-top: 2rem;
+}
+.home footer .wrapper .wrapper-grid .footer-center-links ul li h2 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: left;
+}
+.home footer .wrapper .wrapper-grid .footer-center-links ul li div {
+  width: 100%;
+  position: relative;
+  padding: 1em 0 0 2em;
+  line-height: 1.2;
+}
+.home footer .wrapper .wrapper-grid .footer-center-links ul li div::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  top: 22px;
+  left: 1rem;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 9px solid #D9341C;
+  border-right: 0;
+}
+.home footer .wrapper .wrapper-grid .footer-center-links ul li div a {
+  display: block;
+  height: 100%;
+}
+.home footer .wrapper .wrapper-grid .footer-right-links .banner li + li {
+  margin-top: 30px;
+}
+.home footer .wrapper .wrapper-grid .footer-right-links .banner li a {
+  display: block;
+  width: 100%;
+}
+.home footer .wrapper .wrapper-grid .footer-right-links .banner li a img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home footer .wrapper .copyright {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 0.8rem;
 }/*# sourceMappingURL=style.css.map */
