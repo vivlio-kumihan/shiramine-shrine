@@ -1,8 +1,42 @@
 @use '../forwards' as fw
 @use '../media-query' as *
 
-.home
-  height: 200vh
+.home.blog
+  main
+    .contents
+      position: relative
+      width: min(1680px, 100%)
+      margin: 0 auto
+      .bg
+        width: 100%
+        background: url(./img/bg.png) repeat
+        z-index: 0
+        section
+          display: flex
+          flex-direction: column
+          align-items: center
+          &:first-of-type
+            padding-top: 300px
+
+.to-contents-page
+  display: inline-block
+  padding: 8px 45px
+  font-size: .9rem
+  font-weight: 600
+  border: 1px solid #3333
+  background-color: #fff
+  transition: .3s
+  transform: translateY(2px)
+  &:hover
+    color: #fff
+    background-color: #999
+    transform: translateY(0)
+    box-shadow: 0 2px 4px #333
+    border: 1px solid #aaa
+  
+
+
+
   +min(sm)
   +min(md)
   +min(lg)

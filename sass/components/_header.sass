@@ -3,80 +3,88 @@
 
 .home
   header
+    display: flex
+    justify-content: center
     position: fixed
     top: 0
     left: 0
     width: 100%
-    height: 100px
-    padding: 0 5%
-    display: flex
-    justify-content: space-between
-    align-items: center
-    background-color: #fff
-    box-shadow: 0 3px 5px #eee
-    transform: translateY(-100%)
-    transition: .5s
+    height: 200px
+    padding: 0 200px
+    background: rgb(255,255,255)
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8491771708683473) 50%, rgba(255,255,255,0.6979166666666667) 80%, rgba(255,255,255,0) 100%)
     opacity: .8
     z-index: 100
-    &.fixed-appear
-      transform: translateY(0)
-    .logo-space
+    // 隠れるヘッダー用
+    // box-shadow: 0 3px 5px #eee
+    // transform: translateY(-100%)
+    // transition: .5s
+    // &.fixed-appear
+    //   transform: translateY(0)
+    .wrapper
       display: flex
+      justify-content: space-between
       align-items: center
-      gap: 10px
-      margin-left: 8%
-      .logo
-        width: calc(60px * 1)
-        aspect-ratio: 1
-        object-fit: contain
-      p
-        font-size: .75rem
-        font-weight: 600
-        line-height: 1.5
-        span
-          font-size: 1.85rem
-          line-height: 1em
-    .global-menu
-      display: flex
-      flex-direction: column
-      justify-content: center
-      row-gap: 20px
-      font-size: .95rem
-      .upper, .lower
-        ul
-          display: flex
-          justify-content: space-between
-          align-items: center
-          gap: 20px
-          font-size: .9rem
-          li
-            a
-              display: block
-      .upper ul
-        justify-content: flex-end
-        gap: 5px
-        li:nth-of-type(3)
-          margin-left: 5px
-        .language
-          position: relative
-          margin-left: 40px
-          background-color: #fff
-          border-radius: 999px
-          box-shadow: 0 2px 5px #aaa
-          &::after
-            +fw.positionAbsoluteCTL($top: true)
-            +fw.fontAwesome("\f078", $fontSize: .6rem)
-            right: 5px
-          a
+      width: min(1680px, 100%)
+      height: 120px
+      padding: 0 50px
+      .logo-space
+        display: flex
+        align-items: center
+        gap: 10px
+        
+        .logo
+          width: calc(60px * 1)
+          aspect-ratio: 1
+          object-fit: contain
+        p
+          font-size: .75rem
+          font-weight: 600
+          line-height: 1.5
+          span
+            font-size: 1.85rem
+            line-height: 1em
+      .global-menu
+        display: flex
+        flex-direction: column
+        justify-content: center
+        row-gap: 20px
+        font-size: .95rem
+        .upper, .lower
+          ul
             display: flex
+            justify-content: space-between
             align-items: center
-            gap: 7px
-            padding: 2px 18px 2px 7px
-            font-size: .75rem
-            line-height: 1em            
-            span
-              img
-                width: 17px
+            gap: 20px
+            font-size: .9rem
+            li
+              a
+                display: block
+        .upper ul
+          justify-content: flex-end
+          gap: 5px
+          li:nth-of-type(3)
+            margin-left: 5px
+          .language
+            position: relative
+            margin-left: 40px
+            background-color: #fff
+            border-radius: 999px
+            box-shadow: 0 2px 5px #aaa
+            &::after
+              +fw.positionAbsoluteCTL($top: true)
+              +fw.fontAwesome("\f078", $fontSize: .6rem)
+              right: 5px
+            a
+              display: flex
+              align-items: center
+              gap: 7px
+              padding: 2px 18px 2px 7px
+              font-size: .75rem
+              line-height: 1em            
+              span
+                img
+                  width: 17px
 
     +min(sm)
     +min(md)

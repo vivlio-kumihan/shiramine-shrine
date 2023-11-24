@@ -2,7 +2,6 @@
 // ダッシュボードの投稿のサイドバーにアイキャッチ画像を付与。
 add_theme_support('post-thumbnails');
 
-
 // ダッシュボードのウィジェットの登録
 function theme_slug_widgets_init() {
   register_sidebar(1, array(
