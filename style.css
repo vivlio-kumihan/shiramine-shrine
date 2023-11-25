@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Theme Name: shiramine-shrine */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap");
@@ -15,10 +16,23 @@
   color: #555;
 }
 :root body h2 {
-  font-size: 1.7rem;
+  position: relative;
+  padding-bottom: 20px;
+  font-size: 1.6rem;
+  line-height: 1em;
   font-weight: 300;
   line-height: 1;
   text-align: center;
+}
+:root body h2::after {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+  content: "";
+  width: 10rem;
+  height: 3px;
+  background-color: #BB9A01;
 }
 
 .home header {
@@ -130,26 +144,148 @@
   flex-direction: column;
   align-items: center;
 }
-.home.blog main .contents .bg section:first-of-type {
+.home.blog main .contents .bg section .catch-copy {
+  padding-top: 50px;
+  margin: 0 auto;
+}
+.home.blog main .contents .bg section + section {
+  margin-top: 80px;
+}
+.home.blog main .contents .bg section.information {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
   padding-top: 300px;
+}
+.home.blog main .contents .bg section.information .topics {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home.blog main .contents .bg section.information .topics .wrapper {
+  margin-top: 40px;
+  width: 750px;
+}
+.home.blog main .contents .bg section.information .topics .wrapper .index-to-information .post-archive {
+  background-color: #fff;
+}
+.home.blog main .contents .bg section.information .topics .wrapper .index-to-information .post-archive .post-item + .post-item {
+  border-top: 1px solid #BB9A01;
+}
+.home.blog main .contents .bg section.information .topics .wrapper .index-to-information .post-archive .post-item a {
+  display: flex;
+  padding: 30px 30px;
+}
+.home.blog main .contents .bg section.information .sns-post {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 320px;
+}
+.home.blog main .contents .bg section.information .sns-post .instagram-post, .home.blog main .contents .bg section.information .sns-post .twitter-post {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-color: #eee;
+}
+.home.blog main .contents .bg section.about .catch-copy {
+  width: 50%;
+}
+.home.blog main .contents .bg section.about .catch-copy > h2 {
+  font-size: 2rem;
+  line-height: 2.25em;
+}
+.home.blog main .contents .bg section.about .catch-copy > h2::after {
+  content: unset;
+}
+.home.blog main .contents .bg section.about .catch-copy > p {
+  font-size: 1.15rem;
+  line-height: 2.25em;
+}
+.home.blog main .contents .bg section.about .catch-copy .to-contents-page {
+  margin: 50px auto 0;
+}
+.home.blog main .contents .bg section.annual-event p {
+  margin-top: 50px;
+  font-size: 1.15rem;
+  line-height: 2.25em;
+}
+.home.blog main .contents .bg section.annual-event .note {
+  font-size: 0.95rem;
+  line-height: 1.5em;
+}
+.home.blog main .contents .bg section.annual-event .note:first-of-type {
+  margin-top: 30px;
+}
+.home.blog main .contents .bg section.annual-event .note li {
+  position: relative;
+  margin-left: 1em;
+}
+.home.blog main .contents .bg section.annual-event .note li::before {
+  position: absolute;
+  top: 0;
+  left: -1em;
+  content: "※";
+}
+.home.blog main .contents .bg section.annual-event .note + .note {
+  margin-top: 20px;
+}
+.home.blog main .contents .bg section.to-prayer-gift ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: center;
+}
+.home.blog main .contents .bg section.to-prayer-gift ul li {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/3;
+}
+.home.blog main .contents .bg section.to-prayer-gift ul li img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home.blog main .contents .bg section.to-prayer-gift ul li .catch {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 10px 30px;
+  font-size: 2rem;
+  line-height: 1em;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 .to-contents-page {
   display: inline-block;
-  padding: 8px 45px;
+  margin: 50px auto 0;
+  padding: 10px 60px;
   font-size: 0.9rem;
-  font-weight: 600;
-  border: 1px solid rgba(51, 51, 51, 0.2);
+  font-weight: 500;
+  border: 1px solid #625000;
   background-color: #fff;
   transition: 0.3s;
   transform: translateY(2px);
 }
 .to-contents-page:hover {
   color: #fff;
-  background-color: #999;
+  background-color: #625000;
   transform: translateY(0);
   box-shadow: 0 2px 4px #333;
-  border: 1px solid #aaa;
+  border: 1px solid #666;
+}
+
+.frame {
+  width: 100%;
+}
+.frame img {
+  width: 100%;
 }
 .home footer {
   width: 100%;

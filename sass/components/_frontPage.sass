@@ -15,26 +15,133 @@
           display: flex
           flex-direction: column
           align-items: center
-          &:first-of-type
+          .catch-copy
+            padding-top: 50px
+            margin: 0 auto
+          + section
+            margin-top: 80px
+
+          &.information
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: flex-start
+            gap: 50px
             padding-top: 300px
+            .topics
+              display: flex
+              flex-direction: column
+              justify-content: center
+              .wrapper
+                margin-top: 40px
+                width: 750px
+                .index-to-information
+                  .post-archive
+                    background-color: #fff
+                    .post-item
+                      + .post-item
+                        border-top: 1px solid fw.$gold
+                      a
+                        display: flex
+                        padding: 30px 30px
+            .sns-post
+              display: flex
+              flex-direction: column
+              gap: 30px
+              width: 320px
+              .instagram-post, .twitter-post
+                width: 100%
+                aspect-ratio: 4/3
+                background-color: #eee
+
+          &.about
+            .catch-copy
+              width: 50%
+              > h2
+                font-size: 2rem
+                line-height: 2.25em
+                &::after
+                  content: unset
+              > p
+                font-size: 1.15rem
+                line-height: 2.25em
+              .to-contents-page
+                margin: 50px auto 0
+
+          &.annual-event
+            p
+              margin-top: 50px
+              font-size: 1.15rem
+              line-height: 2.25em
+            .note
+              font-size: .95rem
+              line-height: 1.5em
+              &:first-of-type
+                margin-top: 30px
+              li
+                position: relative
+                margin-left: 1em
+                &::before
+                  position: absolute
+                  top: 0
+                  left: -1em
+                  content: "※"
+
+              + .note
+                margin-top: 20px
+
+          &.to-prayer-gift
+            ul
+              display: grid
+              grid-template-columns: repeat(2, 1fr)
+              justify-content: space-between
+              align-items: center
+              li
+                position: relative
+                width: 100%
+                aspect-ratio: 4/3
+                img
+                  width: 100%
+                  height: 100%
+                  object-fit: cover
+                .catch
+                  +fw.positionAbsoluteCTL
+                  width: 300px
+                  padding: 10px 30px
+                  font-size: 2rem
+                  line-height: 1em
+                  text-align: center
+
+                  color: #fff
+                  border: 1px solid #fff
+
+
+
+
+          
+
 
 .to-contents-page
   display: inline-block
-  padding: 8px 45px
+  margin: 50px auto 0
+  padding: 10px 60px
   font-size: .9rem
-  font-weight: 600
-  border: 1px solid #3333
+  font-weight: 500
+  border: 1px solid fw.$gold-deep
   background-color: #fff
   transition: .3s
   transform: translateY(2px)
   &:hover
     color: #fff
-    background-color: #999
+    background-color: fw.$gold-deep
     transform: translateY(0)
     box-shadow: 0 2px 4px #333
-    border: 1px solid #aaa
+    border: 1px solid #666
   
-
+.frame
+  width: 100%
+  img
+    width: 100%
 
 
   +min(sm)

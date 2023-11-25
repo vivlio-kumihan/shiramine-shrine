@@ -22,7 +22,17 @@
     font-feature-settings: "palt"
     color: fw.$black
     h2
-      font-size: 1.7rem
+      position: relative
+      padding-bottom: 20px
+      font-size: 1.6rem
+      line-height: 1em
       font-weight: 300
       line-height: 1
       text-align: center
+      &::after
+        +fw.positionAbsoluteCTL($left: true)
+        bottom: -5px
+        content: ""
+        width: 10rem
+        height: 3px
+        background-color: #BB9A01
