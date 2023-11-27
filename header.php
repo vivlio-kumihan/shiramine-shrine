@@ -24,9 +24,9 @@
       <nav class="global-menu">
         <div class="upper">
           <ul>
-            <li>交通（アクセス）</li>
+            <li><a href="">交通（アクセス）</a></li>
             <li>|</li>
-            <li>お問い合わせ</li>
+            <li><a href="">お問い合わせ</a></li>
             <li class="language">
               <a href="">
                 <span>

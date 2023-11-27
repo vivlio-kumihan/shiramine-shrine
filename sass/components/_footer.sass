@@ -21,7 +21,6 @@
         span
           font-size: 1.85rem
           line-height: 1em
-      
 
     .wrapper
       background-color: #f6f6f6
@@ -59,24 +58,29 @@
                   &::before
                     +fw.positionAbsoluteCTL($top: true)
                     left: 0
-                    +fw.fontAwesome("\f16d", $fontSize: 2rem, $fontFamily: Blands)
+                    +fw.fontAwesome("\f16d", $fontSize: 2rem, $fontFamily: Brands, $fontWeight: 400)
                 &.icon-twitter 
                   position: relative
                   &::before
                     +fw.positionAbsoluteCTL($top: true)
                     left: 50px
-                    +fw.fontAwesome("\e61b", $fontSize: 2rem, $fontFamily: Blands)
+                    +fw.fontAwesome("\e61b", $fontSize: 2rem, $fontFamily: Brands, $fontWeight: 400)
         .footer-center-links
           display: flex
           column-gap: 160px
-          ul
-            li
+          > ul
+            > li
               + li
                 margin-top: 2rem
-              h2
+              > h2
+                position: unset
+                padding-bottom: 0
                 font-size: .875rem
                 font-weight: 500
                 text-align: left
+                &::after
+                  display: none
+                  
               div
                 width: 100%
                 position: relative
@@ -85,7 +89,7 @@
                 &::before
                   +fw.positionAbsoluteCTL($top: true)
                   top: 22px
-                  left: 1rem
+                  left: .5rem
                   content: ""
                   width: 0
                   height: 0
@@ -94,6 +98,11 @@
                   border-bottom: 7px solid transparent
                   border-left: 9px solid #D9341C
                   border-right: 0
+                  transition: .5s
+                &:hover
+                  &::before
+                    left: 1rem
+                    opacity: .5
                 a
                   display: block
                   height: 100%

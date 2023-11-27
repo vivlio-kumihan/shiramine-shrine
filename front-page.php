@@ -3,15 +3,17 @@
 
 <main>
   <?php if (is_home() || is_front_page()) : ?>
-    <!-- //トップページのみ表示させたい内容を記述 -->
-    <!-- position absoluteでfixさせるよ。 -->
-    <p>movie</p>
+    <!-- <video width="100%" height="100vh" autoplay loop muted playinline src="<?php echo get_template_directory_uri(); ?>/img/_sample_import_61a86920b1a021.47856856.mp4"></video> -->
+    <video width="100%" height="100vh" autoplay loop muted playinline src="<?php echo get_template_directory_uri(); ?>/img/_sample_import_616540e4897b26.24217861.mp4"></video>
   <?php else : ?>
     //トップページ以外に表示させたい内容を記述
     other contents
   <?php endif; ?>
 
   <div class="contents">
+    <section class="title">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/title.png" alt="ページのタイトル">
+    </section>
     <div class="bg">
       <section class="information">
         <div class="topics">
@@ -111,7 +113,7 @@
 
       <section class="access-map">
         <div class="frame">
-          <img src="" alt="">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.062849246738!2d135.75058587613765!3d35.0301575728044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60010875465295bd%3A0xb8f1789b55585273!2z55m95bOv56We5a6u!5e0!3m2!1sja!2sjp!4v1701046947001!5m2!1sja!2sjp" width="100%" height="670px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <a href="" class="to-contents-page">交通（アクセス）</a>
       </section>

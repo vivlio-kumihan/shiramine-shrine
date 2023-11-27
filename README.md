@@ -1,5 +1,17 @@
 # Pruduct memo for shiramine shrine 
 
+> 231127の宿題
+* header, footer responsive対応
+* お知らせ／トピックスulをホバーで背景色を変更
+* h2 ホバーで線を左から右へアニメーション
+* ご祈祷、お守り・授与品ホバーで黒画面から明るい画面へ
+* Twitterの表記。ダメだったらSVGで貼り直し。
+* footerのリンク表記の冒頭の赤三角のアニメーション
+
+以上を6時間でやる。
+
+別日でいいので4時間以内で実装。
+* Twitter、instagramの埋め込み調べて実装
 
 
 # 独自テーマ

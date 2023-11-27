@@ -42,11 +42,11 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 200px;
+  height: 300px;
   padding: 0 200px;
   background: rgb(255, 255, 255);
-  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.8491771709) 50%, rgba(255, 255, 255, 0.6979166667) 80%, rgba(255, 255, 255, 0) 100%);
-  opacity: 0.8;
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.8491771709) 40%, rgba(255, 255, 255, 0.6979166667) 55%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0.95;
   z-index: 100;
 }
 .home header .wrapper {
@@ -91,8 +91,16 @@
   gap: 20px;
   font-size: 0.9rem;
 }
+.home header .wrapper .global-menu .upper ul li, .home header .wrapper .global-menu .lower ul li {
+  transform: translateY(2px);
+  transition: 0.3s;
+}
 .home header .wrapper .global-menu .upper ul li a, .home header .wrapper .global-menu .lower ul li a {
   display: block;
+}
+.home header .wrapper .global-menu .upper ul li:hover, .home header .wrapper .global-menu .lower ul li:hover {
+  transform: translateY(0);
+  opacity: 0.7;
 }
 .home header .wrapper .global-menu .upper ul {
   justify-content: flex-end;
@@ -129,15 +137,54 @@
 .home header .wrapper .global-menu .upper ul .language a span img {
   width: 17px;
 }
+.home.blog main {
+  position: relative;
+}
+.home.blog main video {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100vh;
+  width: min(1680px, 100%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #eee;
+  z-index: -1;
+}
 .home.blog main .contents {
   position: relative;
   width: min(1680px, 100%);
   margin: 0 auto;
 }
-.home.blog main .contents .bg {
+.home.blog main .contents .title {
+  display: grid;
+  place-content: center;
+  position: relative;
   width: 100%;
+  height: 100vh;
+}
+.home.blog main .contents .title img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+}
+.home.blog main .contents .bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
   background: url(./img/bg.png) repeat;
-  z-index: 0;
+}
+.home.blog main .contents .bg::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  opacity: 1;
+  z-index: 2;
 }
 .home.blog main .contents .bg section {
   display: flex;
@@ -157,7 +204,7 @@
   justify-content: center;
   align-items: flex-start;
   gap: 50px;
-  padding-top: 300px;
+  padding-top: 50px;
 }
 .home.blog main .contents .bg section.information .topics {
   display: flex;
@@ -261,6 +308,13 @@
   color: #fff;
   border: 1px solid #fff;
 }
+.home.blog main .contents .bg section.access-map {
+  margin-top: 0;
+  padding-bottom: 100px;
+}
+.home.blog main .contents .bg section.access-map > a {
+  margin-top: 70px;
+}
 
 .to-contents-page {
   display: inline-block;
@@ -360,8 +414,8 @@
   left: 0;
   content: "\f16d";
   font-size: 2rem;
-  font-family: "Font Awesome 6 Blands";
-  font-weight: 900;
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400;
 }
 .home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li.icon-twitter {
   position: relative;
@@ -373,34 +427,39 @@
   left: 50px;
   content: "\e61b";
   font-size: 2rem;
-  font-family: "Font Awesome 6 Blands";
-  font-weight: 900;
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400;
 }
 .home footer .wrapper .wrapper-grid .footer-center-links {
   display: flex;
   -moz-column-gap: 160px;
        column-gap: 160px;
 }
-.home footer .wrapper .wrapper-grid .footer-center-links ul li + li {
+.home footer .wrapper .wrapper-grid .footer-center-links > ul > li + li {
   margin-top: 2rem;
 }
-.home footer .wrapper .wrapper-grid .footer-center-links ul li h2 {
+.home footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2 {
+  position: unset;
+  padding-bottom: 0;
   font-size: 0.875rem;
   font-weight: 500;
   text-align: left;
 }
-.home footer .wrapper .wrapper-grid .footer-center-links ul li div {
+.home footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2::after {
+  display: none;
+}
+.home footer .wrapper .wrapper-grid .footer-center-links > ul > li div {
   width: 100%;
   position: relative;
   padding: 1em 0 0 2em;
   line-height: 1.2;
 }
-.home footer .wrapper .wrapper-grid .footer-center-links ul li div::before {
+.home footer .wrapper .wrapper-grid .footer-center-links > ul > li div::before {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   top: 22px;
-  left: 1rem;
+  left: 0.5rem;
   content: "";
   width: 0;
   height: 0;
@@ -409,8 +468,13 @@
   border-bottom: 7px solid transparent;
   border-left: 9px solid #D9341C;
   border-right: 0;
+  transition: 0.5s;
 }
-.home footer .wrapper .wrapper-grid .footer-center-links ul li div a {
+.home footer .wrapper .wrapper-grid .footer-center-links > ul > li div:hover::before {
+  left: 1rem;
+  opacity: 0.5;
+}
+.home footer .wrapper .wrapper-grid .footer-center-links > ul > li div a {
   display: block;
   height: 100%;
 }
