@@ -99,14 +99,18 @@
       </section>
 
       <section class="to-prayer-gift">
-        <ul>
+        <ul id="to-prayer-gift">
           <li>
-            <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/atari-AdobeStock_346787519_Preview.jpeg" alt="">
-            <div class="catch">ご&emsp;祈&emsp;祷</div>
+            <a href="">
+              <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/atari-AdobeStock_346787519_Preview.jpeg" alt="">
+              <div class="catch">ご&emsp;祈&emsp;祷</div>
+            </a>
           </li>
           <li>
-            <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/atari-toukon-img03.png" alt="">
-            <div class="catch">お守り・授与品</div>
+            <a href="">
+              <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/atari-toukon-img03.png" alt="">
+              <div class="catch">お守り・授与品</div>
+            </a>
           </li>
         </ul>
       </section>

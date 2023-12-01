@@ -42,7 +42,7 @@
           wp_nav_menu(array(
             'theme_location' => 'global-menu',
             'container'      => '',
-            'depth'          => 1,
+            'depth'          => 2,
           ));
           ?>
         </div>

@@ -17,8 +17,8 @@
             <li>お問い合わせ</li>
           </ul>
           <ul>
-            <li class="icon-instagram"></li>
-            <li class="icon-twitter"></li>
+            <li><a href="" class="icon-instagram"></a></li>
+            <li><a href="" class="icon-twitter"></a></li>
           </ul>
         </div>
 

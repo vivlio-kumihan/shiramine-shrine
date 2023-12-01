@@ -53,17 +53,18 @@
           ul
             display: flex
             justify-content: space-between
-            align-items: center
             gap: 20px
             font-size: .9rem
-            li
+            li.menu-item
+              position: relative
               transform: translateY(2px)
               transition: .3s
               a
                 display: block
               &:hover
                 transform: translateY(0)
-                opacity: .7
+                opacity: .9
+
         .upper ul
           justify-content: flex-end
           gap: 5px
@@ -90,6 +91,33 @@
                 img
                   width: 17px
 
+        .lower
+          ul.menu
+            li.menu-item
+              .sub-menu
+                display: flex
+                flex-direction: column
+                row-gap: 8px
+                position: absolute
+                top: 28px
+                left: 50%
+                transform: translateX(-50%)
+                li
+                  left: 0
+                  width: 9.5rem
+                  padding: 8px 16px
+                  text-align: center
+                  background-color: #fff
+                  transition: .5s
+                  visibility: hidden
+                  opacity: 0
+                  transform: translateY(-200px)
+                  &:hover
+                    opacity: .9
+                  &.pull-down-list
+                    visibility: visible
+                    opacity: .8
+                    transform: translateY(0px)        
     +min(sm)
     +min(md)
     +min(lg)

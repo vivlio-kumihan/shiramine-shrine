@@ -87,20 +87,20 @@
 .home header .wrapper .global-menu .upper ul, .home header .wrapper .global-menu .lower ul {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 20px;
   font-size: 0.9rem;
 }
-.home header .wrapper .global-menu .upper ul li, .home header .wrapper .global-menu .lower ul li {
+.home header .wrapper .global-menu .upper ul li.menu-item, .home header .wrapper .global-menu .lower ul li.menu-item {
+  position: relative;
   transform: translateY(2px);
   transition: 0.3s;
 }
-.home header .wrapper .global-menu .upper ul li a, .home header .wrapper .global-menu .lower ul li a {
+.home header .wrapper .global-menu .upper ul li.menu-item a, .home header .wrapper .global-menu .lower ul li.menu-item a {
   display: block;
 }
-.home header .wrapper .global-menu .upper ul li:hover, .home header .wrapper .global-menu .lower ul li:hover {
+.home header .wrapper .global-menu .upper ul li.menu-item:hover, .home header .wrapper .global-menu .lower ul li.menu-item:hover {
   transform: translateY(0);
-  opacity: 0.7;
+  opacity: 0.9;
 }
 .home header .wrapper .global-menu .upper ul {
   justify-content: flex-end;
@@ -136,6 +136,34 @@
 }
 .home header .wrapper .global-menu .upper ul .language a span img {
   width: 17px;
+}
+.home header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.home header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li {
+  left: 0;
+  width: 9.5rem;
+  padding: 8px 16px;
+  text-align: center;
+  background-color: #fff;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-200px);
+}
+.home header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li:hover {
+  opacity: 0.9;
+}
+.home header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li.pull-down-list {
+  visibility: visible;
+  opacity: 0.8;
+  transform: translateY(0px);
 }
 .home.blog main {
   position: relative;
@@ -221,9 +249,13 @@
 .home.blog main .contents .bg section.information .topics .wrapper .index-to-information .post-archive .post-item + .post-item {
   border-top: 1px solid #BB9A01;
 }
+.home.blog main .contents .bg section.information .topics .wrapper .index-to-information .post-archive .post-item.color-blue a {
+  color: #235180;
+}
 .home.blog main .contents .bg section.information .topics .wrapper .index-to-information .post-archive .post-item a {
   display: flex;
   padding: 30px 30px;
+  transition: 0.5s;
 }
 .home.blog main .contents .bg section.information .sns-post {
   display: flex;
@@ -278,24 +310,47 @@
 .home.blog main .contents .bg section.annual-event .note + .note {
   margin-top: 20px;
 }
-.home.blog main .contents .bg section.to-prayer-gift ul {
+.home.blog main .contents .bg section.to-prayer-gift ul#to-prayer-gift {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
+  width: 100%;
   align-items: center;
 }
-.home.blog main .contents .bg section.to-prayer-gift ul li {
+.home.blog main .contents .bg section.to-prayer-gift ul#to-prayer-gift li {
   position: relative;
   width: 100%;
   aspect-ratio: 4/3;
+  transition: 0.5s;
+  overflow: hidden;
 }
-.home.blog main .contents .bg section.to-prayer-gift ul li img {
+.home.blog main .contents .bg section.to-prayer-gift ul#to-prayer-gift li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  transition: 0.5s;
+  opacity: 0.7;
+  z-index: 1;
+}
+.home.blog main .contents .bg section.to-prayer-gift ul#to-prayer-gift li.hover::before {
+  opacity: 0.1;
+}
+.home.blog main .contents .bg section.to-prayer-gift ul#to-prayer-gift li a {
+  display: block;
+  height: 100%;
+}
+.home.blog main .contents .bg section.to-prayer-gift ul#to-prayer-gift li a img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 0.5s;
 }
-.home.blog main .contents .bg section.to-prayer-gift ul li .catch {
+.home.blog main .contents .bg section.to-prayer-gift ul#to-prayer-gift li a .catch {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -307,6 +362,14 @@
   text-align: center;
   color: #fff;
   border: 1px solid #fff;
+  transition: 0.5s;
+  z-index: 2;
+}
+.home.blog main .contents .bg section.to-prayer-gift ul#to-prayer-gift li.hover .catch {
+  color: #555;
+  background-color: #fff;
+  box-shadow: 0 2px 5px #555;
+  opacity: 0.8;
 }
 .home.blog main .contents .bg section.access-map {
   margin-top: 0;
@@ -402,33 +465,38 @@
   gap: 10px;
 }
 .home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) {
+  display: flex;
+  gap: 30px;
   margin-top: 50px;
 }
 .home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li {
   position: relative;
+  width: 2rem;
+  height: 2rem;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li.icon-instagram::before {
+.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a {
+  display: block;
+  height: 100%;
+}
+.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-instagram::before {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 0;
   content: "\f16d";
   font-size: 2rem;
   font-family: "Font Awesome 6 Brands";
   font-weight: 400;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li.icon-twitter {
-  position: relative;
-}
-.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li.icon-twitter::before {
+.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-twitter::before {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 50px;
-  content: "\e61b";
-  font-size: 2rem;
-  font-family: "Font Awesome 6 Brands";
-  font-weight: 400;
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  background: url(./img/x-twitter.svg) no-repeat;
+  background-size: 100%;
+  opacity: 0.7;
 }
 .home footer .wrapper .wrapper-grid .footer-center-links {
   display: flex;

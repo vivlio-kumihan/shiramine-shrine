@@ -51,20 +51,33 @@
               display: flex
               gap: 10px
             &:nth-of-type(3)
+              display: flex
+              gap: 30px
               margin-top: 50px
               li
                 position: relative
-                &.icon-instagram 
-                  &::before
-                    +fw.positionAbsoluteCTL($top: true)
-                    left: 0
-                    +fw.fontAwesome("\f16d", $fontSize: 2rem, $fontFamily: Brands, $fontWeight: 400)
-                &.icon-twitter 
-                  position: relative
-                  &::before
-                    +fw.positionAbsoluteCTL($top: true)
-                    left: 50px
-                    +fw.fontAwesome("\e61b", $fontSize: 2rem, $fontFamily: Brands, $fontWeight: 400)
+                width: 2rem
+                height: 2rem
+                a
+                  display: block
+                  height: 100%
+                  &.icon-instagram 
+                    &::before
+                      +fw.positionAbsoluteCTL($top: true, $left: true)
+                      +fw.fontAwesome("\f16d", $fontSize: 2rem, $fontFamily: Brands, $fontWeight: 400)
+                  &.icon-twitter 
+                    &::before
+                      +fw.positionAbsoluteCTL($top: true, $left: true)
+                      content: ""
+                      width: 2rem
+                      height: 2rem
+                      background: url(./img/x-twitter.svg) no-repeat
+                      background-size: 100%
+                      opacity: .7
+                      // なぜか表示しない
+                      // +fw.positionAbsoluteCTL($top: true)
+                      // left: 50px
+                      // +fw.fontAwesome("\e61b", $fontSize: 2rem, $fontFamily: Brands, $fontWeight: 400)
         .footer-center-links
           display: flex
           column-gap: 160px
