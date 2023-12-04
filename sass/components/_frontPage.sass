@@ -1,7 +1,7 @@
 @use '../forwards' as fw
 @use '../media-query' as *
 
-.home.blog
+.home.blog, .page
   main
     position: relative
     video
@@ -28,8 +28,6 @@
         img
           +fw.positionAbsoluteCTL
           width: 35%
-
-
       
       .bg
         position: relative
@@ -205,18 +203,12 @@
     transform: translateY(0)
     box-shadow: 0 2px 4px #333
     border: 1px solid #666
-  
-.frame
-  width: 100%
-  img
-    width: 100%
 
 
   +min(sm)
   +min(md)
   +min(lg)
   +min(xl)
-
 
 // 透過の作り方
 

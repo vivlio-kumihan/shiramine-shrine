@@ -1,5 +1,3 @@
-/* Theme Name: shiramine-shrine */
-
 @use 'forwards' as fw
 
 // WEBフォントのインポート
@@ -12,27 +10,48 @@
 :root
   font-size: 100% // => 16px
   scroll-behavior: smooth
-  body
-    width: 100%
-    margin: 0 auto
-    // font-family: fw.$noto-gth, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Hiragino Sans", "メイリオ", "Meiryo", sans-serif
-    font-family: fw.$noto-rm, "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif
-    border: none
+
+body
+  width: 100%
+  margin: 0 auto
+  // font-family: fw.$noto-gth, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Hiragino Sans", "メイリオ", "Meiryo", sans-serif
+  font-family: fw.$noto-rm, "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif
+  border: none
+  line-height: 1
+  font-feature-settings: "palt"
+  color: fw.$black
+
+  h2
+    position: relative
+    padding-bottom: 20px
+    font-size: 1.6rem
+    line-height: 1em
+    font-weight: 300
     line-height: 1
-    font-feature-settings: "palt"
-    color: fw.$black
-    h2
-      position: relative
-      padding-bottom: 20px
-      font-size: 1.6rem
-      line-height: 1em
-      font-weight: 300
-      line-height: 1
-      text-align: center
-      &::after
-        +fw.positionAbsoluteCTL($left: true)
-        bottom: -5px
-        content: ""
-        width: 10rem
-        height: 3px
-        background-color: #BB9A01
+    text-align: center
+    &::after
+      +fw.positionAbsoluteCTL($left: true)
+      bottom: -5px
+      content: ""
+      width: 10rem
+      height: 3px
+      background-color: #BB9A01
+
+  .bg
+    position: relative
+    width: 100%
+    height: 100%
+    background: url(./img/bg.png) repeat
+    &::after
+      position: absolute
+      top: 0
+      left: 0
+      content: ""
+      width: 100%
+      opacity: 1
+      z-index: 2
+
+  .frame
+    width: 100%
+    img
+      width: 100%
