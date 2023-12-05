@@ -90,7 +90,6 @@ body .page-top-arrow {
   width: 100%;
   height: 185px;
   padding: 0 200px;
-  background: rgb(255, 255, 255);
   background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.85) 40%, rgba(255, 255, 255, 0.7) 55%, rgba(255, 255, 255, 0) 100%);
   opacity: 0.95;
   z-index: 100;
@@ -134,6 +133,7 @@ body .page-top-arrow {
   justify-content: space-between;
   gap: 40px;
   font-size: 1rem;
+  font-weight: 600;
 }
 .home header .wrapper .global-menu .upper ul li.menu-item, .home header .wrapper .global-menu .lower ul li.menu-item, .page header .wrapper .global-menu .upper ul li.menu-item, .page header .wrapper .global-menu .lower ul li.menu-item {
   position: relative;
@@ -245,6 +245,11 @@ body .page-top-arrow {
     gap: 20px;
   }
 }
+@media (width >= 768px) {
+  .home header .wrapper .global-menu .lower ul.menu, .page header .wrapper .global-menu .lower ul.menu {
+    font-size: 0.95rem;
+  }
+}
 @media (width >= 1100px) {
   .home header, .page header {
     padding: 0 50px;
@@ -286,8 +291,17 @@ body .page-top-arrow {
   }
 }
 @media (width < 768px) {
+  .home header, .page header {
+    background: unset;
+  }
   .home header .wrapper, .page header .wrapper {
     display: block;
+  }
+  .home header .wrapper .logo-space, .page header .wrapper .logo-space {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 0;
   }
   .home header .wrapper .global-menu, .page header .wrapper .global-menu {
     display: block;
@@ -298,15 +312,45 @@ body .page-top-arrow {
     height: 100vh;
     padding-top: 100px;
     background-color: #fff;
-    opacity: 0.9;
+    opacity: 0.95;
   }
   .home header .wrapper .global-menu .upper ul, .page header .wrapper .global-menu .upper ul {
     justify-content: center;
   }
-  .home header .wrapper .global-menu .lower ul, .page header .wrapper .global-menu .lower ul {
+  .home header .wrapper .global-menu .upper ul .language, .page header .wrapper .global-menu .upper ul .language {
+    margin-left: 10px;
+  }
+  .home header .wrapper .global-menu .lower ul.menu, .page header .wrapper .global-menu .lower ul.menu {
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
+  }
+  .home header .wrapper .global-menu .lower ul.menu li.menu-item, .page header .wrapper .global-menu .lower ul.menu li.menu-item {
+    margin: 0 auto;
+    position: unset;
+    width: 60%;
+    text-align: center;
+  }
+  .home header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu, .page header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu {
+    display: block;
+    position: unset;
+    padding-top: 10px;
+    font-weight: 400;
+    transform: translateX(0%);
+    visibility: visible;
+    opacity: 1;
+  }
+  .home header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li, .page header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.03);
+  }
+  .home header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li + li, .page header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li + li {
+    margin-top: 5px;
+  }
+  .home header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li a, .page header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li a {
+    height: auto;
+    padding: 8px 16px;
+    overflow: hidden;
   }
 }
 
