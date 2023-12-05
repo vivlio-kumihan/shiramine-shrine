@@ -53,19 +53,21 @@
             margin-top: 80px
 
           &.information
-            display: grid
-            grid-template-columns: 1.2fr 1fr
+            display: flex
+            flex-direction: row
+            justify-content: center
             align-items: flex-start
-            gap: 50px
+            gap: 30px
             width: 100%
-            padding-top: 50px
+            margin: 0 auto
+            padding: 50px 30px 0
             .topics
               display: flex
               flex-direction: column
               justify-content: center
               .wrapper
                 margin-top: 40px
-                width: 750px
+                width: 100%
                 .index-to-information
                   .post-archive
                     width: 100%
@@ -77,13 +79,15 @@
                         color: fw.$blue-deep
                       a
                         display: flex
-                        padding: 30px 30px
+                        gap: 20px
+                        padding: 25px 30px
+                        line-height: 1.3em
                         transition: .5s
             .sns-post
               display: flex
               flex-direction: column
               gap: 30px
-              width: 320px
+              width: max(375px, 25%) 
               .instagram-post, .twitter-post
                 width: 100%
                 aspect-ratio: 4/3
@@ -188,6 +192,73 @@
             > a
               margin-top: 70px
 
+  +min(sm)
+  +min(md)
+  +min(lg)
+  +min(xl)
+
+// topice
+.home.blog, .page
+  main
+    +max(lg)
+      .contents
+        .bg
+          section.information
+            display: flex
+            flex-direction: column
+            align-items: center
+            .topics
+              .wrapper
+            .sns-post
+              flex-direction: row
+              width: 100%
+    +max(md)
+      .contents
+        .bg
+          section.information
+            .sns-post
+              flex-direction: column
+              width: min(375px, 95%)
+// about
+.home.blog, .page
+  main
+    +max(lg)
+      .contents
+        .bg
+          section.about
+            .catch-copy
+              width: 80%
+// annual-event
+.home.blog, .page
+  main
+    +max(lg)
+      .contents
+        .bg
+          section.annual-event
+            .catch-copy
+              width: 80%
+// to-prayer-gift
+.home.blog, .page
+  main
+    +max(lg)
+      .contents
+        .bg
+          section.to-prayer-gift
+            ul#to-prayer-gift
+              grid-template-columns: 1fr
+              li
+                a
+                  .catch
+                    width: 60%
+                    padding: 15px 0
+                    font-size: 1.15rem
+                    color: #555
+                    background-color: #fff
+                    box-shadow: 0 2px 5px #555
+                    opacity: .8
+              li::before
+                content: unset
+
 .to-contents-page
   display: inline-block
   margin: 50px auto 0
@@ -204,11 +275,6 @@
     transform: translateY(0)
     box-shadow: 0 2px 4px #333
     border: 1px solid #666
-
-  +min(sm)
-  +min(md)
-  +min(lg)
-  +min(xl)
 
 // 透過の作り方
 

@@ -472,12 +472,14 @@ body .page-top-arrow {
   margin-top: 80px;
 }
 .home.blog main .contents .bg section.information, .page main .contents .bg section.information {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: flex-start;
-  gap: 50px;
+  gap: 30px;
   width: 100%;
-  padding-top: 50px;
+  margin: 0 auto;
+  padding: 50px 30px 0;
 }
 .home.blog main .contents .bg section.information .topics, .page main .contents .bg section.information .topics {
   display: flex;
@@ -486,7 +488,7 @@ body .page-top-arrow {
 }
 .home.blog main .contents .bg section.information .topics .wrapper, .page main .contents .bg section.information .topics .wrapper {
   margin-top: 40px;
-  width: 750px;
+  width: 100%;
 }
 .home.blog main .contents .bg section.information .topics .wrapper .index-to-information .post-archive, .page main .contents .bg section.information .topics .wrapper .index-to-information .post-archive {
   width: 100%;
@@ -500,14 +502,16 @@ body .page-top-arrow {
 }
 .home.blog main .contents .bg section.information .topics .wrapper .index-to-information .post-archive .post-item a, .page main .contents .bg section.information .topics .wrapper .index-to-information .post-archive .post-item a {
   display: flex;
-  padding: 30px 30px;
+  gap: 20px;
+  padding: 25px 30px;
+  line-height: 1.3em;
   transition: 0.5s;
 }
 .home.blog main .contents .bg section.information .sns-post, .page main .contents .bg section.information .sns-post {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  width: 320px;
+  width: max(375px, 25%);
 }
 .home.blog main .contents .bg section.information .sns-post .instagram-post, .home.blog main .contents .bg section.information .sns-post .twitter-post, .page main .contents .bg section.information .sns-post .instagram-post, .page main .contents .bg section.information .sns-post .twitter-post {
   width: 100%;
@@ -624,6 +628,53 @@ body .page-top-arrow {
 .home.blog main .contents .bg section.access-map > a, .page main .contents .bg section.access-map > a {
   margin-top: 70px;
 }
+@media (width < 1100px) {
+  .home.blog main .contents .bg section.information, .page main .contents .bg section.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home.blog main .contents .bg section.information .sns-post, .page main .contents .bg section.information .sns-post {
+    flex-direction: row;
+    width: 100%;
+  }
+}
+@media (width < 768px) {
+  .home.blog main .contents .bg section.information .sns-post, .page main .contents .bg section.information .sns-post {
+    flex-direction: column;
+    width: min(375px, 95%);
+  }
+}
+
+@media (width < 1100px) {
+  .home.blog main .contents .bg section.about .catch-copy, .page main .contents .bg section.about .catch-copy {
+    width: 80%;
+  }
+}
+
+@media (width < 1100px) {
+  .home.blog main .contents .bg section.annual-event .catch-copy, .page main .contents .bg section.annual-event .catch-copy {
+    width: 80%;
+  }
+}
+
+@media (width < 1100px) {
+  .home.blog main .contents .bg section.to-prayer-gift ul#to-prayer-gift, .page main .contents .bg section.to-prayer-gift ul#to-prayer-gift {
+    grid-template-columns: 1fr;
+  }
+  .home.blog main .contents .bg section.to-prayer-gift ul#to-prayer-gift li a .catch, .page main .contents .bg section.to-prayer-gift ul#to-prayer-gift li a .catch {
+    width: 60%;
+    padding: 15px 0;
+    font-size: 1.15rem;
+    color: #555;
+    background-color: #fff;
+    box-shadow: 0 2px 5px #555;
+    opacity: 0.8;
+  }
+  .home.blog main .contents .bg section.to-prayer-gift ul#to-prayer-gift li::before, .page main .contents .bg section.to-prayer-gift ul#to-prayer-gift li::before {
+    content: unset;
+  }
+}
 
 .to-contents-page {
   display: inline-block;
@@ -643,6 +694,7 @@ body .page-top-arrow {
   box-shadow: 0 2px 4px #333;
   border: 1px solid #666;
 }
+
 .page main .frame {
   position: relative;
   height: 500px;
