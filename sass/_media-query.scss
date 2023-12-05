@@ -2,7 +2,7 @@
 // sm: 375px–767px
 // md: 768px–991px
 // lg: 992px–1199px
-// xl: 1200px–
+// xl: 1700px–
 
 // 私の設定法
 // 各領域以上は設定が引き継がれる。
@@ -12,8 +12,8 @@
 $breakpoints: (
   sm: 375px,
   md: 768px,
-  lg: 992px,
-  xl: 1200px
+  lg: 1100px,
+  xl: 1700px
 );
 
 @mixin min($bp) {

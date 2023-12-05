@@ -40,7 +40,7 @@
           font-size: .75rem
           font-weight: 600
           line-height: 1.5
-          span
+          &.shrine-name
             font-size: 1.85rem
             line-height: 1em
       .global-menu
@@ -48,26 +48,27 @@
         flex-direction: column
         justify-content: center
         row-gap: 20px
-        font-size: .95rem
         .upper, .lower
           ul
             display: flex
             justify-content: space-between
-            gap: 20px
-            font-size: .9rem
+            gap: 40px
+            font-size: 1rem
             li.menu-item
               position: relative
-              transform: translateY(2px)
               transition: .3s
               a
                 display: block
+                line-height: 1.25
               &:hover
-                transform: translateY(0)
+                color: fw.$blue-deep
                 opacity: .9
 
         .upper ul
           justify-content: flex-end
+          align-items: center
           gap: 5px
+          font-size: .9rem
           li:nth-of-type(3)
             margin-left: 5px
           .language
@@ -94,6 +95,9 @@
         .lower
           ul.menu
             li.menu-item
+              &.active .sub-menu
+                visibility: visible
+                opacity: 1
               .sub-menu
                 display: flex
                 flex-direction: column
@@ -102,23 +106,68 @@
                 top: 28px
                 left: 50%
                 transform: translateX(-50%)
+                transition: .7s
+                visibility: hidden
+                opacity: 0
                 li
                   left: 0
                   width: 9.5rem
-                  padding: 8px 16px
                   text-align: center
                   background-color: #fff
-                  transition: .5s
-                  visibility: hidden
-                  opacity: 0
-                  transform: translateY(-200px)
+                  a
+                    height: auto
+                    padding: 8px 16px
+                    overflow: hidden
                   &:hover
-                    opacity: .9
-                  &.pull-down-list
-                    visibility: visible
-                    opacity: .8
-                    transform: translateY(0px)        
+                    opacity: .6   
     +min(sm)
+      padding: 0
+      .wrapper
+        padding: 0 20px
+        .logo-space
+          flex-direction: column
+          gap: 5px
+          padding-top: 50px
+          div
+            p
+              text-align:   center
+              line-height: 1.3em
+              span
+                display: none
+              &:first-of-type
+                margin-bottom: 5px
+        .global-menu
+          .lower
+            ul.menu
+              gap: 20px
+              li.menu-item
+                a
+                  br
     +min(md)
+      .wrapper
     +min(lg)
+      padding: 0 50px
+      .wrapper
+        .logo-space
+          flex-direction: row
+          gap: 10px
+          padding-top: 0
+          div
+            p
+              text-align: left
+              line-height: 1em
+              span
+                display: inline
+              br
+                display: none  
+              &:first-of-type
+                margin-bottom: 5px   
+        .global-menu
+          .lower
+            ul.menu
+              li.menu-item
+                a
+                  br
+                    // display: block
     +min(xl)
+      padding: 0 225px

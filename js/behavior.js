@@ -41,17 +41,17 @@
 // }
 
 // headerのglobal-menu pull-down-list
-// const menuItem = document.querySelectorAll(".global-menu .lower > .menu > .menu-item");
-const pullDownList = document.querySelectorAll(".global-menu .lower > .menu > .menu-item > .sub-menu > li");
+const pullDownList = document.querySelectorAll(".global-menu .lower > .menu > .menu-item");
 
-pullDownList.forEach((elem, idx) => {
+pullDownList.forEach(elem => {
   elem.addEventListener("mouseenter", () => {
-    elem.classList.add("pull-down-list");
+    console.log("hover");
+    elem.classList.add("active");
   });
   elem.addEventListener("mouseleave", () => {
-    elem.classList.remove("pull-down-list");
+    console.log("leave");
+    elem.classList.remove("active");
   });
-
 });
 
 

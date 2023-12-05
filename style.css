@@ -94,7 +94,7 @@ body .frame img {
   font-weight: 600;
   line-height: 1.5;
 }
-.home header .wrapper .logo-space p span, .page header .wrapper .logo-space p span {
+.home header .wrapper .logo-space p.shrine-name, .page header .wrapper .logo-space p.shrine-name {
   font-size: 1.85rem;
   line-height: 1em;
 }
@@ -103,29 +103,30 @@ body .frame img {
   flex-direction: column;
   justify-content: center;
   row-gap: 20px;
-  font-size: 0.95rem;
 }
 .home header .wrapper .global-menu .upper ul, .home header .wrapper .global-menu .lower ul, .page header .wrapper .global-menu .upper ul, .page header .wrapper .global-menu .lower ul {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
-  font-size: 0.9rem;
+  gap: 40px;
+  font-size: 1rem;
 }
 .home header .wrapper .global-menu .upper ul li.menu-item, .home header .wrapper .global-menu .lower ul li.menu-item, .page header .wrapper .global-menu .upper ul li.menu-item, .page header .wrapper .global-menu .lower ul li.menu-item {
   position: relative;
-  transform: translateY(2px);
   transition: 0.3s;
 }
 .home header .wrapper .global-menu .upper ul li.menu-item a, .home header .wrapper .global-menu .lower ul li.menu-item a, .page header .wrapper .global-menu .upper ul li.menu-item a, .page header .wrapper .global-menu .lower ul li.menu-item a {
   display: block;
+  line-height: 1.25;
 }
 .home header .wrapper .global-menu .upper ul li.menu-item:hover, .home header .wrapper .global-menu .lower ul li.menu-item:hover, .page header .wrapper .global-menu .upper ul li.menu-item:hover, .page header .wrapper .global-menu .lower ul li.menu-item:hover {
-  transform: translateY(0);
+  color: #235180;
   opacity: 0.9;
 }
 .home header .wrapper .global-menu .upper ul, .page header .wrapper .global-menu .upper ul {
   justify-content: flex-end;
+  align-items: center;
   gap: 5px;
+  font-size: 0.9rem;
 }
 .home header .wrapper .global-menu .upper ul li:nth-of-type(3), .page header .wrapper .global-menu .upper ul li:nth-of-type(3) {
   margin-left: 5px;
@@ -158,6 +159,10 @@ body .frame img {
 .home header .wrapper .global-menu .upper ul .language a span img, .page header .wrapper .global-menu .upper ul .language a span img {
   width: 17px;
 }
+.home header .wrapper .global-menu .lower ul.menu li.menu-item.active .sub-menu, .page header .wrapper .global-menu .lower ul.menu li.menu-item.active .sub-menu {
+  visibility: visible;
+  opacity: 1;
+}
 .home header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu, .page header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu {
   display: flex;
   flex-direction: column;
@@ -166,26 +171,79 @@ body .frame img {
   top: 28px;
   left: 50%;
   transform: translateX(-50%);
+  transition: 0.7s;
+  visibility: hidden;
+  opacity: 0;
 }
 .home header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li, .page header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li {
   left: 0;
   width: 9.5rem;
-  padding: 8px 16px;
   text-align: center;
   background-color: #fff;
-  transition: 0.5s;
-  visibility: hidden;
-  opacity: 0;
-  transform: translateY(-200px);
+}
+.home header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li a, .page header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li a {
+  height: auto;
+  padding: 8px 16px;
+  overflow: hidden;
 }
 .home header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li:hover, .page header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li:hover {
-  opacity: 0.9;
+  opacity: 0.6;
 }
-.home header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li.pull-down-list, .page header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li.pull-down-list {
-  visibility: visible;
-  opacity: 0.8;
-  transform: translateY(0px);
+@media (width >= 375px) {
+  .home header, .page header {
+    padding: 0;
+  }
+  .home header .wrapper, .page header .wrapper {
+    padding: 0 20px;
+  }
+  .home header .wrapper .logo-space, .page header .wrapper .logo-space {
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 50px;
+  }
+  .home header .wrapper .logo-space div p, .page header .wrapper .logo-space div p {
+    text-align: center;
+    line-height: 1.3em;
+  }
+  .home header .wrapper .logo-space div p span, .page header .wrapper .logo-space div p span {
+    display: none;
+  }
+  .home header .wrapper .logo-space div p:first-of-type, .page header .wrapper .logo-space div p:first-of-type {
+    margin-bottom: 5px;
+  }
+  .home header .wrapper .global-menu .lower ul.menu, .page header .wrapper .global-menu .lower ul.menu {
+    gap: 20px;
+  }
 }
+@media (width >= 1100px) {
+  .home header, .page header {
+    padding: 0 50px;
+  }
+  .home header .wrapper .logo-space, .page header .wrapper .logo-space {
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 0;
+  }
+  .home header .wrapper .logo-space div p, .page header .wrapper .logo-space div p {
+    text-align: left;
+    line-height: 1em;
+  }
+  .home header .wrapper .logo-space div p span, .page header .wrapper .logo-space div p span {
+    display: inline;
+  }
+  .home header .wrapper .logo-space div p br, .page header .wrapper .logo-space div p br {
+    display: none;
+  }
+  .home header .wrapper .logo-space div p:first-of-type, .page header .wrapper .logo-space div p:first-of-type {
+    margin-bottom: 5px;
+  }
+}
+@media (width >= 1700px) {
+  .home header, .page header {
+    padding: 0 225px;
+  }
+}
+
 .home.blog main, .page main {
   position: relative;
 }
@@ -218,7 +276,7 @@ body .frame img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 35%;
+  width: 580px;
 }
 .home.blog main .contents .bg, .page main .contents .bg {
   position: relative;
