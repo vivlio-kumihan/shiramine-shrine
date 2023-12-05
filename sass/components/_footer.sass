@@ -30,7 +30,7 @@
 
       .wrapper-grid
         display: grid
-        grid-template-columns: 1.5fr 2.5fr 1fr
+        column-gap: 20px
         padding: 0 7%
         .footer-left-links
           padding-left: 70px
@@ -80,7 +80,7 @@
                       // +fw.fontAwesome("\e61b", $fontSize: 2rem, $fontFamily: Brands, $fontWeight: 400)
         .footer-center-links
           display: flex
-          column-gap: 160px
+          // column-gap: 160px
           > ul
             > li
               + li
@@ -136,6 +136,57 @@
         text-align: center
         font-size: .8rem
   +min(sm)
+    footer
+      .wrapper
+        .logo-space
+          justify-content: center
+          margin: 0 0 10px -70px
+        .wrapper-grid
+          grid-template-columns: repeat(1, 1fr)
+          row-gap: 80px
+          .footer-left-links
+            margin: 0 auto
+            padding-left: 0
+          .footer-center-links
+            justify-content: center
+            column-gap: 10px
+          .footer-right-links
+            .banner
+              display: grid
+              grid-template-columns: repeat(2, 1fr)
+              gap: 20px
+              li + li
+                margin-top: 0              
   +min(md)
+    footer
+      .wrapper
+        .wrapper-grid
+          .footer-center-links
+            column-gap: 20px
   +min(lg)
+    footer
+      .wrapper
+        .logo-space
+          justify-content: flex-start
+          margin: 0 0 10px 8%
+        .wrapper-grid
+          grid-template-columns: 1.5fr 1.2fr .8fr
+          column-gap: 30px
+          .footer-left-links
+            margin: 0 0 0 75px
+          .footer-center-links
+            column-gap: 30px
+          .footer-right-links
+            .banner
+              display: block
+              // grid-template-columns: unset
+              gap: 20px
+              li + li
+                margin-top: 20px
   +min(xl)
+    footer
+      .wrapper
+        .wrapper-grid
+          grid-template-columns: 1.5fr 2fr 1fr
+          .footer-center-links
+            column-gap: 100px
