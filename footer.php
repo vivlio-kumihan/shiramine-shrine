@@ -8,7 +8,7 @@
         <div class="footer-left-links">
           <ul>
             <li>【鎮座地】<br />〒602-0054 京都市上京区飛鳥井町261番地</li>
-            <li class="access-tel-fax"><span>電話</span>：075-441-3810</li>
+            <li class="access-tel-fax"><span>電話</span>：<a href="tel:075-441-3810">075-441-3810</a></li>
             <li class="access-tel-fax"><span class="en-tume01">FAX</span>：075-441-3820</li>
           </ul>
           <ul>

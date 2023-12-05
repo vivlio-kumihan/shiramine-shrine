@@ -68,9 +68,9 @@ body
     right: 100px
     width: 45px
     aspect-ratio: 1
-    background: rgba(0, 0, 0, .4)
+    background: rgba(0, 0, 0, .5)
     border-radius: 50%
-    z-index: 200
+    z-index: 1
   .page-top-arrow 
     width: 20px
     aspect-ratio: 1
@@ -80,4 +80,7 @@ body
   +min(xl)
     .to-page-top 
       right: 200px
-
+  +max(md)
+    .to-page-top 
+      bottom: 30px
+      right: 40px

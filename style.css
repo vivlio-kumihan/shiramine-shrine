@@ -64,9 +64,9 @@ body .to-page-top {
   right: 100px;
   width: 45px;
   aspect-ratio: 1;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
-  z-index: 200;
+  z-index: 1;
 }
 body .page-top-arrow {
   width: 20px;
@@ -78,6 +78,12 @@ body .page-top-arrow {
 @media (width >= 1700px) {
   body .to-page-top {
     right: 200px;
+  }
+}
+@media (width < 768px) {
+  body .to-page-top {
+    bottom: 30px;
+    right: 40px;
   }
 }
 
@@ -314,6 +320,7 @@ body .page-top-arrow {
     transition: 0.7s;
     visibility: hidden;
     opacity: 0;
+    z-index: 99;
   }
   .home header .wrapper .global-menu.flag, .page header .wrapper .global-menu.flag {
     right: 0;
@@ -1005,6 +1012,37 @@ body .page-top-arrow {
   .home footer .wrapper .logo-space, .page footer .wrapper .logo-space {
     justify-content: center;
     margin: 0 0 10px -70px;
+  }
+  .home footer .wrapper .wrapper-grid, .page footer .wrapper .wrapper-grid {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 80px;
+  }
+  .home footer .wrapper .wrapper-grid .footer-left-links, .page footer .wrapper .wrapper-grid .footer-left-links {
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  .home footer .wrapper .wrapper-grid .footer-center-links, .page footer .wrapper .wrapper-grid .footer-center-links {
+    justify-content: center;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  .home footer .wrapper .wrapper-grid .footer-right-links .banner, .page footer .wrapper .wrapper-grid .footer-right-links .banner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .home footer .wrapper .wrapper-grid .footer-right-links .banner li + li, .page footer .wrapper .wrapper-grid .footer-right-links .banner li + li {
+    margin-top: 0;
+  }
+}
+@media (width < 768px) {
+  .home footer .wrapper .logo-space, .page footer .wrapper .logo-space {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto 10px;
   }
   .home footer .wrapper .wrapper-grid, .page footer .wrapper .wrapper-grid {
     grid-template-columns: repeat(1, 1fr);
