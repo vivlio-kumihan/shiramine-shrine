@@ -190,6 +190,7 @@
       background: unset
       .wrapper
         display: block
+        position: relative
         .logo-space
           position: absolute
           top: 20px
@@ -199,12 +200,18 @@
           display: block
           position: fixed
           top: 0
-          right: 0
+          right: -100%
           width: 100vw
           height: 100vh
           padding-top: 100px
           background-color: #fff
-          opacity: .95
+          transition: .7s
+          visibility: hidden
+          opacity: 0
+          &.flag
+            right: 0
+            visibility: visible
+            opacity: .95
           .upper
             ul
               justify-content: center
@@ -223,7 +230,7 @@
                 .sub-menu
                   display: block
                   position: unset
-                  padding-top: 10px
+                  padding-top: 7px
                   font-weight: 400
                   transform: translateX(0%)
                   visibility: visible
@@ -235,5 +242,46 @@
                       margin-top: 5px
                     a
                       height: auto
-                      padding: 8px 16px
+                      padding: 4px 0
+                      font-size: .975rem
+                      line-height: 1em
                       overflow: hidden
+        .menu-toggle-btn 
+          display: flex
+          flex-direction: column
+          justify-content: space-between
+          align-items: center
+          position: fixed
+          top: 25px
+          right: 35px
+          width: 55px
+          aspect-ratio: 1
+          background-color: fw.$blue-deep
+          border-radius: 50%
+          z-index: 100
+          span
+            +fw.positionAbsoluteCTL($left: true)
+            width: 30px
+            height: 2px
+            background-color: #eee
+            transition: .3s
+            &:first-of-type
+              top: 35%
+            &:nth-of-type(2)
+              top: 50%
+              visibility: visible
+              opacity: 1
+            &:last-of-type
+              bottom: 30%
+        .menu-toggle-btn.flag span
+          &:first-of-type
+            top: 47.5%
+            left: 24%
+            transform: rotate(45deg)
+          &:nth-of-type(2)
+            visibility: hidden
+            opacity: 0
+          &:last-of-type
+            bottom: 47.5%
+            transform: rotate(-45deg)
+            left: 24%              

@@ -24,7 +24,7 @@
           <p class="shrine-name">白峯神宮</p>
         </div>
       </a>
-      <nav class="global-menu">
+      <nav id="global-menu" class="global-menu">
         <div class="upper">
           <ul>
             <li><a href="">交通（アクセス）</a></li>
@@ -50,6 +50,9 @@
           ?>
         </div>
       </nav>
+      <button id="menu-toggle-btn" class="menu-toggle-btn">
+        <span></span><span></span><span></span>
+      </button>
       <a href="#" class="to-page-top">
         <div class="page-top-arrow"></div>
       </a>

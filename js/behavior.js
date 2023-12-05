@@ -54,6 +54,20 @@ pullDownList.forEach(elem => {
   });
 });
 
+// ハンバーガー・メニュー
+// ボタン
+const menuToggleBtn = document.getElementById('menu-toggle-btn');
+const globalMenu = document.getElementById('global-menu');
+const menu = document.querySelector('.hamburger-menu > .main-menu > .menu');
+const groupLink = document.querySelector('.hamburger-menu .group-link');
+let isMenuVisible = false;
+
+menuToggleBtn.addEventListener('click', function() {
+  // ボタンの表示を切り替える。
+  this.classList.toggle('flag')
+  // メニューを出現させる。
+  globalMenu.classList.toggle('flag');
+});
 
   // const lists = document.querySelectorAll(".menu-item:nth-of-type(idx + 1) .sub-menu li");
   // elem.addEventListener("mouseenter", () => {
