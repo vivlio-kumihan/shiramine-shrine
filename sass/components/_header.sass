@@ -119,7 +119,8 @@
                     padding: 8px 16px
                     overflow: hidden
                   &:hover
-                    opacity: .6   
+                    opacity: .6  
+                    
     +min(sm)
       padding: 0
       .wrapper
@@ -131,23 +132,39 @@
           div
             p
               text-align:   center
+              font-size: .65rem
               line-height: 1.3em
               span
                 display: none
               &:first-of-type
                 margin-bottom: 5px
+              &.shrine-name
+                font-size: 1.4rem
         .global-menu
           .lower
             ul.menu
               gap: 20px
-              li.menu-item
-                a
-                  br
     +min(md)
       .wrapper
     +min(lg)
       padding: 0 50px
       .wrapper
+        .logo-space
+          div
+            p
+              font-size: .75rem
+              span
+              &.shrine-name
+                font-size: 1.85rem        
+        .global-menu
+          .lower
+            ul.menu
+              gap: 40px
+    +min(xl)
+      padding: 0 225px
+      .wrapper
+        // ロゴの組み替え　
+        // グローバルメニューとの兼ね合いでこのタイミングにしている。
         .logo-space
           flex-direction: row
           gap: 10px
@@ -161,13 +178,5 @@
               br
                 display: none  
               &:first-of-type
-                margin-bottom: 5px   
-        .global-menu
-          .lower
-            ul.menu
-              li.menu-item
-                a
-                  br
-                    // display: block
-    +min(xl)
-      padding: 0 225px
+                margin-bottom: 5px  
+        
