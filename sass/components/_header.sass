@@ -146,7 +146,6 @@
             ul.menu
               gap: 20px
     +min(md)
-      .wrapper
     +min(lg)
       padding: 0 50px
       .wrapper
@@ -154,7 +153,6 @@
           div
             p
               font-size: .75rem
-              span
               &.shrine-name
                 font-size: 1.55rem        
         .global-menu
@@ -181,5 +179,27 @@
               &:first-of-type
                 margin-bottom: 5px  
               &.shrine-name
-                font-size: 1.85rem                 
-        
+                font-size: 1.85rem
+    // ハンバーガーメニュー
+    +max(md)
+      .wrapper
+        display: block
+        .global-menu
+          display: block
+          position: fixed
+          top: 0
+          right: 0
+          width: 100vw
+          height: 100vh
+          padding-top: 100px
+          background-color: #fff
+          opacity: .9
+          .upper
+            ul
+              justify-content: center
+          .lower
+            ul
+              flex-direction: column
+              align-items: center
+              margin-top: 30px
+                  

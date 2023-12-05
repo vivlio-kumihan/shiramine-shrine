@@ -50,6 +50,9 @@
           ?>
         </div>
       </nav>
+      <a href="#" class="to-page-top">
+        <div class="page-top-arrow"></div>
+      </a>
 
     </div>
   </header>

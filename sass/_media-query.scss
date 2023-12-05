@@ -22,7 +22,8 @@ $breakpoints: (
   }
 }
 
-// 使うことがあるかわからないが保存しておく設定
-// =max($bp)
-//   @media (width < #{ map-get($breakpoints, $bp)})
-//     @content
+@mixin max($bp) {
+  @media (width < #{ map-get($breakpoints, $bp)}) {
+    @content;
+  }
+}

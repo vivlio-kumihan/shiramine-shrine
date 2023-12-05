@@ -55,6 +55,31 @@ body .frame {
 body .frame img {
   width: 100%;
 }
+body .to-page-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  width: 45px;
+  aspect-ratio: 1;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  z-index: 200;
+}
+body .page-top-arrow {
+  width: 20px;
+  aspect-ratio: 1;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: translateY(20%) rotate(-45deg);
+}
+@media (width >= 1700px) {
+  body .to-page-top {
+    right: 200px;
+  }
+}
 
 .home header, .page header {
   display: flex;
@@ -258,6 +283,30 @@ body .frame img {
   }
   .home header .wrapper .logo-space div p.shrine-name, .page header .wrapper .logo-space div p.shrine-name {
     font-size: 1.85rem;
+  }
+}
+@media (width < 768px) {
+  .home header .wrapper, .page header .wrapper {
+    display: block;
+  }
+  .home header .wrapper .global-menu, .page header .wrapper .global-menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 100px;
+    background-color: #fff;
+    opacity: 0.9;
+  }
+  .home header .wrapper .global-menu .upper ul, .page header .wrapper .global-menu .upper ul {
+    justify-content: center;
+  }
+  .home header .wrapper .global-menu .lower ul, .page header .wrapper .global-menu .lower ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
   }
 }
 
