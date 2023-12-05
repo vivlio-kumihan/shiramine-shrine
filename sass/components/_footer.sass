@@ -153,7 +153,7 @@
           .footer-right-links
             .banner
               display: grid
-              grid-template-columns: repeat(2, 1fr)
+              grid-template-columns: 1fr
               gap: 20px
               li + li
                 margin-top: 0              
@@ -190,3 +190,21 @@
           grid-template-columns: 1.5fr 2fr 1fr
           .footer-center-links
             column-gap: 100px
+
+  // banner
+  +max(lg)
+    footer
+      .wrapper
+        .wrapper-grid
+          .footer-right-links
+            .banner
+              grid-template-columns: repeat(2, 1fr)
+              padding: 0 60px
+  +max(md)
+    footer
+      .wrapper
+        .wrapper-grid
+          .footer-right-links
+            .banner
+              grid-template-columns: 1fr
+              padding: 0 10%
