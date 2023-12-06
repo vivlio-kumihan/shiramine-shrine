@@ -261,7 +261,7 @@ body .page-top-arrow {
     text-shadow: 0 5px 20px rgba(255, 255, 255, 0.8);
   }
   .home header .wrapper .global-menu .lower ul.menu, .page header .wrapper .global-menu .lower ul.menu {
-    gap: 20px;
+    gap: 25px;
   }
 }
 @media (width >= 768px) {
@@ -296,7 +296,8 @@ body .page-top-arrow {
     font-size: 1.55rem;
   }
   .home header .wrapper .global-menu .lower ul.menu, .page header .wrapper .global-menu .lower ul.menu {
-    gap: 15px;
+    gap: 35px;
+    font-size: 0.95rem;
   }
 }
 @media (width >= 1700px) {
@@ -305,6 +306,10 @@ body .page-top-arrow {
   }
   .home header .wrapper .logo-space div p.shrine-name, .page header .wrapper .logo-space div p.shrine-name {
     font-size: 1.85rem;
+  }
+  .home header .wrapper .global-menu .lower ul.menu, .page header .wrapper .global-menu .lower ul.menu {
+    gap: 40px;
+    font-size: 1rem;
   }
 }
 @media (width < 768px) {
