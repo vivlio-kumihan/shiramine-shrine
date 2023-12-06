@@ -863,7 +863,6 @@ body .gradually-appear.active, body .gradually-appear-long.active {
   margin-top: 26px;
 }
 .page main .container .bg section .contents .gradually-appear .inner-contents .flex-container div p em, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container div p em {
-  font-weight: 800;
   font-style: normal;
 }
 
