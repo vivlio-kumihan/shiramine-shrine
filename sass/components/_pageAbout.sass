@@ -75,8 +75,9 @@
               div
                 text-align: center
                 font-size: 1.5rem
-                + div
-                  margin-top: 30px              
+                line-height: 2em
+                br
+                  display: none
               .flex-container
                 display: grid
                 grid-template-columns: repeat(2, 1fr)
@@ -100,7 +101,7 @@
                     em
                       font-weight: 800
                       font-style: normal
-
+// page top image
 .page
   main
     +max(md)
@@ -112,6 +113,7 @@
           font-size: 1.5rem
           letter-spacing: 0
 
+// page top image
 .page
   main
     +max(lg)
@@ -120,3 +122,37 @@
           display: inline-block
           width: max-content
           padding: 20px 50px
+
+.page
+  main
+    .container
+      .bg
+        section
+          .contents
+            +max(md)
+              padding-top: 40px
+              h3
+                font-size: 1.5rem
+                letter-spacing: 0
+                &::before, &::after
+                  width: calc( 50% - 90px)
+              .inner-contents
+                padding: 40px 15px
+                div
+                  font-size: 1.25rem
+                  line-height: 1.25em
+                  + div
+                    margin-top: 15px
+                  br
+                    display: block
+                .flex-container
+                  grid-template-columns: repeat(1, 1fr)
+                  gap: 10px
+                  div
+                    img + img
+                      margin-top: 15px
+                    p
+                      font-size: 1rem
+                      line-height: 1.7
+                      + p
+                        margin-top: 15px

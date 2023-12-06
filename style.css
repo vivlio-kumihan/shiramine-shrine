@@ -817,9 +817,10 @@ body .page-top-arrow {
 .page main .container .bg section .contents .inner-contents div {
   text-align: center;
   font-size: 1.5rem;
+  line-height: 2em;
 }
-.page main .container .bg section .contents .inner-contents div + div {
-  margin-top: 30px;
+.page main .container .bg section .contents .inner-contents div br {
+  display: none;
 }
 .page main .container .bg section .contents .inner-contents .flex-container {
   display: grid;
@@ -878,6 +879,46 @@ body .page-top-arrow {
     width: -moz-max-content;
     width: max-content;
     padding: 20px 50px;
+  }
+}
+
+@media (width < 768px) {
+  .page main .container .bg section .contents {
+    padding-top: 40px;
+  }
+  .page main .container .bg section .contents h3 {
+    font-size: 1.5rem;
+    letter-spacing: 0;
+  }
+  .page main .container .bg section .contents h3::before, .page main .container .bg section .contents h3::after {
+    width: calc(50% - 90px);
+  }
+  .page main .container .bg section .contents .inner-contents {
+    padding: 40px 15px;
+  }
+  .page main .container .bg section .contents .inner-contents div {
+    font-size: 1.25rem;
+    line-height: 1.25em;
+  }
+  .page main .container .bg section .contents .inner-contents div + div {
+    margin-top: 15px;
+  }
+  .page main .container .bg section .contents .inner-contents div br {
+    display: block;
+  }
+  .page main .container .bg section .contents .inner-contents .flex-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .page main .container .bg section .contents .inner-contents .flex-container div img + img {
+    margin-top: 15px;
+  }
+  .page main .container .bg section .contents .inner-contents .flex-container div p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  .page main .container .bg section .contents .inner-contents .flex-container div p + p {
+    margin-top: 15px;
   }
 }
 

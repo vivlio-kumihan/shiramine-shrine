@@ -52,7 +52,7 @@
           <div class="contents">
             <h3>御社殿</h3>
             <div class="inner-contents">
-              <div class="flex-container">
+              <div class="flex-container flex-reverse">
                 <div>
                   <p>流れ造（銅板葺）の御本殿は賀茂御祖神社の「河合社」を模して建造され、他に拝殿・神門・手水舎・瑞垣などは檜皮葺きから銅板葺きに変更されましたが、築地塀とともに御創建時と同じ佇まいです。</p>
                 </div>
@@ -65,8 +65,8 @@
           <div class="contents">
             <h3 class="none-letter-space">宝物・古文書</h3>
             <div class="inner-contents">
-              <div>崇徳上皇像（絹本著色）国指定重要文化財&emsp;付随身像</div>
-              <div>京都市指定天然記念物&emsp;小賀玉の木</div>
+              <div>崇徳上皇像（絹本著色）<br />国指定重要文化財&nbsp;<br />付随身像</div>
+              <div>京都市指定天然記念物&nbsp;<br />小賀玉の木</div>
               <div>他、御鎮座関係書多数</div>
             </div>
           </div>
