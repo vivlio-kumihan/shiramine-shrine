@@ -45,11 +45,14 @@
           display: flex
           flex-direction: column
           align-items: center
-          .catch-copy
-            padding-top: 50px
-            margin: 0 auto
-          + section
-            margin-top: 80px
+          margin-top: 80px
+          padding: 0
+          .gradually-appear
+            .catch-copy
+              padding-top: 50px
+              margin: 0 auto
+            + section
+              margin-top: 80px
 
           &.information
             display: flex
@@ -59,7 +62,7 @@
             gap: 30px
             width: 100%
             margin: 0 auto
-            padding: 50px 30px 0
+            padding-top: 80px
             .topics
               display: flex
               flex-direction: column
@@ -94,6 +97,7 @@
 
           &.about
             .catch-copy
+              margin-top: 30px
               width: 50%
               > h2
                 font-size: 2rem
@@ -107,26 +111,30 @@
                 margin: 50px auto 0
 
           &.annual-event
-            p
-              margin-top: 50px
-              font-size: 1.15rem
-              line-height: 2.25em
-            .note
-              font-size: .95rem
-              line-height: 1.5em
-              &:first-of-type
-                margin-top: 30px
-              li
-                position: relative
-                margin-left: 1em
-                &::before
-                  position: absolute
-                  top: 0
-                  left: -1em
-                  content: "※"
+            .gradually-appear
+              display: flex
+              flex-direction: column
+              .catch-copy
+                p
+                  margin-top: 50px
+                  font-size: 1.15rem
+                  line-height: 2.25em
+                .note
+                  font-size: .95rem
+                  line-height: 1.5em
+                  &:first-of-type
+                    margin-top: 30px
+                  li
+                    position: relative
+                    margin-left: 1em
+                    &::before
+                      position: absolute
+                      top: 0
+                      left: -1em
+                      content: "※"
 
-              + .note
-                margin-top: 20px
+                  + .note
+                    margin-top: 20px
 
           &.to-prayer-gift
             ul#to-prayer-gift
@@ -183,11 +191,10 @@
                     background-color: #fff
                     box-shadow: 0 2px 5px #555
                     opacity: .8
-              
 
           &.access-map
             margin-top: 0
-            padding-bottom: 100px
+            padding: 0 0 100px
             > a
               margin-top: 70px
 

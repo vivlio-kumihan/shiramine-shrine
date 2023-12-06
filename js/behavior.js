@@ -55,14 +55,14 @@ const windowHight = window.innerHeight;
 document.addEventListener("scroll", function () {
   targetElems.forEach(elem => {
     // よほど長い記事の場合はこの関数で調整している。
-    const haflElemHight = () => {
-      if (elem.className === "gradually-appear") {
-        return elem.clientHeight / 3;
-      } else if (elem.className === "gradually-appear-long") {
+    const haflElemHight = (argElem) => {
+      if (argElem.indexOf('gradually-appear-long') !== -1) {
         return elem.clientHeight / 15;
+      } else if (argElem.indexOf('gradually-appear') !== -1) {
+        return elem.clientHeight / 3;
       }
     };
-    const setHight = windowHight - haflElemHight();
+    const setHight = windowHight - haflElemHight(elem.className);
     const getElemDistance = elem.getBoundingClientRect().top;
     if (setHight > getElemDistance) {
       elem.classList.add("active")
