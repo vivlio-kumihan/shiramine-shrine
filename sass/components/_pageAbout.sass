@@ -1,8 +1,10 @@
 @use '../forwards' as fw
+@use '../media-query' as *
 
 .page
   main
     .frame
+      +fw.background-image("./img/page-about-0.jpg")
       position: relative
       height: 500px
       img
@@ -98,3 +100,23 @@
                     em
                       font-weight: 800
                       font-style: normal
+
+.page
+  main
+    +max(md)
+      .frame
+        +fw.background-image("./img/page-about-0-portrait.jpg")
+        height: 100vh
+        h1
+          +fw.positionAbsoluteCTL()
+          font-size: 1.5rem
+          letter-spacing: 0
+
+.page
+  main
+    +max(lg)
+      .frame
+        h1
+          display: inline-block
+          width: max-content
+          padding: 20px 50px

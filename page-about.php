@@ -7,7 +7,6 @@
       <video width="100%" height="100vh" autoplay loop muted playinline src="<?php echo get_template_directory_uri(); ?>/img/_sample_import_616540e4897b26.24217861.mp4"></video>
     <?php else : ?>
       <div class="frame">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/page-about-0.jpg" alt="">
         <h1>白峯神宮について</h1>
       </div>
     <?php endif; ?>
