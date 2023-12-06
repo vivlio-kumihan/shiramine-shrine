@@ -86,6 +86,18 @@ body .page-top-arrow {
     right: 40px;
   }
 }
+body .gradually-appear, body .gradually-appear-long {
+  width: 100%;
+  transition: 1.5s;
+  transform: translateY(80px);
+  visibility: hidden;
+  opacity: 0;
+}
+body .gradually-appear.active, body .gradually-appear-long.active {
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
+}
 
 .home header, .page header {
   display: flex;
@@ -782,7 +794,7 @@ body .page-top-arrow {
 .page main .container .bg section .contents:last-of-type {
   padding-bottom: 100px;
 }
-.page main .container .bg section .contents h3 {
+.page main .container .bg section .contents .gradually-appear h3, .page main .container .bg section .contents .gradually-appear-long h3 {
   position: relative;
   width: 100%;
   text-align: center;
@@ -790,7 +802,7 @@ body .page-top-arrow {
   line-height: 1;
   letter-spacing: 0.5em;
 }
-.page main .container .bg section .contents h3::before, .page main .container .bg section .contents h3::after {
+.page main .container .bg section .contents .gradually-appear h3::before, .page main .container .bg section .contents .gradually-appear h3::after, .page main .container .bg section .contents .gradually-appear-long h3::before, .page main .container .bg section .contents .gradually-appear-long h3::after {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -799,58 +811,58 @@ body .page-top-arrow {
   height: 1px;
   background-color: #333;
 }
-.page main .container .bg section .contents h3::before {
+.page main .container .bg section .contents .gradually-appear h3::before, .page main .container .bg section .contents .gradually-appear-long h3::before {
   right: 0;
 }
-.page main .container .bg section .contents h3::after {
+.page main .container .bg section .contents .gradually-appear h3::after, .page main .container .bg section .contents .gradually-appear-long h3::after {
   left: 0;
 }
-.page main .container .bg section .contents h3.none-letter-space {
+.page main .container .bg section .contents .gradually-appear h3.none-letter-space, .page main .container .bg section .contents .gradually-appear-long h3.none-letter-space {
   letter-spacing: 0;
 }
-.page main .container .bg section .contents .inner-contents {
+.page main .container .bg section .contents .gradually-appear .inner-contents, .page main .container .bg section .contents .gradually-appear-long .inner-contents {
   padding: 60px;
 }
-.page main .container .bg section .contents .inner-contents.font-size-lg {
+.page main .container .bg section .contents .gradually-appear .inner-contents.font-size-lg, .page main .container .bg section .contents .gradually-appear-long .inner-contents.font-size-lg {
   text-align: center;
 }
-.page main .container .bg section .contents .inner-contents div {
+.page main .container .bg section .contents .gradually-appear .inner-contents div, .page main .container .bg section .contents .gradually-appear-long .inner-contents div {
   text-align: center;
   font-size: 1.5rem;
   line-height: 2em;
 }
-.page main .container .bg section .contents .inner-contents div br {
+.page main .container .bg section .contents .gradually-appear .inner-contents div br, .page main .container .bg section .contents .gradually-appear-long .inner-contents div br {
   display: none;
 }
-.page main .container .bg section .contents .inner-contents .flex-container {
+.page main .container .bg section .contents .gradually-appear .inner-contents .flex-container, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
-.page main .container .bg section .contents .inner-contents .flex-container div {
+.page main .container .bg section .contents .gradually-appear .inner-contents .flex-container div, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container div {
   width: 100%;
 }
-.page main .container .bg section .contents .inner-contents .flex-container div img {
+.page main .container .bg section .contents .gradually-appear .inner-contents .flex-container div img, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container div img {
   width: 100%;
   aspect-ratio: 3/2;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.page main .container .bg section .contents .inner-contents .flex-container div img:first-of-type {
+.page main .container .bg section .contents .gradually-appear .inner-contents .flex-container div img:first-of-type, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container div img:first-of-type {
   margin-top: 10px;
 }
-.page main .container .bg section .contents .inner-contents .flex-container div img + img {
+.page main .container .bg section .contents .gradually-appear .inner-contents .flex-container div img + img, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container div img + img {
   margin-top: 80px;
 }
-.page main .container .bg section .contents .inner-contents .flex-container div p {
+.page main .container .bg section .contents .gradually-appear .inner-contents .flex-container div p, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container div p {
   font-size: 1.1rem;
   line-height: 1.8em;
   text-align: justify;
 }
-.page main .container .bg section .contents .inner-contents .flex-container div p + p {
+.page main .container .bg section .contents .gradually-appear .inner-contents .flex-container div p + p, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container div p + p {
   margin-top: 26px;
 }
-.page main .container .bg section .contents .inner-contents .flex-container div p em {
+.page main .container .bg section .contents .gradually-appear .inner-contents .flex-container div p em, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container div p em {
   font-weight: 800;
   font-style: normal;
 }
@@ -886,38 +898,38 @@ body .page-top-arrow {
   .page main .container .bg section .contents {
     padding-top: 40px;
   }
-  .page main .container .bg section .contents h3 {
+  .page main .container .bg section .contents .gradually-appear h3, .page main .container .bg section .contents .gradually-appear-long h3 {
     font-size: 1.5rem;
     letter-spacing: 0;
   }
-  .page main .container .bg section .contents h3::before, .page main .container .bg section .contents h3::after {
+  .page main .container .bg section .contents .gradually-appear h3::before, .page main .container .bg section .contents .gradually-appear h3::after, .page main .container .bg section .contents .gradually-appear-long h3::before, .page main .container .bg section .contents .gradually-appear-long h3::after {
     width: calc(50% - 90px);
   }
-  .page main .container .bg section .contents .inner-contents {
+  .page main .container .bg section .contents .gradually-appear .inner-contents, .page main .container .bg section .contents .gradually-appear-long .inner-contents {
     padding: 40px 15px;
   }
-  .page main .container .bg section .contents .inner-contents div {
+  .page main .container .bg section .contents .gradually-appear .inner-contents div, .page main .container .bg section .contents .gradually-appear-long .inner-contents div {
     font-size: 1.25rem;
     line-height: 1.25em;
   }
-  .page main .container .bg section .contents .inner-contents div + div {
+  .page main .container .bg section .contents .gradually-appear .inner-contents div + div, .page main .container .bg section .contents .gradually-appear-long .inner-contents div + div {
     margin-top: 15px;
   }
-  .page main .container .bg section .contents .inner-contents div br {
+  .page main .container .bg section .contents .gradually-appear .inner-contents div br, .page main .container .bg section .contents .gradually-appear-long .inner-contents div br {
     display: block;
   }
-  .page main .container .bg section .contents .inner-contents .flex-container {
+  .page main .container .bg section .contents .gradually-appear .inner-contents .flex-container, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container {
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
   }
-  .page main .container .bg section .contents .inner-contents .flex-container div img + img {
+  .page main .container .bg section .contents .gradually-appear .inner-contents .flex-container div img + img, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container div img + img {
     margin-top: 15px;
   }
-  .page main .container .bg section .contents .inner-contents .flex-container div p {
+  .page main .container .bg section .contents .gradually-appear .inner-contents .flex-container div p, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container div p {
     font-size: 1rem;
     line-height: 1.7;
   }
-  .page main .container .bg section .contents .inner-contents .flex-container div p + p {
+  .page main .container .bg section .contents .gradually-appear .inner-contents .flex-container div p + p, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container div p + p {
     margin-top: 15px;
   }
 }

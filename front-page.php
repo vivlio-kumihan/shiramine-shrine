@@ -14,7 +14,7 @@
       <img src="<?php echo get_template_directory_uri(); ?>/img/title.png" alt="ページのタイトル">
     </section>
     <div class="bg">
-      <section class="information">
+      <section class="information gradually-appear">
         <div class="topics">
           <h2>お知らせ／トピックス</h2>
           <div class="wrapper">
@@ -60,10 +60,10 @@
       </section>
 
       <section class="about">
-        <div class="frame">
+        <div class="frame gradually-appear">
           <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/information-appearance@2x.png" alt="">
         </div>
-        <div class="catch-copy">
+        <div class="catch-copy gradually-appear">
           <h2>
             スポーツの守護神<br />
             武道上達の神<br />
@@ -75,10 +75,10 @@
       </section>
 
       <section class="annual-event">
-        <div class="frame">
+        <div class="frame gradually-appear">
           <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/annual-event-play-kemari@2x.png" alt="">
         </div>
-        <div class="catch-copy">
+        <div class="catch-copy gradually-appear">
           <h2>年中行事・祭事</h2>
           <p>年間を通し四季折々に行う古来より受け継がれ続ける伝統行事をご紹介いたします。</p>
           <ul class="note">
@@ -97,7 +97,7 @@
         <a href="" class="to-contents-page">年中行事・祭事</a>
       </section>
 
-      <section class="to-prayer-gift">
+      <section class="to-prayer-gift gradually-appear">
         <ul id="to-prayer-gift">
           <li>
             <a href="">
@@ -114,7 +114,7 @@
         </ul>
       </section>
 
-      <section class="access-map">
+      <section class="access-map gradually-appear">
         <div class="frame">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.062849246738!2d135.75058587613765!3d35.0301575728044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60010875465295bd%3A0xb8f1789b55585273!2z55m95bOv56We5a6u!5e0!3m2!1sja!2sjp!4v1701046947001!5m2!1sja!2sjp" width="100%" height="670px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>

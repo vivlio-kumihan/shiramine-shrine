@@ -84,3 +84,14 @@ body
     .to-page-top 
       bottom: 30px
       right: 40px
+
+  .gradually-appear, .gradually-appear-long
+    width: 100%
+    transition: 1.5s
+    transform: translateY(80px)
+    visibility: hidden
+    opacity: 0
+    &.active
+      transform: translateX(0)
+      visibility: visible
+      opacity: 1
