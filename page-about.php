@@ -3,7 +3,6 @@
 <main>
   <div class="contents">
     <?php if (is_home() || is_front_page()) : ?>
-      <!-- <video width="100%" height="100vh" autoplay loop muted playinline src="<?php echo get_template_directory_uri(); ?>/img/_sample_import_61a86920b1a021.47856856.mp4"></video> -->
       <video width="100%" height="100vh" autoplay loop muted playinline src="<?php echo get_template_directory_uri(); ?>/img/_sample_import_616540e4897b26.24217861.mp4"></video>
     <?php else : ?>
       <div class="frame">
@@ -18,7 +17,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="">
             白峯神宮&nbsp;由緒
           </h2>
-          <div class="contents">
+          <div class=" contents">
             <div class="gradually-appear">
               <h3>御祭神</h3>
               <div class="inner-contents">
@@ -27,7 +26,7 @@
               </div>
             </div>
           </div>
-          <div class="contents">
+          <div class=" contents">
             <div class="gradually-appear-long">
               <h3>由&emsp;緒</h3>
               <div class="inner-contents">
@@ -95,6 +94,10 @@
 
 <?php get_footer(); ?>
 
+<!-- 擬似パンくずリストのURLの出し方 -->
+<!-- <a href="<?php echo home_url(); ?>">ホーム</a>
+<a href="<?php echo esc_url(home_url('/about/')); ?>">about</a> -->
+<!-- <?php echo get_page_link($id); ?> -->
 
 <!-- <section>
   <h3>神事</h3>
