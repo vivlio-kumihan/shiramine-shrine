@@ -12,14 +12,14 @@
 
     <div class="container">
       <div class="bg">
-        <section>
+        <section class="chronology">
           <h2>
             <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="">
             略年表
           </h2>
-          <div class=" contents">
-            <div class="gradually-appear">
-              <ul>
+          <div class="contents">
+            <div class="gradually-appear-long">
+              <ul class="list-contents">
                 <li>
                   <div class="date">慶応2年（1866年）</div>
                   <div class="subject">孝明天皇、当神宮御創建を幕府に命ぜられるも12月崩御。</div>
@@ -85,10 +85,6 @@
                   <div class="subject">古武道演武奉納始まる。</div>
                 </li>
                 <li>
-                  <div class="date"></div>
-                  <div class="subject"></div>
-                </li>
-                <li>
                   <div class="date">昭和56年9月6日</div>
                   <div class="subject">献茶式が復活する。</div>
                 </li>
@@ -109,6 +105,35 @@
           </div>
         </section>
       </div>
+
+      <section class="about-visual-links gradually-appear-long">
+        <ul class="hover-bright">
+          <li>
+            <a href="<?php echo esc_url(home_url('/about/history/')); ?>">
+              <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/about-link-01-history.jpg" alt="">
+              <div class="catch">白峯神宮&emsp;由緒</div>
+            </a>
+          </li>
+          <li>
+            <a href="<?php echo esc_url(home_url('/about/gosaizin/')); ?>">
+              <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/about-link-02-gosaizin.jpg" alt="">
+              <div class="catch">御祭神と<br />御聖徳崇敬の意義</div>
+            </a>
+          </li>
+          <li>
+            <a href="<?php echo esc_url(home_url('/about/gobyo/')); ?>">
+              <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/about-link-03-gobyo.jpg" alt="">
+              <div class="catch">崇徳天皇<br />御廟所</div>
+            </a>
+          </li>
+          <li class="hover">
+            <a href="<?php echo esc_url(home_url('/about/chronology/')); ?>">
+              <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/about-link-04-chronology.jpg" alt="">
+              <div class="catch">略&emsp;年&emsp;表</div>
+            </a>
+          </li>
+        </ul>
+      </section>
     </div>
   </div>
 </main>

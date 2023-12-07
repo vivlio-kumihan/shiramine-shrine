@@ -34,6 +34,8 @@
             letter-spacing: .3em
             &::after
               content: none
+            br
+              display: none
             img
               +fw.positionAbsoluteCTL($left: true)
               width: 70px
@@ -83,37 +85,69 @@
                   display: grid
                   grid-template-columns: repeat(2, 1fr)
                   gap: 30px
+                  &.reverse-irregularity-gosaizin
+                    .size-small
+                      grid-column: 2/3
+                      grid-row: 1/2
+                      width: 100%
+                      height: 100%
+                      padding-top: 5%
+                      img
+                        width: 80%
+                    .paragraph
+                      grid-column: 1/2
+                      grid-row: 1/2
+                  &.reverse-irregularity-history
+                    grid-template-columns: repeat(4, 1fr)
+                    .size-learge
+                      grid-column: 2/5
+                      grid-row: 1/2
+                      width: 100%
+                      height: 100%
+                      img
+                        width: 100%
+                    .paragraph
+                      grid-column: 1/2
+                      grid-row: 1/2
+                  + .flex-container
+                    margin-top: 50px
+                  img
+                    width: 100%
+                    aspect-ratio: 3/2
+                    object-fit: cover
                   div
                     width: 100%
                     img
-                      width: 100%
-                      aspect-ratio: 3/2
-                      object-fit: cover
                       &:first-of-type
                         margin-top: 10px
                       + img
                         margin-top: 80px
+                    h4
+                      font-family: fw.$noto-gth
+                      font-size: 1.25rem
+                      font-weight: 300
+                      text-align: left
+                      color: fw.$gold
                     p
                       font-size: 1.1rem
                       line-height: 1.8em
                       text-align: justify
                       + p
-                        margin-top: 26px
+                        margin-top: 15px
+                      &.lead-copy-gobyo
+                        margin-bottom: 30px
                       em
                         // 指示
                         // font-weight: 800
                         font-style: normal
-// page top image
+
 .page
   main
-    +max(md)
-      .frame
-        +fw.background-image("./img/page-about-0-portrait.jpg")
-        height: 100vh
-        h1
-          +fw.positionAbsoluteCTL()
-          font-size: 1.5rem
-          letter-spacing: 0
+    .container
+      .bg
+        section.chronology
+          .contents
+            padding-top: 50px
 
 // page top image
 .page
@@ -125,6 +159,37 @@
           width: max-content
           padding: 20px 50px
 
+// page top image
+.page
+  main
+    +max(md)
+      .frame
+        +fw.background-image("./img/page-about-0-portrait.jpg")
+        height: 50vh
+        h1
+          +fw.positionAbsoluteCTL($left: true)
+          top: 50%
+          padding: 12px 30px
+          font-size: 1.65rem
+          letter-spacing: 0
+          background-color: rgba(0, 0, 0, .5)
+          border: unset
+
+.page
+  main
+    .container
+      .bg
+        section
+          +max(md)
+            h2
+              font-size: 1.65rem
+              line-height: 1.25em
+              letter-spacing: .2em
+              br
+                display: block
+              .bottom-up-90px
+                bottom: 90px
+
 .page
   main
     .container
@@ -133,6 +198,8 @@
           .contents
             +max(md)
               padding-top: 40px
+              &:last-of-type
+                padding-bottom: 40px
               .gradually-appear, .gradually-appear-long
                 h3
                   font-size: 1.5rem
@@ -159,3 +226,33 @@
                         line-height: 1.7
                         + p
                           margin-top: 15px
+
+.page
+  main
+    .container.gosaizin, .container.gobyo, .container.history
+      .bg
+        section
+          .contents
+            .gradually-appear, .gradually-appear-long
+              .inner-contents
+                +max(md)
+                  .flex-container
+                    &.reverse-irregularity-gosaizin
+                      .size-small
+                        grid-column: 1/2
+                        grid-row: 2/2
+                        width: 100%
+                        height: 100%
+                        padding-top: 5%
+                        img
+                          width: 80%
+                      .paragraph
+                        grid-column: 1/2
+                        grid-row: 1/2
+                    img
+                      grid-column: 1/2
+                      grid-row: 2/2
+                      margin-top: 15px
+                    div
+                      grid-column: 1/2
+                      grid-row: 1/2

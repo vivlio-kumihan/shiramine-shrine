@@ -99,7 +99,7 @@
       </section>
 
       <section class="to-prayer-gift gradually-appear">
-        <ul id="to-prayer-gift">
+        <ul class="hover-bright">
           <li>
             <a href="">
               <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/atari-AdobeStock_346787519_Preview.jpeg" alt="">

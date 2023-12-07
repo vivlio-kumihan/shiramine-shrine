@@ -1,15 +1,4 @@
 if (document.querySelector('body.home')) {
-  // top pageの祈祷・授与品  
-  const maskParent = document.getElementById("to-prayer-gift");
-  Array.from(maskParent.children).forEach((elem) => {
-    elem.addEventListener("mouseenter", () => {
-      elem.classList.add("hover", true);
-    });
-    elem.addEventListener("mouseleave", () => {
-      elem.classList.remove("hover", false);
-    });
-  });
-
   // top pageのお知らせ／トピックスのリスト
   const postItem = document.querySelectorAll(".post-item");
   postItem.forEach(elem => {
@@ -70,7 +59,18 @@ document.addEventListener("scroll", function () {
   });
 });
 
-
+// top pageの祈祷・授与品、aboutページの画像を使ったリンク
+const maskParent = document.querySelector(".hover-bright");
+Array.from(maskParent.children).forEach((elem) => {
+  if (elem.classList.value !== "hover") {
+    elem.addEventListener("mouseenter", () => {
+      elem.classList.add("hover");
+    });
+    elem.addEventListener("mouseleave", () => {
+      elem.classList.remove("hover");
+    });
+  }
+});
 // // Appear and Hide Header 
 // // とりあえず見送り
 // const fixedElm = document.querySelector('header');

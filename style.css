@@ -100,6 +100,77 @@ body .page-top-arrow {
   opacity: 1;
 }
 
+.home .bread-crumb, .home.blog .bread-crumb, .page .bread-crumb {
+  position: absolute;
+  top: 20px;
+  left: 80px;
+  display: flex;
+  gap: 10px;
+}
+.home .bread-crumb li:nth-of-type(4), .home.blog .bread-crumb li:nth-of-type(4), .page .bread-crumb li:nth-of-type(4) {
+  padding-left: 10px;
+  border-left: 1px solid #333;
+}
+
+@media (width < 768px) {
+  .home .bread-crumb, .home.blog .bread-crumb, .page .bread-crumb {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 0.9rem;
+  }
+}
+
+.home .list-contents, .home.blog .list-contents, .page .list-contents {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 40px;
+  font-size: 1.15rem;
+  line-height: 1.5em;
+  border-top: 1px solid #BB9A01;
+  border-bottom: 1px solid #BB9A01;
+}
+.home .list-contents li, .home.blog .list-contents li, .page .list-contents li {
+  display: flex;
+  align-items: center;
+}
+.home .list-contents li div:first-of-type, .home.blog .list-contents li div:first-of-type, .page .list-contents li div:first-of-type {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+  padding-left: 20px;
+  background-color: #F5F6FA;
+}
+.home .list-contents li div:last-of-type, .home.blog .list-contents li div:last-of-type, .page .list-contents li div:last-of-type {
+  padding: 20px 20px;
+  width: 80%;
+}
+.home .list-contents li + li, .home.blog .list-contents li + li, .page .list-contents li + li {
+  border-top: 1px solid #BB9A01;
+}
+@media (width < 768px) {
+  .home .list-contents, .home.blog .list-contents, .page .list-contents {
+    font-size: 1rem;
+  }
+  .home .list-contents li, .home.blog .list-contents li, .page .list-contents li {
+    display: flex;
+    flex-direction: column;
+  }
+  .home .list-contents li div:first-of-type, .home.blog .list-contents li div:first-of-type, .page .list-contents li div:first-of-type {
+    width: 100%;
+    justify-content: center;
+    padding-left: 0;
+  }
+  .home .list-contents li div:last-of-type, .home.blog .list-contents li div:last-of-type, .page .list-contents li div:last-of-type {
+    width: 100%;
+    padding: 10px 1em 20px;
+  }
+}
+
 .home header, .page header {
   display: flex;
   justify-content: center;
@@ -221,7 +292,7 @@ body .page-top-arrow {
 }
 .home header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li, .page header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li {
   left: 0;
-  width: 9.5rem;
+  width: 13rem;
   text-align: center;
   background-color: #fff;
 }
@@ -591,21 +662,32 @@ body .page-top-arrow {
 .home.blog main .contents .bg section.annual-event .gradually-appear .catch-copy .note + .note, .page main .contents .bg section.annual-event .gradually-appear .catch-copy .note + .note {
   margin-top: 20px;
 }
-.home.blog main .contents .bg section.to-prayer-gift ul#to-prayer-gift, .page main .contents .bg section.to-prayer-gift ul#to-prayer-gift {
+.home.blog main .contents .bg section.access-map, .page main .contents .bg section.access-map {
+  margin-top: 0;
+  padding: 0 0 100px;
+}
+.home.blog main .contents .bg section.access-map > a, .page main .contents .bg section.access-map > a {
+  margin-top: 70px;
+}
+
+section.to-prayer-gift, section.about-visual-links {
+  margin-top: 0;
+}
+section.to-prayer-gift ul.hover-bright, section.about-visual-links ul.hover-bright {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
   width: 100%;
   align-items: center;
 }
-.home.blog main .contents .bg section.to-prayer-gift ul#to-prayer-gift li, .page main .contents .bg section.to-prayer-gift ul#to-prayer-gift li {
+section.to-prayer-gift ul.hover-bright li, section.about-visual-links ul.hover-bright li {
   position: relative;
   width: 100%;
   aspect-ratio: 4/3;
   transition: 0.5s;
   overflow: hidden;
 }
-.home.blog main .contents .bg section.to-prayer-gift ul#to-prayer-gift li::before, .page main .contents .bg section.to-prayer-gift ul#to-prayer-gift li::before {
+section.to-prayer-gift ul.hover-bright li::before, section.about-visual-links ul.hover-bright li::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -617,48 +699,91 @@ body .page-top-arrow {
   opacity: 0.7;
   z-index: 1;
 }
-.home.blog main .contents .bg section.to-prayer-gift ul#to-prayer-gift li.hover::before, .page main .contents .bg section.to-prayer-gift ul#to-prayer-gift li.hover::before {
+section.to-prayer-gift ul.hover-bright li.hover::before, section.about-visual-links ul.hover-bright li.hover::before {
   opacity: 0.1;
 }
-.home.blog main .contents .bg section.to-prayer-gift ul#to-prayer-gift li a, .page main .contents .bg section.to-prayer-gift ul#to-prayer-gift li a {
+section.to-prayer-gift ul.hover-bright li a, section.about-visual-links ul.hover-bright li a {
   display: block;
+  width: 100%;
   height: 100%;
 }
-.home.blog main .contents .bg section.to-prayer-gift ul#to-prayer-gift li a img, .page main .contents .bg section.to-prayer-gift ul#to-prayer-gift li a img {
+section.to-prayer-gift ul.hover-bright li a img, section.about-visual-links ul.hover-bright li a img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   transition: 0.5s;
 }
-.home.blog main .contents .bg section.to-prayer-gift ul#to-prayer-gift li a .catch, .page main .contents .bg section.to-prayer-gift ul#to-prayer-gift li a .catch {
+section.to-prayer-gift ul.hover-bright li a .catch, section.about-visual-links ul.hover-bright li a .catch {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 300px;
   padding: 10px 30px;
   font-size: 2rem;
   line-height: 1em;
   text-align: center;
+  white-space: nowrap;
   color: #fff;
   border: 1px solid #fff;
   transition: 0.5s;
   z-index: 2;
 }
-.home.blog main .contents .bg section.to-prayer-gift ul#to-prayer-gift li.hover .catch, .page main .contents .bg section.to-prayer-gift ul#to-prayer-gift li.hover .catch {
+section.to-prayer-gift ul.hover-bright li.hover .catch, section.about-visual-links ul.hover-bright li.hover .catch {
   color: #555;
   background-color: #fff;
   box-shadow: 0 2px 5px #555;
   opacity: 0.8;
 }
-.home.blog main .contents .bg section.access-map, .page main .contents .bg section.access-map {
-  margin-top: 0;
-  padding: 0 0 100px;
+section.about-visual-links ul.hover-bright {
+  grid-template-columns: repeat(4, 1fr);
 }
-.home.blog main .contents .bg section.access-map > a, .page main .contents .bg section.access-map > a {
-  margin-top: 70px;
+section.about-visual-links ul.hover-bright li {
+  aspect-ratio: 1/1.55;
 }
+section.about-visual-links ul.hover-bright li a .catch {
+  padding: 25px 10px;
+  font-size: 1.85rem;
+  writing-mode: vertical-rl;
+}
+section.about-visual-links ul.hover-bright li a .catch br {
+  display: none;
+}
+section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
+  letter-spacing: 1em;
+}
+@media (width < 1100px) {
+  section.about-visual-links ul.hover-bright {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  section.about-visual-links ul.hover-bright li {
+    aspect-ratio: 1/2.25;
+  }
+  section.about-visual-links ul.hover-bright li a .catch {
+    font-size: 1.5rem;
+    line-height: 1.2em;
+  }
+  section.about-visual-links ul.hover-bright li a .catch br {
+    display: block;
+  }
+  section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
+    letter-spacing: 0.5em;
+  }
+}
+@media (width < 768px) {
+  section.about-visual-links ul.hover-bright {
+    grid-template-columns: 1fr;
+  }
+  section.about-visual-links ul.hover-bright li {
+    aspect-ratio: 3/2;
+  }
+  section.about-visual-links ul.hover-bright li a .catch {
+    padding: 10px 15px;
+    font-size: 1.25rem;
+    writing-mode: horizontal-tb;
+  }
+}
+
 @media (width >= 375px) {
   .home.blog main .contents .title img, .page main .contents .title img {
     width: min(500px, 110%);
@@ -709,10 +834,10 @@ body .page-top-arrow {
 }
 
 @media (width < 1100px) {
-  .home.blog main .contents .bg section.to-prayer-gift ul#to-prayer-gift, .page main .contents .bg section.to-prayer-gift ul#to-prayer-gift {
+  .home.blog main .contents .bg section.to-prayer-gift ul.hover-bright, .home.blog main .contents .bg section.about-visual-links ul.hover-bright, .page main .contents .bg section.to-prayer-gift ul.hover-bright, .page main .contents .bg section.about-visual-links ul.hover-bright {
     grid-template-columns: 1fr;
   }
-  .home.blog main .contents .bg section.to-prayer-gift ul#to-prayer-gift li a .catch, .page main .contents .bg section.to-prayer-gift ul#to-prayer-gift li a .catch {
+  .home.blog main .contents .bg section.to-prayer-gift ul.hover-bright li a .catch, .home.blog main .contents .bg section.about-visual-links ul.hover-bright li a .catch, .page main .contents .bg section.to-prayer-gift ul.hover-bright li a .catch, .page main .contents .bg section.about-visual-links ul.hover-bright li a .catch {
     width: 60%;
     padding: 15px 0;
     font-size: 1.15rem;
@@ -721,7 +846,7 @@ body .page-top-arrow {
     box-shadow: 0 2px 5px #555;
     opacity: 0.8;
   }
-  .home.blog main .contents .bg section.to-prayer-gift ul#to-prayer-gift li::before, .page main .contents .bg section.to-prayer-gift ul#to-prayer-gift li::before {
+  .home.blog main .contents .bg section.to-prayer-gift ul.hover-bright li::before, .home.blog main .contents .bg section.about-visual-links ul.hover-bright li::before, .page main .contents .bg section.to-prayer-gift ul.hover-bright li::before, .page main .contents .bg section.about-visual-links ul.hover-bright li::before {
     content: unset;
   }
 }
@@ -785,6 +910,9 @@ body .page-top-arrow {
 }
 .page main .container .bg section h2::after {
   content: none;
+}
+.page main .container .bg section h2 br {
+  display: none;
 }
 .page main .container .bg section h2 img {
   position: absolute;
@@ -852,14 +980,47 @@ body .page-top-arrow {
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
-.page main .container .bg section .contents .gradually-appear .inner-contents .flex-container div, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container div {
+.page main .container .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-gosaizin .size-small, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-gosaizin .size-small {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+  padding-top: 5%;
+}
+.page main .container .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-gosaizin .size-small img, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-gosaizin .size-small img {
+  width: 80%;
+}
+.page main .container .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-gosaizin .paragraph, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-gosaizin .paragraph {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.page main .container .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-history, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-history {
+  grid-template-columns: repeat(4, 1fr);
+}
+.page main .container .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-history .size-learge, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-history .size-learge {
+  grid-column: 2/5;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+}
+.page main .container .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-history .size-learge img, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-history .size-learge img {
   width: 100%;
 }
-.page main .container .bg section .contents .gradually-appear .inner-contents .flex-container div img, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container div img {
+.page main .container .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-history .paragraph, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-history .paragraph {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.page main .container .bg section .contents .gradually-appear .inner-contents .flex-container + .flex-container, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container + .flex-container {
+  margin-top: 50px;
+}
+.page main .container .bg section .contents .gradually-appear .inner-contents .flex-container img, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container img {
   width: 100%;
   aspect-ratio: 3/2;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.page main .container .bg section .contents .gradually-appear .inner-contents .flex-container div, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container div {
+  width: 100%;
 }
 .page main .container .bg section .contents .gradually-appear .inner-contents .flex-container div img:first-of-type, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container div img:first-of-type {
   margin-top: 10px;
@@ -867,34 +1028,30 @@ body .page-top-arrow {
 .page main .container .bg section .contents .gradually-appear .inner-contents .flex-container div img + img, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container div img + img {
   margin-top: 80px;
 }
+.page main .container .bg section .contents .gradually-appear .inner-contents .flex-container div h4, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container div h4 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-align: left;
+  color: #BB9A01;
+}
 .page main .container .bg section .contents .gradually-appear .inner-contents .flex-container div p, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container div p {
   font-size: 1.1rem;
   line-height: 1.8em;
   text-align: justify;
 }
 .page main .container .bg section .contents .gradually-appear .inner-contents .flex-container div p + p, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container div p + p {
-  margin-top: 26px;
+  margin-top: 15px;
+}
+.page main .container .bg section .contents .gradually-appear .inner-contents .flex-container div p.lead-copy-gobyo, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container div p.lead-copy-gobyo {
+  margin-bottom: 30px;
 }
 .page main .container .bg section .contents .gradually-appear .inner-contents .flex-container div p em, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container div p em {
   font-style: normal;
 }
 
-@media (width < 768px) {
-  .page main .frame {
-    background-image: url(./img/page-about-0-portrait.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-  }
-  .page main .frame h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.5rem;
-    letter-spacing: 0;
-  }
+.page main .container .bg section.chronology .contents {
+  padding-top: 50px;
 }
 
 @media (width < 1100px) {
@@ -907,8 +1064,46 @@ body .page-top-arrow {
 }
 
 @media (width < 768px) {
+  .page main .frame {
+    background-image: url(./img/page-about-0-portrait.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+  }
+  .page main .frame h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    padding: 12px 30px;
+    font-size: 1.65rem;
+    letter-spacing: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: unset;
+  }
+}
+
+@media (width < 768px) {
+  .page main .container .bg section h2 {
+    font-size: 1.65rem;
+    line-height: 1.25em;
+    letter-spacing: 0.2em;
+  }
+  .page main .container .bg section h2 br {
+    display: block;
+  }
+  .page main .container .bg section h2 .bottom-up-90px {
+    bottom: 90px;
+  }
+}
+
+@media (width < 768px) {
   .page main .container .bg section .contents {
     padding-top: 40px;
+  }
+  .page main .container .bg section .contents:last-of-type {
+    padding-bottom: 40px;
   }
   .page main .container .bg section .contents .gradually-appear h3, .page main .container .bg section .contents .gradually-appear-long h3 {
     font-size: 1.5rem;
@@ -943,6 +1138,32 @@ body .page-top-arrow {
   }
   .page main .container .bg section .contents .gradually-appear .inner-contents .flex-container div p + p, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container div p + p {
     margin-top: 15px;
+  }
+}
+
+@media (width < 768px) {
+  .page main .container.gosaizin .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-gosaizin .size-small, .page main .container.gosaizin .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-gosaizin .size-small, .page main .container.gobyo .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-gosaizin .size-small, .page main .container.gobyo .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-gosaizin .size-small, .page main .container.history .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-gosaizin .size-small, .page main .container.history .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-gosaizin .size-small {
+    grid-column: 1/2;
+    grid-row: 2/2;
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+  }
+  .page main .container.gosaizin .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-gosaizin .size-small img, .page main .container.gosaizin .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-gosaizin .size-small img, .page main .container.gobyo .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-gosaizin .size-small img, .page main .container.gobyo .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-gosaizin .size-small img, .page main .container.history .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-gosaizin .size-small img, .page main .container.history .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-gosaizin .size-small img {
+    width: 80%;
+  }
+  .page main .container.gosaizin .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-gosaizin .paragraph, .page main .container.gosaizin .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-gosaizin .paragraph, .page main .container.gobyo .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-gosaizin .paragraph, .page main .container.gobyo .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-gosaizin .paragraph, .page main .container.history .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-gosaizin .paragraph, .page main .container.history .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-gosaizin .paragraph {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .page main .container.gosaizin .bg section .contents .gradually-appear .inner-contents .flex-container img, .page main .container.gosaizin .bg section .contents .gradually-appear-long .inner-contents .flex-container img, .page main .container.gobyo .bg section .contents .gradually-appear .inner-contents .flex-container img, .page main .container.gobyo .bg section .contents .gradually-appear-long .inner-contents .flex-container img, .page main .container.history .bg section .contents .gradually-appear .inner-contents .flex-container img, .page main .container.history .bg section .contents .gradually-appear-long .inner-contents .flex-container img {
+    grid-column: 1/2;
+    grid-row: 2/2;
+    margin-top: 15px;
+  }
+  .page main .container.gosaizin .bg section .contents .gradually-appear .inner-contents .flex-container div, .page main .container.gosaizin .bg section .contents .gradually-appear-long .inner-contents .flex-container div, .page main .container.gobyo .bg section .contents .gradually-appear .inner-contents .flex-container div, .page main .container.gobyo .bg section .contents .gradually-appear-long .inner-contents .flex-container div, .page main .container.history .bg section .contents .gradually-appear .inner-contents .flex-container div, .page main .container.history .bg section .contents .gradually-appear-long .inner-contents .flex-container div {
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
 }
 
