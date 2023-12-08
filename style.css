@@ -1167,6 +1167,117 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   }
 }
 
+.page main .contents.contact {
+  display: flex;
+  justify-content: center;
+}
+.page main .contents.contact .form-wrapper {
+  width: min(890px, 95%);
+  margin: 150px 0 100px;
+  padding: 60px 40px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 40px #eee;
+}
+.page main .contents.contact .form-wrapper p.center-align {
+  margin-bottom: 50px;
+  font-size: 0.95rem;
+  line-height: 1.3em;
+  text-align: center;
+}
+.page main .contents.contact .form-wrapper h2 {
+  margin-bottom: 40px;
+}
+
+.page .contact-form {
+  display: grid;
+  gap: 30px;
+}
+.page .contact-form div dt p, .page .contact-form div dd p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.page .contact-form div dt {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.page .contact-form div dt p span {
+  margin-right: 12px;
+  padding: 5px 8px;
+  font-size: 12px;
+  color: #fff;
+  background-color: red;
+  border-radius: 3px;
+}
+.page .contact-form div dd {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background-color: rgba(251, 251, 251, 0.6);
+  transition: 0.3s;
+}
+.page .contact-form div dd:hover {
+  border: 1px solid #333;
+}
+.page .contact-form div dd p {
+  position: relative;
+}
+.page .contact-form div dd p span input {
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.page .contact-form div dd p span input::-moz-placeholder {
+  color: #aaa;
+}
+.page .contact-form div dd p span input::placeholder {
+  color: #aaa;
+}
+.page .contact-form div dd p span input:focus {
+  outline: none;
+  border: unset;
+}
+.page .contact-form div dd p .wpcf7-not-valid-tip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.page .contact-form div dd.input-contents {
+  height: 200px;
+}
+.page .agreement {
+  margin-top: 50px;
+}
+.page .agreement:first-of-type p br {
+  display: none;
+}
+.page .agreement p {
+  margin: 0;
+  text-align: center;
+  font-size: 0.85rem;
+}
+.page .agreement p button {
+  display: inline-block;
+  width: 80%;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #333;
+  border-radius: 4px;
+}
+.page .agreement p button .wpcf7-spinner {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.page .wpcf7-response-output {
+  line-height: 1.5em;
+  text-align: center;
+}
+
 .home footer, .page footer {
   width: 100%;
   font-size: 0.875rem;

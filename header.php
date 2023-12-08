@@ -29,7 +29,7 @@
           <ul>
             <li><a href="">交通（アクセス）</a></li>
             <li>|</li>
-            <li><a href="">お問い合わせ</a></li>
+            <li><a href="<?php echo esc_url(home_url('/contact/')); ?>">お問い合わせ</a></li>
             <li class="language">
               <a href="">
                 <span>
