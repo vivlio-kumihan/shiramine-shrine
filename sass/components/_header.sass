@@ -60,6 +60,7 @@
               a
                 display: block
                 line-height: 1.25
+                cursor: pointer
               &:hover
                 color: fw.$blue-deep
                 opacity: .9
@@ -192,10 +193,21 @@
               gap: 40px
               font-size: 1rem
 
-
+    +max(md)
+    .wrapper
+      .logo-space
+        flex-direction: row
+        div 
+          p:first-of-type
+            display: none
+        .logo
+          width: calc( 60px * 0.75 )
+      .menu-toggle-btn
+        width: 40px
+        
     // ハンバーガーメニュー
     +max(md)
-      background: unset
+      height: 120px
       .wrapper
         display: block
         position: relative
@@ -261,9 +273,9 @@
           justify-content: space-between
           align-items: center
           position: fixed
-          top: 25px
-          right: 35px
-          width: 55px
+          top: 23px
+          right: 20px
+          width: 40px
           aspect-ratio: 1
           background-color: rgba(35, 80, 130, .7)          
           border-radius: 50%
@@ -285,7 +297,7 @@
         .menu-toggle-btn.flag span
           &:first-of-type
             top: 47.5%
-            left: 24%
+            left: 13%
             transform: rotate(45deg)
           &:nth-of-type(2)
             visibility: hidden
@@ -293,4 +305,4 @@
           &:last-of-type
             bottom: 47.5%
             transform: rotate(-45deg)
-            left: 24%              
+            left: 13%              

@@ -13,6 +13,20 @@
     <div class="container gosaizin">
       <div class="bg">
         <section>
+          <ul class="bread-crumb">
+            <li>
+              <a href="<?php echo home_url(); ?>">ホーム</a>
+            </li>
+            <li>
+              >
+            </li>
+            <li>
+              白峯神宮について
+            </li>
+            <li>
+              <a href="<?php echo esc_url(home_url('/gosaizin/')); ?>">御祭神と御聖徳崇敬の意義</a>
+            </li>
+          </ul>
           <h2>
             <img class="bottom-up-90px" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="">
             御祭神と<br />御聖徳崇敬の意義

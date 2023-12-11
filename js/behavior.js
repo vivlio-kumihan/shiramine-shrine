@@ -27,9 +27,9 @@ pullDownList.forEach(elem => {
 // ボタン
 const menuToggleBtn = document.getElementById('menu-toggle-btn');
 const globalMenu = document.getElementById('global-menu');
-const menu = document.querySelector('.hamburger-menu > .main-menu > .menu');
-const groupLink = document.querySelector('.hamburger-menu .group-link');
-let isMenuVisible = false;
+// const menu = document.querySelector('.hamburger-menu > .main-menu > .menu');
+// const groupLink = document.querySelector('.hamburger-menu .group-link');
+// let isMenuVisible = false;
 
 menuToggleBtn.addEventListener('click', function() {
   // ボタンの表示を切り替える。
@@ -59,7 +59,7 @@ document.addEventListener("scroll", function () {
   });
 });
 
-// top pageの祈祷・授与品、aboutページの画像を使ったリンク
+// top pageのご祈祷・授与品、aboutページの画像を使ったリンク
 const maskParent = document.querySelector(".hover-bright");
 Array.from(maskParent.children).forEach((elem) => {
   if (elem.classList.value !== "hover") {

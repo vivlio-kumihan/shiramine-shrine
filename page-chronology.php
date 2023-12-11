@@ -13,6 +13,20 @@
     <div class="container">
       <div class="bg">
         <section class="chronology">
+          <ul class="bread-crumb">
+            <li>
+              <a href="<?php echo home_url(); ?>">ホーム</a>
+            </li>
+            <li>
+              >
+            </li>
+            <li>
+              白峯神宮について
+            </li>
+            <li>
+              <a href="<?php echo esc_url(home_url('/chronology/')); ?>">略年表</a>
+            </li>
+          </ul>
           <h2>
             <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="">
             略年表

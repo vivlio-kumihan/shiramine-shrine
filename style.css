@@ -119,8 +119,8 @@ body .page-top-arrow {
     transform: translateX(-50%);
     top: 10px;
     width: 100%;
-    margin: 0 auto;
-    font-size: 0.9rem;
+    justify-content: center;
+    font-size: 0.8rem;
   }
 }
 
@@ -232,6 +232,7 @@ body .page-top-arrow {
 .home header .wrapper .global-menu .upper ul li.menu-item a, .home header .wrapper .global-menu .lower ul li.menu-item a, .page header .wrapper .global-menu .upper ul li.menu-item a, .page header .wrapper .global-menu .lower ul li.menu-item a {
   display: block;
   line-height: 1.25;
+  cursor: pointer;
 }
 .home header .wrapper .global-menu .upper ul li.menu-item:hover, .home header .wrapper .global-menu .lower ul li.menu-item:hover, .page header .wrapper .global-menu .upper ul li.menu-item:hover, .page header .wrapper .global-menu .lower ul li.menu-item:hover {
   color: #235180;
@@ -383,9 +384,21 @@ body .page-top-arrow {
     font-size: 1rem;
   }
 }
+.home header .wrapper .logo-space, .page header .wrapper .logo-space {
+  flex-direction: row;
+}
+.home header .wrapper .logo-space div p:first-of-type, .page header .wrapper .logo-space div p:first-of-type {
+  display: none;
+}
+.home header .wrapper .logo-space .logo, .page header .wrapper .logo-space .logo {
+  width: 45px;
+}
+.home header .wrapper .menu-toggle-btn, .page header .wrapper .menu-toggle-btn {
+  width: 40px;
+}
 @media (width < 768px) {
   .home header, .page header {
-    background: unset;
+    height: 120px;
   }
   .home header .wrapper, .page header .wrapper {
     display: block;
@@ -462,9 +475,9 @@ body .page-top-arrow {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    top: 25px;
-    right: 35px;
-    width: 55px;
+    top: 23px;
+    right: 20px;
+    width: 40px;
     aspect-ratio: 1;
     background-color: rgba(35, 80, 130, 0.7);
     border-radius: 50%;
@@ -492,7 +505,7 @@ body .page-top-arrow {
   }
   .home header .wrapper .menu-toggle-btn.flag span:first-of-type, .page header .wrapper .menu-toggle-btn.flag span:first-of-type {
     top: 47.5%;
-    left: 24%;
+    left: 13%;
     transform: rotate(45deg);
   }
   .home header .wrapper .menu-toggle-btn.flag span:nth-of-type(2), .page header .wrapper .menu-toggle-btn.flag span:nth-of-type(2) {
@@ -502,7 +515,7 @@ body .page-top-arrow {
   .home header .wrapper .menu-toggle-btn.flag span:last-of-type, .page header .wrapper .menu-toggle-btn.flag span:last-of-type {
     bottom: 47.5%;
     transform: rotate(-45deg);
-    left: 24%;
+    left: 13%;
   }
 }
 
@@ -1125,18 +1138,22 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   .page main .container .bg section .contents .gradually-appear .inner-contents div br, .page main .container .bg section .contents .gradually-appear-long .inner-contents div br {
     display: block;
   }
-  .page main .container .bg section .contents .gradually-appear .inner-contents .flex-container, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container {
+  .page main .container .bg section .contents .gradually-appear .inner-contents .flex-container, .page main .container .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-history, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-history {
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
   }
-  .page main .container .bg section .contents .gradually-appear .inner-contents .flex-container div img + img, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container div img + img {
+  .page main .container .bg section .contents .gradually-appear .inner-contents .flex-container .size-learge, .page main .container .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-history .size-learge, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container .size-learge, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-history .size-learge {
+    grid-column: unset;
+    grid-row: unset;
+  }
+  .page main .container .bg section .contents .gradually-appear .inner-contents .flex-container div img + img, .page main .container .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-history div img + img, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container div img + img, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-history div img + img {
     margin-top: 15px;
   }
-  .page main .container .bg section .contents .gradually-appear .inner-contents .flex-container div p, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container div p {
+  .page main .container .bg section .contents .gradually-appear .inner-contents .flex-container div p, .page main .container .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-history div p, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container div p, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-history div p {
     font-size: 1rem;
     line-height: 1.7;
   }
-  .page main .container .bg section .contents .gradually-appear .inner-contents .flex-container div p + p, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container div p + p {
+  .page main .container .bg section .contents .gradually-appear .inner-contents .flex-container div p + p, .page main .container .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-history div p + p, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container div p + p, .page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-history div p + p {
     margin-top: 15px;
   }
 }
