@@ -11,6 +11,7 @@
   <div class="contents">
     <section class="title">
       <img src="<?php echo get_template_directory_uri(); ?>/img/title.png" alt="ページのタイトル">
+      <p class="scroll-down-mark blink">scroll</p>
     </section>
     <div class="bg">
       <section class="information gradually-appear">

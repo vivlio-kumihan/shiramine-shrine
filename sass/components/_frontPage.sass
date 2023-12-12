@@ -27,6 +27,31 @@
           // width: 65%
           // height: 65%
           object-fit: contain
+        .scroll-down-mark
+          +fw.positionAbsoluteCTL($left: true)
+          bottom: 50px
+          font-size: 1rem
+          color: #fff
+          &::before
+            +fw.positionAbsoluteCTL($left: true)
+            top: -60px
+            left: 7px
+            content: ""
+            width: 30px
+            aspect-ratio: 1
+            border-top: 2px solid #fff
+            border-right: 2px solid #fff
+            transform: translateY(20%) rotate(135deg) 
+          &::after
+            +fw.positionAbsoluteCTL($left: true)
+            top: -45px
+            left: 7px
+            content: ""
+            width: 30px
+            aspect-ratio: 1
+            border-top: 2px solid #fff
+            border-right: 2px solid #fff
+            transform: translateY(20%) rotate(135deg) 
 
       .bg
         position: relative
