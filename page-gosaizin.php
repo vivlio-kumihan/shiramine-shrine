@@ -35,9 +35,11 @@
             <div class="gradually-appear-long">
               <h3 class="none-letter-space">第75代&nbsp;崇徳天皇</h3>
               <div class="inner-contents">
-                <div class="flex-container">
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/about-gosaizin-emperor01.png" alt="">
-                  <div>
+                <div class="flex-container irregularity-gosaizin">
+                  <div class="size-small">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/about-gosaizin-emperor01.png" alt="">
+                  </div>
+                  <div class="paragraph">
                     <p>平安時代末の元永2年（1119）に鳥羽天皇の皇子として御降誕になりました。保安4年（1123）に第75代の天皇に御即位あそばされましたが、保元の乱（1156）に遭われて讃岐国へ配流遷奉され、同国に在られること8年の長寛2年（1164）8月に、45歳の聖寿を以って崩御なさいまして、その地の白峰山陵に奉葬されました。</p>
                     <p>天皇は御幼少時より和歌・管絃の道に秀でられ、王朝文化の進展に大きく御貢献、数多の名歌をお詠みになり、殊に小倉百人一首の｢瀬をはやみ岩にせかるる滝川の われても末に逢はむとぞ思ふ｣は有名であります。</p>
                     <p>しかし、皇子重仁親王を皇位に推す叡慮も実現せず、かえって保元の乱の災いによって僻陬の地に御配流の躬となられ、都への還幸を望まれつつ御非運の生涯であられました。「保元物語」や能の「松山天狗」などによれば、御無念の様子を偲んであまりあるものがあります。</p>
@@ -51,9 +53,11 @@
             <div class="gradually-appear-long">
               <h3 class="none-letter-space">第47代&nbsp;淳仁天皇</h3>
               <div class="inner-contents">
-                <div class="flex-container">
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/about-gosaizin-emperor02.png" alt="">
-                  <div>
+                <div class="flex-container irregularity-gosaizin">
+                  <div class="size-small">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/about-gosaizin-emperor02.png" alt="">
+                  </div>
+                  <div class="paragraph">
                     <p>『日本書紀』編纂の舎人親王の王子として、天平5年（733）御降誕になり、孝謙天皇（女帝）の皇太子として、続いて第47代の天皇に御即位あそばされました。</p>
                     <p>藤原仲麻呂（恵美押勝）をして官制改革、租税軽減、通貨鋳造、窮民救済等々の仁政を広く布かせられました。しかし、弓削道鏡の悪政を糺されようとされて、藤原仲麻呂の乱を契機に御廃位となり淡路島に御配流されて、翌天平神護1年（765）同島にて崩御なさいました。</p>
                     <p>和気清麻呂公は、道鏡の専横を討つべく宇佐八幡の神託を得ての帰路、ひそかに御陵を参拝して事の由を奉告したと伝承されています。</p>

@@ -44,7 +44,7 @@
             display: flex
             flex-direction: column
             align-items: center
-            padding: 70px 15%
+            padding: 70px 15% 0
             background-color: #fff
             &:first-of-type
               margin-top: 100px
@@ -84,6 +84,20 @@
                   display: grid
                   grid-template-columns: repeat(2, 1fr)
                   gap: 30px
+                  &.irregularity-gosaizin
+                    grid-template-columns: repeat(5, 1fr)
+                    .size-small
+                      grid-column: 1/3
+                      grid-row: 1/2
+                      width: 100%
+                      height: 100%
+                      img
+                        aspect-ratio: 1
+                        width: 100%
+                        object-fit: cover
+                    .paragraph
+                      grid-column: 3/6
+                      grid-row: 1/2
                   &.reverse-irregularity-gosaizin
                     .size-small
                       grid-column: 2/3
@@ -196,7 +210,7 @@
         section
           .contents
             +max(md)
-              padding-top: 40px
+              padding: 40px 0 0
               &:last-of-type
                 padding-bottom: 40px
               .gradually-appear, .gradually-appear-long
@@ -254,7 +268,20 @@
                     img
                       grid-column: 1/2
                       grid-row: 2/2
-                      margin-top: 15px
+                      margin-top: 5px
                     div
                       grid-column: 1/2
                       grid-row: 1/2
+                  + .flex-container
+                    margin-top: 20px
+.page
+  main
+    .container.gosaizin, .container.gobyo, .container.history
+      .bg
+        section
+          .contents
+            .gradually-appear, .gradually-appear-long
+              .inner-contents
+                +max(md)
+                  .flex-container
+                    margin-top: 30px
