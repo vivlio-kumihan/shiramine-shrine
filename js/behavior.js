@@ -78,8 +78,6 @@ document.addEventListener("scroll", function () {
 const modals = document.querySelectorAll(".modal"),
       openTriggers = document.querySelectorAll(".modal-open-trigger"),
       closeBtns = document.querySelectorAll(".modal-close-btn");
-console.log(modals);
-console.log(closeBtns);
 
 openTriggers.forEach((openTrigger, idx) => {
   //「開くボタン」をクリックしてモーダルを開く
