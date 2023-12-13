@@ -75,32 +75,37 @@ document.addEventListener("scroll", function () {
 });
 
 // modal
-const modal = document.querySelector(".modal"),
-      openTrigger = document.querySelector(".modal-open-trigger.ogatama-no-ki"),
-      closeBtn = document.querySelector(".modal-close-btn");
+const modals = document.querySelectorAll(".modal"),
+      openTriggers = document.querySelectorAll(".modal-open-trigger"),
+      closeBtns = document.querySelectorAll(".modal-close-btn");
+console.log(modals);
+console.log(closeBtns);
 
-//「開くボタン」をクリックしてモーダルを開く
-const modalOpen = () => {
-  modal.classList.add("activate-modal");
-};
-
-openTrigger.addEventListener("click", () => {
-  modalOpen();
+openTriggers.forEach((openTrigger, idx) => {
+  //「開くボタン」をクリックしてモーダルを開く
+  const modalOpen = () => {
+    console.log(modals[idx], "click")
+    modals[idx].classList.add("activate-modal");
+  };
+  openTrigger.addEventListener("click", () => {
+    modalOpen();
+  });
+  
+  //「閉じるボタン」をクリックしてモーダルを閉じる
+  function modalClose() {
+    modals[idx].classList.remove("activate-modal");
+  }
+  closeBtns[idx].addEventListener("click", modalClose);
+  
+  //「モーダルの外側」をクリックしてモーダルを閉じる
+  function modalOut(e) {
+    if (e.target == modals[idx]) {
+      modals[idx].classList.remove("activate-modal");
+    }
+  }
+  addEventListener("click", modalOut);
 });
 
-//「閉じるボタン」をクリックしてモーダルを閉じる
-function modalClose() {
-  modal.classList.remove("activate-modal");
-}
-closeBtn.addEventListener("click", modalClose);
-
-//「モーダルの外側」をクリックしてモーダルを閉じる
-function modalOut(e) {
-  if (e.target == modal) {
-    modal.classList.remove("activate-modal");
-  }
-}
-addEventListener("click", modalOut);
 
 // // top pageのご祈祷・授与品、aboutページの画像を使ったリンク
 // const maskParent = document.querySelector(".hover-bright");

@@ -1322,12 +1322,19 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   background-color: #aaa;
   opacity: 0.6;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear-long ul li:last-of-type > .reiboku {
+.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear-long ul li:last-of-type > div {
   padding: 0;
+  transition: 0.5s;
+  opacity: 0.9;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear-long ul li:last-of-type > .reiboku > a {
+.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear-long ul li:last-of-type > div > a {
   display: block;
   padding: 20px;
+}
+.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear-long ul li:last-of-type > div:hover {
+  color: #fff;
+  background-color: #aaa;
+  opacity: 0.6;
 }
 .page main .contents .container.guide-temple .bg section .contents.reiboku {
   padding: 120px 15% 0;

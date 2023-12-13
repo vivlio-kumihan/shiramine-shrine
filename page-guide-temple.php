@@ -45,11 +45,12 @@
                   <div class="modal-open-trigger temizushya">手水舎</div>
                 </li>
                 <li>
-                  <div class="modal-open-trigger reiboku"><a href="#reiboku">霊木</a></div>
+                  <div><a href="#reiboku">霊木</a></div>
                 </li>
               </ul>
             </div>
           </div>
+
           <div id="reiboku" class="contents reiboku">
             <div class="gradually-appear-short">
               <h3><span class="full-width-char-behind">霊</span>木</h3>
@@ -130,6 +131,34 @@
       </div>
 
       <!-- modal -->
+      <div class="modal jisyushya">
+        <button class="modal-close-btn">
+          <span></span>
+          <span></span>
+        </button>
+        <h1>地主社</h1>
+      </div>
+      <div class="modal senryushya">
+        <button class="modal-close-btn">
+          <span></span>
+          <span></span>
+        </button>
+        <h1>潜龍社</h1>
+      </div>
+      <div class="modal tomonoshya">
+        <button class="modal-close-btn">
+          <span></span>
+          <span></span>
+        </button>
+        <h1>伴緒社</h1>
+      </div>
+      <div class="modal temizushya">
+        <button class="modal-close-btn">
+          <span></span>
+          <span></span>
+        </button>
+        <h1>手水舎</h1>
+      </div>
       <div class="modal ogatama-no-ki">
         <div class="container">
           <button class="modal-close-btn">
@@ -169,8 +198,12 @@
           </div>
         </div>
       </div>
-      <!-- <div class="modal ganshyug">
+      <div class="modal ganshyug">
         <div class="container">
+          <button class="modal-close-btn">
+            <span></span>
+            <span></span>
+          </button>
           <h4 class="guide-temple-modal-header">含笑花（ガンシュウゲ）</h4>
           <div class=" flex-grid">
             <div class="paragraph">
@@ -191,9 +224,13 @@
           </div>
         </div>
         <p>和名の「トウオガタマ（唐招魂）」は、日本自生の「オガタマノキ（招魂の木）」と区別して中国のオガタマノキという意味から、この名前がつけられたと思われます。</p>
-      </div> -->
-      <!-- <div class="modal mukuroji-no-ki">
+      </div>
+      <div class="modal mukuroji-no-ki">
         <div class="container">
+          <button class="modal-close-btn">
+            <span></span>
+            <span></span>
+          </button>
           <h4 class="guide-temple-modal-header">ムクロジの木</h4>
           <div class=" flex-grid">
             <div class="paragraph">
@@ -219,9 +256,13 @@
             </div>
           </div>
         </div>
-      </div> -->
-      <!-- <div class="modal kaji-no-ki">
+      </div>
+      <div class="modal kaji-no-ki">
         <div class="container">
+          <button class="modal-close-btn">
+            <span></span>
+            <span></span>
+          </button>
           <h4 class="guide-temple-modal-header">梶の木</h4>
           <div class=" flex-grid">
             <div class="paragraph">
@@ -244,9 +285,13 @@
             </div>
           </div>
         </div>
-      </div> -->
-      <!-- <div class="modal ukon-no-tachibana">
+      </div>
+      <div class="modal ukon-no-tachibana">
         <div class="container">
+          <button class="modal-close-btn">
+            <span></span>
+            <span></span>
+          </button>
           <h4 class="guide-temple-modal-header">右近の橘</h4>
           <div class=" flex-grid">
             <div class="paragraph">
@@ -263,9 +308,13 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-ukontachibana-02.jpg" alt="">
           </div>
         </div>
-      </div> -->
-      <!-- <div class="modal ukon-no-sakura">
+      </div>
+      <div class="modal ukon-no-sakura">
         <div class="container">
+          <button class="modal-close-btn">
+            <span></span>
+            <span></span>
+          </button>
           <h4 class="guide-temple-modal-header">鬱金の桜（黄桜）</h4>
           <div class=" flex-grid">
             <div class="paragraph">
@@ -282,9 +331,13 @@
             </div>
           </div>
         </div>
-      </div> -->
-      <!-- <div class="modal sanyo-no-matsu">
+      </div>
+      <div class="modal sanyo-no-matsu">
         <div class="container">
+          <button class="modal-close-btn">
+            <span></span>
+            <span></span>
+          </button>
           <h4 class="guide-temple-modal-header">三葉の松</h4>
           <div class=" flex-grid">
             <div class="paragraph">
@@ -307,9 +360,13 @@
             </div>
           </div>
         </div>
-      </div> -->
-      <!-- <div class="modal four-seasons">
+      </div>
+      <div class="modal four-seasons">
         <div class="container">
+          <button class="modal-close-btn">
+            <span></span>
+            <span></span>
+          </button>
           <h4 class="guide-temple-modal-header">季節の花</h4>
           <div>
             <figure>
@@ -326,11 +383,10 @@
             </figure>
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
   </div>
   </div>
-
 
   <!-- 
   潜龍社
