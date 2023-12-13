@@ -178,3 +178,24 @@ body
 .home, .home.blog, .page
   .full-width-char-behind
     margin-right: 1em
+
+.home, .home.blog, .page
+  h3, .guide-temple-modal-header
+    position: relative
+    width: 100%
+    text-align: center
+    font-size: 1.75rem
+    line-height: 1
+    letter-spacing: .5em
+    &::before, &::after
+      +fw.positionAbsoluteCTL($top: true)
+      content: ""
+      width: calc(50% - 120px)
+      height: 1px
+      background-color: #333
+    &::before                
+      right: 0
+    &::after
+      left: 0
+    &.none-letter-space
+      letter-spacing: 0

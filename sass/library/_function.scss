@@ -2,7 +2,8 @@ $index-map:
     guide-contents,
     guide-ul,
     bread-crumb,
-    header;
+    header,
+    modal;
 // z-index属性へ代入する関数を定義する。
 // 配列と値の名称を引数とする。
 @function get_index($name) {
