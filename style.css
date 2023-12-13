@@ -1308,18 +1308,26 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
 .page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear-long ul li + li {
   border-top: 1px solid #BB9A01;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear-long ul li a {
+.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear-long ul li .modal-open-trigger {
   display: block;
   height: 100%;
   padding: 20px;
   background-color: #fff;
+  cursor: pointer;
   transition: 0.5s;
   opacity: 0.9;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear-long ul li a:hover {
+.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear-long ul li .modal-open-trigger:hover {
   color: #fff;
   background-color: #aaa;
   opacity: 0.6;
+}
+.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear-long ul li:last-of-type > .reiboku {
+  padding: 0;
+}
+.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear-long ul li:last-of-type > .reiboku > a {
+  display: block;
+  padding: 20px;
 }
 .page main .contents .container.guide-temple .bg section .contents.reiboku {
   padding: 120px 15% 0;
@@ -1355,47 +1363,88 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   width: 100%;
   height: 100%;
 }
-.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear-short ul li a {
+.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear-short ul li .modal-open-trigger {
   display: block;
   height: 100%;
+  cursor: pointer;
 }
-.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear-short ul li a .photo-frame {
+.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear-short ul li .modal-open-trigger .photo-frame {
   width: 100%;
   aspect-ratio: 1;
 }
-.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear-short ul li a .photo-frame img {
+.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear-short ul li .modal-open-trigger .photo-frame img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear-short ul li a h4 {
+.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear-short ul li .modal-open-trigger h4 {
   margin: 15px 0;
   font-size: 1.3rem;
   line-height: 1em;
   font-weight: 600;
 }
-.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear-short ul li a p {
+.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear-short ul li .modal-open-trigger p {
   line-height: 1.5em;
 }
 .page main .contents .container.guide-temple .modal {
   position: fixed;
   top: 0;
-  left: 0;
+  right: -100%;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
   overflow: auto;
+  transition: 0.8s;
+  visibility: hidden;
+  opacity: 0;
   z-index: 105;
 }
-.page main .contents .container.guide-temple .modal.hide {
-  display: none;
+.page main .contents .container.guide-temple .modal.activate-modal {
+  right: 0;
+  visibility: visible;
+  opacity: 1;
 }
 .page main .contents .container.guide-temple .modal .container {
+  position: relative;
   margin: 90px auto;
   width: 74%;
   padding: 5rem 9rem;
-  background: url(./img/bg.png) repeat;
-  background-color: #fff;
+  background: url(./img/bg.jpg) repeat;
+}
+.page main .contents .container.guide-temple .modal .container .modal-close-btn {
+  position: absolute;
+  top: 60px;
+  right: 60px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #333;
+  transform: translateY(0);
+  transition: 0.3s;
+}
+.page main .contents .container.guide-temple .modal .container .modal-close-btn span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  left: 18%;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: #333;
+}
+.page main .contents .container.guide-temple .modal .container .modal-close-btn span:first-of-type {
+  transform: rotate(45deg);
+  transform-origin: center center 0;
+}
+.page main .contents .container.guide-temple .modal .container .modal-close-btn span:last-of-type {
+  transform: rotate(-45deg);
+  transform-origin: center center 0;
+}
+.page main .contents .container.guide-temple .modal .container .modal-close-btn:hover {
+  background-color: #eee;
+  transform: translateY(-1px);
+  opacity: 0.5;
 }
 .page main .contents .container.guide-temple .modal .container .guide-temple-modal-header {
   font-size: 1.95rem;

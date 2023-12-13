@@ -74,6 +74,34 @@ document.addEventListener("scroll", function () {
   });
 });
 
+// modal
+const modal = document.querySelector(".modal"),
+      openTrigger = document.querySelector(".modal-open-trigger.ogatama-no-ki"),
+      closeBtn = document.querySelector(".modal-close-btn");
+
+//「開くボタン」をクリックしてモーダルを開く
+const modalOpen = () => {
+  modal.classList.add("activate-modal");
+};
+
+openTrigger.addEventListener("click", () => {
+  modalOpen();
+});
+
+//「閉じるボタン」をクリックしてモーダルを閉じる
+function modalClose() {
+  modal.classList.remove("activate-modal");
+}
+closeBtn.addEventListener("click", modalClose);
+
+//「モーダルの外側」をクリックしてモーダルを閉じる
+function modalOut(e) {
+  if (e.target == modal) {
+    modal.classList.remove("activate-modal");
+  }
+}
+addEventListener("click", modalOut);
+
 // // top pageのご祈祷・授与品、aboutページの画像を使ったリンク
 // const maskParent = document.querySelector(".hover-bright");
 // Array.from(maskParent.children).forEach((elem) => {
@@ -86,6 +114,7 @@ document.addEventListener("scroll", function () {
 //     });
 //   }
 // });
+
 // // Appear and Hide Header 
 // // とりあえず見送り
 // const fixedElm = document.querySelector('header');

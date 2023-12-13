@@ -32,11 +32,21 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/img/guide-map.jpg" alt="">
               </div>
               <ul>
-                <li><a href="">地主社（じしゅしゃ）</a></li>
-                <li><a href="">潜龍社（せんりゅうしゃ）</a></li>
-                <li><a href="">伴緒社（とものおしゃ）</a></li>
-                <li><a href="">手水舎</a></li>
-                <li><a href="#reiboku">霊木</a></li>
+                <li>
+                  <div class="modal-open-trigger jisyushya">地主社（じしゅしゃ）</div>
+                </li>
+                <li>
+                  <div class="modal-open-trigger senryushya">潜龍社（せんりゅうしゃ）</div>
+                </li>
+                <li>
+                  <div class="modal-open-trigger tomonoshya">伴緒社（とものおしゃ）</div>
+                </li>
+                <li>
+                  <div class="modal-open-trigger temizushya">手水舎</div>
+                </li>
+                <li>
+                  <div class="modal-open-trigger reiboku"><a href="#reiboku">霊木</a></div>
+                </li>
               </ul>
             </div>
           </div>
@@ -45,82 +55,87 @@
               <h3><span class="full-width-char-behind">霊</span>木</h3>
               <ul>
                 <li>
-                  <a href="">
+                  <div class="modal-open-trigger ogatama-no-ki">
                     <div class="photo-frame">
                       <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-01.jpg" alt="">
                     </div>
                     <h4>小賀玉の木</h4>
                     <p>その名は招霊（おぎたま、霊を招くの意）が、なまったものとも言われるところから、神社の境内によく植えられています。</p>
-                  </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="">
+                  <div class="modal-open-trigger ganshyuge">
                     <div class="photo-frame">
                       <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-02.jpg" alt="">
                     </div>
                     <h4>含笑花（ガンシュウゲ）</h4>
                     <p>中国原産で中国名が「含笑花」、その名のとおり慎ましく微笑んでいるような花で、宋の李網の含笑花の賦に「南方花木の美なるもの含笑に若くはなし」とあります。</p>
-                  </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="">
+                  <div class="modal-open-trigger mukuroji-no-ki">
                     <div class="photo-frame">
                       <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-03.jpg" alt="">
                     </div>
                     <h4>ムクロジの木</h4>
                     <p>無患子・無患樹・木患子、子が患うこの無い樹の意味です。山地に生え、15m～20mになる落葉高木。</p>
-                  </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="">
+                  <div class="modal-open-trigger kaji-no-ki">
                     <div class="photo-frame">
                       <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-04.jpg" alt="">
                     </div>
                     <h4>梶の木</h4>
                     <p>梶の木古代から、神に捧げる神木として尊ばれ、七夕祭に「歌」を葉に直接ヘラなどで書きお供えしました。</p>
-                  </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="">
+                  <div class="modal-open-trigger ukon-no-tachibana">
                     <div class="photo-frame">
                       <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-05.jpg" alt="">
                     </div>
                     <h4>右近の橘</h4>
-                  </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="">
+                  <div class="modal-open-trigger ukon-no-sakura">
                     <div class="photo-frame">
                       <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-06.jpg" alt="">
                     </div>
                     <h4>鬱金の桜（黄桜）</h4>
-                  </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="">
+                  <div class="modal-open-trigger sanyo-no-matsu">
                     <div class="photo-frame">
                       <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-07.jpg" alt="">
                     </div>
                     <h4>三葉の松</h4>
                     <p>昔から日本では、豊饒と平安をもたらす神霊が、松を伝って地上に降臨すると信じられ、昔物語や伝説に登場し、神聖な木として崇めていて、新年の家門に飾る門松は同じ意味で神の降臨を願ってのことです。</p>
-                  </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="">
+                  <div class="modal-open-trigger four-seasons">
                     <div class="photo-frame">
                       <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-08.jpg" alt="">
                     </div>
                     <h4>季節の花</h4>
-                  </a>
+                  </div>
                 </li>
               </ul>
             </div>
           </div>
         </section>
       </div>
+
       <!-- modal -->
       <div class="modal ogatama-no-ki">
         <div class="container">
+          <button class="modal-close-btn">
+            <span></span>
+            <span></span>
+          </button>
           <h4 class="guide-temple-modal-header">小賀玉の木</h4>
           <div class="flex-grid">
             <div class="paragraph">
@@ -154,9 +169,9 @@
           </div>
         </div>
       </div>
-      <div class="modal gansyuge hide">
+      <!-- <div class="modal ganshyug">
         <div class="container">
-          <h4 class="guide-temple-modal-header>含笑花（ガンシュウゲ）</h4>
+          <h4 class="guide-temple-modal-header">含笑花（ガンシュウゲ）</h4>
           <div class=" flex-grid">
             <div class="paragraph">
               <div class="technical-name">
@@ -173,143 +188,146 @@
             <div class="photo-frame">
               <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-gansyouge.jpg" alt="">
             </div>
-        </div>
-        <p>和名の「トウオガタマ（唐招魂）」は、日本自生の「オガタマノキ（招魂の木）」と区別して中国のオガタマノキという意味から、この名前がつけられたと思われます。</p> -->
-      </div>
-    </div>
-    <div class="modal mukuroji-no-ki hide">
-      <div class="container">
-        <h4 class="guide-temple-modal-header>ムクロジの木</h4>
-        <div class=" flex-grid">
-          <div class="paragraph">
-            <p class="technical-name">
-              和名：ムクロジノキ（ムクロジ科ムクロジ属）<br />
-              学名：Sapindus mukurossi
-            </p>
-            <p>無患子・無患樹・木患子、子が患うことの無い樹の意味です。山地に生え、15m～20mになる落葉高木。</p>
-            <p>偶数羽状複葉の葉は長く5～15cmで互生し、4～8対ある小葉には鋸歯はなく、雌雄同株で、6月に黄緑色の小花が円錐形に集まって枝先に咲きます。秋の黄葉が美しく、果実は直径2cmの黒い球状で、厚い外皮があって秋には半透明の黄褐色になり晩秋の落果時に中でコロコロと音を立て、羽根つきの玉に使われます。</p>
-            <p>学名のSapindus：ムクロジ科は「インドの石鹸」の意味で、ムクロジの果皮に約10%の化学物質サポニンが含まれ水に溶けると泡立ちがよい。</p>
-            <p>平安の昔は当時としては灯明の煤でも汚れもよく洗い落とすところから、石鹸として洗濯や洗髪に用いられて、平安時代の公家屋敷には多く植えられていたようです。</p>
           </div>
-          <div class="photos">
-            <div class="photo-frame">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-mukuroji-01.jpg" alt="">
+        </div>
+        <p>和名の「トウオガタマ（唐招魂）」は、日本自生の「オガタマノキ（招魂の木）」と区別して中国のオガタマノキという意味から、この名前がつけられたと思われます。</p>
+      </div> -->
+      <!-- <div class="modal mukuroji-no-ki">
+        <div class="container">
+          <h4 class="guide-temple-modal-header">ムクロジの木</h4>
+          <div class=" flex-grid">
+            <div class="paragraph">
+              <p class="technical-name">
+                和名：ムクロジノキ（ムクロジ科ムクロジ属）<br />
+                学名：Sapindus mukurossi
+              </p>
+              <p>無患子・無患樹・木患子、子が患うことの無い樹の意味です。山地に生え、15m～20mになる落葉高木。</p>
+              <p>偶数羽状複葉の葉は長く5～15cmで互生し、4～8対ある小葉には鋸歯はなく、雌雄同株で、6月に黄緑色の小花が円錐形に集まって枝先に咲きます。秋の黄葉が美しく、果実は直径2cmの黒い球状で、厚い外皮があって秋には半透明の黄褐色になり晩秋の落果時に中でコロコロと音を立て、羽根つきの玉に使われます。</p>
+              <p>学名のSapindus：ムクロジ科は「インドの石鹸」の意味で、ムクロジの果皮に約10%の化学物質サポニンが含まれ水に溶けると泡立ちがよい。</p>
+              <p>平安の昔は当時としては灯明の煤でも汚れもよく洗い落とすところから、石鹸として洗濯や洗髪に用いられて、平安時代の公家屋敷には多く植えられていたようです。</p>
+            </div>
+            <div class="photos">
+              <div class="photo-frame">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-mukuroji-01.jpg" alt="">
+              </div>
+              <div class="photo-frame">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-mukuroji-03.jpg" alt="">
+              </div>
+              <div class="photo-frame">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-mukuroji-03.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- <div class="modal kaji-no-ki">
+        <div class="container">
+          <h4 class="guide-temple-modal-header">梶の木</h4>
+          <div class=" flex-grid">
+            <div class="paragraph">
+              <p class="technical-name">
+                和名：カジノキ（クワ科コウゾ属）<br />
+                学名：Broussonetia papyrifera
+              </p>
+              <p>古代から、神に捧げる神木として尊ばれ、七夕祭に「歌」を葉に直接ヘラなどで書きお供えしました。</p>
+              <p>これは、現在では七夕はササに飾りをつけますが、昔は、梶の葉や枝が用いられたのです。そのために梶の木は、神社の境内などに多く生えられ、主として神事に用い供え物の敷物等に使われました。</p>
+              <p>特に、宮中での七夕飾りや冷泉家に伝わる「乞巧奠」（陰暦7月7日の七夕儀式）には、牽牛、織女の二星（たなばた）に、種々の供物をし、蹴鞠、雅楽、和歌などを手向けて、その技が巧みになるようにと祈ります。そのときの「星の座」は、庭に設けられた祭壇で、机の周囲に九本の燭台を廻らし、うしろに二本の笹の間に梶の葉と糸をつるした緒を張り、机上には、星に貸すため、琴、琵琶などの楽器を置き、お供えは「うり・なすび・もも・なし・からのさかずき・ささげ・らんかず・むしあわび・たい」を梶の葉にのせ、机の前には、五色の布、糸や、秋の七草も手向けられます。最前列に水を張り、梶を一葉浮かべた角盥（つのだらい）を置いてこの水に二星を映して見るわけです。</p>
+              <p>儀式は、午後、七夕精大明神例祭斎行後に、神賑行事として蹴鞠保存会による梶鞠式（蹴鞠奉納）が執り行われます。</p>
+            </div>
+            <div class="photos">
+              <div class="photo-frame">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-kajinoki-01.jpg" alt="">
+              </div>
+              <div class="photo-frame">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-kajinoki-02.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- <div class="modal ukon-no-tachibana">
+        <div class="container">
+          <h4 class="guide-temple-modal-header">右近の橘</h4>
+          <div class=" flex-grid">
+            <div class="paragraph">
+              <p class="technical-name">
+                和名：タチバナ（ミカン科ミカン属）<br />
+                学名：Citrus tachibana
+              </p>
             </div>
             <div class="photo-frame">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-mukuroji-03.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-ukontachibana-01.jpg" alt="">
+            </div>
+          </div>
+          <div class="photo-frame">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-ukontachibana-02.jpg" alt="">
+          </div>
+        </div>
+      </div> -->
+      <!-- <div class="modal ukon-no-sakura">
+        <div class="container">
+          <h4 class="guide-temple-modal-header">鬱金の桜（黄桜）</h4>
+          <div class=" flex-grid">
+            <div class="paragraph">
+              <p class="technical-name">
+                和名：ウコン（バラ科サクラ属）<br />
+                学名：Cerasus Sato-zakura Group ‘Grandiflora’ A. Wagner
+              </p>
+              <div class="photo-frame">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-ukonsakura-01.jpg" alt="">
+              </div>
             </div>
             <div class="photo-frame">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-mukuroji-03.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-ukonsakura-02.jpg" alt="">
             </div>
           </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal kaji-no-ki hide">
-    <div class="container">
-      <h4 class="guide-temple-modal-header>梶の木</h4>
-        <div class=" flex-grid">
-        <div class="paragraph">
-          <p class="technical-name">
-            和名：カジノキ（クワ科コウゾ属）<br />
-            学名：Broussonetia papyrifera
-          </p>
-          <p>古代から、神に捧げる神木として尊ばれ、七夕祭に「歌」を葉に直接ヘラなどで書きお供えしました。</p>
-          <p>これは、現在では七夕はササに飾りをつけますが、昔は、梶の葉や枝が用いられたのです。そのために梶の木は、神社の境内などに多く生えられ、主として神事に用い供え物の敷物等に使われました。</p>
-          <p>特に、宮中での七夕飾りや冷泉家に伝わる「乞巧奠」（陰暦7月7日の七夕儀式）には、牽牛、織女の二星（たなばた）に、種々の供物をし、蹴鞠、雅楽、和歌などを手向けて、その技が巧みになるようにと祈ります。そのときの「星の座」は、庭に設けられた祭壇で、机の周囲に九本の燭台を廻らし、うしろに二本の笹の間に梶の葉と糸をつるした緒を張り、机上には、星に貸すため、琴、琵琶などの楽器を置き、お供えは「うり・なすび・もも・なし・からのさかずき・ささげ・らんかず・むしあわび・たい」を梶の葉にのせ、机の前には、五色の布、糸や、秋の七草も手向けられます。最前列に水を張り、梶を一葉浮かべた角盥（つのだらい）を置いてこの水に二星を映して見るわけです。</p>
-          <p>儀式は、午後、七夕精大明神例祭斎行後に、神賑行事として蹴鞠保存会による梶鞠式（蹴鞠奉納）が執り行われます。</p>
         </div>
-        <div class="photos">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-kajinoki-01.jpg" alt="">
-        </div>
-        <div class="photos">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-kajinoki-02.jpg" alt="">
-        </div>
-    </div>
-  </div>
-  </div>
-  <div class="modal ukon-no-tatchbana hide">
-    <div class="container">
-      <h4 class="guide-temple-modal-header>右近の橘</h4>
-        <div class=" flex-grid">
-        <div class="paragraph">
-          <p class="technical-name">
-            和名：タチバナ（ミカン科ミカン属）<br />
-            学名：Citrus tachibana
-          </p>
-          <div class="photo-frame">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-ukontachibana-01.jpg" alt="">
+      </div> -->
+      <!-- <div class="modal sanyo-no-matsu">
+        <div class="container">
+          <h4 class="guide-temple-modal-header">三葉の松</h4>
+          <div class=" flex-grid">
+            <div class="paragraph">
+              <p class="technical-name">
+                和名：サンヨウノマツ・サンコノマツ（マツ科マツ属）　
+                学名：Pinus Bungeana Zucc
+              </p>
+              <p>昔から日本では、豊饒と平安をもたらす神霊が、松を伝って地上に降臨すると信じられ、昔物語や伝説に登場し、神聖な木として崇めていて、新年の家門に飾る門松は同じ意味で神の降臨を願ってのことです。</p>
+              <p>松は百木の長と言われていますように、木の気品、幹の姿、根の張り、彫りの深い樹皮の亀甲の模様にも気品と風格が感じられます。</p>
+              <p>「三葉の松」は全国でも珍しく、その姿から「夫婦和楽・家内安全」を象徴して、その松葉は黄金色になって落葉します。</p>
+              <p>松は普通二葉か五葉ですが、日本でもまれに三葉の松があります。おおむね神社か仏閣に植えられております。日本では樹高は一般の黒松より大きくはなりません。</p>
+            </div>
+            <div class="photos">
+              <div class="photo-frame">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-sanyomatsu-01.jpg" alt="">
+              </div>
+              <div class="photo-frame">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-sanyomatsu-02.png" alt="">
+              </div>
+            </div>
           </div>
         </div>
-        <div class="photo-frame">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-ukontachibana-02.jpg" alt="">
-        </div>
-    </div>
-  </div>
-  </div>
-  <div class="modal ukon-no-sakura hide">
-    <div class="container">
-      <h4 class="guide-temple-modal-header>鬱金の桜（黄桜）</h4>
-        <div class=" flex-grid">
-        <div class="paragraph">
-          <p class="technical-name">
-            和名：ウコン（バラ科サクラ属）<br />
-            学名：Cerasus Sato-zakura Group ‘Grandiflora’ A. Wagner
-          </p>
-          <div class="photo-frame">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-ukonsakura-01.jpg" alt="">
+      </div> -->
+      <!-- <div class="modal four-seasons">
+        <div class="container">
+          <h4 class="guide-temple-modal-header">季節の花</h4>
+          <div>
+            <figure>
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-fourseason-01.jpg" alt="">
+              <figcaption>椿</figcaption>
+            </figure>
+            <figure>
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-fourseason-02.jpg" alt="">
+              <figcaption>珊瑚樹</figcaption>
+            </figure>
+            <figure>
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-fourseason-03.jpg" alt="">
+              <figcaption>百日紅</figcaption>
+            </figure>
           </div>
         </div>
-        <div class="photo-frame">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-ukonsakura-02.jpg" alt="">
-        </div>
+      </div> -->
     </div>
-  </div>
-  </div>
-  <div class="modal sanyo-no-matsu hide">
-    <div class="container">
-      <h4 class="guide-temple-modal-header>三葉の松</h4>
-        <div class=" flex-grid">
-        <div class="paragraph">
-          <p class="technical-name">
-            和名：サンヨウノマツ・サンコノマツ（マツ科マツ属）　
-            学名：Pinus Bungeana Zucc
-          </p>
-          <p>昔から日本では、豊饒と平安をもたらす神霊が、松を伝って地上に降臨すると信じられ、昔物語や伝説に登場し、神聖な木として崇めていて、新年の家門に飾る門松は同じ意味で神の降臨を願ってのことです。</p>
-          <p>松は百木の長と言われていますように、木の気品、幹の姿、根の張り、彫りの深い樹皮の亀甲の模様にも気品と風格が感じられます。</p>
-          <p>「三葉の松」は全国でも珍しく、その姿から「夫婦和楽・家内安全」を象徴して、その松葉は黄金色になって落葉します。</p>
-          <p>松は普通二葉か五葉ですが、日本でもまれに三葉の松があります。おおむね神社か仏閣に植えられております。日本では樹高は一般の黒松より大きくはなりません。</p>
-        </div>
-        <div class="photos">
-          <div class="photo-frame">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-sanyomatsu-01.jpg" alt="">
-          </div>
-          <div class="photo-frame">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-sanyomatsu-02.png" alt="">
-          </div>
-        </div>
-    </div>
-  </div>
-  </div>
-  <div class="modal four-seasons hide">
-    <div class="container">
-      <h4 class="guide-temple-modal-header>季節の花</h4>
-        <div>
-          <figure>
-            <img src=" <?php echo get_template_directory_uri(); ?>/img/guide-reiboku-fourseason-01.jpg" alt="">
-        <figcaption>椿</figcaption>
-        </figure>
-        <figure>
-          <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-fourseason-02.jpg" alt="">
-          <figcaption>珊瑚樹</figcaption>
-        </figure>
-        <figure>
-          <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-fourseason-03.jpg" alt="">
-          <figcaption>百日紅</figcaption>
-        </figure>
-    </div>
-  </div>
-  </div>
   </div>
   </div>
 
