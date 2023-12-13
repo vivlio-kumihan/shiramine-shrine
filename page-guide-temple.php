@@ -41,7 +41,7 @@
             </div>
           </div>
           <div id="reiboku" class="contents reiboku">
-            <div class="gradually-appear">
+            <div class="gradually-appear-short">
               <h3><span class="full-width-char-behind">霊</span>木</h3>
               <ul>
                 <li>

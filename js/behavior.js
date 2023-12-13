@@ -9,6 +9,19 @@ if (document.querySelector('body.home')) {
       elem.classList.remove("color-blue");
     });
   });  
+
+  // top pageのご祈祷・授与品、aboutページの画像を使ったリンク
+  const maskParent = document.querySelector(".hover-bright");
+  Array.from(maskParent.children).forEach((elem) => {
+    if (elem.classList.value !== "hover") {
+      elem.addEventListener("mouseenter", () => {
+        elem.classList.add("hover");
+      });
+      elem.addEventListener("mouseleave", () => {
+        elem.classList.remove("hover");
+      });
+    }
+  });  
 }
 
 // headerのglobal-menu pull-down-list
@@ -39,13 +52,15 @@ menuToggleBtn.addEventListener('click', function() {
 });
 
 // スクロール・アニメーション　ふわっと現れる
-const targetElems = document.querySelectorAll(".gradually-appear, .gradually-appear-long");
+const targetElems = document.querySelectorAll(".gradually-appear, .gradually-appear-long, .gradually-appear-short");
 const windowHight = window.innerHeight;
 document.addEventListener("scroll", function () {
   targetElems.forEach(elem => {
     // よほど長い記事の場合はこの関数で調整している。
     const haflElemHight = (argElem) => {
-      if (argElem.indexOf('gradually-appear-long') !== -1) {
+      if (argElem.indexOf('gradually-appear-short') !== -1) {
+        return elem.clientHeight / 30;
+      } else if (argElem.indexOf('gradually-appear-long') !== -1) {
         return elem.clientHeight / 15;
       } else if (argElem.indexOf('gradually-appear') !== -1) {
         return elem.clientHeight / 3;
@@ -59,18 +74,18 @@ document.addEventListener("scroll", function () {
   });
 });
 
-// top pageのご祈祷・授与品、aboutページの画像を使ったリンク
-const maskParent = document.querySelector(".hover-bright");
-Array.from(maskParent.children).forEach((elem) => {
-  if (elem.classList.value !== "hover") {
-    elem.addEventListener("mouseenter", () => {
-      elem.classList.add("hover");
-    });
-    elem.addEventListener("mouseleave", () => {
-      elem.classList.remove("hover");
-    });
-  }
-});
+// // top pageのご祈祷・授与品、aboutページの画像を使ったリンク
+// const maskParent = document.querySelector(".hover-bright");
+// Array.from(maskParent.children).forEach((elem) => {
+//   if (elem.classList.value !== "hover") {
+//     elem.addEventListener("mouseenter", () => {
+//       elem.classList.add("hover");
+//     });
+//     elem.addEventListener("mouseleave", () => {
+//       elem.classList.remove("hover");
+//     });
+//   }
+// });
 // // Appear and Hide Header 
 // // とりあえず見送り
 // const fixedElm = document.querySelector('header');

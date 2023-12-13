@@ -87,14 +87,14 @@ body .page-top-arrow {
   }
 }
 
-.home .gradually-appear, .home .gradually-appear-long, .home.blog .gradually-appear, .home.blog .gradually-appear-long, .page .gradually-appear, .page .gradually-appear-long {
+.home .gradually-appear, .home .gradually-appear-long, .home .gradually-appear-short, .home.blog .gradually-appear, .home.blog .gradually-appear-long, .home.blog .gradually-appear-short, .page .gradually-appear, .page .gradually-appear-long, .page .gradually-appear-short {
   width: 100%;
   transition: 1.5s;
   transform: translateY(80px);
   visibility: hidden;
   opacity: 0;
 }
-.home .gradually-appear.active, .home .gradually-appear-long.active, .home.blog .gradually-appear.active, .home.blog .gradually-appear-long.active, .page .gradually-appear.active, .page .gradually-appear-long.active {
+.home .gradually-appear.active, .home .gradually-appear-long.active, .home .gradually-appear-short.active, .home.blog .gradually-appear.active, .home.blog .gradually-appear-long.active, .home.blog .gradually-appear-short.active, .page .gradually-appear.active, .page .gradually-appear-long.active, .page .gradually-appear-short.active {
   transform: translateX(0);
   visibility: visible;
   opacity: 1;
@@ -1324,14 +1324,14 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   padding: 120px 15% 0;
   background-color: transparent;
 }
-.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear h3 {
+.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear-short h3 {
   position: relative;
   padding-left: 1.55rem;
   font-size: 1.55rem;
   text-align: left;
   letter-spacing: 0;
 }
-.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear h3::before {
+.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear-short h3::before {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -1341,39 +1341,39 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   height: 1.55rem;
   background-color: #BB9A01;
 }
-.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear h3::after {
+.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear-short h3::after {
   position: unset;
 }
-.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear ul {
+.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear-short ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   margin: 30px 0 120px;
 }
-.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear ul li {
+.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear-short ul li {
   width: 100%;
   height: 100%;
 }
-.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear ul li a {
+.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear-short ul li a {
   display: block;
   height: 100%;
 }
-.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear ul li a .photo-frame {
+.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear-short ul li a .photo-frame {
   width: 100%;
   aspect-ratio: 1;
 }
-.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear ul li a .photo-frame img {
+.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear-short ul li a .photo-frame img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear ul li a h4 {
+.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear-short ul li a h4 {
   margin: 15px 0;
   font-size: 1.3rem;
   line-height: 1em;
   font-weight: 600;
 }
-.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear ul li a p {
+.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear-short ul li a p {
   line-height: 1.5em;
 }
 
