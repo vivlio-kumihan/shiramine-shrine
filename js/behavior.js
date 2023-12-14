@@ -82,7 +82,6 @@ const modals = document.querySelectorAll(".modal"),
 openTriggers.forEach((openTrigger, idx) => {
   //「開くボタン」をクリックしてモーダルを開く
   const modalOpen = () => {
-    console.log(modals[idx], "click")
     modals[idx].classList.add("activate-modal");
   };
   openTrigger.addEventListener("click", () => {

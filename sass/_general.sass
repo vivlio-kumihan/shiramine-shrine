@@ -145,8 +145,8 @@ body
           padding-left: 20px
           background-color: fw.$purple-light
         &:last-of-type
-          padding: 20px 20px
           width: 80%
+          padding: 20px 20px
       + li
         border-top: 1px solid fw.$gold
   +max(md)
@@ -202,3 +202,20 @@ body
       left: 0
     &.none-letter-space
       letter-spacing: 0
+
+.home, .home.blog, .page
+  .leading-square-header
+    position: relative
+    padding-left: 1.55rem
+    font-size: 1.55rem
+    text-align: left
+    letter-spacing: 0
+    &::before
+      +fw.positionAbsoluteCTL($top: true)
+      left: 0
+      content: ""
+      width: 5px
+      height: 1.55rem
+      background-color: fw.$gold
+    &::after
+      position: unset
