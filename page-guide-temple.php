@@ -26,13 +26,12 @@
           </ul>
 
           <div class="contents guide-map">
-            <div class="gradually-appear-long">
+            <div class="header">
               <h3>境内のご案内</h3>
-              <p class="note">※左の項目からお選びください。</p>
-              <div class="Illustrative-map">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/guide-map.jpg" alt="">
-                <div class="spot-light jisyu-sha"></div>
-              </div>
+              <p class="note">※<span class="changeWord"></span>の項目からお選びください。</p>
+            </div>
+            <div class="Illustrative-map">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-map.jpg" alt="">
               <ul>
                 <li>
                   <div class="modal-open-trigger jisyushya">地主社（じしゅしゃ）</div>
@@ -178,7 +177,7 @@
             </div>
             <div>
               <dt>柊大明神</dt>
-              <dd>厄除延命長寿 ※節分祭にあわて『柊 護符』特別授与 | お知らせをご参照ください。</dd>
+              <dd>厄除延命長寿 <span>※節分祭にあわて『柊 護符』特別授与 | お知らせをご参照ください。</span></dd>
             </div>
             <div>
               <dt>今宮大神</dt>

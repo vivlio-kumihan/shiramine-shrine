@@ -123,7 +123,7 @@
                       grid-column: 1/2
                       grid-row: 1/2
                   + .flex-container
-                    margin-top: 50px
+                    margin-top: 20px
                   img
                     width: 100%
                     aspect-ratio: 3/2
@@ -212,23 +212,23 @@
             +max(md)
               padding: 40px 0 0
               &:last-of-type
-                padding-bottom: 40px
+                padding-bottom: 20px
               .gradually-appear, .gradually-appear-long
-                h3
-                  font-size: 1.5rem
-                  letter-spacing: 0
-                  &::before, &::after
-                    width: calc( 50% - 90px)
+                // h3
+                //   font-size: 1.5rem
+                //   letter-spacing: 0
+                //   &::before, &::after
+                //     width: calc( 50% - 90px)
                 .inner-contents
-                  padding: 40px 15px
+                  padding: 40px 20px 20px
                   div
                     font-size: 1.25rem
                     line-height: 1.25em
                     + div
-                      margin-top: 15px
+                      // margin-top: 15px
                     br
                       display: block
-                  .flex-container, .flex-container.reverse-irregularity-history
+                  .flex-container, .flex-container.reverse-irregularity-history, .flex-container.irregularity-gosaizin
                     grid-template-columns: repeat(1, 1fr)
                     gap: 10px
                     .size-learge
@@ -274,6 +274,13 @@
                       grid-row: 1/2
                   + .flex-container
                     margin-top: 20px
+                  .flex-container.irregularity-gosaizin
+                    .size-small
+                      grid-column: 1/2
+                      grid-row: 2/2
+                    .paragraph
+                      grid-column: 1/2
+                      grid-row: 1/2
 .page
   main
     .container.gosaizin, .container.gobyo, .container.history
@@ -284,4 +291,4 @@
               .inner-contents
                 +max(md)
                   .flex-container
-                    margin-top: 30px
+                    // margin-top: 30px

@@ -204,6 +204,14 @@ body
       letter-spacing: 0
 
 .home, .home.blog, .page
+  h3, .guide-temple-modal-header
+    +max(md)
+      font-size: 1.5rem
+      letter-spacing: 0
+      &::before, &::after
+        width: calc( 50% - 90px)
+
+.home, .home.blog, .page
   .leading-square-header
     position: relative
     padding-left: 1.55rem

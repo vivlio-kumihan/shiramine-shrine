@@ -61,7 +61,7 @@ document.addEventListener("scroll", function () {
       if (argElem.indexOf('gradually-appear-short') !== -1) {
         return elem.clientHeight / 30;
       } else if (argElem.indexOf('gradually-appear-long') !== -1) {
-        return elem.clientHeight / 15;
+        return elem.clientHeight / 20;
       } else if (argElem.indexOf('gradually-appear') !== -1) {
         return elem.clientHeight / 3;
       }
@@ -103,6 +103,19 @@ openTriggers.forEach((openTrigger, idx) => {
   addEventListener("click", modalOut);
 });
 
+// スクリーンサイズに応じて文言を変更する
+const handleUpdateText = () => {
+  const changeWord = document.querySelector(".changeWord");
+  if (window.innerWidth < 768) {
+    changeWord.textContent = "下";
+  } else {
+    changeWord.textContent = "左";
+  }
+};
+// 初回実行
+handleUpdateText();
+// スクリーンサイズの変更を監視
+window.addEventListener('resize', handleUpdateText);
 
 // // top pageのご祈祷・授与品、aboutページの画像を使ったリンク
 // const maskParent = document.querySelector(".hover-bright");
