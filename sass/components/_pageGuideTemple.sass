@@ -15,65 +15,67 @@
                 padding: 0
                 overflow: hidden
                 z-index: fw.get_index(guide-contents)
-                .gradually-appear
-                  .header
-                    width: 100%
-                    padding: 100px 100px 0
-                    h3
-                      letter-spacing: .1em
-                    .note
-                      margin-top: 20px
-                      text-align: center
-                  .Illustrative-map
-                    position: relative
-                    width: 100%
-                    aspect-ratio: 3/1.8
-                    img
-                      +fw.positionAbsoluteCTL
-                      width: 75%
-                      object-fit: contain
-                      z-index: 1
-                    ul
-                      position: absolute
-                      top: 70px
-                      left: 7%
-                      width: fit-content
-                      border-bottom: 1px solid fw.$gold
-                      z-index: fw.get_index(guide-ul)
-                      li
-                        + li
-                          border-top: 1px solid fw.$gold
-                        .modal-open-trigger
-                          display: block
-                          height: 100%
-                          padding: 20px
-                          background-color: #fff
-                          cursor: pointer
+                
+                // なんか怪しい場所　12/22まで様子見る start
+                // .gradually-appear
+                .header
+                  width: 100%
+                  padding: 100px 100px 0
+                  h3
+                    letter-spacing: .1em
+                  .note
+                    margin-top: 20px
+                    text-align: center
+                .Illustrative-map
+                  position: relative
+                  width: 100%
+                  aspect-ratio: 3/1.8
+                  img
+                    +fw.positionAbsoluteCTL
+                    width: 75%
+                    object-fit: contain
+                    z-index: 1
+                  ul
+                    position: absolute
+                    top: 70px
+                    left: 7%
+                    width: fit-content
+                    border-bottom: 1px solid fw.$gold
+                    z-index: fw.get_index(guide-ul)
+                    li
+                      + li
+                        border-top: 1px solid fw.$gold
+                      .modal-open-trigger
+                        display: block
+                        height: 100%
+                        padding: 20px
+                        background-color: #fff
+                        cursor: pointer
+                        transition: .5s
+                        opacity: .9
+                        &:hover
+                          color: #fff
+                          background-color: #aaa
+                          opacity: .6
+                      &:last-of-type
+                        > div
+                          padding: 0
                           transition: .5s
                           opacity: .9
+                          background-color: #fff
+                          > a
+                            display: block
+                            padding: 20px
                           &:hover
                             color: #fff
                             background-color: #aaa
                             opacity: .6
-                        &:last-of-type
-                          > div
-                            padding: 0
-                            transition: .5s
-                            opacity: .9
-                            background-color: #fff
-                            > a
-                              display: block
-                              padding: 20px
-                            &:hover
-                              color: #fff
-                              background-color: #aaa
-                              opacity: .6
+                // なんか怪しい場所　12/22まで様子見る　end
 
               &.reiboku
                 padding: 120px 15% 0
                 background-color: transparent
                 .gradually-appear-short
-                  .leading-square-header
                   ul
                     display: grid
                     grid-template-columns: repeat(4, 1fr)
@@ -421,16 +423,6 @@
           section
             .contents.guide-map
               +max(md)
-                .Illustrative-map
-                  ul
-.page
-  main
-    .contents
-      .container.guide-temple
-        .bg
-          section
-            .contents.guide-map
-              +max(md)
                 .header
                   padding: 0
                 .Illustrative-map
@@ -564,5 +556,14 @@
                 font-size: 1.35rem
                 &:first-of-type
                   margin-top: 0
-                  
-              
+
+// .page
+//   main
+//     .contents
+//       .container.guide-temple
+//         .bg
+//           section
+//             .contents.guide-map
+//               +max(md)
+//                 .Illustrative-map
+//                   ul              

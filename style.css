@@ -1302,23 +1302,23 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   overflow: hidden;
   z-index: 101;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear .header {
+.page main .contents .container.guide-temple .bg section .contents.guide-map .header {
   width: 100%;
   padding: 100px 100px 0;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear .header h3 {
+.page main .contents .container.guide-temple .bg section .contents.guide-map .header h3 {
   letter-spacing: 0.1em;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear .header .note {
+.page main .contents .container.guide-temple .bg section .contents.guide-map .header .note {
   margin-top: 20px;
   text-align: center;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear .Illustrative-map {
+.page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map {
   position: relative;
   width: 100%;
   aspect-ratio: 3/1.8;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear .Illustrative-map img {
+.page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1328,7 +1328,7 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
      object-fit: contain;
   z-index: 1;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear .Illustrative-map ul {
+.page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map ul {
   position: absolute;
   top: 70px;
   left: 7%;
@@ -1337,10 +1337,10 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   border-bottom: 1px solid #BB9A01;
   z-index: 102;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear .Illustrative-map ul li + li {
+.page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map ul li + li {
   border-top: 1px solid #BB9A01;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear .Illustrative-map ul li .modal-open-trigger {
+.page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map ul li .modal-open-trigger {
   display: block;
   height: 100%;
   padding: 20px;
@@ -1349,22 +1349,22 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   transition: 0.5s;
   opacity: 0.9;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear .Illustrative-map ul li .modal-open-trigger:hover {
+.page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map ul li .modal-open-trigger:hover {
   color: #fff;
   background-color: #aaa;
   opacity: 0.6;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear .Illustrative-map ul li:last-of-type > div {
+.page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map ul li:last-of-type > div {
   padding: 0;
   transition: 0.5s;
   opacity: 0.9;
   background-color: #fff;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear .Illustrative-map ul li:last-of-type > div > a {
+.page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map ul li:last-of-type > div > a {
   display: block;
   padding: 20px;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear .Illustrative-map ul li:last-of-type > div:hover {
+.page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map ul li:last-of-type > div:hover {
   color: #fff;
   background-color: #aaa;
   opacity: 0.6;
@@ -1848,6 +1848,225 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   .page main .contents .container.guide-temple .modal.temizushya .container .leading-square-header:first-of-type {
     margin-top: 0;
   }
+}
+
+.page main .contents .frame.prayer {
+  background-image: url(./img/guide-top.jpg);
+}
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+}
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper {
+  width: min(610px, 100%);
+  margin-top: 40px;
+}
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper .leading-square-header, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper .leading-square-header {
+  margin-bottom: 20px;
+}
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper .leading-square-header::before, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper .leading-square-header::before {
+  top: 58%;
+  width: 9px;
+  height: 1.7rem;
+}
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper p, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper p {
+  margin-bottom: 50px;
+  text-align: left;
+}
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper ul, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper ul {
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px 100px;
+  border: 1px solid #333;
+}
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper ul li, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper ul li {
+  text-align: center;
+}
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper ul li.tel-num, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper ul li.tel-num {
+  font-size: 1.65rem;
+  letter-spacing: 0.3em;
+}
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper ul li + li, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper ul li + li {
+  margin-top: 10px;
+}
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear button, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long button {
+  margin-top: 60px;
+}
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear:first-of-type {
+  margin-top: 0;
+}
+
+.page main .contents .container.prayer h3 {
+  margin-bottom: 30px;
+  letter-spacing: 0.07em;
+}
+.page main .contents .container.prayer h3::before, .page main .contents .container.prayer h3::after {
+  width: calc(50% - 150px);
+}
+.page main .contents .container.prayer p {
+  font-size: 1.15rem;
+  line-height: 1.75em;
+}
+.page main .contents .container.prayer p.add-space-margin-bottom {
+  margin-bottom: 20px;
+}
+.page main .contents .container.prayer button {
+  padding: 10px 60px;
+  font-size: 1rem;
+  border: 1px solid #333;
+  transition: 0.3s;
+  transform: translateX(-2px);
+}
+.page main .contents .container.prayer button:hover {
+  color: #fff;
+  background-color: #aaa;
+  border: 1px solid #aaa;
+}
+.page main .contents .container.prayer .privacy-policy-anchor {
+  padding: 3px 7px;
+  font-size: 0.65rem;
+  color: #fff;
+  background-color: #333;
+  border-radius: 2px;
+}
+.page main .contents .container.prayer .check-box {
+  display: flex;
+  align-content: center;
+}
+.page main .contents .container.prayer .check-box input[type=checkbox] {
+  position: relative;
+  margin-right: 5px;
+  width: 0.8rem;
+  height: 0.8rem;
+  border: 1px solid #000;
+}
+.page main .contents .container.prayer .check-box input[type=checkbox]:checked:before {
+  position: absolute;
+  top: 0px;
+  left: 4px;
+  transform: rotate(50deg);
+  width: 5px;
+  height: 10px;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  content: "";
+}
+.page main .contents .container.prayer .check-box label {
+  font-size: 0.75rem;
+}
+
+.page main .contents .container.prayer .form div {
+  display: grid;
+  grid-template-columns: 1fr 3.5fr;
+  gap: 10px;
+  align-items: center;
+  font-size: 1.15rem;
+}
+.page main .contents .container.prayer .form div + div {
+  margin-top: 30px;
+}
+.page main .contents .container.prayer .form div dt p {
+  display: flex;
+  align-items: flex-start;
+  gap: 2px;
+  font-weight: normal;
+}
+.page main .contents .container.prayer .form div dt p span {
+  margin-top: -5px;
+  font-size: 0.5rem;
+}
+.page main .contents .container.prayer .form div dd {
+  height: 3rem;
+}
+.page main .contents .container.prayer .form div dd p span {
+  position: relative;
+}
+.page main .contents .container.prayer .form div dd p span input {
+  width: 100%;
+  height: 3rem;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #333;
+}
+.page main .contents .container.prayer .form div dd p span textarea {
+  width: 100%;
+  height: 15rem;
+  border: 1px solid #333;
+}
+.page main .contents .container.prayer .form div dd p span .wpcf7-not-valid-tip {
+  position: absolute;
+  bottom: -115%;
+  left: 0%;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1;
+}
+.page main .contents .container.prayer .form div.note {
+  margin: 50px 0 5px;
+}
+.page main .contents .container.prayer .form div.note dd {
+  display: flex;
+  border: unset;
+  align-items: flex-end;
+  font-size: 1rem;
+}
+.page main .contents .container.prayer .form div:nth-of-type(2) {
+  margin-top: 0;
+}
+.page main .contents .container.prayer .form div.birthday-age dd, .page main .contents .container.prayer .form div.postal-code dd, .page main .contents .container.prayer .form div.date-time dd {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.page main .contents .container.prayer .form div.birthday-age dd div, .page main .contents .container.prayer .form div.postal-code dd div, .page main .contents .container.prayer .form div.date-time dd div {
+  display: block;
+}
+.page main .contents .container.prayer .form div.birthday-age dd div.postal-code-4, .page main .contents .container.prayer .form div.postal-code dd div.postal-code-4, .page main .contents .container.prayer .form div.date-time dd div.postal-code-4 {
+  margin-top: 0;
+}
+.page main .contents .container.prayer .form div.birthday-age dd div.age, .page main .contents .container.prayer .form div.postal-code dd div.age, .page main .contents .container.prayer .form div.date-time dd div.age {
+  margin-top: 0;
+}
+.page main .contents .container.prayer .form div.birthday-age dd p, .page main .contents .container.prayer .form div.postal-code dd p, .page main .contents .container.prayer .form div.date-time dd p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.page main .contents .container.prayer .form div.birthday-age dd p span input, .page main .contents .container.prayer .form div.postal-code dd p span input, .page main .contents .container.prayer .form div.date-time dd p span input {
+  width: 100%;
+}
+.page main .contents .container.prayer .form div.date-time dd p span input, .page main .contents .container.prayer .form div.date-time dd .time span input, .page main .contents .container.prayer .form div.birthday-age dd p span input, .page main .contents .container.prayer .form div.birthday-age dd .time span input {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-right: 20px;
+  text-align: right;
+}
+.page main .contents .container.prayer .form div.date-time dd .age input, .page main .contents .container.prayer .form div.birthday-age dd .age input {
+  padding-right: 0;
+}
+.page main .contents .container.prayer .form div.date-time dd p span input, .page main .contents .container.prayer .form div.date-time dd .time span input, .page main .contents .container.prayer .form div.birthday-age dd p span input, .page main .contents .container.prayer .form div.birthday-age dd .time span input {
+  text-align: center;
+}
+
+.page main .contents .container.prayer .form .date-time dd .date p span .wpcf7-not-valid-tip, .page main .contents .container.prayer .form .date-time dd .time p span .wpcf7-not-valid-tip {
+  bottom: -34%;
+}
+.page main .contents .container.prayer .form .date-time dd .time p span .wpcf7-not-valid-tip {
+  white-space: nowrap;
+}
+
+.page main .contents .container.prayer .form .prayer-member-length dd p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.page main .contents .container.prayer .form .prayer-member-length dd p span input {
+  width: 10rem;
+  text-align: right;
 }
 
 .page main .contents.contact {
