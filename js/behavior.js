@@ -1,5 +1,5 @@
+// top pageのお知らせ／トピックスのリスト
 if (document.querySelector('body.home')) {
-  // top pageのお知らせ／トピックスのリスト
   const postItem = document.querySelectorAll(".post-item");
   postItem.forEach(elem => {
     elem.addEventListener("mouseenter", () => {
@@ -9,10 +9,28 @@ if (document.querySelector('body.home')) {
       elem.classList.remove("color-blue");
     });
   });  
+}
 
-  // top pageのご祈祷・授与品、aboutページの画像を使ったリンク
-  const maskParent = document.querySelector(".hover-bright");
-  Array.from(maskParent.children).forEach((elem) => {
+// スクリーンサイズに応じて文言を変更する
+if (document.querySelector('body.page-id-10')) {
+  const handleUpdateText = () => {
+    const changeWord = document.querySelector(".changeWord");
+    if (window.innerWidth < 768) {
+      changeWord.textContent = "下";
+    } else {
+      changeWord.textContent = "左";
+    }
+  };
+  // 初回実行
+  handleUpdateText();
+  // スクリーンサイズの変更を監視
+  window.addEventListener('resize', handleUpdateText);
+}
+
+// top pageのご祈祷・授与品、aboutページの画像を使ったリンク
+const maskParents = document.querySelectorAll(".hover-bright");
+maskParents.forEach(parent => {
+  Array.from(parent.children).forEach((elem) => {
     if (elem.classList.value !== "hover") {
       elem.addEventListener("mouseenter", () => {
         elem.classList.add("hover");
@@ -22,7 +40,7 @@ if (document.querySelector('body.home')) {
       });
     }
   });  
-}
+});
 
 // headerのglobal-menu pull-down-list
 const pullDownList = document.querySelectorAll(".global-menu .lower > .menu > .menu-item");
@@ -103,32 +121,6 @@ openTriggers.forEach((openTrigger, idx) => {
   addEventListener("click", modalOut);
 });
 
-// スクリーンサイズに応じて文言を変更する
-const handleUpdateText = () => {
-  const changeWord = document.querySelector(".changeWord");
-  if (window.innerWidth < 768) {
-    changeWord.textContent = "下";
-  } else {
-    changeWord.textContent = "左";
-  }
-};
-// 初回実行
-handleUpdateText();
-// スクリーンサイズの変更を監視
-window.addEventListener('resize', handleUpdateText);
-
-// // top pageのご祈祷・授与品、aboutページの画像を使ったリンク
-// const maskParent = document.querySelector(".hover-bright");
-// Array.from(maskParent.children).forEach((elem) => {
-//   if (elem.classList.value !== "hover") {
-//     elem.addEventListener("mouseenter", () => {
-//       elem.classList.add("hover");
-//     });
-//     elem.addEventListener("mouseleave", () => {
-//       elem.classList.remove("hover");
-//     });
-//   }
-// });
 
 // // Appear and Hide Header 
 // // とりあえず見送り

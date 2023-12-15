@@ -1302,23 +1302,23 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   overflow: hidden;
   z-index: 101;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .header {
+.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear .header {
   width: 100%;
   padding: 100px 100px 0;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .header h3 {
+.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear .header h3 {
   letter-spacing: 0.1em;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .header .note {
+.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear .header .note {
   margin-top: 20px;
   text-align: center;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map {
+.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear .Illustrative-map {
   position: relative;
   width: 100%;
   aspect-ratio: 3/1.8;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map img {
+.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear .Illustrative-map img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1328,7 +1328,7 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
      object-fit: contain;
   z-index: 1;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map ul {
+.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear .Illustrative-map ul {
   position: absolute;
   top: 70px;
   left: 7%;
@@ -1337,10 +1337,10 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   border-bottom: 1px solid #BB9A01;
   z-index: 102;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map ul li + li {
+.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear .Illustrative-map ul li + li {
   border-top: 1px solid #BB9A01;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map ul li .modal-open-trigger {
+.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear .Illustrative-map ul li .modal-open-trigger {
   display: block;
   height: 100%;
   padding: 20px;
@@ -1349,22 +1349,22 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   transition: 0.5s;
   opacity: 0.9;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map ul li .modal-open-trigger:hover {
+.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear .Illustrative-map ul li .modal-open-trigger:hover {
   color: #fff;
   background-color: #aaa;
   opacity: 0.6;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map ul li:last-of-type > div {
+.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear .Illustrative-map ul li:last-of-type > div {
   padding: 0;
   transition: 0.5s;
   opacity: 0.9;
   background-color: #fff;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map ul li:last-of-type > div > a {
+.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear .Illustrative-map ul li:last-of-type > div > a {
   display: block;
   padding: 20px;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map ul li:last-of-type > div:hover {
+.page main .contents .container.guide-temple .bg section .contents.guide-map .gradually-appear .Illustrative-map ul li:last-of-type > div:hover {
   color: #fff;
   background-color: #aaa;
   opacity: 0.6;

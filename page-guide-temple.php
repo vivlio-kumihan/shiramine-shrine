@@ -26,29 +26,31 @@
           </ul>
 
           <div class="contents guide-map">
-            <div class="header">
-              <h3>境内のご案内</h3>
-              <p class="note">※<span class="changeWord"></span>の項目からお選びください。</p>
-            </div>
-            <div class="Illustrative-map">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-map.jpg" alt="">
-              <ul>
-                <li>
-                  <div class="modal-open-trigger jisyushya">地主社（じしゅしゃ）</div>
-                </li>
-                <li>
-                  <div class="modal-open-trigger senryushya">潜龍社（せんりゅうしゃ）</div>
-                </li>
-                <li>
-                  <div class="modal-open-trigger tomonoshya">伴緒社（とものおしゃ）</div>
-                </li>
-                <li>
-                  <div class="modal-open-trigger temizushya">手水舎</div>
-                </li>
-                <li>
-                  <div><a href="#reiboku">霊木</a></div>
-                </li>
-              </ul>
+            <div class="gradually-appear">
+              <div class="header">
+                <h3>境内のご案内</h3>
+                <p class="note">※<span class="changeWord"></span>の項目からお選びください。</p>
+              </div>
+              <div class="Illustrative-map">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/guide-map.jpg" alt="">
+                <ul>
+                  <li>
+                    <div class="modal-open-trigger jisyushya">地主社（じしゅしゃ）</div>
+                  </li>
+                  <li>
+                    <div class="modal-open-trigger senryushya">潜龍社（せんりゅうしゃ）</div>
+                  </li>
+                  <li>
+                    <div class="modal-open-trigger tomonoshya">伴緒社（とものおしゃ）</div>
+                  </li>
+                  <li>
+                    <div class="modal-open-trigger temizushya">手水舎</div>
+                  </li>
+                  <li>
+                    <div><a href="#reiboku">霊木</a></div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
 
