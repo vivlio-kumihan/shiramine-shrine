@@ -92,11 +92,11 @@ document.addEventListener("scroll", function () {
   });
 });
 
-// modal
+// modal about page
 const modals = document.querySelectorAll(".modal"),
       openTriggers = document.querySelectorAll(".modal-open-trigger"),
       closeBtns = document.querySelectorAll(".modal-close-btn");
-
+console.log(openTriggers);
 openTriggers.forEach((openTrigger, idx) => {
   //「開くボタン」をクリックしてモーダルを開く
   const modalOpen = () => {
