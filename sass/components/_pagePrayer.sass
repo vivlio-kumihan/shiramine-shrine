@@ -39,7 +39,7 @@
                         letter-spacing: .3em
                       + li
                         margin-top: 10px
-                button
+                .dl-pdf-btn
                   margin-top: 60px
               .gradually-appear:first-of-type
                 margin-top: 0
@@ -101,6 +101,7 @@
     .contents
       .container.prayer
         .form
+          padding-bottom: 15rem
           div
             display: grid
             grid-template-columns: 1fr 3.5fr
@@ -140,8 +141,6 @@
                     font-size: .9rem
                     font-weight: 600
                     line-height: 1
-
-                    
             &.note
               margin: 50px 0 5px
               dd
@@ -151,7 +150,7 @@
                 font-size: 1rem
             &:nth-of-type(2)
               margin-top: 0
-            &.birthday-age, &.postal-code, &.date-time
+            &.birthday, &.age, &.postal-code, &.date, &.time, &.prayer-member-length, &.group-member-length
               dd
                 display: flex
                 justify-content: flex-start
@@ -169,23 +168,22 @@
                   gap: 5px
                   span
                     input
-                      width: 100%
-            &.date-time, &.birthday-age
+                      width: 10rem
+            &.sender-name, &.group-leader
               dd
-                p, .time
+                div
+                p
                   span
-                    input   
-                      width: fit-content
-                      padding-right: 20px
-                      text-align: right
-                .age
-                  input
-                    padding-right: 0
-                p, .time
-                  span
-                    input   
-                      text-align: center
-
+                    input
+                      width: 25rem
+                      margin-right: 5px
+        .confirm
+          display: flex
+          flex-direction: column
+          align-items: center
+          p
+            margin: 0
+          
 .page
   main
     .contents
@@ -208,13 +206,82 @@
     .contents
       .container.prayer
         .form
-          .prayer-member-length
+          .prayer-member-length, .group-member-length
             dd
               p
                 display: flex
                 align-items: center
                 gap: 5px
                 span
-                  input
-                    width: 10rem
-                    text-align: right
+                  .wpcf7-not-valid-tip                                    
+                    bottom: -34%
+                    white-space: nowrap
+                    input
+                      width: 10rem
+                      text-align: right
+.page
+  main
+    .contents
+      .container.prayer
+        .form
+          div
+            .prayer-message
+              position: relative
+              &::before
+                position: absolute
+                top: -15px
+                left: 0
+                content: "健闘祈願【試合・大会名・試合日】・スポーツ上達・技術根性育成・厄除・心願成就 等々"
+                width: 100%
+                padding-bottom: 5px
+                font-size: .8rem
+                line-height: 1em
+                z-index: 100                    
+
+.page
+  main
+    .contents
+      .container.prayer
+        .bg
+          section
+            .contents.prayer
+              .gradually-appear-long
+                .wpcf7.js
+                  table
+                    tr
+                      th
+                        width: 100%
+                      &:last-of-type
+                        display: none
+                  .wpcf7cp-btns
+                    display: flex
+                    justify-content: center
+                    gap: 30px
+                    margin: 0
+                    button
+                      margin: 0
+
+.page
+  main
+    .contents
+      .container.prayer
+        .confirm
+          .check-box
+            label
+              display: flex
+              align-items: center  
+              span
+                padding-bottom: 2px
+          .agreement
+            width: 100%
+            p
+              button.prayer-submit
+                margin-top: 0
+                color: #333
+                background-color: #fff
+                border: 1px solid #333
+                border-radius: 0
+                &:hover
+                  color: #fff
+                  background-color: #aaa
+                  border: 1px solid #aaa

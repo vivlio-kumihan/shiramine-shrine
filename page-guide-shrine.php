@@ -10,7 +10,7 @@
       </div>
     <?php endif; ?>
 
-    <div class="container guide-temple">
+    <div class="container guide-shrine">
       <div class="bg">
         <section>
           <ul class="bread-crumb">
@@ -21,7 +21,7 @@
               >
             </li>
             <li>
-              <a href="<?php echo esc_url(home_url('/guide-temple/')); ?>">境内のご案内</a>
+              <a href="<?php echo esc_url(home_url('/guide-shrine/')); ?>">境内のご案内</a>
             </li>
           </ul>
 
@@ -141,7 +141,7 @@
             <span></span>
             <span></span>
           </button>
-          <h4 class="guide-temple-modal-header">地主社</h4>
+          <h4 class="guide-shrine-modal-header">地主社</h4>
           <div class="flex-grid">
             <div class="photo-frame">
               <img src="<?php echo get_template_directory_uri(); ?>/img/guide-jisyusya-01.jpg" alt="">
@@ -203,7 +203,7 @@
             <span></span>
             <span></span>
           </button>
-          <h4 class="guide-temple-modal-header">潜龍社</h4>
+          <h4 class="guide-shrine-modal-header">潜龍社</h4>
           <div class="flex-grid">
             <div class="paragraph">
               <h5 class="leading-square-header">御祭神</h5>
@@ -229,7 +229,7 @@
             <span></span>
             <span></span>
           </button>
-          <h4 class="guide-temple-modal-header">伴緒社</h4>
+          <h4 class="guide-shrine-modal-header">伴緒社</h4>
           <div class="flex-grid">
             <figure>
               <img src="<?php echo get_template_directory_uri(); ?>/img/guide-tomonosha-01.jpg" alt="">
@@ -267,7 +267,7 @@
             <span></span>
             <span></span>
           </button>
-          <h4 class="guide-temple-modal-header">手水舎</h4>
+          <h4 class="guide-shrine-modal-header">手水舎</h4>
           <h5 class="leading-square-header">飛鳥井</h5>
           <div class="flex-grid">
             <div class="paragraph">
@@ -299,7 +299,7 @@
             <span></span>
             <span></span>
           </button>
-          <h4 class="guide-temple-modal-header">小賀玉の木</h4>
+          <h4 class="guide-shrine-modal-header">小賀玉の木</h4>
           <div class="flex-grid">
             <div class="paragraph">
               <dl class="technical-name">
@@ -345,7 +345,7 @@
             <span></span>
             <span></span>
           </button>
-          <h4 class="guide-temple-modal-header"><ruby>含笑花<rt>ガンシュウゲ</rt></ruby></h4>
+          <h4 class="guide-shrine-modal-header"><ruby>含笑花<rt>ガンシュウゲ</rt></ruby></h4>
           <div class=" flex-grid">
             <div class="paragraph">
               <dl class="technical-name">
@@ -379,7 +379,7 @@
             <span></span>
             <span></span>
           </button>
-          <h4 class="guide-temple-modal-header">ムクロジの木</h4>
+          <h4 class="guide-shrine-modal-header">ムクロジの木</h4>
           <div class="flex-grid">
             <div class="paragraph">
               <dl class="technical-name">
@@ -418,7 +418,7 @@
             <span></span>
             <span></span>
           </button>
-          <h4 class="guide-temple-modal-header">梶の木</h4>
+          <h4 class="guide-shrine-modal-header">梶の木</h4>
           <div class=" flex-grid">
             <div class="paragraph">
               <dl class="technical-name">
@@ -454,7 +454,7 @@
             <span></span>
             <span></span>
           </button>
-          <h4 class="guide-temple-modal-header">右近の橘</h4>
+          <h4 class="guide-shrine-modal-header">右近の橘</h4>
           <div class=" flex-grid">
             <div class="paragraph">
               <dl class="technical-name">
@@ -484,7 +484,7 @@
             <span></span>
             <span></span>
           </button>
-          <h4 class="guide-temple-modal-header">鬱金の桜<span class="left-side">（</span>黄桜<span class="right-side">）</span></h4>
+          <h4 class="guide-shrine-modal-header">鬱金の桜<span class="left-side">（</span>黄桜<span class="right-side">）</span></h4>
           <div class=" flex-grid">
             <div class="paragraph">
               <dl class="technical-name">
@@ -514,7 +514,7 @@
             <span></span>
             <span></span>
           </button>
-          <h4 class="guide-temple-modal-header">三葉の松</h4>
+          <h4 class="guide-shrine-modal-header">三葉の松</h4>
           <div class=" flex-grid">
             <div class="paragraph">
               <dl class="technical-name">
@@ -550,7 +550,7 @@
             <span></span>
             <span></span>
           </button>
-          <h4 class="guide-temple-modal-header">季節の花</h4>
+          <h4 class="guide-shrine-modal-header">季節の花</h4>
           <div>
             <figure>
               <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-fourseason-01.jpg" alt="">

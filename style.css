@@ -197,7 +197,7 @@ body .page-top-arrow {
   margin-right: 1em;
 }
 
-.home h3, .home .guide-temple-modal-header, .home.blog h3, .home.blog .guide-temple-modal-header, .page h3, .page .guide-temple-modal-header {
+.home h3, .home .guide-shrine-modal-header, .home.blog h3, .home.blog .guide-shrine-modal-header, .page h3, .page .guide-shrine-modal-header {
   position: relative;
   width: 100%;
   text-align: center;
@@ -205,7 +205,7 @@ body .page-top-arrow {
   line-height: 1;
   letter-spacing: 0.5em;
 }
-.home h3::before, .home h3::after, .home .guide-temple-modal-header::before, .home .guide-temple-modal-header::after, .home.blog h3::before, .home.blog h3::after, .home.blog .guide-temple-modal-header::before, .home.blog .guide-temple-modal-header::after, .page h3::before, .page h3::after, .page .guide-temple-modal-header::before, .page .guide-temple-modal-header::after {
+.home h3::before, .home h3::after, .home .guide-shrine-modal-header::before, .home .guide-shrine-modal-header::after, .home.blog h3::before, .home.blog h3::after, .home.blog .guide-shrine-modal-header::before, .home.blog .guide-shrine-modal-header::after, .page h3::before, .page h3::after, .page .guide-shrine-modal-header::before, .page .guide-shrine-modal-header::after {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -214,22 +214,22 @@ body .page-top-arrow {
   height: 1px;
   background-color: #333;
 }
-.home h3::before, .home .guide-temple-modal-header::before, .home.blog h3::before, .home.blog .guide-temple-modal-header::before, .page h3::before, .page .guide-temple-modal-header::before {
+.home h3::before, .home .guide-shrine-modal-header::before, .home.blog h3::before, .home.blog .guide-shrine-modal-header::before, .page h3::before, .page .guide-shrine-modal-header::before {
   right: 0;
 }
-.home h3::after, .home .guide-temple-modal-header::after, .home.blog h3::after, .home.blog .guide-temple-modal-header::after, .page h3::after, .page .guide-temple-modal-header::after {
+.home h3::after, .home .guide-shrine-modal-header::after, .home.blog h3::after, .home.blog .guide-shrine-modal-header::after, .page h3::after, .page .guide-shrine-modal-header::after {
   left: 0;
 }
-.home h3.none-letter-space, .home .guide-temple-modal-header.none-letter-space, .home.blog h3.none-letter-space, .home.blog .guide-temple-modal-header.none-letter-space, .page h3.none-letter-space, .page .guide-temple-modal-header.none-letter-space {
+.home h3.none-letter-space, .home .guide-shrine-modal-header.none-letter-space, .home.blog h3.none-letter-space, .home.blog .guide-shrine-modal-header.none-letter-space, .page h3.none-letter-space, .page .guide-shrine-modal-header.none-letter-space {
   letter-spacing: 0;
 }
 
 @media (width < 768px) {
-  .home h3, .home .guide-temple-modal-header, .home.blog h3, .home.blog .guide-temple-modal-header, .page h3, .page .guide-temple-modal-header {
+  .home h3, .home .guide-shrine-modal-header, .home.blog h3, .home.blog .guide-shrine-modal-header, .page h3, .page .guide-shrine-modal-header {
     font-size: 1.5rem;
     letter-spacing: 0;
   }
-  .home h3::before, .home h3::after, .home .guide-temple-modal-header::before, .home .guide-temple-modal-header::after, .home.blog h3::before, .home.blog h3::after, .home.blog .guide-temple-modal-header::before, .home.blog .guide-temple-modal-header::after, .page h3::before, .page h3::after, .page .guide-temple-modal-header::before, .page .guide-temple-modal-header::after {
+  .home h3::before, .home h3::after, .home .guide-shrine-modal-header::before, .home .guide-shrine-modal-header::after, .home.blog h3::before, .home.blog h3::after, .home.blog .guide-shrine-modal-header::before, .home.blog .guide-shrine-modal-header::after, .page h3::before, .page h3::after, .page .guide-shrine-modal-header::before, .page .guide-shrine-modal-header::after {
     width: calc(50% - 90px);
   }
 }
@@ -1296,29 +1296,29 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
 .page main .contents .frame.guide {
   background-image: url(./img/guide-top.jpg);
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map {
+.page main .contents .container.guide-shrine .bg section .contents.guide-map {
   margin-top: 0;
   padding: 0;
   overflow: hidden;
   z-index: 101;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .header {
+.page main .contents .container.guide-shrine .bg section .contents.guide-map .header {
   width: 100%;
   padding: 100px 100px 0;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .header h3 {
+.page main .contents .container.guide-shrine .bg section .contents.guide-map .header h3 {
   letter-spacing: 0.1em;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .header .note {
+.page main .contents .container.guide-shrine .bg section .contents.guide-map .header .note {
   margin-top: 20px;
   text-align: center;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map {
+.page main .contents .container.guide-shrine .bg section .contents.guide-map .Illustrative-map {
   position: relative;
   width: 100%;
   aspect-ratio: 3/1.8;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map img {
+.page main .contents .container.guide-shrine .bg section .contents.guide-map .Illustrative-map img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1328,7 +1328,7 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
      object-fit: contain;
   z-index: 1;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map ul {
+.page main .contents .container.guide-shrine .bg section .contents.guide-map .Illustrative-map ul {
   position: absolute;
   top: 70px;
   left: 7%;
@@ -1337,10 +1337,10 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   border-bottom: 1px solid #BB9A01;
   z-index: 102;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map ul li + li {
+.page main .contents .container.guide-shrine .bg section .contents.guide-map .Illustrative-map ul li + li {
   border-top: 1px solid #BB9A01;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map ul li .modal-open-trigger {
+.page main .contents .container.guide-shrine .bg section .contents.guide-map .Illustrative-map ul li .modal-open-trigger {
   display: block;
   height: 100%;
   padding: 20px;
@@ -1349,67 +1349,67 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   transition: 0.5s;
   opacity: 0.9;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map ul li .modal-open-trigger:hover {
+.page main .contents .container.guide-shrine .bg section .contents.guide-map .Illustrative-map ul li .modal-open-trigger:hover {
   color: #fff;
   background-color: #aaa;
   opacity: 0.6;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map ul li:last-of-type > div {
+.page main .contents .container.guide-shrine .bg section .contents.guide-map .Illustrative-map ul li:last-of-type > div {
   padding: 0;
   transition: 0.5s;
   opacity: 0.9;
   background-color: #fff;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map ul li:last-of-type > div > a {
+.page main .contents .container.guide-shrine .bg section .contents.guide-map .Illustrative-map ul li:last-of-type > div > a {
   display: block;
   padding: 20px;
 }
-.page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map ul li:last-of-type > div:hover {
+.page main .contents .container.guide-shrine .bg section .contents.guide-map .Illustrative-map ul li:last-of-type > div:hover {
   color: #fff;
   background-color: #aaa;
   opacity: 0.6;
 }
-.page main .contents .container.guide-temple .bg section .contents.reiboku {
+.page main .contents .container.guide-shrine .bg section .contents.reiboku {
   padding: 120px 15% 0;
   background-color: transparent;
 }
-.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear-short ul {
+.page main .contents .container.guide-shrine .bg section .contents.reiboku .gradually-appear-short ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   margin: 30px 0 120px;
 }
-.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear-short ul li {
+.page main .contents .container.guide-shrine .bg section .contents.reiboku .gradually-appear-short ul li {
   width: 100%;
   height: 100%;
 }
-.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear-short ul li .modal-open-trigger {
+.page main .contents .container.guide-shrine .bg section .contents.reiboku .gradually-appear-short ul li .modal-open-trigger {
   display: block;
   height: 100%;
   cursor: pointer;
 }
-.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear-short ul li .modal-open-trigger .photo-frame {
+.page main .contents .container.guide-shrine .bg section .contents.reiboku .gradually-appear-short ul li .modal-open-trigger .photo-frame {
   width: 100%;
   aspect-ratio: 1;
 }
-.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear-short ul li .modal-open-trigger .photo-frame img {
+.page main .contents .container.guide-shrine .bg section .contents.reiboku .gradually-appear-short ul li .modal-open-trigger .photo-frame img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear-short ul li .modal-open-trigger h4 {
+.page main .contents .container.guide-shrine .bg section .contents.reiboku .gradually-appear-short ul li .modal-open-trigger h4 {
   margin: 15px 0;
   font-size: 1.3rem;
   line-height: 1em;
   font-weight: 600;
 }
-.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear-short ul li .modal-open-trigger h4.header-ganshyuge {
+.page main .contents .container.guide-shrine .bg section .contents.reiboku .gradually-appear-short ul li .modal-open-trigger h4.header-ganshyuge {
   margin: 3px 0 13.5px;
 }
-.page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear-short ul li .modal-open-trigger p {
+.page main .contents .container.guide-shrine .bg section .contents.reiboku .gradually-appear-short ul li .modal-open-trigger p {
   line-height: 1.5em;
 }
-.page main .contents .container.guide-temple .modal {
+.page main .contents .container.guide-shrine .modal {
   position: fixed;
   top: 0;
   right: -100%;
@@ -1422,19 +1422,19 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   opacity: 0;
   z-index: 105;
 }
-.page main .contents .container.guide-temple .modal.activate-modal {
+.page main .contents .container.guide-shrine .modal.activate-modal {
   right: 0;
   visibility: visible;
   opacity: 1;
 }
-.page main .contents .container.guide-temple .modal .container {
+.page main .contents .container.guide-shrine .modal .container {
   position: relative;
   margin: 90px auto;
   width: 74%;
   padding: 5rem 9rem;
   background: url(./img/bg.jpg) repeat;
 }
-.page main .contents .container.guide-temple .modal .container .modal-close-btn {
+.page main .contents .container.guide-shrine .modal .container .modal-close-btn {
   position: absolute;
   top: 60px;
   right: 60px;
@@ -1445,7 +1445,7 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   transform: translateY(0);
   transition: 0.3s;
 }
-.page main .contents .container.guide-temple .modal .container .modal-close-btn span {
+.page main .contents .container.guide-shrine .modal .container .modal-close-btn span {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1456,180 +1456,180 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   height: 2px;
   background-color: #333;
 }
-.page main .contents .container.guide-temple .modal .container .modal-close-btn span:first-of-type {
+.page main .contents .container.guide-shrine .modal .container .modal-close-btn span:first-of-type {
   transform: rotate(45deg);
   transform-origin: center center 0;
 }
-.page main .contents .container.guide-temple .modal .container .modal-close-btn span:last-of-type {
+.page main .contents .container.guide-shrine .modal .container .modal-close-btn span:last-of-type {
   transform: rotate(-45deg);
   transform-origin: center center 0;
 }
-.page main .contents .container.guide-temple .modal .container .modal-close-btn:hover {
+.page main .contents .container.guide-shrine .modal .container .modal-close-btn:hover {
   background-color: #eee;
   transform: translateY(-1px);
   opacity: 0.5;
 }
-.page main .contents .container.guide-temple .modal .container .guide-temple-modal-header {
+.page main .contents .container.guide-shrine .modal .container .guide-shrine-modal-header {
   font-size: 1.95rem;
   margin-bottom: 50px;
   letter-spacing: 0;
 }
-.page main .contents .container.guide-temple .modal .container p {
+.page main .contents .container.guide-shrine .modal .container p {
   font-size: 1.15rem;
   line-height: 1.75em;
 }
-.page main .contents .container.guide-temple .modal .container p + p {
+.page main .contents .container.guide-shrine .modal .container p + p {
   margin-top: 1.25em;
 }
-.page main .contents .container.guide-temple .modal .container .flex-grid {
+.page main .contents .container.guide-shrine .modal .container .flex-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
-.page main .contents .container.guide-temple .modal .container .flex-grid .paragraph .technical-name {
+.page main .contents .container.guide-shrine .modal .container .flex-grid .paragraph .technical-name {
   margin-bottom: 20px;
 }
-.page main .contents .container.guide-temple .modal .container .flex-grid .paragraph .technical-name div {
+.page main .contents .container.guide-shrine .modal .container .flex-grid .paragraph .technical-name div {
   display: flex;
   font-size: 1.15rem;
   line-height: 1.15;
 }
-.page main .contents .container.guide-temple .modal .container .flex-grid .paragraph .technical-name div dt {
+.page main .contents .container.guide-shrine .modal .container .flex-grid .paragraph .technical-name div dt {
   padding-top: 3px;
   font-size: 1rem;
   font-weight: 600;
   white-space: nowrap;
 }
-.page main .contents .container.guide-temple .modal .container .flex-grid .paragraph .technical-name div + div {
+.page main .contents .container.guide-shrine .modal .container .flex-grid .paragraph .technical-name div + div {
   margin-top: 10px;
 }
-.page main .contents .container.guide-temple .modal .container .flex-grid .photo-frame {
+.page main .contents .container.guide-shrine .modal .container .flex-grid .photo-frame {
   width: 100%;
 }
-.page main .contents .container.guide-temple .modal .container .flex-grid .photo-frame img {
+.page main .contents .container.guide-shrine .modal .container .flex-grid .photo-frame img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.page main .contents .container.guide-temple .modal .container .photos {
+.page main .contents .container.guide-shrine .modal .container .photos {
   display: flex;
   gap: 30px;
   width: 100%;
 }
-.page main .contents .container.guide-temple .modal .container .photos .photo-frame {
+.page main .contents .container.guide-shrine .modal .container .photos .photo-frame {
   width: 100%;
 }
-.page main .contents .container.guide-temple .modal .container .photos .photo-frame img {
+.page main .contents .container.guide-shrine .modal .container .photos .photo-frame img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.page main .contents .container.guide-temple .modal .container ul {
+.page main .contents .container.guide-shrine .modal .container ul {
   margin: 50px 0;
 }
-.page main .contents .container.guide-temple .modal .container ul li {
+.page main .contents .container.guide-shrine .modal .container ul li {
   position: relative;
   padding-left: 1.15rem;
   font-size: 1.15rem;
   line-height: 1.25rem;
 }
-.page main .contents .container.guide-temple .modal .container ul li::before {
+.page main .contents .container.guide-shrine .modal .container ul li::before {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 0;
   content: "・";
 }
-.page main .contents .container.guide-temple .modal .container ul li + li {
+.page main .contents .container.guide-shrine .modal .container ul li + li {
   margin-top: 15px;
 }
 
-.page main .contents .container.guide-temple .modal.mukuroji-no-ki .container .flex-grid {
+.page main .contents .container.guide-shrine .modal.mukuroji-no-ki .container .flex-grid {
   grid-template-columns: repeat(6, 1fr);
 }
-.page main .contents .container.guide-temple .modal.mukuroji-no-ki .container .flex-grid .paragraph {
+.page main .contents .container.guide-shrine .modal.mukuroji-no-ki .container .flex-grid .paragraph {
   grid-column: 1/5;
 }
-.page main .contents .container.guide-temple .modal.mukuroji-no-ki .container .flex-grid .photos {
+.page main .contents .container.guide-shrine .modal.mukuroji-no-ki .container .flex-grid .photos {
   grid-column: 5/7;
   flex-direction: column;
 }
 
-.page main .contents .container.guide-temple .modal.ukon-no-sakura .container h4 .left-side {
+.page main .contents .container.guide-shrine .modal.ukon-no-sakura .container h4 .left-side {
   padding-left: -50px;
 }
-.page main .contents .container.guide-temple .modal.ukon-no-sakura .container h4 right-side {
+.page main .contents .container.guide-shrine .modal.ukon-no-sakura .container h4 right-side {
   padding-left: -50px;
 }
 
-.page main .contents .container.guide-temple .modal.kaji-no-ki .container .flex-grid .photos, .page main .contents .container.guide-temple .modal.sanyo-no-matsu .container .flex-grid .photos {
+.page main .contents .container.guide-shrine .modal.kaji-no-ki .container .flex-grid .photos, .page main .contents .container.guide-shrine .modal.sanyo-no-matsu .container .flex-grid .photos {
   flex-direction: column;
 }
 
-.page main .contents .container.guide-temple .modal.kaji-no-ki .container .flex-grid .photos .photo-frame {
+.page main .contents .container.guide-shrine .modal.kaji-no-ki .container .flex-grid .photos .photo-frame {
   height: 40%;
 }
 
-.page main .contents .container.guide-temple .modal.four-seasons .container div {
+.page main .contents .container.guide-shrine .modal.four-seasons .container div {
   width: 100%;
   display: flex;
   gap: 30px;
 }
-.page main .contents .container.guide-temple .modal.four-seasons .container div figure {
+.page main .contents .container.guide-shrine .modal.four-seasons .container div figure {
   width: 100%;
   aspect-ratio: 1;
 }
-.page main .contents .container.guide-temple .modal.four-seasons .container div figure img {
+.page main .contents .container.guide-shrine .modal.four-seasons .container div figure img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.page main .contents .container.guide-temple .modal.four-seasons .container div figure figcaption {
+.page main .contents .container.guide-shrine .modal.four-seasons .container div figure figcaption {
   display: grid;
   place-content: center;
   padding-top: 20px;
   font-size: 1.1rem;
 }
 
-.page main .contents .container.guide-temple .modal.jisyushya .container .flex-grid:last-of-type {
+.page main .contents .container.guide-shrine .modal.jisyushya .container .flex-grid:last-of-type {
   grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
   -moz-column-gap: 15px;
        column-gap: 15px;
 }
-.page main .contents .container.guide-temple .modal.jisyushya .container .leading-square-header {
+.page main .contents .container.guide-shrine .modal.jisyushya .container .leading-square-header {
   margin: 30px 0 20px;
 }
-.page main .contents .container.guide-temple .modal.jisyushya .container dl {
+.page main .contents .container.guide-shrine .modal.jisyushya .container dl {
   margin-top: 30px;
   background-color: rgba(255, 255, 255, 0.4);
   border-top: 1px solid #BB9A01;
   border-bottom: 1px solid #BB9A01;
 }
-.page main .contents .container.guide-temple .modal.jisyushya .container dl div {
+.page main .contents .container.guide-shrine .modal.jisyushya .container dl div {
   display: flex;
   align-items: center;
   line-height: 1.5em;
 }
-.page main .contents .container.guide-temple .modal.jisyushya .container dl div:first-of-type dt, .page main .contents .container.guide-temple .modal.jisyushya .container dl div:first-of-type dd {
+.page main .contents .container.guide-shrine .modal.jisyushya .container dl div:first-of-type dt, .page main .contents .container.guide-shrine .modal.jisyushya .container dl div:first-of-type dd {
   padding: 0.75rem 0;
   line-height: 1em;
 }
-.page main .contents .container.guide-temple .modal.jisyushya .container dl div:first-of-type dt span, .page main .contents .container.guide-temple .modal.jisyushya .container dl div:first-of-type dd span {
+.page main .contents .container.guide-shrine .modal.jisyushya .container dl div:first-of-type dt span, .page main .contents .container.guide-shrine .modal.jisyushya .container dl div:first-of-type dd span {
   letter-spacing: 1rem;
 }
-.page main .contents .container.guide-temple .modal.jisyushya .container dl div:first-of-type dt {
+.page main .contents .container.guide-shrine .modal.jisyushya .container dl div:first-of-type dt {
   color: #fff;
   background-color: #A3A9B5;
 }
-.page main .contents .container.guide-temple .modal.jisyushya .container dl div:first-of-type dd {
+.page main .contents .container.guide-shrine .modal.jisyushya .container dl div:first-of-type dd {
   font-weight: 600;
   text-align: center;
   background-color: #DCE1EE;
 }
-.page main .contents .container.guide-temple .modal.jisyushya .container dl div dt {
+.page main .contents .container.guide-shrine .modal.jisyushya .container dl div dt {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1638,159 +1638,159 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   text-align: center;
   background-color: rgba(187, 153, 1, 0.4);
 }
-.page main .contents .container.guide-temple .modal.jisyushya .container dl div dd {
+.page main .contents .container.guide-shrine .modal.jisyushya .container dl div dd {
   width: calc(100% - 8rem);
   padding-left: 1.5rem;
 }
-.page main .contents .container.guide-temple .modal.jisyushya .container dl div + div {
+.page main .contents .container.guide-shrine .modal.jisyushya .container dl div + div {
   border-top: 1px solid #BB9A01;
 }
 
-.page main .contents .container.guide-temple .modal.senryushya .container .flex-grid {
+.page main .contents .container.guide-shrine .modal.senryushya .container .flex-grid {
   margin-bottom: 20px;
 }
-.page main .contents .container.guide-temple .modal.senryushya .container .flex-grid .leading-square-header {
+.page main .contents .container.guide-shrine .modal.senryushya .container .flex-grid .leading-square-header {
   margin: 30px 0 10px;
 }
 
-.page main .contents .container.guide-temple .modal.tomonoshya .container .flex-grid {
+.page main .contents .container.guide-shrine .modal.tomonoshya .container .flex-grid {
   grid-template-columns: 3fr 6fr 3fr;
   margin-bottom: 80px;
   width: 100%;
 }
-.page main .contents .container.guide-temple .modal.tomonoshya .container .flex-grid figure {
+.page main .contents .container.guide-shrine .modal.tomonoshya .container .flex-grid figure {
   width: 100%;
 }
-.page main .contents .container.guide-temple .modal.tomonoshya .container .flex-grid figure img {
+.page main .contents .container.guide-shrine .modal.tomonoshya .container .flex-grid figure img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.page main .contents .container.guide-temple .modal.tomonoshya .container .flex-grid figure figcaption {
+.page main .contents .container.guide-shrine .modal.tomonoshya .container .flex-grid figure figcaption {
   margin-top: 20px;
   font-size: 1.1rem;
   text-align: center;
 }
-.page main .contents .container.guide-temple .modal.tomonoshya .container .flex-grid:last-of-type {
+.page main .contents .container.guide-shrine .modal.tomonoshya .container .flex-grid:last-of-type {
   grid-template-columns: repeat(2, 1fr);
   margin-top: 30px;
 }
-.page main .contents .container.guide-temple .modal.tomonoshya .container .leading-square-header {
+.page main .contents .container.guide-shrine .modal.tomonoshya .container .leading-square-header {
   margin: 30px 0 10px;
 }
-.page main .contents .container.guide-temple .modal.tomonoshya .container p + p {
+.page main .contents .container.guide-shrine .modal.tomonoshya .container p + p {
   margin-top: 0;
 }
 
-.page main .contents .container.guide-temple .modal.temizushya .container .leading-square-header {
+.page main .contents .container.guide-shrine .modal.temizushya .container .leading-square-header {
   margin-bottom: 20px;
 }
-.page main .contents .container.guide-temple .modal.temizushya .container .leading-square-header:last-of-type {
+.page main .contents .container.guide-shrine .modal.temizushya .container .leading-square-header:last-of-type {
   margin-top: 40px;
 }
 
 @media (width < 1100px) {
-  .page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear-short ul {
+  .page main .contents .container.guide-shrine .bg section .contents.reiboku .gradually-appear-short ul {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (width < 768px) {
-  .page main .contents .container.guide-temple .bg section .contents.reiboku .gradually-appear-short ul {
+  .page main .contents .container.guide-shrine .bg section .contents.reiboku .gradually-appear-short ul {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
 @media (width < 768px) {
-  .page main .contents .container.guide-temple .bg section .contents.guide-map {
+  .page main .contents .container.guide-shrine .bg section .contents.guide-map {
     padding: 60px 0 0;
   }
 }
 
 @media (width < 1100px) {
-  .page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map img {
+  .page main .contents .container.guide-shrine .bg section .contents.guide-map .Illustrative-map img {
     left: 55%;
     width: 85%;
   }
 }
 
 @media (width < 768px) {
-  .page main .contents .container.guide-temple .bg section .contents.guide-map .header {
+  .page main .contents .container.guide-shrine .bg section .contents.guide-map .header {
     padding: 0;
   }
-  .page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map {
+  .page main .contents .container.guide-shrine .bg section .contents.guide-map .Illustrative-map {
     display: grid;
     place-content: center;
     padding-bottom: 60px;
     position: unset;
     aspect-ratio: unset;
   }
-  .page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map img {
+  .page main .contents .container.guide-shrine .bg section .contents.guide-map .Illustrative-map img {
     display: none;
   }
-  .page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map ul {
+  .page main .contents .container.guide-shrine .bg section .contents.guide-map .Illustrative-map ul {
     position: unset;
     text-align: center;
   }
-  .page main .contents .container.guide-temple .bg section .contents.guide-map .Illustrative-map ul li .modal-open-trigger {
+  .page main .contents .container.guide-shrine .bg section .contents.guide-map .Illustrative-map ul li .modal-open-trigger {
     padding: 20px 60px;
   }
 }
 
 @media (width < 768px) {
-  .page main .contents .container.guide-temple .bg section .contents.reiboku {
+  .page main .contents .container.guide-shrine .bg section .contents.reiboku {
     padding: 60px 10% 0;
   }
 }
 
 @media (width < 768px) {
-  .page main .contents .container.guide-temple .modal .container {
+  .page main .contents .container.guide-shrine .modal .container {
     margin: 0;
     padding: 15px;
     width: 100%;
   }
-  .page main .contents .container.guide-temple .modal .container .modal-close-btn {
+  .page main .contents .container.guide-shrine .modal .container .modal-close-btn {
     top: 15px;
     right: 15px;
   }
-  .page main .contents .container.guide-temple .modal .container .guide-temple-modal-header {
+  .page main .contents .container.guide-shrine .modal .container .guide-shrine-modal-header {
     margin: 45px 0 30px;
     font-size: 1.5rem;
   }
-  .page main .contents .container.guide-temple .modal .container .guide-temple-modal-header::before, .page main .contents .container.guide-temple .modal .container .guide-temple-modal-header::after {
+  .page main .contents .container.guide-shrine .modal .container .guide-shrine-modal-header::before, .page main .contents .container.guide-shrine .modal .container .guide-shrine-modal-header::after {
     width: calc(50% - 75px);
   }
 }
 
 @media (width < 768px) {
-  .page main .contents .container.guide-temple .modal.jisyushya .container .flex-grid {
+  .page main .contents .container.guide-shrine .modal.jisyushya .container .flex-grid {
     grid-template-columns: repeat(1, 1fr);
   }
-  .page main .contents .container.guide-temple .modal.jisyushya .container .leading-square-header {
+  .page main .contents .container.guide-shrine .modal.jisyushya .container .leading-square-header {
     font-size: 1.35rem;
   }
-  .page main .contents .container.guide-temple .modal.jisyushya .container dl div {
+  .page main .contents .container.guide-shrine .modal.jisyushya .container dl div {
     line-height: 1.1em;
   }
-  .page main .contents .container.guide-temple .modal.jisyushya .container dl div dd span {
+  .page main .contents .container.guide-shrine .modal.jisyushya .container dl div dd span {
     font-size: 0.85rem;
   }
 }
 
 @media (width < 768px) {
-  .page main .contents .container.guide-temple .modal.senryushya .container .flex-grid {
+  .page main .contents .container.guide-shrine .modal.senryushya .container .flex-grid {
     grid-template-columns: repeat(1, 1fr);
   }
-  .page main .contents .container.guide-temple .modal.senryushya .container .leading-square-header {
+  .page main .contents .container.guide-shrine .modal.senryushya .container .leading-square-header {
     font-size: 1.35rem;
   }
-  .page main .contents .container.guide-temple .modal.senryushya .container .leading-square-header:first-of-type {
+  .page main .contents .container.guide-shrine .modal.senryushya .container .leading-square-header:first-of-type {
     margin-top: 0;
   }
 }
 
 @media (width < 768px) {
-  .page main .contents .container.guide-temple .modal.tomonoshya .container .flex-grid {
+  .page main .contents .container.guide-shrine .modal.tomonoshya .container .flex-grid {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     justify-content: center;
@@ -1798,28 +1798,28 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
     margin: 0 auto 50px;
     place-items: center;
   }
-  .page main .contents .container.guide-temple .modal.tomonoshya .container .flex-grid figure {
+  .page main .contents .container.guide-shrine .modal.tomonoshya .container .flex-grid figure {
     width: 70%;
   }
-  .page main .contents .container.guide-temple .modal.tomonoshya .container .flex-grid figure figcaption {
+  .page main .contents .container.guide-shrine .modal.tomonoshya .container .flex-grid figure figcaption {
     margin-top: 10px;
   }
-  .page main .contents .container.guide-temple .modal.tomonoshya .container .flex-grid:last-of-type {
+  .page main .contents .container.guide-shrine .modal.tomonoshya .container .flex-grid:last-of-type {
     grid-template-columns: repeat(1, 1fr);
   }
-  .page main .contents .container.guide-temple .modal.tomonoshya .container .flex-grid:last-of-type figure {
+  .page main .contents .container.guide-shrine .modal.tomonoshya .container .flex-grid:last-of-type figure {
     width: 100%;
   }
-  .page main .contents .container.guide-temple .modal.tomonoshya .container .leading-square-header {
+  .page main .contents .container.guide-shrine .modal.tomonoshya .container .leading-square-header {
     font-size: 1.35rem;
   }
-  .page main .contents .container.guide-temple .modal.tomonoshya .container .leading-square-header:first-of-type {
+  .page main .contents .container.guide-shrine .modal.tomonoshya .container .leading-square-header:first-of-type {
     margin-top: 0;
   }
 }
 
 @media (width < 768px) {
-  .page main .contents .container.guide-temple .modal.temizushya .container .flex-grid {
+  .page main .contents .container.guide-shrine .modal.temizushya .container .flex-grid {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     justify-content: center;
@@ -1827,25 +1827,25 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
     margin: 0 auto 30px;
     place-items: center;
   }
-  .page main .contents .container.guide-temple .modal.temizushya .container .flex-grid figure {
+  .page main .contents .container.guide-shrine .modal.temizushya .container .flex-grid figure {
     width: 70%;
   }
-  .page main .contents .container.guide-temple .modal.temizushya .container .flex-grid figure figcaption {
+  .page main .contents .container.guide-shrine .modal.temizushya .container .flex-grid figure figcaption {
     margin-top: 10px;
   }
-  .page main .contents .container.guide-temple .modal.temizushya .container .flex-grid:last-of-type {
+  .page main .contents .container.guide-shrine .modal.temizushya .container .flex-grid:last-of-type {
     grid-template-columns: repeat(1, 1fr);
   }
-  .page main .contents .container.guide-temple .modal.temizushya .container .flex-grid:last-of-type .photo-frame {
+  .page main .contents .container.guide-shrine .modal.temizushya .container .flex-grid:last-of-type .photo-frame {
     grid-row: 2/3;
   }
-  .page main .contents .container.guide-temple .modal.temizushya .container .flex-grid:last-of-type .pragraph {
+  .page main .contents .container.guide-shrine .modal.temizushya .container .flex-grid:last-of-type .pragraph {
     grid-row: 1/2;
   }
-  .page main .contents .container.guide-temple .modal.temizushya .container .leading-square-header {
+  .page main .contents .container.guide-shrine .modal.temizushya .container .leading-square-header {
     font-size: 1.35rem;
   }
-  .page main .contents .container.guide-temple .modal.temizushya .container .leading-square-header:first-of-type {
+  .page main .contents .container.guide-shrine .modal.temizushya .container .leading-square-header:first-of-type {
     margin-top: 0;
   }
 }
@@ -1892,7 +1892,7 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
 .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper ul li + li, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper ul li + li {
   margin-top: 10px;
 }
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear button, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long button {
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .dl-pdf-btn, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .dl-pdf-btn {
   margin-top: 60px;
 }
 .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear:first-of-type {
@@ -1958,6 +1958,9 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   font-size: 0.75rem;
 }
 
+.page main .contents .container.prayer .form {
+  padding-bottom: 15rem;
+}
 .page main .contents .container.prayer .form div {
   display: grid;
   grid-template-columns: 1fr 3.5fr;
@@ -2016,40 +2019,40 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
 .page main .contents .container.prayer .form div:nth-of-type(2) {
   margin-top: 0;
 }
-.page main .contents .container.prayer .form div.birthday-age dd, .page main .contents .container.prayer .form div.postal-code dd, .page main .contents .container.prayer .form div.date-time dd {
+.page main .contents .container.prayer .form div.birthday dd, .page main .contents .container.prayer .form div.age dd, .page main .contents .container.prayer .form div.postal-code dd, .page main .contents .container.prayer .form div.date dd, .page main .contents .container.prayer .form div.time dd, .page main .contents .container.prayer .form div.prayer-member-length dd, .page main .contents .container.prayer .form div.group-member-length dd {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
 }
-.page main .contents .container.prayer .form div.birthday-age dd div, .page main .contents .container.prayer .form div.postal-code dd div, .page main .contents .container.prayer .form div.date-time dd div {
+.page main .contents .container.prayer .form div.birthday dd div, .page main .contents .container.prayer .form div.age dd div, .page main .contents .container.prayer .form div.postal-code dd div, .page main .contents .container.prayer .form div.date dd div, .page main .contents .container.prayer .form div.time dd div, .page main .contents .container.prayer .form div.prayer-member-length dd div, .page main .contents .container.prayer .form div.group-member-length dd div {
   display: block;
 }
-.page main .contents .container.prayer .form div.birthday-age dd div.postal-code-4, .page main .contents .container.prayer .form div.postal-code dd div.postal-code-4, .page main .contents .container.prayer .form div.date-time dd div.postal-code-4 {
+.page main .contents .container.prayer .form div.birthday dd div.postal-code-4, .page main .contents .container.prayer .form div.age dd div.postal-code-4, .page main .contents .container.prayer .form div.postal-code dd div.postal-code-4, .page main .contents .container.prayer .form div.date dd div.postal-code-4, .page main .contents .container.prayer .form div.time dd div.postal-code-4, .page main .contents .container.prayer .form div.prayer-member-length dd div.postal-code-4, .page main .contents .container.prayer .form div.group-member-length dd div.postal-code-4 {
   margin-top: 0;
 }
-.page main .contents .container.prayer .form div.birthday-age dd div.age, .page main .contents .container.prayer .form div.postal-code dd div.age, .page main .contents .container.prayer .form div.date-time dd div.age {
+.page main .contents .container.prayer .form div.birthday dd div.age, .page main .contents .container.prayer .form div.age dd div.age, .page main .contents .container.prayer .form div.postal-code dd div.age, .page main .contents .container.prayer .form div.date dd div.age, .page main .contents .container.prayer .form div.time dd div.age, .page main .contents .container.prayer .form div.prayer-member-length dd div.age, .page main .contents .container.prayer .form div.group-member-length dd div.age {
   margin-top: 0;
 }
-.page main .contents .container.prayer .form div.birthday-age dd p, .page main .contents .container.prayer .form div.postal-code dd p, .page main .contents .container.prayer .form div.date-time dd p {
+.page main .contents .container.prayer .form div.birthday dd p, .page main .contents .container.prayer .form div.age dd p, .page main .contents .container.prayer .form div.postal-code dd p, .page main .contents .container.prayer .form div.date dd p, .page main .contents .container.prayer .form div.time dd p, .page main .contents .container.prayer .form div.prayer-member-length dd p, .page main .contents .container.prayer .form div.group-member-length dd p {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-.page main .contents .container.prayer .form div.birthday-age dd p span input, .page main .contents .container.prayer .form div.postal-code dd p span input, .page main .contents .container.prayer .form div.date-time dd p span input {
-  width: 100%;
+.page main .contents .container.prayer .form div.birthday dd p span input, .page main .contents .container.prayer .form div.age dd p span input, .page main .contents .container.prayer .form div.postal-code dd p span input, .page main .contents .container.prayer .form div.date dd p span input, .page main .contents .container.prayer .form div.time dd p span input, .page main .contents .container.prayer .form div.prayer-member-length dd p span input, .page main .contents .container.prayer .form div.group-member-length dd p span input {
+  width: 10rem;
 }
-.page main .contents .container.prayer .form div.date-time dd p span input, .page main .contents .container.prayer .form div.date-time dd .time span input, .page main .contents .container.prayer .form div.birthday-age dd p span input, .page main .contents .container.prayer .form div.birthday-age dd .time span input {
-  width: -moz-fit-content;
-  width: fit-content;
-  padding-right: 20px;
-  text-align: right;
+.page main .contents .container.prayer .form div.sender-name dd p span input, .page main .contents .container.prayer .form div.group-leader dd p span input {
+  width: 25rem;
+  margin-right: 5px;
 }
-.page main .contents .container.prayer .form div.date-time dd .age input, .page main .contents .container.prayer .form div.birthday-age dd .age input {
-  padding-right: 0;
+.page main .contents .container.prayer .confirm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.page main .contents .container.prayer .form div.date-time dd p span input, .page main .contents .container.prayer .form div.date-time dd .time span input, .page main .contents .container.prayer .form div.birthday-age dd p span input, .page main .contents .container.prayer .form div.birthday-age dd .time span input {
-  text-align: center;
+.page main .contents .container.prayer .confirm p {
+  margin: 0;
 }
 
 .page main .contents .container.prayer .form .date-time dd .date p span .wpcf7-not-valid-tip, .page main .contents .container.prayer .form .date-time dd .time p span .wpcf7-not-valid-tip {
@@ -2059,14 +2062,72 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   white-space: nowrap;
 }
 
-.page main .contents .container.prayer .form .prayer-member-length dd p {
+.page main .contents .container.prayer .form .prayer-member-length dd p, .page main .contents .container.prayer .form .group-member-length dd p {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-.page main .contents .container.prayer .form .prayer-member-length dd p span input {
+.page main .contents .container.prayer .form .prayer-member-length dd p span .wpcf7-not-valid-tip, .page main .contents .container.prayer .form .group-member-length dd p span .wpcf7-not-valid-tip {
+  bottom: -34%;
+  white-space: nowrap;
+}
+.page main .contents .container.prayer .form .prayer-member-length dd p span .wpcf7-not-valid-tip input, .page main .contents .container.prayer .form .group-member-length dd p span .wpcf7-not-valid-tip input {
   width: 10rem;
   text-align: right;
+}
+
+.page main .contents .container.prayer .form div .prayer-message {
+  position: relative;
+}
+.page main .contents .container.prayer .form div .prayer-message::before {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  content: "健闘祈願【試合・大会名・試合日】・スポーツ上達・技術根性育成・厄除・心願成就 等々";
+  width: 100%;
+  padding-bottom: 5px;
+  font-size: 0.8rem;
+  line-height: 1em;
+  z-index: 100;
+}
+
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wpcf7.js table tr th {
+  width: 100%;
+}
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wpcf7.js table tr:last-of-type {
+  display: none;
+}
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wpcf7.js .wpcf7cp-btns {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+}
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wpcf7.js .wpcf7cp-btns button {
+  margin: 0;
+}
+
+.page main .contents .container.prayer .confirm .check-box label {
+  display: flex;
+  align-items: center;
+}
+.page main .contents .container.prayer .confirm .check-box label span {
+  padding-bottom: 2px;
+}
+.page main .contents .container.prayer .confirm .agreement {
+  width: 100%;
+}
+.page main .contents .container.prayer .confirm .agreement p button.prayer-submit {
+  margin-top: 0;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #333;
+  border-radius: 0;
+}
+.page main .contents .container.prayer .confirm .agreement p button.prayer-submit:hover {
+  color: #fff;
+  background-color: #aaa;
+  border: 1px solid #aaa;
 }
 
 .page main .contents.contact {
@@ -2168,7 +2229,6 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   font-size: 1.2rem;
   color: #fff;
   background-color: #333;
-  border-radius: 4px;
 }
 .page .agreement p button .wpcf7-spinner {
   position: absolute;
