@@ -1977,9 +1977,8 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   gap: 2px;
   font-weight: normal;
 }
-.page main .contents .container.prayer .form div dt p span {
-  margin-top: -5px;
-  font-size: 0.5rem;
+.page main .contents .container.prayer .form div dt p sup {
+  font-size: 0.7rem;
 }
 .page main .contents .container.prayer .form div dd {
   height: 3rem;
@@ -2128,6 +2127,11 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   color: #fff;
   background-color: #aaa;
   border: 1px solid #aaa;
+}
+
+.page main .contents .container.prayer .bg section .contents.prayer {
+  margin-top: 0;
+  padding-top: 100px;
 }
 
 .page.page-id-14 main .contents .frame.annual-event {
