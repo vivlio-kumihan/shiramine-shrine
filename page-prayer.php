@@ -27,7 +27,7 @@
 
           <div class="contents prayer">
             <div class="gradually-appear">
-              <h3>ご祈祷ご案内</h3>
+              <h3>ご祈祷のご案内</h3>
               <p>随時受付中、御祈祷をご希望の方は社務所迄、まずは、お尋ねください。</p>
               <div class="wrapper">
                 <div class="leading-square-header">初穂料</div>
