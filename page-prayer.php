@@ -39,13 +39,13 @@
                 </ul>
               </div>
             </div>
-            <div class="gradually-appear">
+            <div class="gradually-appear fax-send">
               <h3>FAXでのお申込み</h3>
               <p class="add-space-margin-bottom">FAX申込み後の御祈祷は、社務所到着後、翌日の午前中に執り行います。</p>
               <p>申込み用紙の印刷ができない方は、FAX申込み用紙の必要事項をご確認のうえ<br />他の紙に記載したものでも代用可能です。</p>
               <button class="dl-pdf-btn">ご祈祷ご案内FAX申込み用紙ダウンロード</button>
             </div>
-            <div class="gradually-appear-long">
+            <div class="gradually-appear-long mail-send">
               <h3>メールでのお申込み</h3>
               <p class="add-space-margin-bottom">メール申込み後の御祈祷は、社務所到着後、翌日の午前中に執り行います。</p>
               <p>FAXでのお申込みができない方は、下記フォームよりお申込みできます。</p>

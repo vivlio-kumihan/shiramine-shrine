@@ -4,12 +4,12 @@
 .page 
   main 
     .contents
-      .frame.prayer
+      .frame.prayer, .frame.contact
         background-image: url(./img/guide-top.jpg)
       .container.prayer
         .bg 
           section 
-            .contents.prayer
+            .contents.prayer, .contents.contact
               .gradually-appear, .gradually-appear-long
                 display: flex
                 flex-direction: column
@@ -47,7 +47,7 @@
 .page 
   main 
     .contents
-      .container.prayer
+      .container.prayer, .container.contact
         h3
           margin-bottom: 30px
           letter-spacing: .07em
@@ -63,11 +63,13 @@
           font-size: 1rem
           border: 1px solid #333
           transition: .3s
-          transform: translateX(-2px)
+          transform: translateY(2px)
           &:hover
             color: #fff
             background-color: #aaa
             border: 1px solid #aaa
+            transform: translateY(0)
+            box-shadow: 0 2px 5px #333
         .privacy-policy-anchor
           padding: 3px 7px
           font-size: .65rem
@@ -99,7 +101,7 @@
 .page 
   main 
     .contents
-      .container.prayer
+      .container.prayer, .container.contact
         .form
           padding-bottom: 15rem
           div
@@ -185,7 +187,7 @@
 .page
   main
     .contents
-      .container.prayer
+      .container.prayer, .container.contact
         .form
           .date-time
             dd
@@ -202,7 +204,7 @@
 .page
   main
     .contents
-      .container.prayer
+      .container.prayer, .container.contact
         .form
           .prayer-member-length, .group-member-length
             dd
@@ -220,7 +222,7 @@
 .page
   main
     .contents
-      .container.prayer
+      .container.prayer, .container.contact
         .form
           div
             .prayer-message
@@ -239,10 +241,10 @@
 .page
   main
     .contents
-      .container.prayer
+      .container.prayer, .container.contact
         .bg
           section
-            .contents.prayer
+            .contents.prayer, .contents.contact
               .gradually-appear-long
                 .wpcf7.js
                   table
@@ -262,7 +264,7 @@
 .page
   main
     .contents
-      .container.prayer
+      .container.prayer, .container.contact
         .confirm
           .check-box
             label
@@ -272,18 +274,67 @@
                 padding-bottom: 2px
           .agreement
             width: 100%
+            margin-top: 50px
             p
               button.prayer-submit
+                width: 100%
                 margin-top: 0
+                padding: 10px 0
+                font-size: 1.3rem
+                line-height: 1
+                text-align: center
                 color: #333
                 background-color: #fff
                 border: 1px solid #333
                 border-radius: 0
+                transform: translateY(2px)
                 &:hover
                   color: #fff
                   background-color: #aaa
                   border: 1px solid #aaa
+                  transform: translateY(0)
+                  box-shadow: 0 2px 5px #333
+                .wpcf7-spinner
+                  display: none
+                input
+                  padding-left: 1rem
+                  letter-spacing: 1rem
 
+.page
+  main
+    .contents
+      .container.prayer, .container.contact
+        .bg
+          section
+            .contents.prayer, .contents.contact
+              margin-top: 0
+              padding-top: 100px
+
+.page
+  main
+    .contents
+      .container.prayer, .container.contact
+        .form
+          div.sender-name
+            dd
+              p
+                span
+                  input
+                    width: 100%
+
+// for sm
+.page
+  main
+    .contents
+      +max(md)
+        .container.prayer, .container.contact
+          .form
+            div
+              display: block
+.page
+  main
+    .contents
+      .container.prayer
 .page
   main
     .contents
@@ -291,5 +342,63 @@
         .bg
           section
             .contents.prayer
-              margin-top: 0
-              padding-top: 100px
+              .gradually-appear, .gradually-appear-long
+                margin-top: 60px
+                h3::before, h3::after
+                  width: calc(50% - 95px)
+                p, .wrapper
+                  padding: 0 1rem
+                .wrapper
+                  > p
+                    margin-bottom: 20px
+                  > ul
+                    width: 100%
+                    padding: 1rem 0
+                &.fax-send
+                  h3::before, h3::after
+                    width: calc(50% - 120px)
+                &.mail-send
+                  h3::before, h3::after
+                    width: calc(50% - 135px)
+                .dl-pdf-btn
+                  margin-top: 30px
+                  padding: 2rem 1rem
+                div.wpcf7
+
+
+.page   
+  main  
+    .contents
+      +max(md)
+        .container.prayer
+          .form
+            div.group-leader, .container.contact
+              dd
+                p
+                  span
+                    input
+                      width: 100%
+.page
+  main
+    .contents
+      +max(md)
+        .container.prayer
+          .form
+            div.sender-name, div.group-leader
+              dd
+                p
+                  span
+                    input
+                      width: 15rem
+.page
+  main
+    .contents
+      .container.prayer
+        .form
+          div.prayer-message-wrapper
+            padding-bottom: 2rem
+            .prayer-message
+              &::before
+                top: 55px
+                width: fit-content
+                padding: 0 1rem

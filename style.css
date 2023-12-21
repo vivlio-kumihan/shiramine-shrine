@@ -1850,100 +1850,102 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   }
 }
 
-.page main .contents .frame.prayer {
+.page main .contents .frame.prayer, .page main .contents .frame.contact {
   background-image: url(./img/guide-top.jpg);
 }
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long {
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 120px;
 }
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper {
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper {
   width: min(610px, 100%);
   margin-top: 40px;
 }
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper .leading-square-header, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper .leading-square-header {
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper .leading-square-header, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper .leading-square-header, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper .leading-square-header, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper .leading-square-header {
   margin-bottom: 20px;
 }
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper .leading-square-header::before, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper .leading-square-header::before {
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper .leading-square-header::before, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper .leading-square-header::before, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper .leading-square-header::before, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper .leading-square-header::before {
   top: 58%;
   width: 9px;
   height: 1.7rem;
 }
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper p, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper p {
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper p, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper p, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper p, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper p {
   margin-bottom: 50px;
   text-align: left;
 }
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper ul, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper ul {
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper ul, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper ul, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper ul, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper ul {
   margin: 0 auto;
   width: -moz-fit-content;
   width: fit-content;
   padding: 20px 100px;
   border: 1px solid #333;
 }
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper ul li, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper ul li {
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper ul li, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper ul li, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper ul li, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper ul li {
   text-align: center;
 }
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper ul li.tel-num, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper ul li.tel-num {
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper ul li.tel-num, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper ul li.tel-num, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper ul li.tel-num, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper ul li.tel-num {
   font-size: 1.65rem;
   letter-spacing: 0.3em;
 }
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper ul li + li, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper ul li + li {
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper ul li + li, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper ul li + li, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper ul li + li, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper ul li + li {
   margin-top: 10px;
 }
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .dl-pdf-btn, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .dl-pdf-btn {
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .dl-pdf-btn, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .dl-pdf-btn, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .dl-pdf-btn, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .dl-pdf-btn {
   margin-top: 60px;
 }
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear:first-of-type {
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear:first-of-type, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear:first-of-type {
   margin-top: 0;
 }
 
-.page main .contents .container.prayer h3 {
+.page main .contents .container.prayer h3, .page main .contents .container.contact h3 {
   margin-bottom: 30px;
   letter-spacing: 0.07em;
 }
-.page main .contents .container.prayer h3::before, .page main .contents .container.prayer h3::after {
+.page main .contents .container.prayer h3::before, .page main .contents .container.prayer h3::after, .page main .contents .container.contact h3::before, .page main .contents .container.contact h3::after {
   width: calc(50% - 150px);
 }
-.page main .contents .container.prayer p {
+.page main .contents .container.prayer p, .page main .contents .container.contact p {
   font-size: 1.15rem;
   line-height: 1.75em;
 }
-.page main .contents .container.prayer p.add-space-margin-bottom {
+.page main .contents .container.prayer p.add-space-margin-bottom, .page main .contents .container.contact p.add-space-margin-bottom {
   margin-bottom: 20px;
 }
-.page main .contents .container.prayer button {
+.page main .contents .container.prayer button, .page main .contents .container.contact button {
   padding: 10px 60px;
   font-size: 1rem;
   border: 1px solid #333;
   transition: 0.3s;
-  transform: translateX(-2px);
+  transform: translateY(2px);
 }
-.page main .contents .container.prayer button:hover {
+.page main .contents .container.prayer button:hover, .page main .contents .container.contact button:hover {
   color: #fff;
   background-color: #aaa;
   border: 1px solid #aaa;
+  transform: translateY(0);
+  box-shadow: 0 2px 5px #333;
 }
-.page main .contents .container.prayer .privacy-policy-anchor {
+.page main .contents .container.prayer .privacy-policy-anchor, .page main .contents .container.contact .privacy-policy-anchor {
   padding: 3px 7px;
   font-size: 0.65rem;
   color: #fff;
   background-color: #333;
   border-radius: 2px;
 }
-.page main .contents .container.prayer .check-box {
+.page main .contents .container.prayer .check-box, .page main .contents .container.contact .check-box {
   display: flex;
   align-content: center;
 }
-.page main .contents .container.prayer .check-box input[type=checkbox] {
+.page main .contents .container.prayer .check-box input[type=checkbox], .page main .contents .container.contact .check-box input[type=checkbox] {
   position: relative;
   margin-right: 5px;
   width: 0.8rem;
   height: 0.8rem;
   border: 1px solid #000;
 }
-.page main .contents .container.prayer .check-box input[type=checkbox]:checked:before {
+.page main .contents .container.prayer .check-box input[type=checkbox]:checked:before, .page main .contents .container.contact .check-box input[type=checkbox]:checked:before {
   position: absolute;
   top: 0px;
   left: 4px;
@@ -1954,51 +1956,51 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   border-bottom: 2px solid #000;
   content: "";
 }
-.page main .contents .container.prayer .check-box label {
+.page main .contents .container.prayer .check-box label, .page main .contents .container.contact .check-box label {
   font-size: 0.75rem;
 }
 
-.page main .contents .container.prayer .form {
+.page main .contents .container.prayer .form, .page main .contents .container.contact .form {
   padding-bottom: 15rem;
 }
-.page main .contents .container.prayer .form div {
+.page main .contents .container.prayer .form div, .page main .contents .container.contact .form div {
   display: grid;
   grid-template-columns: 1fr 3.5fr;
   gap: 10px;
   align-items: center;
   font-size: 1.15rem;
 }
-.page main .contents .container.prayer .form div + div {
+.page main .contents .container.prayer .form div + div, .page main .contents .container.contact .form div + div {
   margin-top: 30px;
 }
-.page main .contents .container.prayer .form div dt p {
+.page main .contents .container.prayer .form div dt p, .page main .contents .container.contact .form div dt p {
   display: flex;
   align-items: flex-start;
   gap: 2px;
   font-weight: normal;
 }
-.page main .contents .container.prayer .form div dt p sup {
+.page main .contents .container.prayer .form div dt p sup, .page main .contents .container.contact .form div dt p sup {
   font-size: 0.7rem;
 }
-.page main .contents .container.prayer .form div dd {
+.page main .contents .container.prayer .form div dd, .page main .contents .container.contact .form div dd {
   height: 3rem;
 }
-.page main .contents .container.prayer .form div dd p span {
+.page main .contents .container.prayer .form div dd p span, .page main .contents .container.contact .form div dd p span {
   position: relative;
 }
-.page main .contents .container.prayer .form div dd p span input {
+.page main .contents .container.prayer .form div dd p span input, .page main .contents .container.contact .form div dd p span input {
   width: 100%;
   height: 3rem;
   padding: 1rem;
   font-size: 1rem;
   border: 1px solid #333;
 }
-.page main .contents .container.prayer .form div dd p span textarea {
+.page main .contents .container.prayer .form div dd p span textarea, .page main .contents .container.contact .form div dd p span textarea {
   width: 100%;
   height: 15rem;
   border: 1px solid #333;
 }
-.page main .contents .container.prayer .form div dd p span .wpcf7-not-valid-tip {
+.page main .contents .container.prayer .form div dd p span .wpcf7-not-valid-tip, .page main .contents .container.contact .form div dd p span .wpcf7-not-valid-tip {
   position: absolute;
   bottom: -115%;
   left: 0%;
@@ -2006,79 +2008,79 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   font-weight: 600;
   line-height: 1;
 }
-.page main .contents .container.prayer .form div.note {
+.page main .contents .container.prayer .form div.note, .page main .contents .container.contact .form div.note {
   margin: 50px 0 5px;
 }
-.page main .contents .container.prayer .form div.note dd {
+.page main .contents .container.prayer .form div.note dd, .page main .contents .container.contact .form div.note dd {
   display: flex;
   border: unset;
   align-items: flex-end;
   font-size: 1rem;
 }
-.page main .contents .container.prayer .form div:nth-of-type(2) {
+.page main .contents .container.prayer .form div:nth-of-type(2), .page main .contents .container.contact .form div:nth-of-type(2) {
   margin-top: 0;
 }
-.page main .contents .container.prayer .form div.birthday dd, .page main .contents .container.prayer .form div.age dd, .page main .contents .container.prayer .form div.postal-code dd, .page main .contents .container.prayer .form div.date dd, .page main .contents .container.prayer .form div.time dd, .page main .contents .container.prayer .form div.prayer-member-length dd, .page main .contents .container.prayer .form div.group-member-length dd {
+.page main .contents .container.prayer .form div.birthday dd, .page main .contents .container.prayer .form div.age dd, .page main .contents .container.prayer .form div.postal-code dd, .page main .contents .container.prayer .form div.date dd, .page main .contents .container.prayer .form div.time dd, .page main .contents .container.prayer .form div.prayer-member-length dd, .page main .contents .container.prayer .form div.group-member-length dd, .page main .contents .container.contact .form div.birthday dd, .page main .contents .container.contact .form div.age dd, .page main .contents .container.contact .form div.postal-code dd, .page main .contents .container.contact .form div.date dd, .page main .contents .container.contact .form div.time dd, .page main .contents .container.contact .form div.prayer-member-length dd, .page main .contents .container.contact .form div.group-member-length dd {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
 }
-.page main .contents .container.prayer .form div.birthday dd div, .page main .contents .container.prayer .form div.age dd div, .page main .contents .container.prayer .form div.postal-code dd div, .page main .contents .container.prayer .form div.date dd div, .page main .contents .container.prayer .form div.time dd div, .page main .contents .container.prayer .form div.prayer-member-length dd div, .page main .contents .container.prayer .form div.group-member-length dd div {
+.page main .contents .container.prayer .form div.birthday dd div, .page main .contents .container.prayer .form div.age dd div, .page main .contents .container.prayer .form div.postal-code dd div, .page main .contents .container.prayer .form div.date dd div, .page main .contents .container.prayer .form div.time dd div, .page main .contents .container.prayer .form div.prayer-member-length dd div, .page main .contents .container.prayer .form div.group-member-length dd div, .page main .contents .container.contact .form div.birthday dd div, .page main .contents .container.contact .form div.age dd div, .page main .contents .container.contact .form div.postal-code dd div, .page main .contents .container.contact .form div.date dd div, .page main .contents .container.contact .form div.time dd div, .page main .contents .container.contact .form div.prayer-member-length dd div, .page main .contents .container.contact .form div.group-member-length dd div {
   display: block;
 }
-.page main .contents .container.prayer .form div.birthday dd div.postal-code-4, .page main .contents .container.prayer .form div.age dd div.postal-code-4, .page main .contents .container.prayer .form div.postal-code dd div.postal-code-4, .page main .contents .container.prayer .form div.date dd div.postal-code-4, .page main .contents .container.prayer .form div.time dd div.postal-code-4, .page main .contents .container.prayer .form div.prayer-member-length dd div.postal-code-4, .page main .contents .container.prayer .form div.group-member-length dd div.postal-code-4 {
+.page main .contents .container.prayer .form div.birthday dd div.postal-code-4, .page main .contents .container.prayer .form div.age dd div.postal-code-4, .page main .contents .container.prayer .form div.postal-code dd div.postal-code-4, .page main .contents .container.prayer .form div.date dd div.postal-code-4, .page main .contents .container.prayer .form div.time dd div.postal-code-4, .page main .contents .container.prayer .form div.prayer-member-length dd div.postal-code-4, .page main .contents .container.prayer .form div.group-member-length dd div.postal-code-4, .page main .contents .container.contact .form div.birthday dd div.postal-code-4, .page main .contents .container.contact .form div.age dd div.postal-code-4, .page main .contents .container.contact .form div.postal-code dd div.postal-code-4, .page main .contents .container.contact .form div.date dd div.postal-code-4, .page main .contents .container.contact .form div.time dd div.postal-code-4, .page main .contents .container.contact .form div.prayer-member-length dd div.postal-code-4, .page main .contents .container.contact .form div.group-member-length dd div.postal-code-4 {
   margin-top: 0;
 }
-.page main .contents .container.prayer .form div.birthday dd div.age, .page main .contents .container.prayer .form div.age dd div.age, .page main .contents .container.prayer .form div.postal-code dd div.age, .page main .contents .container.prayer .form div.date dd div.age, .page main .contents .container.prayer .form div.time dd div.age, .page main .contents .container.prayer .form div.prayer-member-length dd div.age, .page main .contents .container.prayer .form div.group-member-length dd div.age {
+.page main .contents .container.prayer .form div.birthday dd div.age, .page main .contents .container.prayer .form div.age dd div.age, .page main .contents .container.prayer .form div.postal-code dd div.age, .page main .contents .container.prayer .form div.date dd div.age, .page main .contents .container.prayer .form div.time dd div.age, .page main .contents .container.prayer .form div.prayer-member-length dd div.age, .page main .contents .container.prayer .form div.group-member-length dd div.age, .page main .contents .container.contact .form div.birthday dd div.age, .page main .contents .container.contact .form div.age dd div.age, .page main .contents .container.contact .form div.postal-code dd div.age, .page main .contents .container.contact .form div.date dd div.age, .page main .contents .container.contact .form div.time dd div.age, .page main .contents .container.contact .form div.prayer-member-length dd div.age, .page main .contents .container.contact .form div.group-member-length dd div.age {
   margin-top: 0;
 }
-.page main .contents .container.prayer .form div.birthday dd p, .page main .contents .container.prayer .form div.age dd p, .page main .contents .container.prayer .form div.postal-code dd p, .page main .contents .container.prayer .form div.date dd p, .page main .contents .container.prayer .form div.time dd p, .page main .contents .container.prayer .form div.prayer-member-length dd p, .page main .contents .container.prayer .form div.group-member-length dd p {
+.page main .contents .container.prayer .form div.birthday dd p, .page main .contents .container.prayer .form div.age dd p, .page main .contents .container.prayer .form div.postal-code dd p, .page main .contents .container.prayer .form div.date dd p, .page main .contents .container.prayer .form div.time dd p, .page main .contents .container.prayer .form div.prayer-member-length dd p, .page main .contents .container.prayer .form div.group-member-length dd p, .page main .contents .container.contact .form div.birthday dd p, .page main .contents .container.contact .form div.age dd p, .page main .contents .container.contact .form div.postal-code dd p, .page main .contents .container.contact .form div.date dd p, .page main .contents .container.contact .form div.time dd p, .page main .contents .container.contact .form div.prayer-member-length dd p, .page main .contents .container.contact .form div.group-member-length dd p {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-.page main .contents .container.prayer .form div.birthday dd p span input, .page main .contents .container.prayer .form div.age dd p span input, .page main .contents .container.prayer .form div.postal-code dd p span input, .page main .contents .container.prayer .form div.date dd p span input, .page main .contents .container.prayer .form div.time dd p span input, .page main .contents .container.prayer .form div.prayer-member-length dd p span input, .page main .contents .container.prayer .form div.group-member-length dd p span input {
+.page main .contents .container.prayer .form div.birthday dd p span input, .page main .contents .container.prayer .form div.age dd p span input, .page main .contents .container.prayer .form div.postal-code dd p span input, .page main .contents .container.prayer .form div.date dd p span input, .page main .contents .container.prayer .form div.time dd p span input, .page main .contents .container.prayer .form div.prayer-member-length dd p span input, .page main .contents .container.prayer .form div.group-member-length dd p span input, .page main .contents .container.contact .form div.birthday dd p span input, .page main .contents .container.contact .form div.age dd p span input, .page main .contents .container.contact .form div.postal-code dd p span input, .page main .contents .container.contact .form div.date dd p span input, .page main .contents .container.contact .form div.time dd p span input, .page main .contents .container.contact .form div.prayer-member-length dd p span input, .page main .contents .container.contact .form div.group-member-length dd p span input {
   width: 10rem;
 }
-.page main .contents .container.prayer .form div.sender-name dd p span input, .page main .contents .container.prayer .form div.group-leader dd p span input {
+.page main .contents .container.prayer .form div.sender-name dd p span input, .page main .contents .container.prayer .form div.group-leader dd p span input, .page main .contents .container.contact .form div.sender-name dd p span input, .page main .contents .container.contact .form div.group-leader dd p span input {
   width: 25rem;
   margin-right: 5px;
 }
-.page main .contents .container.prayer .confirm {
+.page main .contents .container.prayer .confirm, .page main .contents .container.contact .confirm {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.page main .contents .container.prayer .confirm p {
+.page main .contents .container.prayer .confirm p, .page main .contents .container.contact .confirm p {
   margin: 0;
 }
 
-.page main .contents .container.prayer .form .date-time dd .date p span .wpcf7-not-valid-tip, .page main .contents .container.prayer .form .date-time dd .time p span .wpcf7-not-valid-tip {
+.page main .contents .container.prayer .form .date-time dd .date p span .wpcf7-not-valid-tip, .page main .contents .container.prayer .form .date-time dd .time p span .wpcf7-not-valid-tip, .page main .contents .container.contact .form .date-time dd .date p span .wpcf7-not-valid-tip, .page main .contents .container.contact .form .date-time dd .time p span .wpcf7-not-valid-tip {
   bottom: -34%;
 }
-.page main .contents .container.prayer .form .date-time dd .time p span .wpcf7-not-valid-tip {
+.page main .contents .container.prayer .form .date-time dd .time p span .wpcf7-not-valid-tip, .page main .contents .container.contact .form .date-time dd .time p span .wpcf7-not-valid-tip {
   white-space: nowrap;
 }
 
-.page main .contents .container.prayer .form .prayer-member-length dd p, .page main .contents .container.prayer .form .group-member-length dd p {
+.page main .contents .container.prayer .form .prayer-member-length dd p, .page main .contents .container.prayer .form .group-member-length dd p, .page main .contents .container.contact .form .prayer-member-length dd p, .page main .contents .container.contact .form .group-member-length dd p {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-.page main .contents .container.prayer .form .prayer-member-length dd p span .wpcf7-not-valid-tip, .page main .contents .container.prayer .form .group-member-length dd p span .wpcf7-not-valid-tip {
+.page main .contents .container.prayer .form .prayer-member-length dd p span .wpcf7-not-valid-tip, .page main .contents .container.prayer .form .group-member-length dd p span .wpcf7-not-valid-tip, .page main .contents .container.contact .form .prayer-member-length dd p span .wpcf7-not-valid-tip, .page main .contents .container.contact .form .group-member-length dd p span .wpcf7-not-valid-tip {
   bottom: -34%;
   white-space: nowrap;
 }
-.page main .contents .container.prayer .form .prayer-member-length dd p span .wpcf7-not-valid-tip input, .page main .contents .container.prayer .form .group-member-length dd p span .wpcf7-not-valid-tip input {
+.page main .contents .container.prayer .form .prayer-member-length dd p span .wpcf7-not-valid-tip input, .page main .contents .container.prayer .form .group-member-length dd p span .wpcf7-not-valid-tip input, .page main .contents .container.contact .form .prayer-member-length dd p span .wpcf7-not-valid-tip input, .page main .contents .container.contact .form .group-member-length dd p span .wpcf7-not-valid-tip input {
   width: 10rem;
   text-align: right;
 }
 
-.page main .contents .container.prayer .form div .prayer-message {
+.page main .contents .container.prayer .form div .prayer-message, .page main .contents .container.contact .form div .prayer-message {
   position: relative;
 }
-.page main .contents .container.prayer .form div .prayer-message::before {
+.page main .contents .container.prayer .form div .prayer-message::before, .page main .contents .container.contact .form div .prayer-message::before {
   position: absolute;
   top: -15px;
   left: 0;
@@ -2090,48 +2092,122 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   z-index: 100;
 }
 
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wpcf7.js table tr th {
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wpcf7.js table tr th, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wpcf7.js table tr th, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear-long .wpcf7.js table tr th, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long .wpcf7.js table tr th {
   width: 100%;
 }
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wpcf7.js table tr:last-of-type {
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wpcf7.js table tr:last-of-type, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wpcf7.js table tr:last-of-type, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear-long .wpcf7.js table tr:last-of-type, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long .wpcf7.js table tr:last-of-type {
   display: none;
 }
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wpcf7.js .wpcf7cp-btns {
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wpcf7.js .wpcf7cp-btns, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wpcf7.js .wpcf7cp-btns, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear-long .wpcf7.js .wpcf7cp-btns, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long .wpcf7.js .wpcf7cp-btns {
   display: flex;
   justify-content: center;
   gap: 30px;
   margin: 0;
 }
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wpcf7.js .wpcf7cp-btns button {
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wpcf7.js .wpcf7cp-btns button, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wpcf7.js .wpcf7cp-btns button, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear-long .wpcf7.js .wpcf7cp-btns button, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long .wpcf7.js .wpcf7cp-btns button {
   margin: 0;
 }
 
-.page main .contents .container.prayer .confirm .check-box label {
+.page main .contents .container.prayer .confirm .check-box label, .page main .contents .container.contact .confirm .check-box label {
   display: flex;
   align-items: center;
 }
-.page main .contents .container.prayer .confirm .check-box label span {
+.page main .contents .container.prayer .confirm .check-box label span, .page main .contents .container.contact .confirm .check-box label span {
   padding-bottom: 2px;
 }
-.page main .contents .container.prayer .confirm .agreement {
+.page main .contents .container.prayer .confirm .agreement, .page main .contents .container.contact .confirm .agreement {
   width: 100%;
+  margin-top: 50px;
 }
-.page main .contents .container.prayer .confirm .agreement p button.prayer-submit {
+.page main .contents .container.prayer .confirm .agreement p button.prayer-submit, .page main .contents .container.contact .confirm .agreement p button.prayer-submit {
+  width: 100%;
   margin-top: 0;
+  padding: 10px 0;
+  font-size: 1.3rem;
+  line-height: 1;
+  text-align: center;
   color: #333;
   background-color: #fff;
   border: 1px solid #333;
   border-radius: 0;
+  transform: translateY(2px);
 }
-.page main .contents .container.prayer .confirm .agreement p button.prayer-submit:hover {
+.page main .contents .container.prayer .confirm .agreement p button.prayer-submit:hover, .page main .contents .container.contact .confirm .agreement p button.prayer-submit:hover {
   color: #fff;
   background-color: #aaa;
   border: 1px solid #aaa;
+  transform: translateY(0);
+  box-shadow: 0 2px 5px #333;
+}
+.page main .contents .container.prayer .confirm .agreement p button.prayer-submit .wpcf7-spinner, .page main .contents .container.contact .confirm .agreement p button.prayer-submit .wpcf7-spinner {
+  display: none;
+}
+.page main .contents .container.prayer .confirm .agreement p button.prayer-submit input, .page main .contents .container.contact .confirm .agreement p button.prayer-submit input {
+  padding-left: 1rem;
+  letter-spacing: 1rem;
 }
 
-.page main .contents .container.prayer .bg section .contents.prayer {
+.page main .contents .container.prayer .bg section .contents.prayer, .page main .contents .container.prayer .bg section .contents.contact, .page main .contents .container.contact .bg section .contents.prayer, .page main .contents .container.contact .bg section .contents.contact {
   margin-top: 0;
   padding-top: 100px;
+}
+
+.page main .contents .container.prayer .form div.sender-name dd p span input, .page main .contents .container.contact .form div.sender-name dd p span input {
+  width: 100%;
+}
+
+@media (width < 768px) {
+  .page main .contents .container.prayer .form div, .page main .contents .container.contact .form div {
+    display: block;
+  }
+}
+
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long {
+  margin-top: 60px;
+}
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear h3::before, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear h3::after, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long h3::before, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long h3::after {
+  width: calc(50% - 95px);
+}
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear p, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long p, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper {
+  padding: 0 1rem;
+}
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper > p, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper > p {
+  margin-bottom: 20px;
+}
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper > ul, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper > ul {
+  width: 100%;
+  padding: 1rem 0;
+}
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear.fax-send h3::before, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear.fax-send h3::after, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long.fax-send h3::before, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long.fax-send h3::after {
+  width: calc(50% - 120px);
+}
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear.mail-send h3::before, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear.mail-send h3::after, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long.mail-send h3::before, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long.mail-send h3::after {
+  width: calc(50% - 135px);
+}
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .dl-pdf-btn, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .dl-pdf-btn {
+  margin-top: 30px;
+  padding: 2rem 1rem;
+}
+@media (width < 768px) {
+  .page main .contents .container.prayer .form div.group-leader dd p span input, .page main .contents .container.prayer .form .container.contact dd p span input {
+    width: 100%;
+  }
+}
+
+@media (width < 768px) {
+  .page main .contents .container.prayer .form div.sender-name dd p span input, .page main .contents .container.prayer .form div.group-leader dd p span input {
+    width: 15rem;
+  }
+}
+
+.page main .contents .container.prayer .form div.prayer-message-wrapper {
+  padding-bottom: 2rem;
+}
+.page main .contents .container.prayer .form div.prayer-message-wrapper .prayer-message::before {
+  top: 55px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 1rem;
 }
 
 .page.page-id-14 main .contents .frame.annual-event {
@@ -2702,290 +2778,6 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   .page.page-id-14 main .contents .container.annual-event .bg section .contents.chart .gradually-appear h3::before, .page.page-id-14 main .contents .container.annual-event .bg section .contents.chart .gradually-appear h3::after {
     width: calc(50% - 114px);
   }
-}
-
-.page main .contents .frame.prayer, .page main .contents .frame.contact {
-  background-image: url(./img/guide-top.jpg);
-}
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 120px;
-}
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper {
-  width: min(610px, 100%);
-  margin-top: 40px;
-}
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper .leading-square-header, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper .leading-square-header, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper .leading-square-header, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper .leading-square-header {
-  margin-bottom: 20px;
-}
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper .leading-square-header::before, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper .leading-square-header::before, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper .leading-square-header::before, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper .leading-square-header::before {
-  top: 58%;
-  width: 9px;
-  height: 1.7rem;
-}
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper p, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper p, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper p, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper p {
-  margin-bottom: 50px;
-  text-align: left;
-}
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper ul, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper ul, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper ul, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper ul {
-  margin: 0 auto;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 20px 100px;
-  border: 1px solid #333;
-}
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper ul li, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper ul li, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper ul li, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper ul li {
-  text-align: center;
-}
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper ul li.tel-num, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper ul li.tel-num, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper ul li.tel-num, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper ul li.tel-num {
-  font-size: 1.65rem;
-  letter-spacing: 0.3em;
-}
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper ul li + li, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper ul li + li, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper ul li + li, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper ul li + li {
-  margin-top: 10px;
-}
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .dl-pdf-btn, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .dl-pdf-btn, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .dl-pdf-btn, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .dl-pdf-btn {
-  margin-top: 60px;
-}
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear:first-of-type, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear:first-of-type {
-  margin-top: 0;
-}
-
-.page main .contents .container.prayer h3, .page main .contents .container.contact h3 {
-  margin-bottom: 30px;
-  letter-spacing: 0.07em;
-}
-.page main .contents .container.prayer h3::before, .page main .contents .container.prayer h3::after, .page main .contents .container.contact h3::before, .page main .contents .container.contact h3::after {
-  width: calc(50% - 150px);
-}
-.page main .contents .container.prayer p, .page main .contents .container.contact p {
-  font-size: 1.15rem;
-  line-height: 1.75em;
-}
-.page main .contents .container.prayer p.add-space-margin-bottom, .page main .contents .container.contact p.add-space-margin-bottom {
-  margin-bottom: 20px;
-}
-.page main .contents .container.prayer button, .page main .contents .container.contact button {
-  padding: 10px 60px;
-  font-size: 1rem;
-  border: 1px solid #333;
-  transition: 0.3s;
-  transform: translateX(-2px);
-}
-.page main .contents .container.prayer button:hover, .page main .contents .container.contact button:hover {
-  color: #fff;
-  background-color: #aaa;
-  border: 1px solid #aaa;
-}
-.page main .contents .container.prayer .privacy-policy-anchor, .page main .contents .container.contact .privacy-policy-anchor {
-  padding: 3px 7px;
-  font-size: 0.65rem;
-  color: #fff;
-  background-color: #333;
-  border-radius: 2px;
-}
-.page main .contents .container.prayer .check-box, .page main .contents .container.contact .check-box {
-  display: flex;
-  align-content: center;
-}
-.page main .contents .container.prayer .check-box input[type=checkbox], .page main .contents .container.contact .check-box input[type=checkbox] {
-  position: relative;
-  margin-right: 5px;
-  width: 0.8rem;
-  height: 0.8rem;
-  border: 1px solid #000;
-}
-.page main .contents .container.prayer .check-box input[type=checkbox]:checked:before, .page main .contents .container.contact .check-box input[type=checkbox]:checked:before {
-  position: absolute;
-  top: 0px;
-  left: 4px;
-  transform: rotate(50deg);
-  width: 5px;
-  height: 10px;
-  border-right: 2px solid #000;
-  border-bottom: 2px solid #000;
-  content: "";
-}
-.page main .contents .container.prayer .check-box label, .page main .contents .container.contact .check-box label {
-  font-size: 0.75rem;
-}
-
-.page main .contents .container.prayer .form, .page main .contents .container.contact .form {
-  padding-bottom: 15rem;
-}
-.page main .contents .container.prayer .form div, .page main .contents .container.contact .form div {
-  display: grid;
-  grid-template-columns: 1fr 3.5fr;
-  gap: 10px;
-  align-items: center;
-  font-size: 1.15rem;
-}
-.page main .contents .container.prayer .form div + div, .page main .contents .container.contact .form div + div {
-  margin-top: 30px;
-}
-.page main .contents .container.prayer .form div dt p, .page main .contents .container.contact .form div dt p {
-  display: flex;
-  align-items: flex-start;
-  gap: 2px;
-  font-weight: normal;
-}
-.page main .contents .container.prayer .form div dt p sup, .page main .contents .container.contact .form div dt p sup {
-  font-size: 0.7rem;
-}
-.page main .contents .container.prayer .form div dd, .page main .contents .container.contact .form div dd {
-  height: 3rem;
-}
-.page main .contents .container.prayer .form div dd p span, .page main .contents .container.contact .form div dd p span {
-  position: relative;
-}
-.page main .contents .container.prayer .form div dd p span input, .page main .contents .container.contact .form div dd p span input {
-  width: 100%;
-  height: 3rem;
-  padding: 1rem;
-  font-size: 1rem;
-  border: 1px solid #333;
-}
-.page main .contents .container.prayer .form div dd p span textarea, .page main .contents .container.contact .form div dd p span textarea {
-  width: 100%;
-  height: 15rem;
-  border: 1px solid #333;
-}
-.page main .contents .container.prayer .form div dd p span .wpcf7-not-valid-tip, .page main .contents .container.contact .form div dd p span .wpcf7-not-valid-tip {
-  position: absolute;
-  bottom: -115%;
-  left: 0%;
-  font-size: 0.9rem;
-  font-weight: 600;
-  line-height: 1;
-}
-.page main .contents .container.prayer .form div.note, .page main .contents .container.contact .form div.note {
-  margin: 50px 0 5px;
-}
-.page main .contents .container.prayer .form div.note dd, .page main .contents .container.contact .form div.note dd {
-  display: flex;
-  border: unset;
-  align-items: flex-end;
-  font-size: 1rem;
-}
-.page main .contents .container.prayer .form div:nth-of-type(2), .page main .contents .container.contact .form div:nth-of-type(2) {
-  margin-top: 0;
-}
-.page main .contents .container.prayer .form div.birthday dd, .page main .contents .container.prayer .form div.age dd, .page main .contents .container.prayer .form div.postal-code dd, .page main .contents .container.prayer .form div.date dd, .page main .contents .container.prayer .form div.time dd, .page main .contents .container.prayer .form div.prayer-member-length dd, .page main .contents .container.prayer .form div.group-member-length dd, .page main .contents .container.contact .form div.birthday dd, .page main .contents .container.contact .form div.age dd, .page main .contents .container.contact .form div.postal-code dd, .page main .contents .container.contact .form div.date dd, .page main .contents .container.contact .form div.time dd, .page main .contents .container.contact .form div.prayer-member-length dd, .page main .contents .container.contact .form div.group-member-length dd {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 10px;
-}
-.page main .contents .container.prayer .form div.birthday dd div, .page main .contents .container.prayer .form div.age dd div, .page main .contents .container.prayer .form div.postal-code dd div, .page main .contents .container.prayer .form div.date dd div, .page main .contents .container.prayer .form div.time dd div, .page main .contents .container.prayer .form div.prayer-member-length dd div, .page main .contents .container.prayer .form div.group-member-length dd div, .page main .contents .container.contact .form div.birthday dd div, .page main .contents .container.contact .form div.age dd div, .page main .contents .container.contact .form div.postal-code dd div, .page main .contents .container.contact .form div.date dd div, .page main .contents .container.contact .form div.time dd div, .page main .contents .container.contact .form div.prayer-member-length dd div, .page main .contents .container.contact .form div.group-member-length dd div {
-  display: block;
-}
-.page main .contents .container.prayer .form div.birthday dd div.postal-code-4, .page main .contents .container.prayer .form div.age dd div.postal-code-4, .page main .contents .container.prayer .form div.postal-code dd div.postal-code-4, .page main .contents .container.prayer .form div.date dd div.postal-code-4, .page main .contents .container.prayer .form div.time dd div.postal-code-4, .page main .contents .container.prayer .form div.prayer-member-length dd div.postal-code-4, .page main .contents .container.prayer .form div.group-member-length dd div.postal-code-4, .page main .contents .container.contact .form div.birthday dd div.postal-code-4, .page main .contents .container.contact .form div.age dd div.postal-code-4, .page main .contents .container.contact .form div.postal-code dd div.postal-code-4, .page main .contents .container.contact .form div.date dd div.postal-code-4, .page main .contents .container.contact .form div.time dd div.postal-code-4, .page main .contents .container.contact .form div.prayer-member-length dd div.postal-code-4, .page main .contents .container.contact .form div.group-member-length dd div.postal-code-4 {
-  margin-top: 0;
-}
-.page main .contents .container.prayer .form div.birthday dd div.age, .page main .contents .container.prayer .form div.age dd div.age, .page main .contents .container.prayer .form div.postal-code dd div.age, .page main .contents .container.prayer .form div.date dd div.age, .page main .contents .container.prayer .form div.time dd div.age, .page main .contents .container.prayer .form div.prayer-member-length dd div.age, .page main .contents .container.prayer .form div.group-member-length dd div.age, .page main .contents .container.contact .form div.birthday dd div.age, .page main .contents .container.contact .form div.age dd div.age, .page main .contents .container.contact .form div.postal-code dd div.age, .page main .contents .container.contact .form div.date dd div.age, .page main .contents .container.contact .form div.time dd div.age, .page main .contents .container.contact .form div.prayer-member-length dd div.age, .page main .contents .container.contact .form div.group-member-length dd div.age {
-  margin-top: 0;
-}
-.page main .contents .container.prayer .form div.birthday dd p, .page main .contents .container.prayer .form div.age dd p, .page main .contents .container.prayer .form div.postal-code dd p, .page main .contents .container.prayer .form div.date dd p, .page main .contents .container.prayer .form div.time dd p, .page main .contents .container.prayer .form div.prayer-member-length dd p, .page main .contents .container.prayer .form div.group-member-length dd p, .page main .contents .container.contact .form div.birthday dd p, .page main .contents .container.contact .form div.age dd p, .page main .contents .container.contact .form div.postal-code dd p, .page main .contents .container.contact .form div.date dd p, .page main .contents .container.contact .form div.time dd p, .page main .contents .container.contact .form div.prayer-member-length dd p, .page main .contents .container.contact .form div.group-member-length dd p {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-.page main .contents .container.prayer .form div.birthday dd p span input, .page main .contents .container.prayer .form div.age dd p span input, .page main .contents .container.prayer .form div.postal-code dd p span input, .page main .contents .container.prayer .form div.date dd p span input, .page main .contents .container.prayer .form div.time dd p span input, .page main .contents .container.prayer .form div.prayer-member-length dd p span input, .page main .contents .container.prayer .form div.group-member-length dd p span input, .page main .contents .container.contact .form div.birthday dd p span input, .page main .contents .container.contact .form div.age dd p span input, .page main .contents .container.contact .form div.postal-code dd p span input, .page main .contents .container.contact .form div.date dd p span input, .page main .contents .container.contact .form div.time dd p span input, .page main .contents .container.contact .form div.prayer-member-length dd p span input, .page main .contents .container.contact .form div.group-member-length dd p span input {
-  width: 10rem;
-}
-.page main .contents .container.prayer .form div.sender-name dd p span input, .page main .contents .container.prayer .form div.group-leader dd p span input, .page main .contents .container.contact .form div.sender-name dd p span input, .page main .contents .container.contact .form div.group-leader dd p span input {
-  width: 25rem;
-  margin-right: 5px;
-}
-.page main .contents .container.prayer .confirm, .page main .contents .container.contact .confirm {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.page main .contents .container.prayer .confirm p, .page main .contents .container.contact .confirm p {
-  margin: 0;
-}
-
-.page main .contents .container.prayer .form .date-time dd .date p span .wpcf7-not-valid-tip, .page main .contents .container.prayer .form .date-time dd .time p span .wpcf7-not-valid-tip, .page main .contents .container.contact .form .date-time dd .date p span .wpcf7-not-valid-tip, .page main .contents .container.contact .form .date-time dd .time p span .wpcf7-not-valid-tip {
-  bottom: -34%;
-}
-.page main .contents .container.prayer .form .date-time dd .time p span .wpcf7-not-valid-tip, .page main .contents .container.contact .form .date-time dd .time p span .wpcf7-not-valid-tip {
-  white-space: nowrap;
-}
-
-.page main .contents .container.prayer .form .prayer-member-length dd p, .page main .contents .container.prayer .form .group-member-length dd p, .page main .contents .container.contact .form .prayer-member-length dd p, .page main .contents .container.contact .form .group-member-length dd p {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-.page main .contents .container.prayer .form .prayer-member-length dd p span .wpcf7-not-valid-tip, .page main .contents .container.prayer .form .group-member-length dd p span .wpcf7-not-valid-tip, .page main .contents .container.contact .form .prayer-member-length dd p span .wpcf7-not-valid-tip, .page main .contents .container.contact .form .group-member-length dd p span .wpcf7-not-valid-tip {
-  bottom: -34%;
-  white-space: nowrap;
-}
-.page main .contents .container.prayer .form .prayer-member-length dd p span .wpcf7-not-valid-tip input, .page main .contents .container.prayer .form .group-member-length dd p span .wpcf7-not-valid-tip input, .page main .contents .container.contact .form .prayer-member-length dd p span .wpcf7-not-valid-tip input, .page main .contents .container.contact .form .group-member-length dd p span .wpcf7-not-valid-tip input {
-  width: 10rem;
-  text-align: right;
-}
-
-.page main .contents .container.prayer .form div .prayer-message, .page main .contents .container.contact .form div .prayer-message {
-  position: relative;
-}
-.page main .contents .container.prayer .form div .prayer-message::before, .page main .contents .container.contact .form div .prayer-message::before {
-  position: absolute;
-  top: -15px;
-  left: 0;
-  content: "健闘祈願【試合・大会名・試合日】・スポーツ上達・技術根性育成・厄除・心願成就 等々";
-  width: 100%;
-  padding-bottom: 5px;
-  font-size: 0.8rem;
-  line-height: 1em;
-  z-index: 100;
-}
-
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wpcf7.js table tr th, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wpcf7.js table tr th, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear-long .wpcf7.js table tr th, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long .wpcf7.js table tr th {
-  width: 100%;
-}
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wpcf7.js table tr:last-of-type, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wpcf7.js table tr:last-of-type, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear-long .wpcf7.js table tr:last-of-type, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long .wpcf7.js table tr:last-of-type {
-  display: none;
-}
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wpcf7.js .wpcf7cp-btns, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wpcf7.js .wpcf7cp-btns, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear-long .wpcf7.js .wpcf7cp-btns, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long .wpcf7.js .wpcf7cp-btns {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin: 0;
-}
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wpcf7.js .wpcf7cp-btns button, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wpcf7.js .wpcf7cp-btns button, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear-long .wpcf7.js .wpcf7cp-btns button, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long .wpcf7.js .wpcf7cp-btns button {
-  margin: 0;
-}
-
-.page main .contents .container.prayer .confirm .check-box label, .page main .contents .container.contact .confirm .check-box label {
-  display: flex;
-  align-items: center;
-}
-.page main .contents .container.prayer .confirm .check-box label span, .page main .contents .container.contact .confirm .check-box label span {
-  padding-bottom: 2px;
-}
-.page main .contents .container.prayer .confirm .agreement, .page main .contents .container.contact .confirm .agreement {
-  width: 100%;
-}
-.page main .contents .container.prayer .confirm .agreement p button.prayer-submit, .page main .contents .container.contact .confirm .agreement p button.prayer-submit {
-  margin-top: 0;
-  color: #333;
-  background-color: #fff;
-  border: 1px solid #333;
-  border-radius: 0;
-}
-.page main .contents .container.prayer .confirm .agreement p button.prayer-submit:hover, .page main .contents .container.contact .confirm .agreement p button.prayer-submit:hover {
-  color: #fff;
-  background-color: #aaa;
-  border: 1px solid #aaa;
-}
-
-.page main .contents .container.prayer .bg section .contents.prayer, .page main .contents .container.prayer .bg section .contents.contact, .page main .contents .container.contact .bg section .contents.prayer, .page main .contents .container.contact .bg section .contents.contact {
-  margin-top: 0;
-  padding-top: 100px;
 }
 
 .home footer, .page footer {
