@@ -71,7 +71,7 @@
           </h2>
           <p>当やしろは、代々、鞠と和歌の宗家である公家飛鳥井氏の邸宅で、「崇徳天皇」「淳仁天皇」「清大明神」が祀られており、御所にほど近く樹齢数百年の霊木たる小賀玉の木のもと、飛鳥井の井から清水が湧く古都京都のオアシスともなっています。</p>
         </div>
-        <a href="" class="to-contents-page">白峯神宮について</a>
+        <a href="<?php echo esc_url(home_url('/about/history/')); ?>" class="to-contents-page">白峯神宮について</a>
       </section>
 
       <section class="annual-event">
@@ -95,21 +95,21 @@
               </li>
             </ul>
           </div>
-          <a href="" class="to-contents-page">年中行事・祭事</a>
+          <a href="<?php echo esc_url(home_url('/annual-event/')); ?>" class="to-contents-page">年中行事・祭事</a>
         </div>
       </section>
 
       <section class="to-prayer-gift gradually-appear">
         <ul class="hover-bright">
           <li>
-            <a href="">
-              <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/atari-AdobeStock_346787519_Preview.jpeg" alt="">
+            <a href="<?php echo esc_url(home_url('/prayer/')); ?>">
+              <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/index-page-link-to-prayer-image.jpg" alt="">
               <div class="catch">ご&emsp;祈&emsp;祷</div>
             </a>
           </li>
           <li>
-            <a href="">
-              <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/atari-toukon-img03.png" alt="">
+            <a href="https://shiraminejingu.or.jp/omamori/">
+              <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/index-page-link-to-omamori-image.jpg" alt="">
               <div class="catch">お守り・授与品</div>
             </a>
           </li>
@@ -120,7 +120,7 @@
         <div class="frame">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.062849246738!2d135.75058587613765!3d35.0301575728044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60010875465295bd%3A0xb8f1789b55585273!2z55m95bOv56We5a6u!5e0!3m2!1sja!2sjp!4v1701046947001!5m2!1sja!2sjp" width="100%" height="670px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <a href="" class="to-contents-page">交通（アクセス）</a>
+        <a href="<?php echo esc_url(home_url('/access/')); ?>" class="to-contents-page">交通（アクセス）</a>
       </section>
     </div>
   </div>
