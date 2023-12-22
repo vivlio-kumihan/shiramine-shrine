@@ -326,19 +326,40 @@ body .page-top-arrow {
   justify-content: flex-end;
   align-items: center;
   gap: 5px;
+  position: relative;
+  padding-right: 140px;
   font-size: 0.9rem;
 }
 .home header .wrapper .global-menu .upper ul li:nth-of-type(3), .page header .wrapper .global-menu .upper ul li:nth-of-type(3) {
   margin-left: 5px;
 }
 .home header .wrapper .global-menu .upper ul .language, .page header .wrapper .global-menu .upper ul .language {
-  position: relative;
-  margin-left: 40px;
+  position: absolute;
+  top: -8px;
+  right: 0;
+  width: 125px;
+  padding: 3px 0px 8px 0;
+  height: auto;
   background-color: #fff;
-  border-radius: 999px;
+  border-radius: 5px;
   box-shadow: 0 2px 5px #aaa;
+  z-index: 105;
 }
-.home header .wrapper .global-menu .upper ul .language::after, .page header .wrapper .global-menu .upper ul .language::after {
+.home header .wrapper .global-menu .upper ul .language > button, .page header .wrapper .global-menu .upper ul .language > button {
+  position: relative;
+  width: 100%;
+  padding: 3px 20px 3px 30px;
+}
+.home header .wrapper .global-menu .upper ul .language > button span, .page header .wrapper .global-menu .upper ul .language > button span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+}
+.home header .wrapper .global-menu .upper ul .language > button span img, .page header .wrapper .global-menu .upper ul .language > button span img {
+  width: 17px;
+}
+.home header .wrapper .global-menu .upper ul .language > button::after, .page header .wrapper .global-menu .upper ul .language > button::after {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -346,18 +367,21 @@ body .page-top-arrow {
   font-size: 0.6rem;
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
-  right: 5px;
+  top: 52%;
+  right: 12px;
 }
-.home header .wrapper .global-menu .upper ul .language a, .page header .wrapper .global-menu .upper ul .language a {
+.home header .wrapper .global-menu .upper ul .language > ul, .page header .wrapper .global-menu .upper ul .language > ul {
   display: flex;
-  align-items: center;
-  gap: 7px;
-  padding: 2px 18px 2px 7px;
-  font-size: 0.75rem;
-  line-height: 1em;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 0 0 31px;
+  border: unset;
 }
-.home header .wrapper .global-menu .upper ul .language a span img, .page header .wrapper .global-menu .upper ul .language a span img {
-  width: 17px;
+.home header .wrapper .global-menu .upper ul .language > ul li a, .page header .wrapper .global-menu .upper ul .language > ul li a {
+  display: block;
+  width: 100%;
+  padding: 10px 0 0;
+  white-space: nowrap;
 }
 .home header .wrapper .global-menu .lower ul.menu li.menu-item.active .sub-menu, .page header .wrapper .global-menu .lower ul.menu li.menu-item.active .sub-menu {
   visibility: visible;
@@ -1420,7 +1444,7 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   transition: 0.8s;
   visibility: hidden;
   opacity: 0;
-  z-index: 105;
+  z-index: 106;
 }
 .page main .contents .container.guide-shrine .modal.activate-modal {
   right: 0;
@@ -2297,7 +2321,7 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   transition: 0.8s;
   visibility: hidden;
   opacity: 0;
-  z-index: 105;
+  z-index: 106;
 }
 .page.page-id-14 main .contents .container.annual-event .modal.activate-modal {
   right: 0;
@@ -2845,6 +2869,9 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
 .page main .contents .frame.access {
   background-image: url(./img/access-top.jpg);
 }
+.page main .contents .container.access .bg section .contents.access {
+  padding-top: 140px;
+}
 .page main .contents .container.access .bg section .contents.access:first-of-type {
   margin-top: 0;
 }
@@ -2935,6 +2962,192 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
 
 span.color-gold {
   color: #eec714;
+}
+
+.page main .frame.english {
+  background-image: url(./img/english-top.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.page main .frame.english h1 {
+  letter-spacing: 0;
+}
+.page main .container.english em {
+  font-weight: 700;
+}
+.page main .container.english .bg section .contents {
+  background-color: transparent;
+}
+.page main .container.english .bg section .contents:first-of-type {
+  margin-top: 0;
+  padding-top: 140px;
+}
+.page main .container.english .bg section .contents:last-of-type {
+  padding-bottom: 100px;
+}
+.page main .container.english .bg section .contents.padding-top-none {
+  padding-top: 0;
+}
+.page main .container.english .bg section .contents .gradually-appear h3::before, .page main .container.english .bg section .contents .gradually-appear h3::after, .page main .container.english .bg section .contents .gradually-appear-long h3::before, .page main .container.english .bg section .contents .gradually-appear-long h3::after {
+  width: calc(50% - 90px);
+}
+.page main .container.english .bg section .contents .gradually-appear h3.eng-seidai-myoujin::before, .page main .container.english .bg section .contents .gradually-appear h3.eng-seidai-myoujin::after, .page main .container.english .bg section .contents .gradually-appear-long h3.eng-seidai-myoujin::before, .page main .container.english .bg section .contents .gradually-appear-long h3.eng-seidai-myoujin::after {
+  width: calc(50% - 215px);
+}
+.page main .container.english .bg section .contents .gradually-appear h3.eng-kemari::before, .page main .container.english .bg section .contents .gradually-appear h3.eng-kemari::after, .page main .container.english .bg section .contents .gradually-appear-long h3.eng-kemari::before, .page main .container.english .bg section .contents .gradually-appear-long h3.eng-kemari::after {
+  width: calc(50% - 130px);
+}
+.page main .container.english .bg section .contents .gradually-appear h3.eng-ema::before, .page main .container.english .bg section .contents .gradually-appear h3.eng-ema::after, .page main .container.english .bg section .contents .gradually-appear-long h3.eng-ema::before, .page main .container.english .bg section .contents .gradually-appear-long h3.eng-ema::after {
+  width: calc(50% - 100px);
+}
+.page main .container.english .bg section .contents .gradually-appear .lead-copy, .page main .container.english .bg section .contents .gradually-appear-long .lead-copy {
+  margin-bottom: 60px;
+}
+.page main .container.english .bg section .contents .gradually-appear .lead-copy p, .page main .container.english .bg section .contents .gradually-appear-long .lead-copy p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: block;
+}
+.page main .container.english .bg section .contents .gradually-appear .lead-copy p:last-of-type, .page main .container.english .bg section .contents .gradually-appear-long .lead-copy p:last-of-type {
+  margin-top: 1rem;
+}
+.page main .container.english .bg section .contents .gradually-appear .inner-contents, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents {
+  padding: 60px 0 80px;
+}
+.page main .container.english .bg section .contents .gradually-appear .inner-contents.padding-top-none, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents.padding-top-none {
+  padding-top: 0;
+}
+.page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container.flex-column, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container.flex-column {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: unset;
+}
+.page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container.irregularity-gosaizin, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container.irregularity-gosaizin {
+  grid-template-columns: repeat(5, 1fr);
+}
+.page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container.irregularity-gosaizin .size-small, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container.irregularity-gosaizin .size-small {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+}
+.page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container.irregularity-gosaizin .size-small img, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container.irregularity-gosaizin .size-small img {
+  aspect-ratio: 1;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container.irregularity-gosaizin .paragraph, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container.irregularity-gosaizin .paragraph {
+  grid-column: 3/6;
+  grid-row: 1/2;
+}
+.page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-gosaizin .size-small, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-gosaizin .size-small {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+  padding-top: 5%;
+}
+.page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-gosaizin .size-small img, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-gosaizin .size-small img {
+  width: 80%;
+}
+.page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-gosaizin .paragraph, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-gosaizin .paragraph {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-history, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-history {
+  grid-template-columns: repeat(4, 1fr);
+}
+.page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-history .size-learge, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-history .size-learge {
+  grid-column: 2/5;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+}
+.page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-history .size-learge img, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-history .size-learge img {
+  width: 100%;
+}
+.page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-history .paragraph, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-history .paragraph {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container + .flex-container, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container + .flex-container {
+  margin-top: 20px;
+}
+.page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container .paragraph .wrapper + .wrapper, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container .paragraph .wrapper + .wrapper {
+  margin-top: 25px;
+}
+.page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container .paragraph ul, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container .paragraph ul {
+  margin-top: 30px;
+}
+.page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container .paragraph ul li, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container .paragraph ul li {
+  font-size: 1rem;
+  line-height: 1em;
+  text-align: left;
+}
+.page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container .paragraph ul li + li, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container .paragraph ul li + li {
+  margin-top: 15px;
+}
+.page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container .photos, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container .photos {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container .photos .photo-frame, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container .photos .photo-frame {
+  width: 100%;
+  aspect-ratio: 3/2;
+}
+.page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container .photos .photo-frame img, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container .photos .photo-frame img {
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container .photos.ema, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container .photos.ema {
+  flex-direction: row;
+}
+
+@media (width < 768px) {
+  .page main .container.english .bg section .contents:first-of-type {
+    padding-top: 60px;
+  }
+  .page main .container.english .bg section .contents:first-of-type .lead-copy {
+    padding: 0 1rem;
+  }
+  .page main .container.english .bg section .contents:first-of-type .lead-copy p {
+    font-size: 1rem;
+    line-height: 1.5em;
+    text-align: center;
+  }
+  .page main .container.english .bg section .contents .gradually-appear .inner-contents, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents {
+    padding: 40px 1rem 0;
+  }
+  .page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container, .page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-history, .page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container.irregularity-gosaizin, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-history, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container.irregularity-gosaizin {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  .page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container p, .page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-history p, .page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container.irregularity-gosaizin p, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container p, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-history p, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container.irregularity-gosaizin p {
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: left;
+  }
+  .page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container p + p, .page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-history p + p, .page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container.irregularity-gosaizin p + p, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container p + p, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-history p + p, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container.irregularity-gosaizin p + p {
+    margin-top: 15px;
+  }
+  .page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container .photos, .page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-history .photos, .page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container.irregularity-gosaizin .photos, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container .photos, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-history .photos, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container.irregularity-gosaizin .photos {
+    margin-top: 20px;
+  }
+  .page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container .photos.ema, .page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-history .photos.ema, .page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container.irregularity-gosaizin .photos.ema, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container .photos.ema, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-history .photos.ema, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container.irregularity-gosaizin .photos.ema {
+    flex-direction: column;
+  }
 }
 
 .home footer, .page footer {

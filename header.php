@@ -31,12 +31,16 @@
             <li>|</li>
             <li><a href="<?php echo esc_url(home_url('/contact/')); ?>">お問い合わせ</a></li>
             <li class="language">
-              <a href="">
+              <button type="button">
                 <span>
                   <img src="<?php echo get_template_directory_uri(); ?>/img/icon-global-middle.png" alt="">
                 </span>
                 Language
-              </a>
+              </button>
+              <ul>
+                <li><a href="<?php echo home_url(); ?>">日本語</a></li>
+                <li><a href="<?php echo esc_url(home_url('/english/')); ?>">English</a></li>
+              </ul>
             </li>
           </ul>
         </div>
