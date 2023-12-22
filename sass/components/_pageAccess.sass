@@ -1,0 +1,127 @@
+@use '../forwards' as fw
+@use '../media-query' as *
+
+.page 
+  main 
+    .contents
+      .frame.access
+        background-image: url(./img/access-top.jpg)
+      .container.access
+        .bg 
+          section 
+            .contents.access
+              // padding-top: 140px
+              &:first-of-type
+                margin-top: 0
+              .gradually-appear, .gradually-appear-long
+                margin-top: 0
+                .wrapper
+                  width: fit-content
+                h3
+                  &#place.place
+                    padding: 0
+                    margin-top: 0
+                    &::before, &::after
+                      width: calc(50% - 85px)
+                  &:last-of-type
+                    margin-top: 90px
+                    &::before, &::after
+                      width: calc(50% - 280px)
+              .gradually-appear-long.align-left
+                align-items: flex-start
+                .leading-square-header
+                  margin: 20px 0
+                  &:not(:first-of-type)
+                    margin-top: 40px
+                > .grid-wrapper
+                  display: grid
+                  grid-template-columns: repeat(3, 1fr)
+                  gap: 20px
+                  width: 100%
+                  .description
+                    grid-column: 1/2
+                    > p
+                      margin-bottom: 10px
+                      font-size: 1.1rem
+                      line-height: 1.5em
+                    > ul
+                      margin: 1rem 0
+                      li
+                        padding-left:1em
+                        text-indent:-1em
+                        font-size: 1rem
+                        line-height: 1.3em
+                        &:not(:first-of-type)
+                          margin-top: 7px
+                  .photo-frame
+                    grid-column: 2/4
+                    img
+                      width: 100%
+                      object-fit: cover
+                > .grid-wrapper.five-photos
+                    grid-template-columns: repeat(2, 1fr)
+                    margin-top: 20px
+                    figure
+                      figcaption
+                        margin-bottom: 10px
+                        font-size: .9rem
+                        line-height: 1.3em
+                      img
+                        width: 100%
+                        object-fit: cover
+                      &:last-of-type
+                        grid-column: 1/3
+                        text-align: center
+                        img
+                          width: 50%
+span.color-gold
+  color: #eec714
+
+              
+
+// .page 
+//   main 
+//     .contents
+//       .container.access
+//         .form
+//           div
+//             dd
+//               p
+//                 span
+//                   .wpcf7-not-valid-tip
+//                     bottom: -35%
+//               &.sender-email
+//                 p
+//                   span
+//                     .wpcf7-not-valid-tip
+//                       bottom: -115%
+//               &.message
+//                 p
+//                   span
+//                     .wpcf7-not-valid-tip
+//                       bottom: -490%
+// // for sm
+// .page
+//   main
+//     .contents
+//       +max(md)
+//         .container.access
+//           .bg
+//             section
+//               .contents.access
+//                 margin-top: 0
+//                 padding: 100px 0 80px
+//                 .gradually-appear, .gradually-appear-long
+//                   margin-top: 0
+//                   h3::before, h3::after
+//                     width: calc(50% - 95px)
+//                   p, .wrapper
+//                     padding: 0 1rem
+// .page
+//   main
+//     .contents
+//       +max(md)
+//         .container.access
+//           .form
+//             div.note
+//               margin: 25px 0 0

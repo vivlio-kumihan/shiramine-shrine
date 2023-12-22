@@ -21,7 +21,7 @@
               >
             </li>
             <li>
-              <a href="<?php echo esc_url(home_url('/guide-shrine/')); ?>">境内のご案内</a>
+              <a href="<?php echo esc_url(home_url('/annual-event/')); ?>">年中行事・祭事</a>
             </li>
           </ul>
 

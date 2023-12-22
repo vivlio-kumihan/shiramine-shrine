@@ -1850,102 +1850,102 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   }
 }
 
-.page main .contents .frame.prayer, .page main .contents .frame.contact {
+.page main .contents .frame.prayer, .page main .contents .frame.contact, .page main .contents .frame.access {
   background-image: url(./img/prayer-top.jpg);
 }
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear-long, .page main .contents .container.contact .bg section .contents.contact .gradually-appear, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long {
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long, .page main .contents .container.prayer .bg section .contents.access .gradually-appear, .page main .contents .container.prayer .bg section .contents.access .gradually-appear-long, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear-long, .page main .contents .container.contact .bg section .contents.contact .gradually-appear, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long, .page main .contents .container.contact .bg section .contents.access .gradually-appear, .page main .contents .container.contact .bg section .contents.access .gradually-appear-long, .page main .contents .container.access .bg section .contents.prayer .gradually-appear, .page main .contents .container.access .bg section .contents.prayer .gradually-appear-long, .page main .contents .container.access .bg section .contents.contact .gradually-appear, .page main .contents .container.access .bg section .contents.contact .gradually-appear-long, .page main .contents .container.access .bg section .contents.access .gradually-appear, .page main .contents .container.access .bg section .contents.access .gradually-appear-long {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 120px;
 }
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear .wrapper, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear-long .wrapper, .page main .contents .container.contact .bg section .contents.contact .gradually-appear .wrapper, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long .wrapper {
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper, .page main .contents .container.prayer .bg section .contents.access .gradually-appear .wrapper, .page main .contents .container.prayer .bg section .contents.access .gradually-appear-long .wrapper, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear .wrapper, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear-long .wrapper, .page main .contents .container.contact .bg section .contents.contact .gradually-appear .wrapper, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long .wrapper, .page main .contents .container.contact .bg section .contents.access .gradually-appear .wrapper, .page main .contents .container.contact .bg section .contents.access .gradually-appear-long .wrapper, .page main .contents .container.access .bg section .contents.prayer .gradually-appear .wrapper, .page main .contents .container.access .bg section .contents.prayer .gradually-appear-long .wrapper, .page main .contents .container.access .bg section .contents.contact .gradually-appear .wrapper, .page main .contents .container.access .bg section .contents.contact .gradually-appear-long .wrapper, .page main .contents .container.access .bg section .contents.access .gradually-appear .wrapper, .page main .contents .container.access .bg section .contents.access .gradually-appear-long .wrapper {
   width: min(610px, 100%);
   margin-top: 40px;
 }
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper .leading-square-header, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper .leading-square-header, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper .leading-square-header, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper .leading-square-header, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear .wrapper .leading-square-header, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear-long .wrapper .leading-square-header, .page main .contents .container.contact .bg section .contents.contact .gradually-appear .wrapper .leading-square-header, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long .wrapper .leading-square-header {
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper .leading-square-header, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper .leading-square-header, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper .leading-square-header, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper .leading-square-header, .page main .contents .container.prayer .bg section .contents.access .gradually-appear .wrapper .leading-square-header, .page main .contents .container.prayer .bg section .contents.access .gradually-appear-long .wrapper .leading-square-header, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear .wrapper .leading-square-header, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear-long .wrapper .leading-square-header, .page main .contents .container.contact .bg section .contents.contact .gradually-appear .wrapper .leading-square-header, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long .wrapper .leading-square-header, .page main .contents .container.contact .bg section .contents.access .gradually-appear .wrapper .leading-square-header, .page main .contents .container.contact .bg section .contents.access .gradually-appear-long .wrapper .leading-square-header, .page main .contents .container.access .bg section .contents.prayer .gradually-appear .wrapper .leading-square-header, .page main .contents .container.access .bg section .contents.prayer .gradually-appear-long .wrapper .leading-square-header, .page main .contents .container.access .bg section .contents.contact .gradually-appear .wrapper .leading-square-header, .page main .contents .container.access .bg section .contents.contact .gradually-appear-long .wrapper .leading-square-header, .page main .contents .container.access .bg section .contents.access .gradually-appear .wrapper .leading-square-header, .page main .contents .container.access .bg section .contents.access .gradually-appear-long .wrapper .leading-square-header {
   margin-bottom: 20px;
 }
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper .leading-square-header::before, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper .leading-square-header::before, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper .leading-square-header::before, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper .leading-square-header::before, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear .wrapper .leading-square-header::before, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear-long .wrapper .leading-square-header::before, .page main .contents .container.contact .bg section .contents.contact .gradually-appear .wrapper .leading-square-header::before, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long .wrapper .leading-square-header::before {
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper .leading-square-header::before, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper .leading-square-header::before, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper .leading-square-header::before, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper .leading-square-header::before, .page main .contents .container.prayer .bg section .contents.access .gradually-appear .wrapper .leading-square-header::before, .page main .contents .container.prayer .bg section .contents.access .gradually-appear-long .wrapper .leading-square-header::before, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear .wrapper .leading-square-header::before, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear-long .wrapper .leading-square-header::before, .page main .contents .container.contact .bg section .contents.contact .gradually-appear .wrapper .leading-square-header::before, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long .wrapper .leading-square-header::before, .page main .contents .container.contact .bg section .contents.access .gradually-appear .wrapper .leading-square-header::before, .page main .contents .container.contact .bg section .contents.access .gradually-appear-long .wrapper .leading-square-header::before, .page main .contents .container.access .bg section .contents.prayer .gradually-appear .wrapper .leading-square-header::before, .page main .contents .container.access .bg section .contents.prayer .gradually-appear-long .wrapper .leading-square-header::before, .page main .contents .container.access .bg section .contents.contact .gradually-appear .wrapper .leading-square-header::before, .page main .contents .container.access .bg section .contents.contact .gradually-appear-long .wrapper .leading-square-header::before, .page main .contents .container.access .bg section .contents.access .gradually-appear .wrapper .leading-square-header::before, .page main .contents .container.access .bg section .contents.access .gradually-appear-long .wrapper .leading-square-header::before {
   top: 58%;
   width: 9px;
   height: 1.7rem;
 }
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper p, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper p, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper p, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper p, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear .wrapper p, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear-long .wrapper p, .page main .contents .container.contact .bg section .contents.contact .gradually-appear .wrapper p, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long .wrapper p {
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper p, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper p, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper p, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper p, .page main .contents .container.prayer .bg section .contents.access .gradually-appear .wrapper p, .page main .contents .container.prayer .bg section .contents.access .gradually-appear-long .wrapper p, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear .wrapper p, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear-long .wrapper p, .page main .contents .container.contact .bg section .contents.contact .gradually-appear .wrapper p, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long .wrapper p, .page main .contents .container.contact .bg section .contents.access .gradually-appear .wrapper p, .page main .contents .container.contact .bg section .contents.access .gradually-appear-long .wrapper p, .page main .contents .container.access .bg section .contents.prayer .gradually-appear .wrapper p, .page main .contents .container.access .bg section .contents.prayer .gradually-appear-long .wrapper p, .page main .contents .container.access .bg section .contents.contact .gradually-appear .wrapper p, .page main .contents .container.access .bg section .contents.contact .gradually-appear-long .wrapper p, .page main .contents .container.access .bg section .contents.access .gradually-appear .wrapper p, .page main .contents .container.access .bg section .contents.access .gradually-appear-long .wrapper p {
   margin-bottom: 50px;
   text-align: left;
 }
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper ul, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper ul, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper ul, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper ul, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear .wrapper ul, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear-long .wrapper ul, .page main .contents .container.contact .bg section .contents.contact .gradually-appear .wrapper ul, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long .wrapper ul {
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper ul, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper ul, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper ul, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper ul, .page main .contents .container.prayer .bg section .contents.access .gradually-appear .wrapper ul, .page main .contents .container.prayer .bg section .contents.access .gradually-appear-long .wrapper ul, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear .wrapper ul, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear-long .wrapper ul, .page main .contents .container.contact .bg section .contents.contact .gradually-appear .wrapper ul, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long .wrapper ul, .page main .contents .container.contact .bg section .contents.access .gradually-appear .wrapper ul, .page main .contents .container.contact .bg section .contents.access .gradually-appear-long .wrapper ul, .page main .contents .container.access .bg section .contents.prayer .gradually-appear .wrapper ul, .page main .contents .container.access .bg section .contents.prayer .gradually-appear-long .wrapper ul, .page main .contents .container.access .bg section .contents.contact .gradually-appear .wrapper ul, .page main .contents .container.access .bg section .contents.contact .gradually-appear-long .wrapper ul, .page main .contents .container.access .bg section .contents.access .gradually-appear .wrapper ul, .page main .contents .container.access .bg section .contents.access .gradually-appear-long .wrapper ul {
   margin: 0 auto;
   width: -moz-fit-content;
   width: fit-content;
   padding: 20px 100px;
   border: 1px solid #333;
 }
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper ul li, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper ul li, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper ul li, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper ul li, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear .wrapper ul li, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear-long .wrapper ul li, .page main .contents .container.contact .bg section .contents.contact .gradually-appear .wrapper ul li, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long .wrapper ul li {
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper ul li, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper ul li, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper ul li, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper ul li, .page main .contents .container.prayer .bg section .contents.access .gradually-appear .wrapper ul li, .page main .contents .container.prayer .bg section .contents.access .gradually-appear-long .wrapper ul li, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear .wrapper ul li, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear-long .wrapper ul li, .page main .contents .container.contact .bg section .contents.contact .gradually-appear .wrapper ul li, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long .wrapper ul li, .page main .contents .container.contact .bg section .contents.access .gradually-appear .wrapper ul li, .page main .contents .container.contact .bg section .contents.access .gradually-appear-long .wrapper ul li, .page main .contents .container.access .bg section .contents.prayer .gradually-appear .wrapper ul li, .page main .contents .container.access .bg section .contents.prayer .gradually-appear-long .wrapper ul li, .page main .contents .container.access .bg section .contents.contact .gradually-appear .wrapper ul li, .page main .contents .container.access .bg section .contents.contact .gradually-appear-long .wrapper ul li, .page main .contents .container.access .bg section .contents.access .gradually-appear .wrapper ul li, .page main .contents .container.access .bg section .contents.access .gradually-appear-long .wrapper ul li {
   text-align: center;
 }
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper ul li.tel-num, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper ul li.tel-num, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper ul li.tel-num, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper ul li.tel-num, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear .wrapper ul li.tel-num, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear-long .wrapper ul li.tel-num, .page main .contents .container.contact .bg section .contents.contact .gradually-appear .wrapper ul li.tel-num, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long .wrapper ul li.tel-num {
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper ul li.tel-num, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper ul li.tel-num, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper ul li.tel-num, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper ul li.tel-num, .page main .contents .container.prayer .bg section .contents.access .gradually-appear .wrapper ul li.tel-num, .page main .contents .container.prayer .bg section .contents.access .gradually-appear-long .wrapper ul li.tel-num, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear .wrapper ul li.tel-num, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear-long .wrapper ul li.tel-num, .page main .contents .container.contact .bg section .contents.contact .gradually-appear .wrapper ul li.tel-num, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long .wrapper ul li.tel-num, .page main .contents .container.contact .bg section .contents.access .gradually-appear .wrapper ul li.tel-num, .page main .contents .container.contact .bg section .contents.access .gradually-appear-long .wrapper ul li.tel-num, .page main .contents .container.access .bg section .contents.prayer .gradually-appear .wrapper ul li.tel-num, .page main .contents .container.access .bg section .contents.prayer .gradually-appear-long .wrapper ul li.tel-num, .page main .contents .container.access .bg section .contents.contact .gradually-appear .wrapper ul li.tel-num, .page main .contents .container.access .bg section .contents.contact .gradually-appear-long .wrapper ul li.tel-num, .page main .contents .container.access .bg section .contents.access .gradually-appear .wrapper ul li.tel-num, .page main .contents .container.access .bg section .contents.access .gradually-appear-long .wrapper ul li.tel-num {
   font-size: 1.65rem;
   letter-spacing: 0.3em;
 }
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper ul li + li, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper ul li + li, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper ul li + li, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper ul li + li, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear .wrapper ul li + li, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear-long .wrapper ul li + li, .page main .contents .container.contact .bg section .contents.contact .gradually-appear .wrapper ul li + li, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long .wrapper ul li + li {
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper ul li + li, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper ul li + li, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .wrapper ul li + li, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .wrapper ul li + li, .page main .contents .container.prayer .bg section .contents.access .gradually-appear .wrapper ul li + li, .page main .contents .container.prayer .bg section .contents.access .gradually-appear-long .wrapper ul li + li, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear .wrapper ul li + li, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear-long .wrapper ul li + li, .page main .contents .container.contact .bg section .contents.contact .gradually-appear .wrapper ul li + li, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long .wrapper ul li + li, .page main .contents .container.contact .bg section .contents.access .gradually-appear .wrapper ul li + li, .page main .contents .container.contact .bg section .contents.access .gradually-appear-long .wrapper ul li + li, .page main .contents .container.access .bg section .contents.prayer .gradually-appear .wrapper ul li + li, .page main .contents .container.access .bg section .contents.prayer .gradually-appear-long .wrapper ul li + li, .page main .contents .container.access .bg section .contents.contact .gradually-appear .wrapper ul li + li, .page main .contents .container.access .bg section .contents.contact .gradually-appear-long .wrapper ul li + li, .page main .contents .container.access .bg section .contents.access .gradually-appear .wrapper ul li + li, .page main .contents .container.access .bg section .contents.access .gradually-appear-long .wrapper ul li + li {
   margin-top: 10px;
 }
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .dl-pdf-btn, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .dl-pdf-btn, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .dl-pdf-btn, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .dl-pdf-btn, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear .dl-pdf-btn, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear-long .dl-pdf-btn, .page main .contents .container.contact .bg section .contents.contact .gradually-appear .dl-pdf-btn, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long .dl-pdf-btn {
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .dl-pdf-btn, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .dl-pdf-btn, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .dl-pdf-btn, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .dl-pdf-btn, .page main .contents .container.prayer .bg section .contents.access .gradually-appear .dl-pdf-btn, .page main .contents .container.prayer .bg section .contents.access .gradually-appear-long .dl-pdf-btn, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear .dl-pdf-btn, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear-long .dl-pdf-btn, .page main .contents .container.contact .bg section .contents.contact .gradually-appear .dl-pdf-btn, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long .dl-pdf-btn, .page main .contents .container.contact .bg section .contents.access .gradually-appear .dl-pdf-btn, .page main .contents .container.contact .bg section .contents.access .gradually-appear-long .dl-pdf-btn, .page main .contents .container.access .bg section .contents.prayer .gradually-appear .dl-pdf-btn, .page main .contents .container.access .bg section .contents.prayer .gradually-appear-long .dl-pdf-btn, .page main .contents .container.access .bg section .contents.contact .gradually-appear .dl-pdf-btn, .page main .contents .container.access .bg section .contents.contact .gradually-appear-long .dl-pdf-btn, .page main .contents .container.access .bg section .contents.access .gradually-appear .dl-pdf-btn, .page main .contents .container.access .bg section .contents.access .gradually-appear-long .dl-pdf-btn {
   margin-top: 60px;
 }
-.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear:first-of-type, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear:first-of-type, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear:first-of-type, .page main .contents .container.contact .bg section .contents.contact .gradually-appear:first-of-type {
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear:first-of-type, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear:first-of-type, .page main .contents .container.prayer .bg section .contents.access .gradually-appear:first-of-type, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear:first-of-type, .page main .contents .container.contact .bg section .contents.contact .gradually-appear:first-of-type, .page main .contents .container.contact .bg section .contents.access .gradually-appear:first-of-type, .page main .contents .container.access .bg section .contents.prayer .gradually-appear:first-of-type, .page main .contents .container.access .bg section .contents.contact .gradually-appear:first-of-type, .page main .contents .container.access .bg section .contents.access .gradually-appear:first-of-type {
   margin-top: 0;
 }
 
-.page main .contents .container.prayer h3, .page main .contents .container.contact h3 {
+.page main .contents .container.prayer h3, .page main .contents .container.contact h3, .page main .contents .container.access h3 {
   margin-bottom: 30px;
   letter-spacing: 0.07em;
 }
-.page main .contents .container.prayer h3::before, .page main .contents .container.prayer h3::after, .page main .contents .container.contact h3::before, .page main .contents .container.contact h3::after {
+.page main .contents .container.prayer h3::before, .page main .contents .container.prayer h3::after, .page main .contents .container.contact h3::before, .page main .contents .container.contact h3::after, .page main .contents .container.access h3::before, .page main .contents .container.access h3::after {
   width: calc(50% - 150px);
 }
-.page main .contents .container.prayer p, .page main .contents .container.contact p {
+.page main .contents .container.prayer p, .page main .contents .container.contact p, .page main .contents .container.access p {
   font-size: 1.15rem;
   line-height: 1.75em;
 }
-.page main .contents .container.prayer p.add-space-margin-bottom, .page main .contents .container.contact p.add-space-margin-bottom {
+.page main .contents .container.prayer p.add-space-margin-bottom, .page main .contents .container.contact p.add-space-margin-bottom, .page main .contents .container.access p.add-space-margin-bottom {
   margin-bottom: 20px;
 }
-.page main .contents .container.prayer button, .page main .contents .container.contact button {
+.page main .contents .container.prayer button, .page main .contents .container.contact button, .page main .contents .container.access button {
   padding: 10px 60px;
   font-size: 1rem;
   border: 1px solid #333;
   transition: 0.3s;
   transform: translateY(2px);
 }
-.page main .contents .container.prayer button:hover, .page main .contents .container.contact button:hover {
+.page main .contents .container.prayer button:hover, .page main .contents .container.contact button:hover, .page main .contents .container.access button:hover {
   color: #fff;
   background-color: #aaa;
   border: 1px solid #aaa;
   transform: translateY(0);
   box-shadow: 0 2px 5px #333;
 }
-.page main .contents .container.prayer .privacy-policy-anchor, .page main .contents .container.contact .privacy-policy-anchor {
+.page main .contents .container.prayer .privacy-policy-anchor, .page main .contents .container.contact .privacy-policy-anchor, .page main .contents .container.access .privacy-policy-anchor {
   padding: 3px 7px;
   font-size: 0.65rem;
   color: #fff;
   background-color: #333;
   border-radius: 2px;
 }
-.page main .contents .container.prayer .check-box, .page main .contents .container.contact .check-box {
+.page main .contents .container.prayer .check-box, .page main .contents .container.contact .check-box, .page main .contents .container.access .check-box {
   display: flex;
   align-content: center;
 }
-.page main .contents .container.prayer .check-box input[type=checkbox], .page main .contents .container.contact .check-box input[type=checkbox] {
+.page main .contents .container.prayer .check-box input[type=checkbox], .page main .contents .container.contact .check-box input[type=checkbox], .page main .contents .container.access .check-box input[type=checkbox] {
   position: relative;
   margin-right: 5px;
   width: 0.8rem;
   height: 0.8rem;
   border: 1px solid #000;
 }
-.page main .contents .container.prayer .check-box input[type=checkbox]:checked:before, .page main .contents .container.contact .check-box input[type=checkbox]:checked:before {
+.page main .contents .container.prayer .check-box input[type=checkbox]:checked:before, .page main .contents .container.contact .check-box input[type=checkbox]:checked:before, .page main .contents .container.access .check-box input[type=checkbox]:checked:before {
   position: absolute;
   top: 0px;
   left: 4px;
@@ -1956,51 +1956,51 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   border-bottom: 2px solid #000;
   content: "";
 }
-.page main .contents .container.prayer .check-box label, .page main .contents .container.contact .check-box label {
+.page main .contents .container.prayer .check-box label, .page main .contents .container.contact .check-box label, .page main .contents .container.access .check-box label {
   font-size: 0.75rem;
 }
 
-.page main .contents .container.prayer .form, .page main .contents .container.contact .form {
+.page main .contents .container.prayer .form, .page main .contents .container.contact .form, .page main .contents .container.access .form {
   padding-bottom: 15rem;
 }
-.page main .contents .container.prayer .form div, .page main .contents .container.contact .form div {
+.page main .contents .container.prayer .form div, .page main .contents .container.contact .form div, .page main .contents .container.access .form div {
   display: grid;
   grid-template-columns: 1fr 3.5fr;
   gap: 10px;
   align-items: center;
   font-size: 1.15rem;
 }
-.page main .contents .container.prayer .form div + div, .page main .contents .container.contact .form div + div {
+.page main .contents .container.prayer .form div + div, .page main .contents .container.contact .form div + div, .page main .contents .container.access .form div + div {
   margin-top: 30px;
 }
-.page main .contents .container.prayer .form div dt p, .page main .contents .container.contact .form div dt p {
+.page main .contents .container.prayer .form div dt p, .page main .contents .container.contact .form div dt p, .page main .contents .container.access .form div dt p {
   display: flex;
   align-items: flex-start;
   gap: 2px;
   font-weight: normal;
 }
-.page main .contents .container.prayer .form div dt p sup, .page main .contents .container.contact .form div dt p sup {
+.page main .contents .container.prayer .form div dt p sup, .page main .contents .container.contact .form div dt p sup, .page main .contents .container.access .form div dt p sup {
   font-size: 0.7rem;
 }
-.page main .contents .container.prayer .form div dd, .page main .contents .container.contact .form div dd {
+.page main .contents .container.prayer .form div dd, .page main .contents .container.contact .form div dd, .page main .contents .container.access .form div dd {
   height: 3rem;
 }
-.page main .contents .container.prayer .form div dd p span, .page main .contents .container.contact .form div dd p span {
+.page main .contents .container.prayer .form div dd p span, .page main .contents .container.contact .form div dd p span, .page main .contents .container.access .form div dd p span {
   position: relative;
 }
-.page main .contents .container.prayer .form div dd p span input, .page main .contents .container.contact .form div dd p span input {
+.page main .contents .container.prayer .form div dd p span input, .page main .contents .container.contact .form div dd p span input, .page main .contents .container.access .form div dd p span input {
   width: 100%;
   height: 3rem;
   padding: 1rem;
   font-size: 1rem;
   border: 1px solid #333;
 }
-.page main .contents .container.prayer .form div dd p span textarea, .page main .contents .container.contact .form div dd p span textarea {
+.page main .contents .container.prayer .form div dd p span textarea, .page main .contents .container.contact .form div dd p span textarea, .page main .contents .container.access .form div dd p span textarea {
   width: 100%;
   height: 15rem;
   border: 1px solid #333;
 }
-.page main .contents .container.prayer .form div dd p span .wpcf7-not-valid-tip, .page main .contents .container.contact .form div dd p span .wpcf7-not-valid-tip {
+.page main .contents .container.prayer .form div dd p span .wpcf7-not-valid-tip, .page main .contents .container.contact .form div dd p span .wpcf7-not-valid-tip, .page main .contents .container.access .form div dd p span .wpcf7-not-valid-tip {
   position: absolute;
   bottom: -115%;
   left: 0%;
@@ -2008,56 +2008,56 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   font-weight: 600;
   line-height: 1;
 }
-.page main .contents .container.prayer .form div.note, .page main .contents .container.contact .form div.note {
+.page main .contents .container.prayer .form div.note, .page main .contents .container.contact .form div.note, .page main .contents .container.access .form div.note {
   margin: 50px 0 5px;
 }
-.page main .contents .container.prayer .form div.note dd, .page main .contents .container.contact .form div.note dd {
+.page main .contents .container.prayer .form div.note dd, .page main .contents .container.contact .form div.note dd, .page main .contents .container.access .form div.note dd {
   display: flex;
   border: unset;
   align-items: flex-end;
   font-size: 1rem;
 }
-.page main .contents .container.prayer .form div:nth-of-type(2), .page main .contents .container.contact .form div:nth-of-type(2) {
+.page main .contents .container.prayer .form div:nth-of-type(2), .page main .contents .container.contact .form div:nth-of-type(2), .page main .contents .container.access .form div:nth-of-type(2) {
   margin-top: 0;
 }
-.page main .contents .container.prayer .form div.birthday dd, .page main .contents .container.prayer .form div.age dd, .page main .contents .container.prayer .form div.postal-code dd, .page main .contents .container.prayer .form div.date dd, .page main .contents .container.prayer .form div.time dd, .page main .contents .container.prayer .form div.prayer-member-length dd, .page main .contents .container.prayer .form div.group-member-length dd, .page main .contents .container.contact .form div.birthday dd, .page main .contents .container.contact .form div.age dd, .page main .contents .container.contact .form div.postal-code dd, .page main .contents .container.contact .form div.date dd, .page main .contents .container.contact .form div.time dd, .page main .contents .container.contact .form div.prayer-member-length dd, .page main .contents .container.contact .form div.group-member-length dd {
+.page main .contents .container.prayer .form div.birthday dd, .page main .contents .container.prayer .form div.age dd, .page main .contents .container.prayer .form div.postal-code dd, .page main .contents .container.prayer .form div.date dd, .page main .contents .container.prayer .form div.time dd, .page main .contents .container.prayer .form div.prayer-member-length dd, .page main .contents .container.prayer .form div.group-member-length dd, .page main .contents .container.contact .form div.birthday dd, .page main .contents .container.contact .form div.age dd, .page main .contents .container.contact .form div.postal-code dd, .page main .contents .container.contact .form div.date dd, .page main .contents .container.contact .form div.time dd, .page main .contents .container.contact .form div.prayer-member-length dd, .page main .contents .container.contact .form div.group-member-length dd, .page main .contents .container.access .form div.birthday dd, .page main .contents .container.access .form div.age dd, .page main .contents .container.access .form div.postal-code dd, .page main .contents .container.access .form div.date dd, .page main .contents .container.access .form div.time dd, .page main .contents .container.access .form div.prayer-member-length dd, .page main .contents .container.access .form div.group-member-length dd {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
 }
-.page main .contents .container.prayer .form div.birthday dd div, .page main .contents .container.prayer .form div.age dd div, .page main .contents .container.prayer .form div.postal-code dd div, .page main .contents .container.prayer .form div.date dd div, .page main .contents .container.prayer .form div.time dd div, .page main .contents .container.prayer .form div.prayer-member-length dd div, .page main .contents .container.prayer .form div.group-member-length dd div, .page main .contents .container.contact .form div.birthday dd div, .page main .contents .container.contact .form div.age dd div, .page main .contents .container.contact .form div.postal-code dd div, .page main .contents .container.contact .form div.date dd div, .page main .contents .container.contact .form div.time dd div, .page main .contents .container.contact .form div.prayer-member-length dd div, .page main .contents .container.contact .form div.group-member-length dd div {
+.page main .contents .container.prayer .form div.birthday dd div, .page main .contents .container.prayer .form div.age dd div, .page main .contents .container.prayer .form div.postal-code dd div, .page main .contents .container.prayer .form div.date dd div, .page main .contents .container.prayer .form div.time dd div, .page main .contents .container.prayer .form div.prayer-member-length dd div, .page main .contents .container.prayer .form div.group-member-length dd div, .page main .contents .container.contact .form div.birthday dd div, .page main .contents .container.contact .form div.age dd div, .page main .contents .container.contact .form div.postal-code dd div, .page main .contents .container.contact .form div.date dd div, .page main .contents .container.contact .form div.time dd div, .page main .contents .container.contact .form div.prayer-member-length dd div, .page main .contents .container.contact .form div.group-member-length dd div, .page main .contents .container.access .form div.birthday dd div, .page main .contents .container.access .form div.age dd div, .page main .contents .container.access .form div.postal-code dd div, .page main .contents .container.access .form div.date dd div, .page main .contents .container.access .form div.time dd div, .page main .contents .container.access .form div.prayer-member-length dd div, .page main .contents .container.access .form div.group-member-length dd div {
   display: block;
 }
-.page main .contents .container.prayer .form div.birthday dd div.postal-code-4, .page main .contents .container.prayer .form div.age dd div.postal-code-4, .page main .contents .container.prayer .form div.postal-code dd div.postal-code-4, .page main .contents .container.prayer .form div.date dd div.postal-code-4, .page main .contents .container.prayer .form div.time dd div.postal-code-4, .page main .contents .container.prayer .form div.prayer-member-length dd div.postal-code-4, .page main .contents .container.prayer .form div.group-member-length dd div.postal-code-4, .page main .contents .container.contact .form div.birthday dd div.postal-code-4, .page main .contents .container.contact .form div.age dd div.postal-code-4, .page main .contents .container.contact .form div.postal-code dd div.postal-code-4, .page main .contents .container.contact .form div.date dd div.postal-code-4, .page main .contents .container.contact .form div.time dd div.postal-code-4, .page main .contents .container.contact .form div.prayer-member-length dd div.postal-code-4, .page main .contents .container.contact .form div.group-member-length dd div.postal-code-4 {
+.page main .contents .container.prayer .form div.birthday dd div.postal-code-4, .page main .contents .container.prayer .form div.age dd div.postal-code-4, .page main .contents .container.prayer .form div.postal-code dd div.postal-code-4, .page main .contents .container.prayer .form div.date dd div.postal-code-4, .page main .contents .container.prayer .form div.time dd div.postal-code-4, .page main .contents .container.prayer .form div.prayer-member-length dd div.postal-code-4, .page main .contents .container.prayer .form div.group-member-length dd div.postal-code-4, .page main .contents .container.contact .form div.birthday dd div.postal-code-4, .page main .contents .container.contact .form div.age dd div.postal-code-4, .page main .contents .container.contact .form div.postal-code dd div.postal-code-4, .page main .contents .container.contact .form div.date dd div.postal-code-4, .page main .contents .container.contact .form div.time dd div.postal-code-4, .page main .contents .container.contact .form div.prayer-member-length dd div.postal-code-4, .page main .contents .container.contact .form div.group-member-length dd div.postal-code-4, .page main .contents .container.access .form div.birthday dd div.postal-code-4, .page main .contents .container.access .form div.age dd div.postal-code-4, .page main .contents .container.access .form div.postal-code dd div.postal-code-4, .page main .contents .container.access .form div.date dd div.postal-code-4, .page main .contents .container.access .form div.time dd div.postal-code-4, .page main .contents .container.access .form div.prayer-member-length dd div.postal-code-4, .page main .contents .container.access .form div.group-member-length dd div.postal-code-4 {
   margin-top: 0;
 }
-.page main .contents .container.prayer .form div.birthday dd div.age, .page main .contents .container.prayer .form div.age dd div.age, .page main .contents .container.prayer .form div.postal-code dd div.age, .page main .contents .container.prayer .form div.date dd div.age, .page main .contents .container.prayer .form div.time dd div.age, .page main .contents .container.prayer .form div.prayer-member-length dd div.age, .page main .contents .container.prayer .form div.group-member-length dd div.age, .page main .contents .container.contact .form div.birthday dd div.age, .page main .contents .container.contact .form div.age dd div.age, .page main .contents .container.contact .form div.postal-code dd div.age, .page main .contents .container.contact .form div.date dd div.age, .page main .contents .container.contact .form div.time dd div.age, .page main .contents .container.contact .form div.prayer-member-length dd div.age, .page main .contents .container.contact .form div.group-member-length dd div.age {
+.page main .contents .container.prayer .form div.birthday dd div.age, .page main .contents .container.prayer .form div.age dd div.age, .page main .contents .container.prayer .form div.postal-code dd div.age, .page main .contents .container.prayer .form div.date dd div.age, .page main .contents .container.prayer .form div.time dd div.age, .page main .contents .container.prayer .form div.prayer-member-length dd div.age, .page main .contents .container.prayer .form div.group-member-length dd div.age, .page main .contents .container.contact .form div.birthday dd div.age, .page main .contents .container.contact .form div.age dd div.age, .page main .contents .container.contact .form div.postal-code dd div.age, .page main .contents .container.contact .form div.date dd div.age, .page main .contents .container.contact .form div.time dd div.age, .page main .contents .container.contact .form div.prayer-member-length dd div.age, .page main .contents .container.contact .form div.group-member-length dd div.age, .page main .contents .container.access .form div.birthday dd div.age, .page main .contents .container.access .form div.age dd div.age, .page main .contents .container.access .form div.postal-code dd div.age, .page main .contents .container.access .form div.date dd div.age, .page main .contents .container.access .form div.time dd div.age, .page main .contents .container.access .form div.prayer-member-length dd div.age, .page main .contents .container.access .form div.group-member-length dd div.age {
   margin-top: 0;
 }
-.page main .contents .container.prayer .form div.birthday dd p, .page main .contents .container.prayer .form div.age dd p, .page main .contents .container.prayer .form div.postal-code dd p, .page main .contents .container.prayer .form div.date dd p, .page main .contents .container.prayer .form div.time dd p, .page main .contents .container.prayer .form div.prayer-member-length dd p, .page main .contents .container.prayer .form div.group-member-length dd p, .page main .contents .container.contact .form div.birthday dd p, .page main .contents .container.contact .form div.age dd p, .page main .contents .container.contact .form div.postal-code dd p, .page main .contents .container.contact .form div.date dd p, .page main .contents .container.contact .form div.time dd p, .page main .contents .container.contact .form div.prayer-member-length dd p, .page main .contents .container.contact .form div.group-member-length dd p {
+.page main .contents .container.prayer .form div.birthday dd p, .page main .contents .container.prayer .form div.age dd p, .page main .contents .container.prayer .form div.postal-code dd p, .page main .contents .container.prayer .form div.date dd p, .page main .contents .container.prayer .form div.time dd p, .page main .contents .container.prayer .form div.prayer-member-length dd p, .page main .contents .container.prayer .form div.group-member-length dd p, .page main .contents .container.contact .form div.birthday dd p, .page main .contents .container.contact .form div.age dd p, .page main .contents .container.contact .form div.postal-code dd p, .page main .contents .container.contact .form div.date dd p, .page main .contents .container.contact .form div.time dd p, .page main .contents .container.contact .form div.prayer-member-length dd p, .page main .contents .container.contact .form div.group-member-length dd p, .page main .contents .container.access .form div.birthday dd p, .page main .contents .container.access .form div.age dd p, .page main .contents .container.access .form div.postal-code dd p, .page main .contents .container.access .form div.date dd p, .page main .contents .container.access .form div.time dd p, .page main .contents .container.access .form div.prayer-member-length dd p, .page main .contents .container.access .form div.group-member-length dd p {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-.page main .contents .container.prayer .form div.birthday dd p span input, .page main .contents .container.prayer .form div.age dd p span input, .page main .contents .container.prayer .form div.postal-code dd p span input, .page main .contents .container.prayer .form div.date dd p span input, .page main .contents .container.prayer .form div.time dd p span input, .page main .contents .container.prayer .form div.prayer-member-length dd p span input, .page main .contents .container.prayer .form div.group-member-length dd p span input, .page main .contents .container.contact .form div.birthday dd p span input, .page main .contents .container.contact .form div.age dd p span input, .page main .contents .container.contact .form div.postal-code dd p span input, .page main .contents .container.contact .form div.date dd p span input, .page main .contents .container.contact .form div.time dd p span input, .page main .contents .container.contact .form div.prayer-member-length dd p span input, .page main .contents .container.contact .form div.group-member-length dd p span input {
+.page main .contents .container.prayer .form div.birthday dd p span input, .page main .contents .container.prayer .form div.age dd p span input, .page main .contents .container.prayer .form div.postal-code dd p span input, .page main .contents .container.prayer .form div.date dd p span input, .page main .contents .container.prayer .form div.time dd p span input, .page main .contents .container.prayer .form div.prayer-member-length dd p span input, .page main .contents .container.prayer .form div.group-member-length dd p span input, .page main .contents .container.contact .form div.birthday dd p span input, .page main .contents .container.contact .form div.age dd p span input, .page main .contents .container.contact .form div.postal-code dd p span input, .page main .contents .container.contact .form div.date dd p span input, .page main .contents .container.contact .form div.time dd p span input, .page main .contents .container.contact .form div.prayer-member-length dd p span input, .page main .contents .container.contact .form div.group-member-length dd p span input, .page main .contents .container.access .form div.birthday dd p span input, .page main .contents .container.access .form div.age dd p span input, .page main .contents .container.access .form div.postal-code dd p span input, .page main .contents .container.access .form div.date dd p span input, .page main .contents .container.access .form div.time dd p span input, .page main .contents .container.access .form div.prayer-member-length dd p span input, .page main .contents .container.access .form div.group-member-length dd p span input {
   width: 10rem;
 }
-.page main .contents .container.prayer .form div.sender-name dd p, .page main .contents .container.prayer .form div.group-leader dd p, .page main .contents .container.contact .form div.sender-name dd p, .page main .contents .container.contact .form div.group-leader dd p {
+.page main .contents .container.prayer .form div.sender-name dd p, .page main .contents .container.prayer .form div.group-leader dd p, .page main .contents .container.contact .form div.sender-name dd p, .page main .contents .container.contact .form div.group-leader dd p, .page main .contents .container.access .form div.sender-name dd p, .page main .contents .container.access .form div.group-leader dd p {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 5px;
 }
-.page main .contents .container.prayer .form div.sender-name dd p span, .page main .contents .container.prayer .form div.group-leader dd p span, .page main .contents .container.contact .form div.sender-name dd p span, .page main .contents .container.contact .form div.group-leader dd p span {
+.page main .contents .container.prayer .form div.sender-name dd p span, .page main .contents .container.prayer .form div.group-leader dd p span, .page main .contents .container.contact .form div.sender-name dd p span, .page main .contents .container.contact .form div.group-leader dd p span, .page main .contents .container.access .form div.sender-name dd p span, .page main .contents .container.access .form div.group-leader dd p span {
   width: 100%;
 }
-.page main .contents .container.prayer .confirm, .page main .contents .container.contact .confirm {
+.page main .contents .container.prayer .confirm, .page main .contents .container.contact .confirm, .page main .contents .container.access .confirm {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.page main .contents .container.prayer .confirm p, .page main .contents .container.contact .confirm p {
+.page main .contents .container.prayer .confirm p, .page main .contents .container.contact .confirm p, .page main .contents .container.access .confirm p {
   margin: 0;
 }
 
@@ -2840,6 +2840,101 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   .page main .contents .container.contact .form div.note {
     margin: 25px 0 0;
   }
+}
+
+.page main .contents .frame.access {
+  background-image: url(./img/access-top.jpg);
+}
+.page main .contents .container.access .bg section .contents.access:first-of-type {
+  margin-top: 0;
+}
+.page main .contents .container.access .bg section .contents.access .gradually-appear, .page main .contents .container.access .bg section .contents.access .gradually-appear-long {
+  margin-top: 0;
+}
+.page main .contents .container.access .bg section .contents.access .gradually-appear .wrapper, .page main .contents .container.access .bg section .contents.access .gradually-appear-long .wrapper {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.page main .contents .container.access .bg section .contents.access .gradually-appear h3#place.place, .page main .contents .container.access .bg section .contents.access .gradually-appear-long h3#place.place {
+  padding: 0;
+  margin-top: 0;
+}
+.page main .contents .container.access .bg section .contents.access .gradually-appear h3#place.place::before, .page main .contents .container.access .bg section .contents.access .gradually-appear h3#place.place::after, .page main .contents .container.access .bg section .contents.access .gradually-appear-long h3#place.place::before, .page main .contents .container.access .bg section .contents.access .gradually-appear-long h3#place.place::after {
+  width: calc(50% - 85px);
+}
+.page main .contents .container.access .bg section .contents.access .gradually-appear h3:last-of-type, .page main .contents .container.access .bg section .contents.access .gradually-appear-long h3:last-of-type {
+  margin-top: 90px;
+}
+.page main .contents .container.access .bg section .contents.access .gradually-appear h3:last-of-type::before, .page main .contents .container.access .bg section .contents.access .gradually-appear h3:last-of-type::after, .page main .contents .container.access .bg section .contents.access .gradually-appear-long h3:last-of-type::before, .page main .contents .container.access .bg section .contents.access .gradually-appear-long h3:last-of-type::after {
+  width: calc(50% - 280px);
+}
+.page main .contents .container.access .bg section .contents.access .gradually-appear-long.align-left {
+  align-items: flex-start;
+}
+.page main .contents .container.access .bg section .contents.access .gradually-appear-long.align-left .leading-square-header {
+  margin: 20px 0;
+}
+.page main .contents .container.access .bg section .contents.access .gradually-appear-long.align-left .leading-square-header:not(:first-of-type) {
+  margin-top: 40px;
+}
+.page main .contents .container.access .bg section .contents.access .gradually-appear-long.align-left > .grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+.page main .contents .container.access .bg section .contents.access .gradually-appear-long.align-left > .grid-wrapper .description {
+  grid-column: 1/2;
+}
+.page main .contents .container.access .bg section .contents.access .gradually-appear-long.align-left > .grid-wrapper .description > p {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  line-height: 1.5em;
+}
+.page main .contents .container.access .bg section .contents.access .gradually-appear-long.align-left > .grid-wrapper .description > ul {
+  margin: 1rem 0;
+}
+.page main .contents .container.access .bg section .contents.access .gradually-appear-long.align-left > .grid-wrapper .description > ul li {
+  padding-left: 1em;
+  text-indent: -1em;
+  font-size: 1rem;
+  line-height: 1.3em;
+}
+.page main .contents .container.access .bg section .contents.access .gradually-appear-long.align-left > .grid-wrapper .description > ul li:not(:first-of-type) {
+  margin-top: 7px;
+}
+.page main .contents .container.access .bg section .contents.access .gradually-appear-long.align-left > .grid-wrapper .photo-frame {
+  grid-column: 2/4;
+}
+.page main .contents .container.access .bg section .contents.access .gradually-appear-long.align-left > .grid-wrapper .photo-frame img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.page main .contents .container.access .bg section .contents.access .gradually-appear-long.align-left > .grid-wrapper.five-photos {
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 20px;
+}
+.page main .contents .container.access .bg section .contents.access .gradually-appear-long.align-left > .grid-wrapper.five-photos figure figcaption {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  line-height: 1.3em;
+}
+.page main .contents .container.access .bg section .contents.access .gradually-appear-long.align-left > .grid-wrapper.five-photos figure img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.page main .contents .container.access .bg section .contents.access .gradually-appear-long.align-left > .grid-wrapper.five-photos figure:last-of-type {
+  grid-column: 1/3;
+  text-align: center;
+}
+.page main .contents .container.access .bg section .contents.access .gradually-appear-long.align-left > .grid-wrapper.five-photos figure:last-of-type img {
+  width: 50%;
+}
+
+span.color-gold {
+  color: #eec714;
 }
 
 .home footer, .page footer {

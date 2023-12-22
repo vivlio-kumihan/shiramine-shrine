@@ -27,7 +27,7 @@
       <nav id="global-menu" class="global-menu">
         <div class="upper">
           <ul>
-            <li><a href="">交通（アクセス）</a></li>
+            <li><a href="<?php echo esc_url(home_url('/access/')); ?>">交通（アクセス）</a></li>
             <li>|</li>
             <li><a href="<?php echo esc_url(home_url('/contact/')); ?>">お問い合わせ</a></li>
             <li class="language">
