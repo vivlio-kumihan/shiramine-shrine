@@ -96,7 +96,6 @@ document.addEventListener("scroll", function () {
 const modals = document.querySelectorAll(".modal"),
       openTriggers = document.querySelectorAll(".modal-open-trigger"),
       closeBtns = document.querySelectorAll(".modal-close-btn");
-console.log(openTriggers);
 openTriggers.forEach((openTrigger, idx) => {
   //「開くボタン」をクリックしてモーダルを開く
   const modalOpen = () => {
@@ -116,6 +115,34 @@ openTriggers.forEach((openTrigger, idx) => {
   function modalOut(e) {
     if (e.target == modals[idx]) {
       modals[idx].classList.remove("activate-modal");
+    }
+  }
+  addEventListener("click", modalOut);
+});
+
+// modal privacy policy
+const modalsPrivacyPolicys = document.querySelectorAll(".modal-privacy-policy"),
+      privacyPolicyTriggers  = document.querySelectorAll(".privacy-policy-anchor > p"),
+      modalPrivacyPolicyCloseBtns = document.querySelectorAll(".modal-privacy-policy-close-btn");
+privacyPolicyTriggers.forEach((trigger, idx) => {
+  //「開くボタン」をクリックしてモーダルを開く
+  const modalOpen = () => {
+    modalsPrivacyPolicys[idx].classList.add("activate-modal-privacy-policy");
+  };
+  trigger.addEventListener("click", () => {
+    modalOpen();
+  });
+  
+  //「閉じるボタン」をクリックしてモーダルを閉じる
+  function modalClose() {
+    modalsPrivacyPolicys[idx].classList.remove("activate-modal-privacy-policy");
+  }
+  modalPrivacyPolicyCloseBtns[idx].addEventListener("click", modalClose);
+  
+  //「モーダルの外側」をクリックしてモーダルを閉じる
+  function modalOut(e) {
+    if (e.target == modalsPrivacyPolicys[idx]) {
+      modalsPrivacyPolicys[idx].classList.remove("activate-modal-privacy-policy");
     }
   }
   addEventListener("click", modalOut);

@@ -43,7 +43,7 @@
               <h3>FAXでのお申込み</h3>
               <p class="add-space-margin-bottom">FAX申込み後の御祈祷は、社務所到着後、翌日の午前中に執り行います。</p>
               <p>申込み用紙の印刷ができない方は、FAX申込み用紙の必要事項をご確認のうえ<br />他の紙に記載したものでも代用可能です。</p>
-              <button class="dl-pdf-btn">ご祈祷ご案内FAX申込み用紙ダウンロード</button>
+              <button class="dl-pdf-btn"><a href="https://shiraminejingu.or.jp/download_prayer_fax.pdf">ご祈祷ご案内FAX申込み用紙ダウンロード</a></button>
             </div>
             <div class="gradually-appear-long mail-send">
               <h3>メールでのお申込み</h3>
@@ -54,6 +54,31 @@
               <?php echo do_shortcode('[contact-form-7 id="1692886" title="prayer-form"]') ?>
             </div>
           </div>
+
+          <div class="modal-privacy-policy">
+            <div class="container">
+              <button class="modal-privacy-policy-close-btn">
+                <span></span>
+                <span></span>
+              </button>
+              <h4 class="modal-pp-header">プライバシーポリシー</h4>
+              <p class="lead-copy">白峯神宮は、個人情報保護の重要性を認識し、適切な利用と保護を図り、全ての従業員に周知徹底をするとともに次の事を遵守していきます。</p>
+              <h5 class="leading-square-header">個人情報の取り扱い</h5>
+              <p>皆様の個人情報の取り扱いに関して、目的に応じた個人情報保護のため、適切かつ厳重に取り扱います。</p>
+              <h5 class="leading-square-header">個人情報の利用</h5>
+              <p>皆様の個人情報は、利用目的の達成に必要な範囲において取扱う措置を講じ、その範囲を超えての目的外利用はいたしません。利用目的の範囲を超えて、個人情報を利用する必要が生じた場合は、その旨をあらかじめご連絡し、同意をいただいた上で利用いたします。</p>
+              <h5 class="leading-square-header">個人情報の提供</h5>
+              <p>あらかじめ、皆様からの同意をいただいている場合、及び法令等に基づく場合を除き、個人情報を第三者に対して提供いたしません。ただし、利用目的を遂行するために委託する場合があります。この場合、委託先に対する個人情報保護の契約を締結し、適正な取扱いが行われるよう管理・監督いたします。</p>
+              <h5 class="leading-square-header">安全管理措置</h5>
+              <p>お預かりした個人情報は、必要な安全管理措置を講じ、漏えい、滅失又はき損等を防止するとともに是正に努めてまいります。</p>
+              <h5 class="leading-square-header">法令等の遵守</h5>
+              <p>個人情報の保護に適用される法令及びその他の規範を遵守します。</p>
+              <h5 class="leading-square-header">継続的改善</h5>
+              <p>事業内容の変化および事業を取り巻く社会環境・法令・情報技術の変化等に対応して、個人情報取扱体制の見直しを行い、継続的な改善に努めてまいります。</p>
+              <h5 class="leading-square-header">ご相談及び開示等への対応に関すること</h5>
+              <p>保有しております個人情報について、ご相談、及び利用目的の通知、開示、訂正等、利用停止等を希望される場合、お問い合わせください。ご本人確認の上、誠意をもって対応させていただきます。</p>
+            </div>
+          </div>
         </section>
       </div>
     </div>
@@ -61,298 +86,3 @@
 </main>
 
 <?php get_footer(); ?>
-
-<!-- <p>FAXにてお申し込みください。</p> -->
-<!-- <dl class="form">
-  <div class="note">
-    <dt></dt>
-    <dd>※は必須事項となります。</dd>
-  </div>
-  <div>
-    <dt>申込者氏名<span>※</span></dt>
-    <dd></dd>
-  </div>
-  <div>
-    <dt>フリガナ<span>※</span></dt>
-    <dd></dd>
-  </div>
-  <div class="birthday-age">
-    <dt>生年月日・年齢</dt>
-    <dd>
-      <div class="birth-day"></div>
-      <div>・</div>
-      <div class="age"></div>
-    </dd>
-  </div>
-  <div>
-    <dt>メールアドレス<span>※</span></dt>
-    <dd></dd>
-  </div>
-  <div>
-    <dt>電話番号<span>※</span></dt>
-    <dd></dd>
-  </div>
-  <div class="postal-code">
-    <dt>郵便番号</dt>
-    <dd>
-      <div class="postal-code-3"></div>
-      <div>–</div>
-      <div class="postal-code-4"></div>
-    </dd>
-  </div>
-  <div>
-    <dt>現住所<span>※</span></dt>
-    <dd></dd>
-  </div>
-  <div>
-    <dt>フリガナ<span>※</span></dt>
-    <dd></dd>
-  </div>
-  <div>
-    <dt>祈祷願意<span>※</span></dt>
-    <dd class="prayer-message"></dd>
-  </div>
-  <div class="date-time">
-    <dt>祈祷希望日時<span>※</span></dt>
-    <dd>
-      <div class="date"></div>
-      <div class="time"></div>
-    </dd>
-  </div>
-  <div>
-    <dt>当日参列者数<span>※</span></dt>
-    <dd></dd>
-  </div>
-  <div>
-    <dt>学校名・チーム名</dt>
-    <dd></dd>
-  </div>
-  <div>
-    <dt>フリガナ</dt>
-    <dd></dd>
-  </div>
-  <div>
-    <dt>代表者名</dt>
-    <dd></dd>
-  </div>
-  <div>
-    <dt>フリガナ</dt>
-    <dd></dd>
-  </div>
-  <div>
-    <dt>部員数</dt>
-    <dd></dd>
-  </div>
-  <div>
-    <dt>備考</dt>
-    <dd></dd>
-  </div>
-</dl>
-<p>必要事項をご記入のうえ、確認ボタンを押して確認後、送信してください。</p>
-<a class="privacy-policy-anchor" href="<?php echo esc_url(home_url('/privacy-policy/')); ?>">▶️&nbsp;プライバシー・ポリシー</a>
-<div class="check-box">
-  <input type="checkbox" id="name">
-  <label for="name">プライバシーポリシーに同意する</label>
-</div>
-<div class="agreement">
-  <button>[submit "送 信"]</button>
-</div> -->
-
-<!-- <input type="checkbox" name="level" value="">[checkbox* read-privacy-policy-check use_label_element]</input>
-<label for="name">プライバシーポリシーに同意する</label> -->
-
-
-
-
-<!-- fix -->
-<!-- <dl class="form">
-  <div class="note">
-    <dt></dt>
-    <dd>※は必須事項となります。</dd>
-  </div>
-  <div class="sender-name">
-    <dt><label for="sender-name">申込者氏名<span>※</span><label></dt>
-    <dd>[text* sender-name]様</dd>
-  </div>
-  <div>
-    <dt><label for="sender-name-ruby">フリガナ<span>※</span></label></dt>
-    <dd>[text* sender-name-ruby]</dd>
-  </div>
-  <div class="birthday">
-    <dt><label for="birthday">生年月日</label></dt>
-    <dd>[date birthday min:1917-01-15]</dd>
-  </div>
-  <div class="age">
-    <dt><label for="age">生年月日</label></dt>
-    <dd>[number age min:1 max:100]歳</dd>
-  </div>
-  <div>
-    <dt><label for="sender-email">メールアドレス<span>※</span></label></dt>
-    <dd>[email* sender-email]</dd>
-  </div>
-  <div>
-    <dt><label for="tel">電話番号<span>※</span></label></dt>
-    <dd>[tel* tel]</dd>
-  </div>
-  <div class="postal-code">
-    <dt><label for="postal-code">郵便番号</label></dt>
-    <dd>[number postal-code min:7 max:7]</dd>
-  </div>
-  <div>
-    <dt><label for="adress">現住所<span>※</span></label></dt>
-    <dd>[text* adress]</dd>
-  </div>
-  <div>
-    <dt><label for="adress-ruby">フリガナ<span>※</span></label></dt>
-    <dd>[text* adress-ruby]</dd>
-  </div>
-  <div>
-    <dt><label for="prayer-message">祈祷願意<span>※</span></label></dt>
-    <dd class="prayer-message">[text* prayer-mean]</dd>
-  </div>
-  <div class="date">
-    <dt><label for="date">祈祷希望日<span>※</span></label></dt>
-    <dd class="date">[date* date]</dd>
-  </div>
-  <div class="time">
-    <dt><label for="time">祈祷希望時間<span>※</span></label></dt>
-    <dd class="date">[number* time min:9 max:16]時</dd>
-  </div>
-  <div class="prayer-member-length">
-    <dt><label for="prayer-member-length">当日参列者数<span>※</span></label></dt>
-    <dd>[number* prayer-member-length min:1 max:200]名</dd>
-  </div>
-  <div>
-    <dt><label for="group-name">学校名・チーム名</label></dt>
-    <dd>[text group-name]</dd>
-  </div>
-  <div>
-    <dt><label for="group-name-ruby">フリガナ</label></dt>
-    <dd>[text group-name-ruby]</dd>
-  </div>
-  <div class="group-leader">
-    <dt><label for="group-leader">代表者名</label></dt>
-    <dd>[text group-leader]様</dd>
-  </div>
-  <div>
-    <dt><label for="group-leader-ruby">フリガナ</label></dt>
-    <dd>[text group-leader-ruby]</dd>
-  </div>
-  <div class="group-member-length">
-    <dt><label for="group-member-length">部員数</label></dt>
-    <dd>[number group-member-length min:1 max:200]名</dd>
-  </div>
-  <div>
-    <dt><label for="note">備考</label></dt>
-    <dd>[textarea note]</dd>
-  </div>
-</dl>
-<div class="confirm">
-  <p>必要事項をご記入のうえ、確認ボタンを押して確認後、送信してください。</p>
-  <a class="privacy-policy-anchor" href="<?php echo esc_url(home_url('/privacy-policy/')); ?>">▶️&nbsp;プライバシー・ポリシー</a>
-  <div class="check-box">
-    [acceptance privacy-policy] プライバシーポリシーに同意する [/acceptance]
-  </div>
-  <div class="agreement">
-    <button class="prayer-submit">[submit "送　信"]</button>
-  </div>
-</div> -->
-
-
-
-<!-- org -->
-<!-- 
-<dl class="form">
-  <div class="note">
-    <dt></dt>
-    <dd>※は必須事項となります。</dd>
-  </div>
-  <div>
-    <dt><label>申込者氏名<span>※</span><label></dt>
-    <dd>[text* sender-name]</dd>
-  </div>
-  <div>
-    <dt>フリガナ<span>※</span></dt>
-    <dd>[text* sender-name-ruby]</dd>
-  </div>
-  <div class="birthday-age">
-    <dt>生年月日・年齢</dt>
-    <dd>
-      <div class="birth-day">[date birthday min:1917-01-15]</div>
-      <div class="age">[number age min:1 max:100]歳</div>
-    </dd>
-  </div>
-  <div>
-    <dt>メールアドレス<span>※</span></dt>
-    <dd>[email* email]</dd>
-  </div>
-  <div>
-    <dt>電話番号<span>※</span></dt>
-    <dd>[tel* tel]</dd>
-  </div>
-  <div class="postal-code">
-    <dt>郵便番号</dt>
-    <dd>
-      <div class="postal-code-3">[number postal-code-3 min:1 max:999]</div>
-      <div>–</div>
-      <div class="postal-code-4">[number postal-code-4 min:1 max:9999]</div>
-    </dd>
-  </div>
-  <div>
-    <dt>現住所<span>※</span></dt>
-    <dd>[text* adress]</dd>
-  </div>
-  <div>
-    <dt>フリガナ<span>※</span></dt>
-    <dd>[text* adress-ruby]</dd>
-  </div>
-  <div>
-    <dt>祈祷願意<span>※</span></dt>
-    <dd class="prayer-message">[text* prayer-mean]</dd>
-  </div>
-  <div class="date-time">
-    <dt>祈祷希望日時<span>※</span></dt>
-    <dd>
-      <div class="date">[date* date]</div>
-      <div class="time">[number* time min:9 max:16]時</div>
-    </dd>
-  </div>
-  <div class="prayer-member-length">
-    <dt>当日参列者数<span>※</span></dt>
-    <dd>[number* prayer-member-length min:1 max:200]名</dd>
-  </div>
-  <div>
-    <dt>学校名・チーム名</dt>
-    <dd>[text group-name]</dd>
-  </div>
-  <div>
-    <dt>フリガナ</dt>
-    <dd>[text group-name-ruby]</dd>
-  </div>
-  <div>
-    <dt>代表者名</dt>
-    <dd>[text group-leader]</dd>
-  </div>
-  <div>
-    <dt>フリガナ</dt>
-    <dd>[text group-leader-ruby]</dd>
-  </div>
-  <div class="group-member-length">
-    <dt>部員数</dt>
-    <dd>[number group-member-length min:1 max:200]名</dd>
-  </div>
-  <div>
-    <dt>備考</dt>
-    <dd>[textarea note]</dd>
-  </div>
-</dl>
-<div class="confirm">
-  <p>必要事項をご記入のうえ、確認ボタンを押して確認後、送信してください。</p>
-  <a class="privacy-policy-anchor" href="<?php echo esc_url(home_url('/privacy-policy/')); ?>">▶️&nbsp;プライバシー・ポリシー</a>
-  <div class="check-box">
-    [acceptance privacy-policy] プライバシーポリシーに同意する [/acceptance]
-  </div>
-  <div class="agreement">
-    <button>[submit "送信"]</button>
-  </div>
-</div> -->

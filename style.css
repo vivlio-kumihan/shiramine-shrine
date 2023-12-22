@@ -1444,7 +1444,7 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   transition: 0.8s;
   visibility: hidden;
   opacity: 0;
-  z-index: 106;
+  z-index: 107;
 }
 .page main .contents .container.guide-shrine .modal.activate-modal {
   right: 0;
@@ -1919,6 +1919,12 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
 .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .dl-pdf-btn, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .dl-pdf-btn, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .dl-pdf-btn, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .dl-pdf-btn, .page main .contents .container.prayer .bg section .contents.access .gradually-appear .dl-pdf-btn, .page main .contents .container.prayer .bg section .contents.access .gradually-appear-long .dl-pdf-btn, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear .dl-pdf-btn, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear-long .dl-pdf-btn, .page main .contents .container.contact .bg section .contents.contact .gradually-appear .dl-pdf-btn, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long .dl-pdf-btn, .page main .contents .container.contact .bg section .contents.access .gradually-appear .dl-pdf-btn, .page main .contents .container.contact .bg section .contents.access .gradually-appear-long .dl-pdf-btn, .page main .contents .container.access .bg section .contents.prayer .gradually-appear .dl-pdf-btn, .page main .contents .container.access .bg section .contents.prayer .gradually-appear-long .dl-pdf-btn, .page main .contents .container.access .bg section .contents.contact .gradually-appear .dl-pdf-btn, .page main .contents .container.access .bg section .contents.contact .gradually-appear-long .dl-pdf-btn, .page main .contents .container.access .bg section .contents.access .gradually-appear .dl-pdf-btn, .page main .contents .container.access .bg section .contents.access .gradually-appear-long .dl-pdf-btn {
   margin-top: 60px;
 }
+.page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .dl-pdf-btn a, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .dl-pdf-btn a, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear .dl-pdf-btn a, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear-long .dl-pdf-btn a, .page main .contents .container.prayer .bg section .contents.access .gradually-appear .dl-pdf-btn a, .page main .contents .container.prayer .bg section .contents.access .gradually-appear-long .dl-pdf-btn a, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear .dl-pdf-btn a, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear-long .dl-pdf-btn a, .page main .contents .container.contact .bg section .contents.contact .gradually-appear .dl-pdf-btn a, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long .dl-pdf-btn a, .page main .contents .container.contact .bg section .contents.access .gradually-appear .dl-pdf-btn a, .page main .contents .container.contact .bg section .contents.access .gradually-appear-long .dl-pdf-btn a, .page main .contents .container.access .bg section .contents.prayer .gradually-appear .dl-pdf-btn a, .page main .contents .container.access .bg section .contents.prayer .gradually-appear-long .dl-pdf-btn a, .page main .contents .container.access .bg section .contents.contact .gradually-appear .dl-pdf-btn a, .page main .contents .container.access .bg section .contents.contact .gradually-appear-long .dl-pdf-btn a, .page main .contents .container.access .bg section .contents.access .gradually-appear .dl-pdf-btn a, .page main .contents .container.access .bg section .contents.access .gradually-appear-long .dl-pdf-btn a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 60px;
+}
 .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear:first-of-type, .page main .contents .container.prayer .bg section .contents.contact .gradually-appear:first-of-type, .page main .contents .container.prayer .bg section .contents.access .gradually-appear:first-of-type, .page main .contents .container.contact .bg section .contents.prayer .gradually-appear:first-of-type, .page main .contents .container.contact .bg section .contents.contact .gradually-appear:first-of-type, .page main .contents .container.contact .bg section .contents.access .gradually-appear:first-of-type, .page main .contents .container.access .bg section .contents.prayer .gradually-appear:first-of-type, .page main .contents .container.access .bg section .contents.contact .gradually-appear:first-of-type, .page main .contents .container.access .bg section .contents.access .gradually-appear:first-of-type {
   margin-top: 0;
 }
@@ -1938,7 +1944,6 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   margin-bottom: 20px;
 }
 .page main .contents .container.prayer button, .page main .contents .container.contact button, .page main .contents .container.access button {
-  padding: 10px 60px;
   font-size: 1rem;
   border: 1px solid #333;
   transition: 0.3s;
@@ -1952,11 +1957,15 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   box-shadow: 0 2px 5px #333;
 }
 .page main .contents .container.prayer .privacy-policy-anchor, .page main .contents .container.contact .privacy-policy-anchor, .page main .contents .container.access .privacy-policy-anchor {
-  padding: 3px 7px;
-  font-size: 0.65rem;
+  margin: 15px 0;
   color: #fff;
   background-color: #333;
   border-radius: 2px;
+}
+.page main .contents .container.prayer .privacy-policy-anchor p, .page main .contents .container.contact .privacy-policy-anchor p, .page main .contents .container.access .privacy-policy-anchor p {
+  padding: 3px 7px;
+  font-size: 0.65rem;
+  cursor: pointer;
 }
 .page main .contents .container.prayer .check-box, .page main .contents .container.contact .check-box, .page main .contents .container.access .check-box {
   display: flex;
@@ -2178,7 +2187,7 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
 
 .page main .contents .container.prayer .bg section .contents.prayer, .page main .contents .container.prayer .bg section .contents.contact, .page main .contents .container.contact .bg section .contents.prayer, .page main .contents .container.contact .bg section .contents.contact {
   margin-top: 0;
-  padding-top: 140px;
+  padding: 140px 0 80px;
 }
 
 @media (width < 768px) {
@@ -2212,7 +2221,6 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   }
   .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .dl-pdf-btn, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .dl-pdf-btn {
     margin-top: 30px;
-    padding: 2rem 1rem;
   }
 }
 
@@ -2254,6 +2262,115 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
 @media (width < 768px) {
   .page main .contents .container.prayer .form div.date dd p span .wpcf7-not-valid-tip, .page main .contents .container.prayer .form div.time dd p span .wpcf7-not-valid-tip, .page main .contents .container.prayer .form div.prayer-member-length dd p span .wpcf7-not-valid-tip {
     bottom: -35%;
+  }
+}
+
+.page main .contents .container.prayer .bg section .modal-privacy-policy, .page main .contents .container.contact .bg section .modal-privacy-policy {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: auto;
+  transition: 0.9s;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 106;
+}
+.page main .contents .container.prayer .bg section .modal-privacy-policy.activate-modal-privacy-policy, .page main .contents .container.contact .bg section .modal-privacy-policy.activate-modal-privacy-policy {
+  right: 0;
+  visibility: visible;
+  opacity: 1;
+}
+.page main .contents .container.prayer .bg section .modal-privacy-policy .container, .page main .contents .container.contact .bg section .modal-privacy-policy .container {
+  position: relative;
+  margin: 90px auto;
+  width: 74%;
+  padding: 5rem 9rem;
+  background: url(./img/bg.jpg) repeat;
+}
+.page main .contents .container.prayer .bg section .modal-privacy-policy .container .modal-privacy-policy-close-btn, .page main .contents .container.contact .bg section .modal-privacy-policy .container .modal-privacy-policy-close-btn {
+  position: absolute;
+  top: 60px;
+  right: 60px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #333;
+  transform: translateY(0);
+  transition: 0.3s;
+}
+.page main .contents .container.prayer .bg section .modal-privacy-policy .container .modal-privacy-policy-close-btn span, .page main .contents .container.contact .bg section .modal-privacy-policy .container .modal-privacy-policy-close-btn span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  left: 18%;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: #333;
+}
+.page main .contents .container.prayer .bg section .modal-privacy-policy .container .modal-privacy-policy-close-btn span:first-of-type, .page main .contents .container.contact .bg section .modal-privacy-policy .container .modal-privacy-policy-close-btn span:first-of-type {
+  transform: rotate(45deg);
+  transform-origin: center center 0;
+}
+.page main .contents .container.prayer .bg section .modal-privacy-policy .container .modal-privacy-policy-close-btn span:last-of-type, .page main .contents .container.contact .bg section .modal-privacy-policy .container .modal-privacy-policy-close-btn span:last-of-type {
+  transform: rotate(-45deg);
+  transform-origin: center center 0;
+}
+.page main .contents .container.prayer .bg section .modal-privacy-policy .container .modal-privacy-policy-close-btn:hover, .page main .contents .container.contact .bg section .modal-privacy-policy .container .modal-privacy-policy-close-btn:hover {
+  background-color: #eee;
+  transform: translateY(-1px);
+  opacity: 0.5;
+}
+.page main .contents .container.prayer .bg section .modal-privacy-policy .container h4.modal-pp-header, .page main .contents .container.contact .bg section .modal-privacy-policy .container h4.modal-pp-header {
+  font-size: 1.95rem;
+  margin-bottom: 50px;
+  letter-spacing: 0;
+}
+.page main .contents .container.prayer .bg section .modal-privacy-policy .container h5.leading-square-header, .page main .contents .container.contact .bg section .modal-privacy-policy .container h5.leading-square-header {
+  margin-bottom: 20px;
+}
+.page main .contents .container.prayer .bg section .modal-privacy-policy .container h5.leading-square-header:not(:first-of-type), .page main .contents .container.contact .bg section .modal-privacy-policy .container h5.leading-square-header:not(:first-of-type) {
+  margin-top: 40px;
+}
+.page main .contents .container.prayer .bg section .modal-privacy-policy .container h5.leading-square-header.two-line, .page main .contents .container.contact .bg section .modal-privacy-policy .container h5.leading-square-header.two-line {
+  line-height: 1.2em;
+}
+.page main .contents .container.prayer .bg section .modal-privacy-policy .container h5.leading-square-header.two-line::before, .page main .contents .container.contact .bg section .modal-privacy-policy .container h5.leading-square-header.two-line::before {
+  height: 3rem;
+}
+.page main .contents .container.prayer .bg section .modal-privacy-policy .container p, .page main .contents .container.contact .bg section .modal-privacy-policy .container p {
+  font-size: 1.15rem;
+  line-height: 1.75em;
+}
+.page main .contents .container.prayer .bg section .modal-privacy-policy .container p + p, .page main .contents .container.contact .bg section .modal-privacy-policy .container p + p {
+  margin-top: 0.75em;
+}
+.page main .contents .container.prayer .bg section .modal-privacy-policy .container p.lead-copy, .page main .contents .container.contact .bg section .modal-privacy-policy .container p.lead-copy {
+  margin-bottom: 40px;
+}
+
+@media (width < 768px) {
+  .page main .contents .container.prayer .bg section .modal-privacy-policy .container, .page main .contents .container.contact .bg section .modal-privacy-policy .container {
+    margin: 1rem auto;
+    width: calc(100% - 2rem);
+    padding: 4rem 1rem 1rem;
+  }
+  .page main .contents .container.prayer .bg section .modal-privacy-policy .container .modal-privacy-policy-close-btn, .page main .contents .container.contact .bg section .modal-privacy-policy .container .modal-privacy-policy-close-btn {
+    top: 15px;
+    right: 15px;
+  }
+  .page main .contents .container.prayer .bg section .modal-privacy-policy .container h4.modal-pp-header, .page main .contents .container.contact .bg section .modal-privacy-policy .container h4.modal-pp-header {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .page main .contents .container.prayer .bg section .modal-privacy-policy .container p, .page main .contents .container.contact .bg section .modal-privacy-policy .container p {
+    font-size: 1rem;
+    line-height: 1.5em;
   }
 }
 
@@ -2321,7 +2438,7 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   transition: 0.8s;
   visibility: hidden;
   opacity: 0;
-  z-index: 106;
+  z-index: 107;
 }
 .page.page-id-14 main .contents .container.annual-event .modal.activate-modal {
   right: 0;
@@ -2964,6 +3081,18 @@ span.color-gold {
   color: #eec714;
 }
 
+.page header .wrapper .logo-space div .shrine-name.english {
+  font-size: 2rem;
+}
+
+@media (width < 768px) {
+  .page header .wrapper .logo-space div .shrine-name.english {
+    display: block;
+    padding-top: 5px;
+    font-size: 1rem;
+  }
+}
+
 .page main .frame.english {
   background-image: url(./img/english-top.jpg);
   background-size: cover;
@@ -3147,6 +3276,29 @@ span.color-gold {
   }
   .page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container .photos.ema, .page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-history .photos.ema, .page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container.irregularity-gosaizin .photos.ema, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container .photos.ema, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-history .photos.ema, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container.irregularity-gosaizin .photos.ema {
     flex-direction: column;
+  }
+}
+
+@media (width < 768px) {
+  .page main .frame.english h1 {
+    display: inline-block;
+    width: -moz-max-content;
+    width: max-content;
+    padding: 20px 15px;
+    font-size: 1.5rem;
+    line-height: 1em;
+  }
+}
+
+@media (width < 768px) {
+  .page main .container.english .bg section .contents {
+    padding-top: 70px;
+  }
+}
+
+@media (width < 768px) {
+  .page main .container.english .bg section .contents.JUNNIN {
+    padding-top: 60px;
   }
 }
 

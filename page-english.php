@@ -20,7 +20,7 @@
       <a class="logo-space" href="<?php echo esc_url(home_url()); ?>">
         <img class="logo header" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="">
         <div>
-          <p>SHIRAMINE JINGU-Shrine</p>
+          <p class="shrine-name english">SHIRAMINE JINGU-Shrine</p>
         </div>
       </a>
       <nav id="global-menu" class="global-menu">
@@ -92,7 +92,7 @@
                 </div>
               </div>
             </div>
-            <div class="contents padding-top-none">
+            <div class="contents padding-top-none JUNNIN">
               <div class="gradually-appear-long">
                 <div class="inner-contents padding-top-none">
                   <div class="flex-container irregularity-gosaizin">
