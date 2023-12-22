@@ -557,13 +557,35 @@
                 &:first-of-type
                   margin-top: 0
 
-// .page
-//   main
-//     .contents
-//       .container.guide-shrine
-//         .bg
-//           section
-//             .contents.guide-map
-//               +max(md)
-//                 .Illustrative-map
-//                   ul              
+// modal
+.page
+  main
+    .contents
+      .container.guide-shrine
+        +max(md)
+          .modal
+            .container
+              .flex-grid
+                display: block
+                .photo-frame
+                  margin-top: 30px
+              .photos
+                flex-direction: column
+            &.ganshyug
+              .flex-grid
+                margin-bottom: 30px
+            &.mukuroji-no-ki, &.mukuroji-no-ki, &.kaji-no-ki, &.sanyo-no-matsu
+              .photos
+                gap: 0
+            &.four-seasons
+              .container
+                div
+                  flex-direction: column
+                  gap: 55px
+                  figure
+                    img
+                      height: 100%
+                      aspect-ratio: 4/3
+                      object-fit: cover
+                    figcaption
+                      padding-top: 10px

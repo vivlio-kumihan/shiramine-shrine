@@ -27,7 +27,7 @@
         <div class="upper">
           <ul>
             <li class="language">
-              <button type="button">
+              <button id="language" type="button">
                 <span>
                   <img src="<?php echo get_template_directory_uri(); ?>/img/icon-global-middle.png" alt="">
                 </span>

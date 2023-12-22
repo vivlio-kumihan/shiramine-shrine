@@ -335,25 +335,26 @@ body .page-top-arrow {
 }
 .home header .wrapper .global-menu .upper ul .language, .page header .wrapper .global-menu .upper ul .language {
   position: absolute;
-  top: -8px;
+  top: -10px;
   right: 0;
   width: 125px;
   padding: 3px 0px 8px 0;
   height: auto;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 18px;
   box-shadow: 0 2px 5px #aaa;
   z-index: 105;
 }
 .home header .wrapper .global-menu .upper ul .language > button, .page header .wrapper .global-menu .upper ul .language > button {
   position: relative;
   width: 100%;
-  padding: 3px 20px 3px 30px;
+  padding: 5px 20px 3px 30px;
 }
 .home header .wrapper .global-menu .upper ul .language > button span, .page header .wrapper .global-menu .upper ul .language > button span {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  top: 60%;
   left: 10px;
 }
 .home header .wrapper .global-menu .upper ul .language > button span img, .page header .wrapper .global-menu .upper ul .language > button span img {
@@ -367,15 +368,25 @@ body .page-top-arrow {
   font-size: 0.6rem;
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
-  top: 52%;
+  top: 60%;
   right: 12px;
 }
 .home header .wrapper .global-menu .upper ul .language > ul, .page header .wrapper .global-menu .upper ul .language > ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  height: 0;
+  margin: 0;
   padding: 0 0 0 31px;
   border: unset;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.home header .wrapper .global-menu .upper ul .language > ul li:first-of-type, .page header .wrapper .global-menu .upper ul .language > ul li:first-of-type {
+  padding-top: 5px;
+}
+.home header .wrapper .global-menu .upper ul .language > ul li:last-of-type, .page header .wrapper .global-menu .upper ul .language > ul li:last-of-type {
+  padding-bottom: 6px;
 }
 .home header .wrapper .global-menu .upper ul .language > ul li a, .page header .wrapper .global-menu .upper ul .language > ul li a {
   display: block;
@@ -626,6 +637,21 @@ body .page-top-arrow {
     bottom: 47.5%;
     transform: rotate(-45deg);
     left: 13%;
+  }
+  .home header ul, .page header ul {
+    height: 0;
+    border-top: 1px solid #67a863;
+    background-color: #5EAA6C;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  .home header ul li, .page header ul li {
+    padding: 20px 0;
+    border-bottom: 1px dotted #7FBF8B;
+  }
+  .home header ul li a, .page header ul li a {
+    display: block;
+    padding-left: 15px;
   }
 }
 
@@ -1871,6 +1897,37 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   }
   .page main .contents .container.guide-shrine .modal.temizushya .container .leading-square-header:first-of-type {
     margin-top: 0;
+  }
+}
+
+@media (width < 768px) {
+  .page main .contents .container.guide-shrine .modal .container .flex-grid {
+    display: block;
+  }
+  .page main .contents .container.guide-shrine .modal .container .flex-grid .photo-frame {
+    margin-top: 30px;
+  }
+  .page main .contents .container.guide-shrine .modal .container .photos {
+    flex-direction: column;
+  }
+  .page main .contents .container.guide-shrine .modal.ganshyug .flex-grid {
+    margin-bottom: 30px;
+  }
+  .page main .contents .container.guide-shrine .modal.mukuroji-no-ki .photos, .page main .contents .container.guide-shrine .modal.mukuroji-no-ki .photos, .page main .contents .container.guide-shrine .modal.kaji-no-ki .photos, .page main .contents .container.guide-shrine .modal.sanyo-no-matsu .photos {
+    gap: 0;
+  }
+  .page main .contents .container.guide-shrine .modal.four-seasons .container div {
+    flex-direction: column;
+    gap: 55px;
+  }
+  .page main .contents .container.guide-shrine .modal.four-seasons .container div figure img {
+    height: 100%;
+    aspect-ratio: 4/3;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .page main .contents .container.guide-shrine .modal.four-seasons .container div figure figcaption {
+    padding-top: 10px;
   }
 }
 

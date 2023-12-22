@@ -149,6 +149,36 @@ privacyPolicyTriggers.forEach((trigger, idx) => {
 });
 
 
+// メニューを開く関数
+const slideDown = (el) => {
+  console.log(el);
+  el.style.height = 'auto'; //いったんautoに
+  let h = el.offsetHeight; //autoにした要素から高さを取得
+  el.style.height = h + 'px';
+  el.animate([ //高さ0から取得した高さまでのアニメーション
+    { height: 0 },
+    { height: h + 'px' }
+  ], {
+    duration: 300, //アニメーションの時間（ms）
+  });
+};
+
+// メニューを閉じる関数
+const slideUp = (el) => {
+  el.style.height = 0;
+};
+
+const langBtn = document.getElementById("language");
+langBtn.addEventListener("click", (e) => {
+  e.target.parentNode.classList.toggle("active");
+  const getUl = langBtn.nextElementSibling;
+  if (e.target.parentNode.classList.contains("active")) {
+    slideDown (getUl)
+  } else {
+    slideUp(getUl);
+  }
+});
+
 // // Appear and Hide Header 
 // // とりあえず見送り
 // const fixedElm = document.querySelector('header');

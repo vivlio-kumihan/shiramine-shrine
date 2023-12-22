@@ -76,41 +76,50 @@
             margin-left: 5px
           .language
             position: absolute
-            top: -8px
+            top: -10px
             right: 0
             width: 125px
             padding: 3px 0px 8px 0
             height: auto
             background-color: #fff
-            border-radius: 5px
+            border-radius: 18px
             box-shadow: 0 2px 5px #aaa
             z-index: fw.get_index(language)
             > button
               position: relative
               width: 100%
-              padding: 3px 20px 3px 30px
+              padding: 5px 20px 3px 30px
               span
                 +fw.positionAbsoluteCTL($top: true)
+                top: 60%
                 left: 10px
                 img
                   width: 17px
               &::after
                 +fw.positionAbsoluteCTL($top: true)
                 +fw.fontAwesome("\f078", $fontSize: .6rem)
-                top: 52%
+                top: 60%
                 right: 12px
             > ul
               display: flex
               flex-direction: column
               align-items: flex-start
+              height: 0
+              margin: 0
               padding: 0 0 0 31px
               border: unset
+              overflow: hidden
+              transition: .5s
               li
+                &:first-of-type
+                  padding-top: 5px
+                &:last-of-type
+                  padding-bottom: 6px
                 a
                   display: block
                   width: 100%
                   padding: 10px 0 0
-                  white-space: nowrap          
+                  white-space: nowrap 
 
         .lower
           ul.menu
@@ -325,3 +334,16 @@
             bottom: 47.5%
             transform: rotate(-45deg)
             left: 13%              
+
+      ul
+        height: 0
+        border-top: 1px solid #67a863
+        background-color: #5EAA6C
+        transition: .5s
+        overflow: hidden
+        li
+          padding: 20px 0
+          border-bottom: 1px dotted #7FBF8B
+          a
+            display: block
+            padding-left: 15px
