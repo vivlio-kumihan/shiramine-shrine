@@ -104,7 +104,7 @@ body .page-top-arrow {
   opacity: 1;
 }
 
-.home .bread-crumb, .home.blog .bread-crumb, .page .bread-crumb, .archive .bread-crumb {
+.home .bread-crumb, .home.blog .bread-crumb, .page .bread-crumb {
   position: absolute;
   top: 20px;
   left: 80px;
@@ -112,7 +112,7 @@ body .page-top-arrow {
   gap: 10px;
   z-index: 103;
 }
-.home .bread-crumb li:nth-of-type(4), .home.blog .bread-crumb li:nth-of-type(4), .page .bread-crumb li:nth-of-type(4), .archive .bread-crumb li:nth-of-type(4) {
+.home .bread-crumb li:nth-of-type(4), .home.blog .bread-crumb li:nth-of-type(4), .page .bread-crumb li:nth-of-type(4) {
   padding-left: 10px;
   border-left: 1px solid #333;
 }
@@ -3360,6 +3360,10 @@ span.color-gold {
   }
 }
 
+.archive main {
+  width: min(1680px, 100%);
+  margin: 0 auto;
+}
 .archive main .frame {
   background-image: url(./img/information-top.jpg);
   background-size: cover;
@@ -3374,7 +3378,7 @@ span.color-gold {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.archive main .frame h1 {
+.archive main .frame h1.part-main-title {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -3386,92 +3390,200 @@ span.color-gold {
   color: #fff;
   border: 1px solid #fff;
 }
-.archive main .container .bg section {
-  margin: 0 auto;
-}
-.archive main .container .bg section h2 {
+.archive main .container {
   position: relative;
-  padding-bottom: 0;
-  padding-top: 170px;
-  font-size: 1.85rem;
-  line-height: 1em;
-  letter-spacing: 0.3em;
+  padding: 0 10%;
 }
-.archive main .container .bg section h2::after {
-  content: none;
-}
-.archive main .container .bg section h2 br {
-  display: none;
-}
-.archive main .container .bg section h2 img {
+.archive main .container .bread-crumb {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 70px;
-  bottom: 60px;
-  opacity: 0.5;
-}
-.archive main .container .bg section .contents {
+  top: -60px;
+  left: 80px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 120px 13% 100px;
-  background-color: #fff;
+  gap: 10px;
+  z-index: 103;
 }
-.archive main .container .bg section .contents h3 {
+.archive main .container .flex-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 80px;
+}
+.archive main .container .flex-wrapper .menu-list {
+  grid-column: 1/2;
+}
+.archive main .container .flex-wrapper .contents {
+  grid-column: 2/5;
+}
+.archive main .container .flex-wrapper .contents h1.part-title {
   position: relative;
   width: 100%;
-  text-align: center;
   font-size: 2rem;
+  font-weight: 600;
   line-height: 1;
+  text-align: center;
   letter-spacing: 0.1em;
+  border-bottom: unset;
 }
-.archive main .container .bg section .contents h3::before, .archive main .container .bg section .contents h3::after {
+.archive main .container .flex-wrapper .contents h1.part-title::before, .archive main .container .flex-wrapper .contents h1.part-title::after {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   content: "";
-  width: calc(50% - 120px);
+  width: calc(50% - 110px);
   height: 1px;
   background-color: #333;
 }
-.archive main .container .bg section .contents h3::before {
-  right: 0;
-}
-.archive main .container .bg section .contents h3::after {
+.archive main .container .flex-wrapper .contents h1.part-title::before {
   left: 0;
 }
-.archive main .container .bg section .contents h3.none-letter-space {
+.archive main .container .flex-wrapper .contents h1.part-title::after {
+  right: 0;
+}
+.archive main .container .flex-wrapper .contents .post-contents {
+  margin-top: 30px;
+}
+.archive main .container .flex-wrapper .contents .post-contents .post-item p, .archive main .container .flex-wrapper .contents .post-contents .post-item li {
+  font-size: 1.15rem;
+  line-height: 1.75em;
+}
+.archive main .container .flex-wrapper .contents .post-contents .post-item .post-title {
+  position: relative;
+  margin: 3em 0 0.75em;
+  padding: 0 0 0.8rem 1.55rem;
+  font-size: 1.75rem;
+  line-height: 1.2em;
+  text-align: left;
   letter-spacing: 0;
+  border-bottom: 1px solid #BB9A01;
+}
+.archive main .container .flex-wrapper .contents .post-contents .post-item .post-title::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  content: "";
+  width: 10px;
+  height: 3rem;
+  background-color: #BB9A01;
+}
+.archive main .container .flex-wrapper .contents .post-contents .post-item .post-title::after {
+  position: unset;
+}
+.archive main .container .flex-wrapper .contents .post-contents .post-item h1, .archive main .container .flex-wrapper .contents .post-contents .post-item h2, .archive main .container .flex-wrapper .contents .post-contents .post-item h3, .archive main .container .flex-wrapper .contents .post-contents .post-item h4, .archive main .container .flex-wrapper .contents .post-contents .post-item h5, .archive main .container .flex-wrapper .contents .post-contents .post-item h6 {
+  margin: 1.5em 0 0.8em;
+  line-height: 1em;
+  font-weight: 600;
+  text-align: left;
+}
+.archive main .container .flex-wrapper .contents .post-contents .post-item h1 {
+  font-size: 1.75rem;
+}
+.archive main .container .flex-wrapper .contents .post-contents .post-item h2 {
+  position: unset;
+  padding-bottom: 0;
+  font-size: 1.65rem;
+}
+.archive main .container .flex-wrapper .contents .post-contents .post-item h2::after {
+  position: unset;
+}
+.archive main .container .flex-wrapper .contents .post-contents .post-item h3 {
+  font-size: 1.5rem;
+}
+.archive main .container .flex-wrapper .contents .post-contents .post-item h4 {
+  font-size: 1.35rem;
+}
+.archive main .container .flex-wrapper .contents .post-contents .post-item h5 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.archive main .container .flex-wrapper .contents .post-contents .post-item h6 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.archive main .container .flex-wrapper .contents .post-contents .post-item ul {
+  margin: 1.25rem;
+}
+.archive main .container .flex-wrapper .contents .post-contents .post-item ul li {
+  position: relative;
+  line-height: 1.5em;
+  padding-left: 2em;
+}
+.archive main .container .flex-wrapper .contents .post-contents .post-item ul li::before {
+  position: absolute;
+  top: 0;
+  left: 1em;
+  content: "⚫︎";
+  color: #999;
+}
+.archive main .container .flex-wrapper .contents .post-contents .post-item ol {
+  margin: 1.25rem;
+  counter-reset: count 0;
+}
+.archive main .container .flex-wrapper .contents .post-contents .post-item ol li {
+  position: relative;
+  line-height: 1.5em;
+  padding-left: 2em;
+}
+.archive main .container .flex-wrapper .contents .post-contents .post-item ol li::before {
+  position: absolute;
+  top: 0;
+  left: 1em;
+  content: counter(count) ". ";
+  counter-increment: count 1;
+}
+.archive main .container .flex-wrapper .contents .post-contents .post-item ul > li + li, .archive main .container .flex-wrapper .contents .post-contents .post-item ol > li + li {
+  margin-top: 0.75em;
+}
+.archive main .container .flex-wrapper .contents .post-contents .post-item a {
+  color: red;
+  border-bottom: 1px solid red;
+}
+.archive main .container .flex-wrapper .contents .post-contents .post-item hr {
+  margin: 2rem 0;
+  border: 3px solid #eee;
+}
+.archive main .container .flex-wrapper .contents .post-contents .post-item .wp-block-table table tbody tr {
+  font-size: 1.15rem;
+  line-height: 1.4em;
+}
+.archive main .container .flex-wrapper .contents .post-contents .post-item .wp-block-table table tbody tr td {
+  border-left: unset;
+  border-right: unset;
+}
+.archive main .container .flex-wrapper .contents .post-contents .post-item .wp-block-table table tbody tr td:first-of-type {
+  background-color: #F5F6FA;
+}
+.archive main .container .flex-wrapper .contents .post-contents .post-item .wp-block-table .wp-element-caption {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  line-height: 1.2em;
+}
+.archive main .container .flex-wrapper .contents .post-contents .post-item .wp-block-image {
+  margin: 1rem 0;
+}
+.archive main .container .flex-wrapper .contents .post-contents .post-item .date-category {
+  display: flex;
+  gap: 7px;
+  margin-top: 30px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1em;
+}
+.archive main .container .flex-wrapper .contents .post-contents .post-item .date-category .category {
+  color: red;
 }
 
 @media (width < 768px) {
-  .archive main .container .bg section h2 {
+  .archive main .container .flex-wrapper h2 {
     font-size: 1.65rem;
     line-height: 1.25em;
     letter-spacing: 0.2em;
   }
-  .archive main .container .bg section h2 br {
+  .archive main .container .flex-wrapper h2 br {
     display: block;
   }
-  .archive main .container .bg section h2 .bottom-up-90px {
+  .archive main .container .flex-wrapper h2 .bottom-up-90px {
     bottom: 90px;
-  }
-}
-
-@media (width < 768px) {
-  .archive main .container .bg section .contents {
-    padding: 40px 0 0;
-  }
-  .archive main .container .bg section .contents:last-of-type {
-    padding-bottom: 20px;
-  }
-  .archive main .container .bg section .contents .gradually-appear h3, .archive main .container .bg section .contents .gradually-appear-long h3 {
-    font-size: 1.5rem;
-    letter-spacing: 0;
-  }
-  .archive main .container .bg section .contents .gradually-appear h3::before, .archive main .container .bg section .contents .gradually-appear h3::after, .archive main .container .bg section .contents .gradually-appear-long h3::before, .archive main .container .bg section .contents .gradually-appear-long h3::after {
-    width: calc(50% - 90px);
   }
 }
 
