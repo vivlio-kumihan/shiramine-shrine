@@ -4,7 +4,7 @@
 .archive
   main
     .frame
-      +fw.background-image("./img/page-about-0.jpg")
+      +fw.background-image("./img/information-top.jpg")
       position: relative
       height: 500px
       img
@@ -44,149 +44,27 @@
             display: flex
             flex-direction: column
             align-items: center
-            padding: 70px 15% 0
+            padding: 120px 13% 100px
             background-color: #fff
-            &:first-of-type
-              margin-top: 100px
-            &:last-of-type
-              padding-bottom: 100px
-            .gradually-appear, .gradually-appear-long
-              // h3
-              //   position: relative
-              //   width: 100%
-              //   text-align: center
-              //   font-size: 1.75rem
-              //   line-height: 1
-              //   letter-spacing: .5em
-              //   &::before, &::after
-              //     +fw.positionAbsoluteCTL($top: true)
-              //     content: ""
-              //     width: calc(50% - 120px)
-              //     height: 1px
-              //     background-color: #333
-              //   &::before                
-              //     right: 0
-              //   &::after
-              //     left: 0
-              //   &.none-letter-space
-              //     letter-spacing: 0
-              .inner-contents
-                padding: 60px 0
-                &.font-size-lg
-                  text-align: center
-                div
-                  text-align: center
-                  font-size: 1.5rem
-                  line-height: 2em
-                  br
-                    display: none
-                .flex-container
-                  display: grid
-                  grid-template-columns: repeat(2, 1fr)
-                  gap: 30px
-                  &.irregularity-gosaizin
-                    grid-template-columns: repeat(5, 1fr)
-                    .size-small
-                      grid-column: 1/3
-                      grid-row: 1/2
-                      width: 100%
-                      height: 100%
-                      img
-                        aspect-ratio: 1
-                        width: 100%
-                        object-fit: cover
-                    .paragraph
-                      grid-column: 3/6
-                      grid-row: 1/2
-                  &.reverse-irregularity-gosaizin
-                    .size-small
-                      grid-column: 2/3
-                      grid-row: 1/2
-                      width: 100%
-                      height: 100%
-                      padding-top: 5%
-                      img
-                        width: 80%
-                    .paragraph
-                      grid-column: 1/2
-                      grid-row: 1/2
-                  &.reverse-irregularity-history
-                    grid-template-columns: repeat(4, 1fr)
-                    .size-learge
-                      grid-column: 2/5
-                      grid-row: 1/2
-                      width: 100%
-                      height: 100%
-                      img
-                        width: 100%
-                    .paragraph
-                      grid-column: 1/2
-                      grid-row: 1/2
-                  + .flex-container
-                    margin-top: 20px
-                  img
-                    width: 100%
-                    aspect-ratio: 3/2
-                    object-fit: cover
-                  div
-                    width: 100%
-                    img
-                      &:first-of-type
-                        margin-top: 10px
-                      + img
-                        margin-top: 80px
-                    h4
-                      font-family: fw.$noto-gth
-                      font-size: 1.25rem
-                      font-weight: 300
-                      text-align: left
-                      color: fw.$gold
-                    p
-                      font-size: 1.1rem
-                      line-height: 1.8em
-                      text-align: justify
-                      + p
-                        margin-top: 15px
-                      &.lead-copy-gobyo
-                        margin-bottom: 30px
-                      em
-                        // 指示
-                        // font-weight: 800
-                        font-style: normal
-
-.archive
-  main
-    .container
-      .bg
-        section.chronology
-          .contents
-            padding-top: 50px
-
-// page top image
-.archive
-  main
-    +max(lg)
-      .frame
-        h1
-          display: inline-block
-          width: max-content
-          padding: 20px 50px
-
-// page top image
-.archive
-  main
-    +max(md)
-      .frame
-        +fw.background-image("./img/page-about-0-portrait.jpg")
-        height: 50vh
-        h1
-          +fw.positionAbsoluteCTL($left: true)
-          top: 50%
-          padding: 12px 30px
-          font-size: 1.65rem
-          letter-spacing: 0
-          background-color: rgba(0, 0, 0, .5)
-          border: unset
+            h3
+              position: relative
+              width: 100%
+              text-align: center
+              font-size: 2rem
+              line-height: 1
+              letter-spacing: .1em
+              &::before, &::after
+                +fw.positionAbsoluteCTL($top: true)
+                content: ""
+                width: calc(50% - 120px)
+                height: 1px
+                background-color: #333
+              &::before
+                right: 0
+              &::after
+                left: 0
+              &.none-letter-space
+                letter-spacing: 0
 
 .archive
   main
@@ -214,87 +92,15 @@
               &:last-of-type
                 padding-bottom: 20px
               .gradually-appear, .gradually-appear-long
-                // h3
-                //   font-size: 1.5rem
-                //   letter-spacing: 0
-                //   &::before, &::after
-                //     width: calc( 50% - 90px)
-                .inner-contents
-                  padding: 40px 20px 20px
-                  div
-                    font-size: 1.25rem
-                    line-height: 1.25em
-                    + div
-                      // margin-top: 15px
-                    br
-                      display: block
-                  .flex-container, .flex-container.reverse-irregularity-history, .flex-container.irregularity-gosaizin
-                    grid-template-columns: repeat(1, 1fr)
-                    gap: 10px
-                    .size-learge
-                      grid-column: unset
-                      grid-row: unset
-                    div
-                      img + img
-                        margin-top: 15px
-                      p
-                        font-size: 1rem
-                        line-height: 1.7
-                        + p
-                          margin-top: 15px
+                h3
+                  font-size: 1.5rem
+                  letter-spacing: 0
+                  &::before, &::after
+                    width: calc( 50% - 90px)
+
 
 .archive
-  main
-    .container.gosaizin, .container.gobyo, .container.history
-      .bg
-        section
-          .contents
-            .gradually-appear, .gradually-appear-long
-              .inner-contents
-                +max(md)
-                  .flex-container
-                    &.reverse-irregularity-gosaizin
-                      .size-small
-                        grid-column: 1/2
-                        grid-row: 2/2
-                        width: 100%
-                        height: 100%
-                        padding-top: 5%
-                        img
-                          width: 80%
-                      .paragraph
-                        grid-column: 1/2
-                        grid-row: 1/2
-                    img
-                      grid-column: 1/2
-                      grid-row: 2/2
-                      margin-top: 5px
-                    div
-                      grid-column: 1/2
-                      grid-row: 1/2
-                  + .flex-container
-                    margin-top: 20px
-                  .flex-container.irregularity-gosaizin
-                    .size-small
-                      grid-column: 1/2
-                      grid-row: 2/2
-                    .paragraph
-                      grid-column: 1/2
-                      grid-row: 1/2
-.archive
-  main
-    .container.gosaizin, .container.gobyo, .container.history
-      .bg
-        section
-          .contents
-            .gradually-appear, .gradually-appear-long
-              .inner-contents
-                +max(md)
-                  .flex-container
-                    // margin-top: 30px
-
-// .archive
-//   +min(sm)
-//   +min(md)
-//   +min(lg)
-//   +min(xl)
+  +min(sm)
+  +min(md)
+  +min(lg)
+  +min(xl) 
