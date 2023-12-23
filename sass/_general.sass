@@ -86,10 +86,10 @@ body
       bottom: 30px
       right: 40px
 
-.home, .home.blog, .page
+.home, .home.blog, .page, .archive
   em
     font-style: unset
-.home, .home.blog, .page
+.home, .home.blog, .page, .archive
   .gradually-appear, .gradually-appear-long, .gradually-appear-short
     width: 100%
     transition: 1.5s
@@ -102,7 +102,7 @@ body
       opacity: 1
 
 // パンくずリスト
-.home, .home.blog, .page
+.home, .home.blog, .page, .archive
   .bread-crumb
     position: absolute
     top: 20px
@@ -114,7 +114,7 @@ body
       padding-left: 10px
       border-left: 1px solid #333
 
-.home, .home.blog, .page
+.home, .home.blog, .page, .archive
   +max(md)
     .bread-crumb
       +fw.positionAbsoluteCTL($left: true)
@@ -124,7 +124,7 @@ body
       font-size: .8rem
 
 // 表組
-.home, .home.blog, .page
+.home, .home.blog, .page, .archive
   .list-contents
     display: grid
     grid-template-columns: 1fr
@@ -164,7 +164,7 @@ body
             width: 100%
             padding: 10px 1em 20px           
 
-.home, .home.blog, .page
+.home, .home.blog, .page, .archive
   .blink
     animation: blinking 1.5s ease-in-out infinite alternate
 
@@ -174,15 +174,15 @@ body
     100%
       opacity: 1
 
-.home, .home.blog, .page
+.home, .home.blog, .page, .archive
   .note
     font-size: .95rem
     line-height: 1.5em
-.home, .home.blog, .page
+.home, .home.blog, .page, .archive
   .full-width-char-behind
     margin-right: 1em
 
-.home, .home.blog, .page
+.home, .home.blog, .page, .archive
   h3, .guide-shrine-modal-header, .annual-event-modal-header
     position: relative
     width: 100%
@@ -203,7 +203,7 @@ body
     &.none-letter-space
       letter-spacing: 0
 
-.home, .home.blog, .page
+.home, .home.blog, .page, .archive
   h3, .guide-shrine-modal-header
     +max(md)
       font-size: 1.5rem
@@ -211,7 +211,7 @@ body
       &::before, &::after
         width: calc( 50% - 90px)
 
-.home, .home.blog, .page
+.home, .home.blog, .page, .archive
   .leading-square-header
     position: relative
     padding-left: 1.55rem
