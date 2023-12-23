@@ -1,7 +1,7 @@
 @use '../forwards' as fw
 @use '../media-query' as *
 
-.home, .page
+.home, .page, .single, .archive
   header
     display: flex
     justify-content: center
@@ -76,10 +76,10 @@
             margin-left: 5px
           .language
             position: absolute
-            top: -10px
+            top: -8px
             right: 0
             width: 125px
-            padding: 3px 0px 8px 0
+            padding-bottom: 3px
             height: auto
             background-color: #fff
             border-radius: 18px
@@ -112,13 +112,13 @@
               transition: .5s
               li
                 &:first-of-type
-                  padding-top: 5px
+                  padding-top: 2px
                 &:last-of-type
                   padding-bottom: 6px
                 a
                   display: block
                   width: 100%
-                  padding: 10px 0 0
+                  padding: 8px 0 0
                   white-space: nowrap 
 
         .lower
@@ -220,7 +220,8 @@
             ul.menu
               gap: 40px
               font-size: 1rem
-
+.home, .page, .single, .archive
+  header
     +max(md)
       .wrapper
         .logo-space

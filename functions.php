@@ -40,6 +40,16 @@ function menu_setup()
 }
 add_action('after_setup_theme', 'menu_setup');
 
+// archiveをアクティブにする。
+function post_has_archive( $args, $post_type ) {
+  if ( 'post' == $post_type ) {
+    $args['rewrite'] = true;
+    $args['has_archive'] = 'information'; //任意のスラッグ名をinformationに設定する。
+  }
+  return $args;
+}
+add_filter( 'register_post_type_args', 'post_has_archive', 10, 2 );
+
 // 投稿抜粋の末尾記号を変更する。
 function new_excerpt_more($more)
 {
@@ -47,22 +57,23 @@ function new_excerpt_more($more)
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
-//カレンダーショートコード
-add_shortcode('calendar-1', 'calendar_shortcode');
-if (!function_exists('calendar_shortcode')) :
-  function calendar_shortcode($atts, $content = null)
-  {
-    extract(shortcode_atts(array(
-      'month' => 1,
-    ), $atts));
-    ob_start();
-    global $monthnum, $year;
-    $monthnum = date('m', strtotime(date('Y-m-1') . '-' . $month . ' month'));
-    $year = date('Y', strtotime(date('Y-m-1') . '-' . $month . ' month'));
-    get_calendar();
-    return ob_get_clean();
-  }
-endif;
+
+// //カレンダーショートコード
+// add_shortcode('calendar-1', 'calendar_shortcode');
+// if (!function_exists('calendar_shortcode')) :
+//   function calendar_shortcode($atts, $content = null)
+//   {
+//     extract(shortcode_atts(array(
+//       'month' => 1,
+//     ), $atts));
+//     ob_start();
+//     global $monthnum, $year;
+//     $monthnum = date('m', strtotime(date('Y-m-1') . '-' . $month . ' month'));
+//     $year = date('Y', strtotime(date('Y-m-1') . '-' . $month . ' month'));
+//     get_calendar();
+//     return ob_get_clean();
+//   }
+// endif;
 
 // function my_orderby_meta_key($query) {
 //   if (!is_admin()) {

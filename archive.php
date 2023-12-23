@@ -1,5 +1,3 @@
-<?php /* Template Name: 北斗書房ブログ　*/ ?>
-
 <?php get_header(); ?>
 
 <div class="container">
@@ -73,6 +71,7 @@
 
 <?php get_footer(); ?>
 
+<!-- <?php /* Template Name: name　*/ ?> -->
 <!-- 
 <div class="category-link">
   <header>記事カテゴリー</header>
