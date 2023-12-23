@@ -24,9 +24,41 @@
 
     <div class="flex-wrapper">
       <div class="mune-list">
-        <ul>
-          <li>最新情報</li>
-        </ul>
+        <div class="category-link-menu">
+          <div class="link-title">記事カテゴリー</div>
+          <ul>
+            <?php
+            $categories = get_categories();
+            if ($categories) {
+              foreach ($categories as $category) {
+                echo '<li><a href="/category/' . $category->slug . '">' . $category->name . '</a></li>';
+              }
+            }
+            ?>
+          </ul>
+        </div>
+        <div class="monthry-archive">
+
+          <ul class="monthly-list">
+            <?php
+            // 月別アーカイブのリンクを表示
+            wp_get_archives(array(
+              'post_type' => 'post',
+              'type' => 'monthly',
+              'show_post_count' => 1,
+              'format' => 'custom',
+              'before' => '<li>',
+              'after' => '</li>',
+              'echo' => 1,
+              'show_post_count' => true,
+              'echo' => true,
+              'order' => 'DESC',
+            ));
+            ?>
+          </ul>
+
+
+        </div>
       </div>
       <div class="contents">
         <h1 class="part-title">お知らせ</h1>
