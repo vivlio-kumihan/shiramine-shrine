@@ -3469,6 +3469,10 @@ span.color-gold {
 .archive main .container .flex-wrapper .contents .post-contents .post-item .post-title::after {
   position: unset;
 }
+.archive main .container .flex-wrapper .contents .post-contents .post-item .post-title > a {
+  color: black;
+  border-bottom: unset;
+}
 .archive main .container .flex-wrapper .contents .post-contents .post-item h1, .archive main .container .flex-wrapper .contents .post-contents .post-item h2, .archive main .container .flex-wrapper .contents .post-contents .post-item h3, .archive main .container .flex-wrapper .contents .post-contents .post-item h4, .archive main .container .flex-wrapper .contents .post-contents .post-item h5, .archive main .container .flex-wrapper .contents .post-contents .post-item h6 {
   margin: 1.5em 0 0.8em;
   line-height: 1em;

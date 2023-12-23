@@ -11,21 +11,21 @@
 
   <div class="container">
     <ul class="bread-crumb">
-      <li>
-        <a href="<?php echo home_url(); ?>">ホーム</a>
-      </li>
-      <li>
-        >
-      </li>
-      <li>
-        <a href="<?php echo esc_url(home_url('/information/')); ?>">お知らせ</a>
-      </li>
+      <li><a href="<?php echo home_url(); ?>">ホーム</a></li>
+      <li>></li>
+      <?php if (is_date()) : ?>
+        <li><a href="<?php echo esc_url(home_url('/information/')); ?>">お知らせ</a></li>
+        <li>></li>
+        <li><a href="<?php echo esc_url(home_url('/' . get_the_date('Y/n') . '/')); ?>"><?php echo get_the_date('Y年n月'); ?> 記事</a></li>
+      <?php else : ?>
+        <li><a href="<?php echo esc_url(home_url('/information/')); ?>">お知らせ</a></li>
+      <?php endif; ?>
     </ul>
 
     <div class="flex-wrapper">
-      <div class="mune-list">
+      <div class="menu-list">
         <div class="category-link-menu">
-          <div class="link-title">記事カテゴリー</div>
+          <div class="headline-title">記事カテゴリー</div>
           <ul>
             <?php
             $categories = get_categories();
@@ -37,12 +37,10 @@
             ?>
           </ul>
         </div>
-        <div class="monthry-archive">
-
-          <ul class="monthly-list">
-            <?php
-            // 月別アーカイブのリンクを表示
-            wp_get_archives(array(
+        <div class="year-monthry-archive">
+          <div class="headline-title">記事カテゴリー</div>
+          <ul class="year-monthry-list">
+            <?php wp_get_archives(array(
               'post_type' => 'post',
               'type' => 'monthly',
               'show_post_count' => 1,
@@ -53,30 +51,23 @@
               'show_post_count' => true,
               'echo' => true,
               'order' => 'DESC',
-            ));
-            ?>
+            )); ?>
           </ul>
-
-
         </div>
       </div>
       <div class="contents">
-        <h1 class="part-title">お知らせ</h1>
+        <?php if (is_date()) : ?>
+          <h1 class="part-title"><?php echo get_the_date('Y年n月'); ?> 記事</h1>
+        <?php else : ?>
+          <h1 class="part-title">お知らせ</h1>
+        <?php endif; ?>
         <div class="blogs">
           <ul class="post-contents">
-            <?php
-            $recent_page = get_query_var('paged') ? get_query_var('paged') : 1;
-            $args = array(
-              'post_type' => 'post',
-              'posts_per_page' => 10,
-              'paged' => $recent_page,
-              'cat' => 'all'
-            );
-            $my_query = new WP_Query($args);
-            if ($my_query->have_posts()) : while ($my_query->have_posts()) : $my_query->the_post();
-            ?>
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <li class="post-item">
-                  <div class="post-title"><?php the_title(); ?></div>
+                  <div class="post-title">
+                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                  </div>
                   <div class="content"><?php echo the_content(); ?></div>
                   <div class="date-category">
                     <time datetime="<?php echo get_the_date("Y-m-d") ?>"><?php echo get_the_date("Y-m-d") ?></time>
@@ -89,22 +80,16 @@
                     ?>
                   </div>
                 </li>
-            <?php endwhile;
-            endif; ?>
+              <?php endwhile; ?>
           </ul>
-          <div class="breadcrumbs">
-            <?php
-            $args = array(
-              'type' => 'list',
-              'current' => $recent_page,
-              'total' => $my_query->max_num_pages,
-              'prev_text' => '前のページ',
-              'next_text' => '次のページ',
-            );
-            echo paginate_links($args);
-            ?>
-          </div>
         </div>
+      <?php
+              // Previous/next page navigation.
+              the_posts_pagination(array(
+                'prev_text'        => __('前のページ'),
+                'next_text'        => __('次のページ'),
+              ));
+            endif; ?>
       </div>
     </div>
   </div>
