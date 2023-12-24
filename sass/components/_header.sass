@@ -234,7 +234,7 @@
         .menu-toggle-btn
           width: 40px
         
-    // ハンバーガーメニュー
+    // // ハンバーガーメニュー
     +max(md)
       height: 120px
       .wrapper
@@ -265,34 +265,45 @@
           .upper
             ul
               justify-content: center
+              padding: 0
               .language
+                position: unset
                 margin-left: 10px
           .lower
             ul.menu
               flex-direction: column
               align-items: center
+              gap: 0
               margin-top: 30px
+              font-size: 1.1rem
+              font-weight: 600
+              border-bottom: 2px dotted #eee
               li.menu-item
                 margin: 0 auto
                 position: unset
-                width: 60%
+                width: 100%
                 text-align: center
+                &:not(:first-of-type)
+                  padding:10px
+                  border-top: 2px dotted #eee
                 .sub-menu
                   display: block
                   position: unset
-                  padding-top: 7px
+                  padding: 5px 1rem 15px
                   font-weight: 600
                   transform: translateX(0%)
                   visibility: visible
                   opacity: 1
+                  
                   li
+                    margin: 5px 0
+                    padding: 0
+                    border: unset
                     width: 100%
                     background-color: rgba(0, 0, 0, .03)
-                    + li
-                      margin-top: 5px
                     a
                       height: auto
-                      padding: 4px 0
+                      padding: 10px 0
                       font-size: .975rem
                       line-height: 1em
                       overflow: hidden
@@ -334,17 +345,4 @@
           &:last-of-type
             bottom: 47.5%
             transform: rotate(-45deg)
-            left: 13%              
-
-      ul
-        height: 0
-        border-top: 1px solid #67a863
-        background-color: #5EAA6C
-        transition: .5s
-        overflow: hidden
-        li
-          padding: 20px 0
-          border-bottom: 1px dotted #7FBF8B
-          a
-            display: block
-            padding-left: 15px
+            left: 13%

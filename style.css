@@ -553,40 +553,50 @@ body .page-top-arrow {
   }
   .home header .wrapper .global-menu .upper ul, .page header .wrapper .global-menu .upper ul, .single header .wrapper .global-menu .upper ul, .archive header .wrapper .global-menu .upper ul {
     justify-content: center;
+    padding: 0;
   }
   .home header .wrapper .global-menu .upper ul .language, .page header .wrapper .global-menu .upper ul .language, .single header .wrapper .global-menu .upper ul .language, .archive header .wrapper .global-menu .upper ul .language {
+    position: unset;
     margin-left: 10px;
   }
   .home header .wrapper .global-menu .lower ul.menu, .page header .wrapper .global-menu .lower ul.menu, .single header .wrapper .global-menu .lower ul.menu, .archive header .wrapper .global-menu .lower ul.menu {
     flex-direction: column;
     align-items: center;
+    gap: 0;
     margin-top: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-bottom: 2px dotted #eee;
   }
   .home header .wrapper .global-menu .lower ul.menu li.menu-item, .page header .wrapper .global-menu .lower ul.menu li.menu-item, .single header .wrapper .global-menu .lower ul.menu li.menu-item, .archive header .wrapper .global-menu .lower ul.menu li.menu-item {
     margin: 0 auto;
     position: unset;
-    width: 60%;
+    width: 100%;
     text-align: center;
+  }
+  .home header .wrapper .global-menu .lower ul.menu li.menu-item:not(:first-of-type), .page header .wrapper .global-menu .lower ul.menu li.menu-item:not(:first-of-type), .single header .wrapper .global-menu .lower ul.menu li.menu-item:not(:first-of-type), .archive header .wrapper .global-menu .lower ul.menu li.menu-item:not(:first-of-type) {
+    padding: 10px;
+    border-top: 2px dotted #eee;
   }
   .home header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu, .page header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu, .single header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu, .archive header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu {
     display: block;
     position: unset;
-    padding-top: 7px;
+    padding: 5px 1rem 15px;
     font-weight: 600;
     transform: translateX(0%);
     visibility: visible;
     opacity: 1;
   }
   .home header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li, .page header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li, .single header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li, .archive header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li {
+    margin: 5px 0;
+    padding: 0;
+    border: unset;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.03);
   }
-  .home header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li + li, .page header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li + li, .single header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li + li, .archive header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li + li {
-    margin-top: 5px;
-  }
   .home header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li a, .page header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li a, .single header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li a, .archive header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li a {
     height: auto;
-    padding: 4px 0;
+    padding: 10px 0;
     font-size: 0.975rem;
     line-height: 1em;
     overflow: hidden;
@@ -638,21 +648,6 @@ body .page-top-arrow {
     bottom: 47.5%;
     transform: rotate(-45deg);
     left: 13%;
-  }
-  .home header ul, .page header ul, .single header ul, .archive header ul {
-    height: 0;
-    border-top: 1px solid #67a863;
-    background-color: #5EAA6C;
-    transition: 0.5s;
-    overflow: hidden;
-  }
-  .home header ul li, .page header ul li, .single header ul li, .archive header ul li {
-    padding: 20px 0;
-    border-bottom: 1px dotted #7FBF8B;
-  }
-  .home header ul li a, .page header ul li a, .single header ul li a, .archive header ul li a {
-    display: block;
-    padding-left: 15px;
   }
 }
 
