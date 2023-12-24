@@ -528,20 +528,11 @@
           <div class="flex-grid">
             <div class="paragraph">
               <p>以下のお子さん方が対象です。</p>
-              <dl>
-                <div>
-                  <dt>3歳 男児・女児</dt>
-                  <dd>〓〓〓〓〓〓〓</dd>
-                </div>
-                <div>
-                  <dt>5歳 男児</dt>
-                  <dd>〓〓〓〓〓〓〓</dd>
-                </div>
-                <div>
-                  <dt>7歳 女児</dt>
-                  <dd>〓〓〓〓〓〓〓</dd>
-                </div>
-              </dl>
+              <ul>
+                <li>3歳 男児・女児</li>
+                <li>5歳 男児</li>
+                <li>7歳 女児</li>
+              </ul>
               <p>満年齢での七・五・三才の方もお詣りいただけます。</p>
             </div>
             <div class="photo-frame">

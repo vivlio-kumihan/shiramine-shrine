@@ -202,4 +202,12 @@
     </div>
   </main>
 
-  <?php get_footer(); ?>
+<footer class="english-page-footer">
+  <div class="wrapper">
+    <div class="copyright">Copyright &#169; SHIRAMINE JINGU SHRINE All Rights Reserved.</div>
+  </div>
+</footer>
+<?php wp_footer(); ?>
+</body>
+
+</html>

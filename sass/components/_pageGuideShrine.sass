@@ -236,6 +236,15 @@
                 padding-left: -50px
               right-side
                 padding-left: -50px
+.page 
+  main 
+    .contents 
+      .container.guide-shrine
+        +max(md)
+          .modal.ukon-no-sakura
+            .container 
+              .guide-shrine-modal-header::before, .guide-shrine-modal-header::after
+                width: calc(50% - 110px)
 
 .page 
   main 
@@ -467,6 +476,22 @@
                 font-size: 1.5rem
                 &::before, &::after
                   width: calc(50% - 75px)
+.page
+  main
+    .contents
+      +min(md)
+        .container.guide-shrine
+          .modal
+            .container
+              padding: 6rem 2rem
+.page
+  main
+    .contents
+      +min(lg)
+        .container.guide-shrine
+          .modal
+            .container
+              padding: 6rem 5rem
 // jisyushya
 .page
   main
@@ -534,7 +559,9 @@
         .container.guide-shrine
           .modal.temizushya
             .container
+              padding: 1rem
               .flex-grid
+                display: grid
                 grid-template-columns: repeat(1, 1fr)
                 gap: 20px
                 justify-content: center
@@ -545,10 +572,13 @@
                   width: 70%
                   figcaption
                     margin-top: 10px
+                &:first-of-type
+                  .photo-frame
+                    margin-top: 0
                 &:last-of-type
-                  grid-template-columns: repeat(1, 1fr)
                   .photo-frame
                     grid-row: 2/3
+                    margin-top: 0
                   .pragraph
                     grid-row: 1/2
 
@@ -556,8 +586,37 @@
                 font-size: 1.35rem
                 &:first-of-type
                   margin-top: 0
+.page
+  main
+    .contents
+      +min(lg)
+        .container.guide-shrine
+          .modal.temizushya
+            .container
+              padding: 5rem
+              .flex-grid:first-of-type
+                display: flex
+                flex-direction: column
+                align-items: center
+                .photo-frame
+                  width: 70%
+                  margin-bottom: 30px
+.page
+  main
+    .contents
+      +min(md)
+        .container.guide-shrine
+          .modal.temizushya
+            .container
+              .flex-grid:first-of-type
+                display: flex
+                flex-direction: column
+                align-items: center
+                .photo-frame
+                  width: 90%
+                  margin-bottom: 30px
 
-// modal
+// modal  
 .page
   main
     .contents
@@ -579,6 +638,7 @@
                 gap: 0
             &.four-seasons
               .container
+                padding: 15px 15px 50px
                 div
                   flex-direction: column
                   gap: 55px
