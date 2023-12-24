@@ -118,7 +118,7 @@ body .page-top-arrow {
 }
 
 @media (width < 768px) {
-  .home .bread-crumb, .home.blog .bread-crumb, .page .bread-crumb {
+  .home .bread-crumb, .home.blog .bread-crumb, .page .bread-crumb, .archive .bread-crumb {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -3478,7 +3478,7 @@ span.color-gold {
 }
 .archive main .container .flex-wrapper .contents .post-contents .post-item h1, .archive main .container .flex-wrapper .contents .post-contents .post-item h2, .archive main .container .flex-wrapper .contents .post-contents .post-item h3, .archive main .container .flex-wrapper .contents .post-contents .post-item h4, .archive main .container .flex-wrapper .contents .post-contents .post-item h5, .archive main .container .flex-wrapper .contents .post-contents .post-item h6 {
   margin: 1.5em 0 0.8em;
-  line-height: 1em;
+  line-height: 1.25em;
   font-weight: 600;
   text-align: left;
 }
@@ -3634,6 +3634,53 @@ span.color-gold {
 }
 .archive main .container .flex-wrapper .menu-list .year-monthry-archive {
   margin-top: 30px;
+}
+
+@media (width < 768px) {
+  .archive main .frame {
+    background-image: url(./img/information-top-portrait.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+  }
+  .archive main .frame h1.part-main-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    padding: 12px 30px;
+    font-size: 1.65rem;
+    letter-spacing: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: unset;
+  }
+  .archive main .container {
+    padding: 0 1rem;
+  }
+  .archive main .container .bread-crumb {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+    width: 100%;
+    justify-content: center;
+    font-size: 0.8rem;
+  }
+  .archive main .container .flex-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 70px;
+  }
+  .archive main .container .flex-wrapper .contents h1.part-title::before, .archive main .container .flex-wrapper .contents h1.part-title::after {
+    width: calc(50% - 75px);
+  }
+  .archive main .container .flex-wrapper .contents h1.part-title::before {
+    left: -1rem;
+  }
+  .archive main .container .flex-wrapper .contents h1.part-title::after {
+    right: -1rem;
+  }
 }
 
 .home footer, .page footer, .single footer, .archive footer {
