@@ -215,10 +215,10 @@ body .page-top-arrow {
   background-color: #333;
 }
 .home h3::before, .home .guide-shrine-modal-header::before, .home .annual-event-modal-header::before, .home.blog h3::before, .home.blog .guide-shrine-modal-header::before, .home.blog .annual-event-modal-header::before, .page h3::before, .page .guide-shrine-modal-header::before, .page .annual-event-modal-header::before {
-  right: 0;
+  left: 0;
 }
 .home h3::after, .home .guide-shrine-modal-header::after, .home .annual-event-modal-header::after, .home.blog h3::after, .home.blog .guide-shrine-modal-header::after, .home.blog .annual-event-modal-header::after, .page h3::after, .page .guide-shrine-modal-header::after, .page .annual-event-modal-header::after {
-  left: 0;
+  right: 0;
 }
 .home h3.none-letter-space, .home .guide-shrine-modal-header.none-letter-space, .home .annual-event-modal-header.none-letter-space, .home.blog h3.none-letter-space, .home.blog .guide-shrine-modal-header.none-letter-space, .home.blog .annual-event-modal-header.none-letter-space, .page h3.none-letter-space, .page .guide-shrine-modal-header.none-letter-space, .page .annual-event-modal-header.none-letter-space {
   letter-spacing: 0;
@@ -2308,11 +2308,20 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
 }
 
 @media (width < 768px) {
+  .page main .contents .container.prayer .bg section .contents.prayer {
+    padding: 60px 1rem;
+  }
   .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long {
     margin-top: 60px;
   }
   .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear h3::before, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear h3::after, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long h3::before, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long h3::after {
-    width: calc(50% - 95px);
+    width: calc(50% - 90px);
+  }
+  .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear h3::before, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long h3::before {
+    left: -1rem;
+  }
+  .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear h3::after, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long h3::after {
+    right: -1rem;
   }
   .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear p, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .wrapper, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long p, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .wrapper {
     padding: 0 1rem;
@@ -2325,10 +2334,10 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
     padding: 1rem 0;
   }
   .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear.fax-send h3::before, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear.fax-send h3::after, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long.fax-send h3::before, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long.fax-send h3::after {
-    width: calc(50% - 120px);
+    width: calc(50% - 100px);
   }
   .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear.mail-send h3::before, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear.mail-send h3::after, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long.mail-send h3::before, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long.mail-send h3::after {
-    width: calc(50% - 135px);
+    width: calc(50% - 110px);
   }
   .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear .dl-pdf-btn, .page main .contents .container.prayer .bg section .contents.prayer .gradually-appear-long .dl-pdf-btn {
     margin-top: 30px;
@@ -2494,13 +2503,13 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
 }
 .page.page-id-14 main .contents .container.annual-event .bg section .contents.chart .gradually-appear .header {
   width: 100%;
-  padding: 100px 0 0;
+  padding: 60px 0 0;
 }
 .page.page-id-14 main .contents .container.annual-event .bg section .contents.chart .gradually-appear .header h3 {
   letter-spacing: 0.1em;
 }
 .page.page-id-14 main .contents .container.annual-event .bg section .contents.chart .gradually-appear-long .note {
-  margin-top: 70px;
+  margin-top: 30px;
   text-align: center;
   font-size: 1rem;
 }
@@ -3120,7 +3129,7 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
 @media (width < 768px) {
   .page main .contents .container.contact .bg section .contents.contact {
     margin-top: 0;
-    padding: 100px 0 80px;
+    padding: 70px 0 80px;
   }
   .page main .contents .container.contact .bg section .contents.contact .gradually-appear, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long {
     margin-top: 0;
@@ -3219,6 +3228,8 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   margin-bottom: 10px;
   font-size: 0.9rem;
   line-height: 1.3em;
+  padding-left: 1em;
+  text-indent: -1em;
 }
 .page main .contents .container.access .bg section .contents.access .gradually-appear-long.align-left > .grid-wrapper.five-photos figure img {
   width: 100%;
@@ -3235,6 +3246,48 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
 
 span.color-gold {
   color: #eec714;
+}
+
+@media (width < 768px) {
+  .page main .contents .frame.access {
+    background-image: url(./img/access-top.jpg);
+  }
+  .page main .contents .container.access .bg section .contents.access {
+    padding: 70px 1rem 0;
+  }
+  .page main .contents .container.access .bg section .contents.access .gradually-appear .wrapper {
+    margin-top: 10px;
+  }
+  .page main .contents .container.access .bg section .contents.access .gradually-appear .wrapper > p {
+    margin-bottom: 30px;
+  }
+  .page main .contents .container.access .bg section .contents.access .gradually-appear .wrapper > ul {
+    padding: 1rem;
+  }
+  .page main .contents .container.access .bg section .contents.access .gradually-appear-long h3:last-of-type {
+    margin: 60px 0 0;
+    line-height: 1.25em;
+  }
+  .page main .contents .container.access .bg section .contents.access .gradually-appear-long h3:last-of-type .media-screen-md {
+    display: block;
+  }
+  .page main .contents .container.access .bg section .contents.access .gradually-appear-long.align-left .grid-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .page main .contents .container.access .bg section .contents.access .gradually-appear-long.align-left .grid-wrapper.five-photos figure + figure {
+    margin-top: 30px;
+  }
+  .page main .contents .container.access .bg section .contents.access .gradually-appear-long.align-left .grid-wrapper.five-photos figure figcaption {
+    margin-bottom: 10px;
+  }
+  .page main .contents .container.access .bg section .contents.access .gradually-appear-long.align-left .grid-wrapper.five-photos figure:last-of-type figcaption {
+    text-align: left;
+  }
+  .page main .contents .container.access .bg section .contents.access .gradually-appear-long.align-left .grid-wrapper.five-photos figure:last-of-type img {
+    width: 100%;
+  }
 }
 
 .page header .wrapper .logo-space div .shrine-name.english {
@@ -3549,7 +3602,7 @@ span.color-gold {
 }
 .archive main .container .flex-wrapper .contents .post-contents .post-item .post-title {
   position: relative;
-  margin: 3em 0 0.75em;
+  margin: 3rem 0 0.75rem;
   padding: 0 0 0.8rem 1.55rem;
   font-size: 1.75rem;
   line-height: 1.2em;

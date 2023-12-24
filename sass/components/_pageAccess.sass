@@ -66,6 +66,8 @@
                         margin-bottom: 10px
                         font-size: .9rem
                         line-height: 1.3em
+                        padding-left:1em
+                        text-indent:-1em
                       img
                         width: 100%
                         object-fit: cover
@@ -77,51 +79,43 @@
 span.color-gold
   color: #eec714
 
-              
-
-// .page 
-//   main 
-//     .contents
-//       .container.access
-//         .form
-//           div
-//             dd
-//               p
-//                 span
-//                   .wpcf7-not-valid-tip
-//                     bottom: -35%
-//               &.sender-email
-//                 p
-//                   span
-//                     .wpcf7-not-valid-tip
-//                       bottom: -115%
-//               &.message
-//                 p
-//                   span
-//                     .wpcf7-not-valid-tip
-//                       bottom: -490%
-// // for sm
-// .page
-//   main
-//     .contents
-//       +max(md)
-//         .container.access
-//           .bg
-//             section
-//               .contents.access
-//                 margin-top: 0
-//                 padding: 100px 0 80px
-//                 .gradually-appear, .gradually-appear-long
-//                   margin-top: 0
-//                   h3::before, h3::after
-//                     width: calc(50% - 95px)
-//                   p, .wrapper
-//                     padding: 0 1rem
-// .page
-//   main
-//     .contents
-//       +max(md)
-//         .container.access
-//           .form
-//             div.note
-//               margin: 25px 0 0
+.page 
+  main 
+    .contents
+      +max(md)
+        .frame.access
+          background-image: url(./img/access-top.jpg)
+        .container.access
+          .bg 
+            section 
+              .contents.access
+                padding: 70px 1rem 0
+                .gradually-appear
+                  .wrapper
+                    margin-top: 10px
+                    > p
+                      margin-bottom: 30px
+                    > ul
+                      padding: 1rem 
+                .gradually-appear-long
+                  h3:last-of-type
+                    margin: 60px 0 0
+                    line-height: 1.25em
+                    .media-screen-md
+                      display: block
+                .gradually-appear-long.align-left
+                  .grid-wrapper
+                    display: flex
+                    flex-direction: column
+                    gap: 0
+                  .grid-wrapper.five-photos
+                    figure
+                      + figure
+                        margin-top: 30px
+                      figcaption
+                        margin-bottom: 10px
+                      &:last-of-type
+                        figcaption
+                          text-align: left
+                        img
+                          width: 100%

@@ -337,10 +337,15 @@
           .bg
             section
               .contents.prayer
+                padding: 60px 1rem
                 .gradually-appear, .gradually-appear-long
                   margin-top: 60px
                   h3::before, h3::after
-                    width: calc(50% - 95px)
+                    width: calc(50% - 90px)
+                  h3::before
+                    left: -1rem
+                  h3::after
+                    right: -1rem
                   p, .wrapper
                     padding: 0 1rem
                   .wrapper
@@ -351,10 +356,10 @@
                       padding: 1rem 0
                   &.fax-send
                     h3::before, h3::after
-                      width: calc(50% - 120px)
+                      width: calc(50% - 100px)
                   &.mail-send
                     h3::before, h3::after
-                      width: calc(50% - 135px)
+                      width: calc(50% - 110px)
                   .dl-pdf-btn
                     margin-top: 30px
 
