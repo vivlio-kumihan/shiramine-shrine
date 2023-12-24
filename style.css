@@ -3396,7 +3396,7 @@ span.color-gold {
 }
 .archive main .container .bread-crumb {
   position: absolute;
-  top: -60px;
+  top: -80px;
   left: 80px;
   display: flex;
   gap: 10px;
@@ -3406,7 +3406,7 @@ span.color-gold {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 .archive main .container .flex-wrapper .menu-list {
   grid-column: 1/2;
@@ -3438,6 +3438,9 @@ span.color-gold {
 }
 .archive main .container .flex-wrapper .contents h1.part-title::after {
   right: 0;
+}
+.archive main .container .flex-wrapper .contents h1.part-title.date::before, .archive main .container .flex-wrapper .contents h1.part-title.date::after {
+  width: calc(50% - 170px);
 }
 .archive main .container .flex-wrapper .contents .post-contents {
   margin-top: 30px;
@@ -3480,24 +3483,24 @@ span.color-gold {
   text-align: left;
 }
 .archive main .container .flex-wrapper .contents .post-contents .post-item h1 {
-  font-size: 1.75rem;
+  font-size: 1.65rem;
 }
 .archive main .container .flex-wrapper .contents .post-contents .post-item h2 {
   position: unset;
   padding-bottom: 0;
-  font-size: 1.65rem;
+  font-size: 1.55rem;
 }
 .archive main .container .flex-wrapper .contents .post-contents .post-item h2::after {
   position: unset;
 }
 .archive main .container .flex-wrapper .contents .post-contents .post-item h3 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 .archive main .container .flex-wrapper .contents .post-contents .post-item h4 {
-  font-size: 1.35rem;
+  font-size: 1.25rem;
 }
 .archive main .container .flex-wrapper .contents .post-contents .post-item h5 {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 700;
 }
 .archive main .container .flex-wrapper .contents .post-contents .post-item h6 {
@@ -3510,12 +3513,12 @@ span.color-gold {
 .archive main .container .flex-wrapper .contents .post-contents .post-item ul li {
   position: relative;
   line-height: 1.5em;
-  padding-left: 2em;
+  padding-left: 1em;
 }
 .archive main .container .flex-wrapper .contents .post-contents .post-item ul li::before {
   position: absolute;
   top: 0;
-  left: 1em;
+  left: 0;
   content: "⚫︎";
   color: #999;
 }
@@ -3526,12 +3529,12 @@ span.color-gold {
 .archive main .container .flex-wrapper .contents .post-contents .post-item ol li {
   position: relative;
   line-height: 1.5em;
-  padding-left: 2em;
+  padding-left: 1em;
 }
 .archive main .container .flex-wrapper .contents .post-contents .post-item ol li::before {
   position: absolute;
   top: 0;
-  left: 1em;
+  left: 0;
   content: counter(count) ". ";
   counter-increment: count 1;
 }
@@ -3589,6 +3592,48 @@ span.color-gold {
   .archive main .container .flex-wrapper h2 .bottom-up-90px {
     bottom: 90px;
   }
+}
+
+.archive main .container .flex-wrapper .menu-list .headline-title {
+  padding: 0.65rem 1.5rem;
+  color: #fff;
+  background-color: #999;
+}
+.archive main .container .flex-wrapper .menu-list ul {
+  border-bottom: 1px solid #BB9A01;
+}
+.archive main .container .flex-wrapper .menu-list ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+.archive main .container .flex-wrapper .menu-list ul li::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "\f105";
+  font-size: 1rem;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  left: 0;
+  color: red;
+  transition: 0.5s;
+}
+.archive main .container .flex-wrapper .menu-list ul li a {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+}
+.archive main .container .flex-wrapper .menu-list ul li:hover::before {
+  left: 0.5rem;
+}
+.archive main .container .flex-wrapper .menu-list ul li + li {
+  border-top: 1px solid #BB9A01;
+}
+.archive main .container .flex-wrapper .menu-list .year-monthry-archive {
+  margin-top: 30px;
 }
 
 .home footer, .page footer, .single footer, .archive footer {

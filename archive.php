@@ -25,7 +25,7 @@
     <div class="flex-wrapper">
       <div class="menu-list">
         <div class="category-link-menu">
-          <div class="headline-title">記事カテゴリー</div>
+          <div class="headline-title">カテゴリー</div>
           <ul>
             <?php
             $categories = get_categories();
@@ -38,7 +38,7 @@
           </ul>
         </div>
         <div class="year-monthry-archive">
-          <div class="headline-title">記事カテゴリー</div>
+          <div class="headline-title">アーカイブ</div>
           <ul class="year-monthry-list">
             <?php wp_get_archives(array(
               'post_type' => 'post',
@@ -57,7 +57,7 @@
       </div>
       <div class="contents">
         <?php if (is_date()) : ?>
-          <h1 class="part-title"><?php echo get_the_date('Y年n月'); ?> 記事</h1>
+          <h1 class="part-title date"><?php echo get_the_date('Y年n月'); ?> 記事</h1>
         <?php else : ?>
           <h1 class="part-title">お知らせ</h1>
         <?php endif; ?>
