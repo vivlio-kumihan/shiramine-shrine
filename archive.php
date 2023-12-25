@@ -2,7 +2,7 @@
 
 <main>
   <?php if (is_home() || is_front_page()) : ?>
-    <video width="100%" height="100vh" autoplay loop muted playinline src="<?php echo get_template_directory_uri(); ?>/img/_sample_import_616540e4897b26.24217861.mp4"></video>
+    <video width="100%" height="100vh" autoplay loop muted playinline src="<?php echo get_template_directory_uri(); ?>/img/shiramine_imgmov3.mp4"></video>
   <?php else : ?>
     <div class="frame">
       <h1 class="part-main-title">お知らせ</h1>
@@ -84,12 +84,12 @@
           </ul>
         </div>
       <?php
-              // Previous/next page navigation.
-              the_posts_pagination(array(
-                'prev_text'        => __('前のページ'),
-                'next_text'        => __('次のページ'),
-              ));
-            endif; ?>
+          // Previous/next page navigation.
+          the_posts_pagination(array(
+            'prev_text'        => __('前のページ'),
+            'next_text'        => __('次のページ'),
+          ));
+        endif; ?>
       </div>
     </div>
   </div>

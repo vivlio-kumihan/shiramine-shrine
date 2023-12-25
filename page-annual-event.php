@@ -3,7 +3,7 @@
 <main>
   <div class="contents">
     <?php if (is_home() || is_front_page()) : ?>
-      <video width="100%" height="100vh" autoplay loop muted playinline src="<?php echo get_template_directory_uri(); ?>/img/_sample_import_616540e4897b26.24217861.mp4"></video>
+      <video width="100%" height="100vh" autoplay loop muted playinline src="<?php echo get_template_directory_uri(); ?>/img/shiramine_imgmov3.mp4"></video>
     <?php else : ?>
       <div class="frame annual-event">
         <h1>年中行事・祭事</h1>
@@ -314,8 +314,8 @@
             </div>
             <div>
               <ul>
-                <li><a href="">『茅の輪護符』&emsp;申込用紙（PDF）</a></li>
-                <li><a href="">『茅の輪護符』&emsp;記入例（PDF）</a></li>
+                <li><a href="https://shiraminejingu.or.jp/file/chi-no-wa-gofu-entry.pdf">『茅の輪護符』&emsp;申込用紙（PDF）</a></li>
+                <li><a href="https://shiraminejingu.or.jp/file/chi-no-wa-gofu-form.pdf">『茅の輪護符』&emsp;記入例（PDF）</a></li>
               </ul>
             </div>
           </div>

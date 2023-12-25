@@ -2,6 +2,229 @@
 @use '../media-query' as *
 
 .single
+  main
+    width: min(1680px, 100%)
+    margin: 0 auto
+    .frame
+      +fw.background-image("./img/information-top.jpg")
+      position: relative
+      height: 500px
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+      h1.part-main-title
+        +fw.positionAbsoluteCTL($left: ture)
+        top: 55%
+        padding: 25px 120px
+        font-size: 1.85rem
+        font-weight: 300
+        letter-spacing: .3em
+        color: #fff
+        border: 1px solid #fff
+    .content
+      width: 10_0%
+      margin: 0 auto
+      padding: 3rem 0
+      .post-content
+        .post-item
+          .content
+            margin: 0
+            padding: 0
+          p, li
+            font-size: 1.15rem
+            line-height: 1.75em
+          .post-title
+            position: relative
+            margin-bottom: 2rem
+            padding: 0 0 .8rem 1.55rem
+            font-size: 1.75rem
+            line-height: 1.2em
+            text-align: left
+            letter-spacing: 0
+            border-bottom: 1px solid fw.$gold
+            &::before
+              +fw.positionAbsoluteCTL($top: true)
+              left: 0
+              content: ""
+              width: 10px
+              height: 3rem
+              background-color: fw.$gold
+            &::after
+              position: unset
+            > a
+              color: black
+              border-bottom: unset
+          h1, h2, h3, h4, h5, h6
+            margin: 1.5em 0 0.8em
+            line-height: 1.25em
+            font-weight: 600
+            text-align: left
+          h1
+            font-size: 1.65rem
+          h2
+            position: unset
+            padding-bottom: 0
+            font-size: 1.55rem
+            &::after
+              position: unset
+          h3
+            font-size: 1.4rem
+          h4
+            font-size: 1.25rem
+          h5
+            font-size: 1.15rem
+            font-weight: 700
+          h6
+            font-size: 1.1rem
+            font-weight: 700
+          ul
+            margin: 1.25rem
+            li
+              position: relative
+              line-height: 1.5em
+              padding-left: 1em
+              &::before
+                position: absolute
+                top: 0
+                left: 0
+                content: "⚫︎"
+                color: #999
+          ol
+            margin: 1.25rem
+            counter-reset: count 0
+            li
+              position: relative
+              line-height: 1.5em
+              padding-left: 1em
+              &::before
+                position: absolute
+                top: 0
+                left: 0
+                content: counter(count) ". "
+                counter-increment: count 1
+          ul > li + li, ol > li + li
+            margin-top: .75em
+          a
+            color: red
+            border-bottom: 1px solid red
+          hr
+            margin: 2rem 0
+            border: 3px solid #eee
+          .wp-block-table
+            table
+              tbody
+                tr
+                  font-size: 1.15rem 
+                  line-height: 1.4em
+                  td
+                    border-left: unset
+                    border-right: unset
+                  td:first-of-type
+                    background-color: fw.$purple-light
+            .wp-element-caption
+              margin-top: 10px
+              font-size: .95rem
+              line-height: 1.2em
+          .wp-block-image
+            margin: 1rem 0
+          .date-category
+            display: flex
+            gap: 7px
+            margin-top: 30px
+            font-family: fw.$noto-gth
+            font-size: .9rem
+            line-height: 1em
+            .category
+              color: red
+
+.archive
+  main
+    .container
+      +max(md)
+        .flex-wrapper
+          h2
+            font-size: 1.65rem
+            line-height: 1.25em
+            letter-spacing: .2em
+            br
+              display: block
+            .bottom-up-90px
+              bottom: 90px
+
+.archive
+  main
+    .container
+      .flex-wrapper
+        .menu-list 
+          .headline-title
+            padding: .65rem 1.5rem
+            color: #fff
+            background-color: #999
+          ul
+            border-bottom: 1px solid fw.$gold
+            li
+              display: flex
+              justify-content: flex-start
+              align-items: center
+              position: relative
+              &::before
+                +fw.positionAbsoluteCTL($top: true)
+                +fw.fontAwesome("\f105", $fontSize: 1rem)
+                left: 0
+                color: red
+                transition: .5s
+              a
+                display: block
+                width: fit-content
+                padding: .5rem 0 .5rem 1.5rem
+              &:hover::before
+                left: .5rem
+              + li
+                border-top: 1px solid fw.$gold
+          .year-monthry-archive
+            margin-top: 30px
+
+.archive
+  main
+    +max(md)
+      .frame 
+        +fw.background-image("./img/information-top-portrait.jpg")
+        height: 50vh
+        h1.part-main-title
+          +fw.positionAbsoluteCTL($left: true)
+          top: 50%
+          padding: 12px 30px
+          font-size: 1.65rem
+          letter-spacing: 0
+          background-color: rgba(0, 0, 0, .5)
+          border: unset
+      .container
+        padding: 0 1rem
+        .bread-crumb
+          +fw.positionAbsoluteCTL($left: true)
+          top: -50px
+          width: 100%
+          justify-content: center
+          font-size: .8rem
+        .flex-wrapper
+          display: flex
+          flex-direction: column-reverse
+          margin-top: 70px
+          .contents
+            h1.part-title::before, h1.part-title::after
+              width: calc(50% - 75px)
+            h1.part-title::before
+              left: -1rem
+            h1.part-title::after
+              right: -1rem
+
+.archive
+  +min(sm)
+  +min(md)
+  +min(lg)
+  +min(xl) 
+.single
   +min(sm)
   +min(md)
   +min(lg)

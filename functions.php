@@ -57,6 +57,14 @@ function new_excerpt_more($more)
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
+// メンテナンスモード
+function maintenance_mode()
+{
+  if (!current_user_can('shiramine-shrine') || !is_user_logged_in()) {
+    wp_die('只今、サイトリニューアルにつきメンテナンス中です。ご迷惑をおかけしますがご了承いただきますようお願い申し上げます。');
+  }
+}
+add_action('get_header', 'maintenance_mode');
 
 // //カレンダーショートコード
 // add_shortcode('calendar-1', 'calendar_shortcode');

@@ -3829,6 +3829,283 @@ span.color-gold {
   }
 }
 
+.single main {
+  width: min(1680px, 100%);
+  margin: 0 auto;
+}
+.single main .frame {
+  background-image: url(./img/information-top.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 500px;
+}
+.single main .frame img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.single main .frame h1.part-main-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 55%;
+  padding: 25px 120px;
+  font-size: 1.85rem;
+  font-weight: 300;
+  letter-spacing: 0.3em;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.single main .content {
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+.single main .content .post-content .post-item .content {
+  margin: 0;
+  padding: 0;
+}
+.single main .content .post-content .post-item p, .single main .content .post-content .post-item li {
+  font-size: 1.15rem;
+  line-height: 1.75em;
+}
+.single main .content .post-content .post-item .post-title {
+  position: relative;
+  margin-bottom: 2rem;
+  padding: 0 0 0.8rem 1.55rem;
+  font-size: 1.75rem;
+  line-height: 1.2em;
+  text-align: left;
+  letter-spacing: 0;
+  border-bottom: 1px solid #BB9A01;
+}
+.single main .content .post-content .post-item .post-title::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  content: "";
+  width: 10px;
+  height: 3rem;
+  background-color: #BB9A01;
+}
+.single main .content .post-content .post-item .post-title::after {
+  position: unset;
+}
+.single main .content .post-content .post-item .post-title > a {
+  color: black;
+  border-bottom: unset;
+}
+.single main .content .post-content .post-item h1, .single main .content .post-content .post-item h2, .single main .content .post-content .post-item h3, .single main .content .post-content .post-item h4, .single main .content .post-content .post-item h5, .single main .content .post-content .post-item h6 {
+  margin: 1.5em 0 0.8em;
+  line-height: 1.25em;
+  font-weight: 600;
+  text-align: left;
+}
+.single main .content .post-content .post-item h1 {
+  font-size: 1.65rem;
+}
+.single main .content .post-content .post-item h2 {
+  position: unset;
+  padding-bottom: 0;
+  font-size: 1.55rem;
+}
+.single main .content .post-content .post-item h2::after {
+  position: unset;
+}
+.single main .content .post-content .post-item h3 {
+  font-size: 1.4rem;
+}
+.single main .content .post-content .post-item h4 {
+  font-size: 1.25rem;
+}
+.single main .content .post-content .post-item h5 {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+.single main .content .post-content .post-item h6 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.single main .content .post-content .post-item ul {
+  margin: 1.25rem;
+}
+.single main .content .post-content .post-item ul li {
+  position: relative;
+  line-height: 1.5em;
+  padding-left: 1em;
+}
+.single main .content .post-content .post-item ul li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "⚫︎";
+  color: #999;
+}
+.single main .content .post-content .post-item ol {
+  margin: 1.25rem;
+  counter-reset: count 0;
+}
+.single main .content .post-content .post-item ol li {
+  position: relative;
+  line-height: 1.5em;
+  padding-left: 1em;
+}
+.single main .content .post-content .post-item ol li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: counter(count) ". ";
+  counter-increment: count 1;
+}
+.single main .content .post-content .post-item ul > li + li, .single main .content .post-content .post-item ol > li + li {
+  margin-top: 0.75em;
+}
+.single main .content .post-content .post-item a {
+  color: red;
+  border-bottom: 1px solid red;
+}
+.single main .content .post-content .post-item hr {
+  margin: 2rem 0;
+  border: 3px solid #eee;
+}
+.single main .content .post-content .post-item .wp-block-table table tbody tr {
+  font-size: 1.15rem;
+  line-height: 1.4em;
+}
+.single main .content .post-content .post-item .wp-block-table table tbody tr td {
+  border-left: unset;
+  border-right: unset;
+}
+.single main .content .post-content .post-item .wp-block-table table tbody tr td:first-of-type {
+  background-color: #F5F6FA;
+}
+.single main .content .post-content .post-item .wp-block-table .wp-element-caption {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  line-height: 1.2em;
+}
+.single main .content .post-content .post-item .wp-block-image {
+  margin: 1rem 0;
+}
+.single main .content .post-content .post-item .date-category {
+  display: flex;
+  gap: 7px;
+  margin-top: 30px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1em;
+}
+.single main .content .post-content .post-item .date-category .category {
+  color: red;
+}
+
+@media (width < 768px) {
+  .archive main .container .flex-wrapper h2 {
+    font-size: 1.65rem;
+    line-height: 1.25em;
+    letter-spacing: 0.2em;
+  }
+  .archive main .container .flex-wrapper h2 br {
+    display: block;
+  }
+  .archive main .container .flex-wrapper h2 .bottom-up-90px {
+    bottom: 90px;
+  }
+}
+
+.archive main .container .flex-wrapper .menu-list .headline-title {
+  padding: 0.65rem 1.5rem;
+  color: #fff;
+  background-color: #999;
+}
+.archive main .container .flex-wrapper .menu-list ul {
+  border-bottom: 1px solid #BB9A01;
+}
+.archive main .container .flex-wrapper .menu-list ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+.archive main .container .flex-wrapper .menu-list ul li::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "\f105";
+  font-size: 1rem;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  left: 0;
+  color: red;
+  transition: 0.5s;
+}
+.archive main .container .flex-wrapper .menu-list ul li a {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+}
+.archive main .container .flex-wrapper .menu-list ul li:hover::before {
+  left: 0.5rem;
+}
+.archive main .container .flex-wrapper .menu-list ul li + li {
+  border-top: 1px solid #BB9A01;
+}
+.archive main .container .flex-wrapper .menu-list .year-monthry-archive {
+  margin-top: 30px;
+}
+
+@media (width < 768px) {
+  .archive main .frame {
+    background-image: url(./img/information-top-portrait.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+  }
+  .archive main .frame h1.part-main-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    padding: 12px 30px;
+    font-size: 1.65rem;
+    letter-spacing: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: unset;
+  }
+  .archive main .container {
+    padding: 0 1rem;
+  }
+  .archive main .container .bread-crumb {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+    width: 100%;
+    justify-content: center;
+    font-size: 0.8rem;
+  }
+  .archive main .container .flex-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 70px;
+  }
+  .archive main .container .flex-wrapper .contents h1.part-title::before, .archive main .container .flex-wrapper .contents h1.part-title::after {
+    width: calc(50% - 75px);
+  }
+  .archive main .container .flex-wrapper .contents h1.part-title::before {
+    left: -1rem;
+  }
+  .archive main .container .flex-wrapper .contents h1.part-title::after {
+    right: -1rem;
+  }
+}
+
 .home footer, .page footer, .single footer, .archive footer {
   width: 100%;
   font-size: 0.875rem;
