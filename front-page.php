@@ -54,11 +54,20 @@
           <a class="to-contents-page" href="">お知らせ／トピックス</a>
         </div>
         <div class="sns-post">
-          <div class="instagram-post"></div>
-          <div class="twitter-post"></div>
+          <div class="instagram-post">
+            {[instagram-feed feed=1]}
+
+          </div>
+          <div class="twitter-post">
+            <!-- <a class="twitter-timeline" data-width="335" data-height="400" href="https://twitter.com/shiramine_jingu?ref_src=twsrc%5Etfw">Tweets by shiramine_jingu</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+            <a class="twitter-timeline" data-lang="ja" href="https://twitter.com/shiramine_jingu?ref_src=twsrc%5Etfw"></a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <!-- <a class="twitter-timeline" data-lang="ja" data-width="400" data-height="300" href="https://twitter.com/shiramine_jingu?ref_src=twsrc%5Etfw">Tweets by shiramine_jingu</a> -->
+            <!-- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+          </div>
         </div>
       </section>
-
       <section class="about">
         <div class="frame gradually-appear">
           <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/information-appearance@2x.png" alt="">

@@ -25,7 +25,8 @@
             </li>
           </ul>
           <div class="contents contact">
-            <div class="gradually-appear-long">
+            <div class="gradually-appear">
+            <!-- <div class="gradually-appear-long"> -->
               <h3>お問い合わせ</h3>
               <p>※スマートフォンや携帯電話からお問い合わせされる場合は、メールの着信設定をご確認ください。</p>
               <?php echo do_shortcode('[contact-form-7 id="51ca316" title="お問い合わせ"]') ?>

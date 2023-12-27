@@ -20,7 +20,7 @@
       <a class="logo-space" href="<?php echo esc_url(home_url()); ?>">
         <img class="logo header" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="">
         <div>
-          <p>スポーツの守護神<span>・</span><br />武道上達の神<span>・</span><br />上昇気運氣運の神</p>
+          <p>スポーツの守護神<span>・</span><br />武道上達の神<span>・</span><br />上昇気運の神</p>
           <p class="shrine-name">白峯神宮</p>
         </div>
       </a>

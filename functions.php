@@ -50,6 +50,17 @@ function post_has_archive( $args, $post_type ) {
 }
 add_filter( 'register_post_type_args', 'post_has_archive', 10, 2 );
 
+// 投稿をお知らせに変える。
+function aktk_post_type_labels_post($labels)
+{
+  foreach ($labels as $key => $value) {
+    $labels->$key = str_replace('投稿', 'お知らせ', $value);
+  }
+
+  return $labels;
+}
+add_filter('post_type_labels_post', 'aktk_post_type_labels_post');
+
 // 投稿抜粋の末尾記号を変更する。
 function new_excerpt_more($more)
 {

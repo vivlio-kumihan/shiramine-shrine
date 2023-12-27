@@ -287,7 +287,7 @@ body .page-top-arrow {
 }
 .archive main .container {
   position: relative;
-  padding: 0 10%;
+  padding: 0 10% 5rem;
 }
 .archive main .container .bread-crumb {
   position: absolute;
@@ -475,6 +475,40 @@ body .page-top-arrow {
   color: red;
 }
 
+.archive main .container .flex-wrapper .contents .blogs .post-contents .post-item .content p > img {
+  padding: 1.5rem 0;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.nav-links .page-numbers {
+  display: grid;
+  place-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  font-size: 1rem;
+  border: 1px solid #333;
+}
+.nav-links .page-numbers + .page-numbers {
+  margin-left: 10px;
+}
+.nav-links .page-numbers.dots, .nav-links .page-numbers.next {
+  padding: 0;
+  border: unset;
+}
+.nav-links .page-numbers.next {
+  padding: 0;
+  width: auto;
+  height: inherit;
+  white-space: nowrap;
+}
+.nav-links .page-numbers.dots, .nav-links .page-numbers:nth-of-type(2) {
+  margin-left: 0;
+}
+
 @media (width < 768px) {
   .archive main .container .flex-wrapper h2 {
     font-size: 1.65rem;
@@ -578,82 +612,82 @@ body .page-top-arrow {
   }
 }
 
-.home footer, .page footer, .single footer, .archive footer {
+.home footer, .page footer, .archive footer {
   width: 100%;
   font-size: 0.875rem;
 }
-.home footer .logo-space, .page footer .logo-space, .single footer .logo-space, .archive footer .logo-space {
+.home footer .logo-space, .page footer .logo-space, .archive footer .logo-space {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-left: 8%;
 }
-.home footer .logo-space .logo, .page footer .logo-space .logo, .single footer .logo-space .logo, .archive footer .logo-space .logo {
+.home footer .logo-space .logo, .page footer .logo-space .logo, .archive footer .logo-space .logo {
   width: 51px;
   aspect-ratio: 1;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.home footer .logo-space p, .page footer .logo-space p, .single footer .logo-space p, .archive footer .logo-space p {
+.home footer .logo-space p, .page footer .logo-space p, .archive footer .logo-space p {
   font-size: 0.75rem;
   font-weight: 600;
   line-height: 1.5;
 }
-.home footer .logo-space p span, .page footer .logo-space p span, .single footer .logo-space p span, .archive footer .logo-space p span {
+.home footer .logo-space p span, .page footer .logo-space p span, .archive footer .logo-space p span {
   font-size: 1.85rem;
   line-height: 1em;
 }
-.home footer .wrapper, .page footer .wrapper, .single footer .wrapper, .archive footer .wrapper {
+.home footer .wrapper, .page footer .wrapper, .archive footer .wrapper {
   background-color: #f6f6f6;
-  width: min(1680px, 100%);
+  width: 100%;
   margin: 0 auto;
   padding: 60px 0;
 }
-.home footer .wrapper .wrapper-grid, .page footer .wrapper .wrapper-grid, .single footer .wrapper .wrapper-grid, .archive footer .wrapper .wrapper-grid {
+.home footer .wrapper .wrapper-grid, .page footer .wrapper .wrapper-grid, .archive footer .wrapper .wrapper-grid {
   display: grid;
   -moz-column-gap: 20px;
        column-gap: 20px;
   padding: 0 7%;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links, .page footer .wrapper .wrapper-grid .footer-left-links, .single footer .wrapper .wrapper-grid .footer-left-links, .archive footer .wrapper .wrapper-grid .footer-left-links {
+.home footer .wrapper .wrapper-grid .footer-left-links, .page footer .wrapper .wrapper-grid .footer-left-links, .archive footer .wrapper .wrapper-grid .footer-left-links {
   padding-left: 70px;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links ul + ul, .page footer .wrapper .wrapper-grid .footer-left-links ul + ul, .single footer .wrapper .wrapper-grid .footer-left-links ul + ul, .archive footer .wrapper .wrapper-grid .footer-left-links ul + ul {
+.home footer .wrapper .wrapper-grid .footer-left-links ul + ul, .page footer .wrapper .wrapper-grid .footer-left-links ul + ul, .archive footer .wrapper .wrapper-grid .footer-left-links ul + ul {
   margin-top: 15px;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax, .page footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax, .single footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax, .archive footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax {
+.home footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax, .page footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax, .archive footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax {
   font-size: 1.75rem;
   line-height: 1.25em;
   letter-spacing: 0.1em;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span, .page footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span, .single footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span, .archive footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span {
+.home footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span, .page footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span, .archive footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span {
   font-size: 1.65rem;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span.en-tume01, .page footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span.en-tume01, .single footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span.en-tume01, .archive footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span.en-tume01 {
+.home footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span.en-tume01, .page footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span.en-tume01, .archive footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span.en-tume01 {
   letter-spacing: 0.075em;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(1), .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(1), .single footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(1), .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(1) {
+.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(1), .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(1), .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(1) {
   line-height: 1.5em;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(2), .home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3), .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(2), .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3), .single footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(2), .single footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3), .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(2), .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) {
+.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(2), .home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3), .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(2), .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3), .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(2), .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) {
   display: flex;
   gap: 10px;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3), .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3), .single footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3), .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) {
+.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3), .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3), .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) {
   display: flex;
   gap: 30px;
   margin-top: 50px;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li, .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li, .single footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li, .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li {
+.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li, .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li, .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li {
   position: relative;
   width: 2rem;
   height: 2rem;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a, .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a, .single footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a, .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a {
+.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a, .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a, .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a {
   display: block;
   height: 100%;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-instagram::before, .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-instagram::before, .single footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-instagram::before, .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-instagram::before {
+.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-instagram::before, .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-instagram::before, .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-instagram::before {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -662,7 +696,7 @@ body .page-top-arrow {
   font-family: "Font Awesome 6 Brands";
   font-weight: 900;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-twitter::before, .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-twitter::before, .single footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-twitter::before, .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-twitter::before {
+.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-twitter::before, .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-twitter::before, .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-twitter::before {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -673,29 +707,29 @@ body .page-top-arrow {
   background-size: 100%;
   opacity: 0.7;
 }
-.home footer .wrapper .wrapper-grid .footer-center-links, .page footer .wrapper .wrapper-grid .footer-center-links, .single footer .wrapper .wrapper-grid .footer-center-links, .archive footer .wrapper .wrapper-grid .footer-center-links {
+.home footer .wrapper .wrapper-grid .footer-center-links, .page footer .wrapper .wrapper-grid .footer-center-links, .archive footer .wrapper .wrapper-grid .footer-center-links {
   display: flex;
 }
-.home footer .wrapper .wrapper-grid .footer-center-links > ul > li + li, .page footer .wrapper .wrapper-grid .footer-center-links > ul > li + li, .single footer .wrapper .wrapper-grid .footer-center-links > ul > li + li, .archive footer .wrapper .wrapper-grid .footer-center-links > ul > li + li {
+.home footer .wrapper .wrapper-grid .footer-center-links > ul > li + li, .page footer .wrapper .wrapper-grid .footer-center-links > ul > li + li, .archive footer .wrapper .wrapper-grid .footer-center-links > ul > li + li {
   margin-top: 2rem;
 }
-.home footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2, .page footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2, .single footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2, .archive footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2 {
+.home footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2, .page footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2, .archive footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2 {
   position: unset;
   padding-bottom: 0;
   font-size: 0.875rem;
   font-weight: 500;
   text-align: left;
 }
-.home footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2::after, .page footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2::after, .single footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2::after, .archive footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2::after {
+.home footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2::after, .page footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2::after, .archive footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2::after {
   display: none;
 }
-.home footer .wrapper .wrapper-grid .footer-center-links > ul > li div, .page footer .wrapper .wrapper-grid .footer-center-links > ul > li div, .single footer .wrapper .wrapper-grid .footer-center-links > ul > li div, .archive footer .wrapper .wrapper-grid .footer-center-links > ul > li div {
+.home footer .wrapper .wrapper-grid .footer-center-links > ul > li div, .page footer .wrapper .wrapper-grid .footer-center-links > ul > li div, .archive footer .wrapper .wrapper-grid .footer-center-links > ul > li div {
   width: 100%;
   position: relative;
   padding: 1em 0 0 2em;
   line-height: 1.2;
 }
-.home footer .wrapper .wrapper-grid .footer-center-links > ul > li div::before, .page footer .wrapper .wrapper-grid .footer-center-links > ul > li div::before, .single footer .wrapper .wrapper-grid .footer-center-links > ul > li div::before, .archive footer .wrapper .wrapper-grid .footer-center-links > ul > li div::before {
+.home footer .wrapper .wrapper-grid .footer-center-links > ul > li div::before, .page footer .wrapper .wrapper-grid .footer-center-links > ul > li div::before, .archive footer .wrapper .wrapper-grid .footer-center-links > ul > li div::before {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -711,27 +745,27 @@ body .page-top-arrow {
   border-right: 0;
   transition: 0.5s;
 }
-.home footer .wrapper .wrapper-grid .footer-center-links > ul > li div:hover::before, .page footer .wrapper .wrapper-grid .footer-center-links > ul > li div:hover::before, .single footer .wrapper .wrapper-grid .footer-center-links > ul > li div:hover::before, .archive footer .wrapper .wrapper-grid .footer-center-links > ul > li div:hover::before {
+.home footer .wrapper .wrapper-grid .footer-center-links > ul > li div:hover::before, .page footer .wrapper .wrapper-grid .footer-center-links > ul > li div:hover::before, .archive footer .wrapper .wrapper-grid .footer-center-links > ul > li div:hover::before {
   left: 1rem;
   opacity: 0.5;
 }
-.home footer .wrapper .wrapper-grid .footer-center-links > ul > li div a, .page footer .wrapper .wrapper-grid .footer-center-links > ul > li div a, .single footer .wrapper .wrapper-grid .footer-center-links > ul > li div a, .archive footer .wrapper .wrapper-grid .footer-center-links > ul > li div a {
+.home footer .wrapper .wrapper-grid .footer-center-links > ul > li div a, .page footer .wrapper .wrapper-grid .footer-center-links > ul > li div a, .archive footer .wrapper .wrapper-grid .footer-center-links > ul > li div a {
   display: block;
   height: 100%;
 }
-.home footer .wrapper .wrapper-grid .footer-right-links .banner li + li, .page footer .wrapper .wrapper-grid .footer-right-links .banner li + li, .single footer .wrapper .wrapper-grid .footer-right-links .banner li + li, .archive footer .wrapper .wrapper-grid .footer-right-links .banner li + li {
+.home footer .wrapper .wrapper-grid .footer-right-links .banner li + li, .page footer .wrapper .wrapper-grid .footer-right-links .banner li + li, .archive footer .wrapper .wrapper-grid .footer-right-links .banner li + li {
   margin-top: 30px;
 }
-.home footer .wrapper .wrapper-grid .footer-right-links .banner li a, .page footer .wrapper .wrapper-grid .footer-right-links .banner li a, .single footer .wrapper .wrapper-grid .footer-right-links .banner li a, .archive footer .wrapper .wrapper-grid .footer-right-links .banner li a {
+.home footer .wrapper .wrapper-grid .footer-right-links .banner li a, .page footer .wrapper .wrapper-grid .footer-right-links .banner li a, .archive footer .wrapper .wrapper-grid .footer-right-links .banner li a {
   display: block;
   width: 100%;
 }
-.home footer .wrapper .wrapper-grid .footer-right-links .banner li a img, .page footer .wrapper .wrapper-grid .footer-right-links .banner li a img, .single footer .wrapper .wrapper-grid .footer-right-links .banner li a img, .archive footer .wrapper .wrapper-grid .footer-right-links .banner li a img {
+.home footer .wrapper .wrapper-grid .footer-right-links .banner li a img, .page footer .wrapper .wrapper-grid .footer-right-links .banner li a img, .archive footer .wrapper .wrapper-grid .footer-right-links .banner li a img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.home footer .wrapper .copyright, .page footer .wrapper .copyright, .single footer .wrapper .copyright, .archive footer .wrapper .copyright {
+.home footer .wrapper .copyright, .page footer .wrapper .copyright, .archive footer .wrapper .copyright {
   margin-top: 80px;
   text-align: center;
   font-size: 0.8rem;
@@ -865,7 +899,7 @@ body .page-top-arrow {
   left: 50%;
   transform: translateX(-50%);
   height: 100vh;
-  width: min(1680px, 100%);
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   background-color: #eee;
@@ -873,7 +907,6 @@ body .page-top-arrow {
 }
 .home.blog main .contents, .page main .contents {
   position: relative;
-  width: min(1680px, 100%);
   margin: 0 auto;
 }
 .home.blog main .contents .title, .page main .contents .title {
@@ -993,11 +1026,15 @@ body .page-top-arrow {
   flex-direction: column;
   gap: 30px;
   width: max(375px, 25%);
+  margin-top: 10px;
 }
 .home.blog main .contents .bg section.information .sns-post .instagram-post, .home.blog main .contents .bg section.information .sns-post .twitter-post, .page main .contents .bg section.information .sns-post .instagram-post, .page main .contents .bg section.information .sns-post .twitter-post {
   width: 100%;
   aspect-ratio: 4/3;
   background-color: #eee;
+  overflow: auto;
+  border-radius: 20px;
+  border: 2px solid #999;
 }
 .home.blog main .contents .bg section.about .catch-copy, .page main .contents .bg section.about .catch-copy {
   margin-top: 30px;
@@ -2082,60 +2119,59 @@ span.color-gold {
   }
 }
 
-.page.page-id-14 main .contents .frame.annual-event {
+.page main .contents .frame.annual-event {
   background-image: url(./img/annual-event-top.jpg);
 }
-.page.page-id-14 main .contents .container.annual-event .bg section .contents.chart {
+.page main .contents .container.annual-event .bg section .contents.chart {
   margin-top: 0;
-  padding: 0 15%;
+  padding: 140px 17% 80px;
 }
-.page.page-id-14 main .contents .container.annual-event .bg section .contents.chart .gradually-appear .header {
+.page main .contents .container.annual-event .bg section .contents.chart .gradually-appear .header {
   width: 100%;
-  padding: 60px 0 0;
 }
-.page.page-id-14 main .contents .container.annual-event .bg section .contents.chart .gradually-appear .header h3 {
+.page main .contents .container.annual-event .bg section .contents.chart .gradually-appear .header h3 {
   letter-spacing: 0.1em;
 }
-.page.page-id-14 main .contents .container.annual-event .bg section .contents.chart .gradually-appear-long .note {
+.page main .contents .container.annual-event .bg section .contents.chart .gradually-appear-long .note {
   margin-top: 30px;
   text-align: center;
   font-size: 1rem;
 }
-.page.page-id-14 main .contents .container.annual-event .bg section .contents.chart .gradually-appear-long .list-contents {
+.page main .contents .container.annual-event .bg section .contents.chart .gradually-appear-long .list-contents {
   margin: 5px 80px 80px;
   padding: 0;
 }
-.page.page-id-14 main .contents .container.annual-event .bg section .contents.chart .gradually-appear-long .list-contents li .subject {
+.page main .contents .container.annual-event .bg section .contents.chart .gradually-appear-long .list-contents li .subject {
   display: flex;
   flex-direction: column;
   gap: 5px;
   line-height: 1.5em;
 }
-.page.page-id-14 main .contents .container.annual-event .bg section .contents.chart .gradually-appear-long .list-contents li .subject.row {
+.page main .contents .container.annual-event .bg section .contents.chart .gradually-appear-long .list-contents li .subject.row {
   flex-direction: row;
 }
-.page.page-id-14 main .contents .container.annual-event .bg section .contents.chart .gradually-appear-long .list-contents li .subject div .modal-open-trigger, .page.page-id-14 main .contents .container.annual-event .bg section .contents.chart .gradually-appear-long .list-contents li .subject div .from-annual-event-to-post {
+.page main .contents .container.annual-event .bg section .contents.chart .gradually-appear-long .list-contents li .subject div .modal-open-trigger, .page main .contents .container.annual-event .bg section .contents.chart .gradually-appear-long .list-contents li .subject div .from-annual-event-to-post {
   color: red;
   border-bottom: 1px solid red;
   cursor: pointer;
 }
-.page.page-id-14 main .contents .container.annual-event .bg section .contents.chart .gradually-appear-long .list-contents li .subject div .modal-open-trigger.before-emsp, .page.page-id-14 main .contents .container.annual-event .bg section .contents.chart .gradually-appear-long .list-contents li .subject div .from-annual-event-to-post.before-emsp {
+.page main .contents .container.annual-event .bg section .contents.chart .gradually-appear-long .list-contents li .subject div .modal-open-trigger.before-emsp, .page main .contents .container.annual-event .bg section .contents.chart .gradually-appear-long .list-contents li .subject div .from-annual-event-to-post.before-emsp {
   margin-left: 1em;
 }
-.page.page-id-14 main .contents .container.annual-event .bg section .contents.chart .gradually-appear-long .list-contents li .subject div:first-of-type {
+.page main .contents .container.annual-event .bg section .contents.chart .gradually-appear-long .list-contents li .subject div:first-of-type {
   display: block;
   width: 100%;
   padding: 0;
   background-color: unset;
 }
-.page.page-id-14 main .contents .container.annual-event .bg section .contents.chart .gradually-appear-long .list-contents li .subject div:last-of-type {
+.page main .contents .container.annual-event .bg section .contents.chart .gradually-appear-long .list-contents li .subject div:last-of-type {
   width: 100%;
   padding: 0;
 }
-.page.page-id-14 main .contents .container.annual-event .bg section .contents.chart .gradually-appear-long .list-contents li .subject div span.before-emsp {
+.page main .contents .container.annual-event .bg section .contents.chart .gradually-appear-long .list-contents li .subject div span.before-emsp {
   margin-left: 1em;
 }
-.page.page-id-14 main .contents .container.annual-event .modal {
+.page main .contents .container.annual-event .modal {
   position: fixed;
   top: 0;
   right: -100%;
@@ -2148,19 +2184,19 @@ span.color-gold {
   opacity: 0;
   z-index: 107;
 }
-.page.page-id-14 main .contents .container.annual-event .modal.activate-modal {
+.page main .contents .container.annual-event .modal.activate-modal {
   right: 0;
   visibility: visible;
   opacity: 1;
 }
-.page.page-id-14 main .contents .container.annual-event .modal .container {
+.page main .contents .container.annual-event .modal .container {
   position: relative;
   margin: 90px auto;
   width: 74%;
   padding: 5rem 9rem;
   background: url(./img/bg.jpg) repeat;
 }
-.page.page-id-14 main .contents .container.annual-event .modal .container .modal-close-btn {
+.page main .contents .container.annual-event .modal .container .modal-close-btn {
   position: absolute;
   top: 60px;
   right: 60px;
@@ -2171,7 +2207,7 @@ span.color-gold {
   transform: translateY(0);
   transition: 0.3s;
 }
-.page.page-id-14 main .contents .container.annual-event .modal .container .modal-close-btn span {
+.page main .contents .container.annual-event .modal .container .modal-close-btn span {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2182,327 +2218,327 @@ span.color-gold {
   height: 2px;
   background-color: #333;
 }
-.page.page-id-14 main .contents .container.annual-event .modal .container .modal-close-btn span:first-of-type {
+.page main .contents .container.annual-event .modal .container .modal-close-btn span:first-of-type {
   transform: rotate(45deg);
   transform-origin: center center 0;
 }
-.page.page-id-14 main .contents .container.annual-event .modal .container .modal-close-btn span:last-of-type {
+.page main .contents .container.annual-event .modal .container .modal-close-btn span:last-of-type {
   transform: rotate(-45deg);
   transform-origin: center center 0;
 }
-.page.page-id-14 main .contents .container.annual-event .modal .container .modal-close-btn:hover {
+.page main .contents .container.annual-event .modal .container .modal-close-btn:hover {
   background-color: #eee;
   transform: translateY(-1px);
   opacity: 0.5;
 }
-.page.page-id-14 main .contents .container.annual-event .modal .container .annual-event-modal-header {
+.page main .contents .container.annual-event .modal .container .annual-event-modal-header {
   font-size: 1.95rem;
   margin-bottom: 50px;
   letter-spacing: 0;
 }
-.page.page-id-14 main .contents .container.annual-event .modal .container h4 {
+.page main .contents .container.annual-event .modal .container h4 {
   margin-bottom: 30px;
 }
-.page.page-id-14 main .contents .container.annual-event .modal .container h4.two-line {
+.page main .contents .container.annual-event .modal .container h4.two-line {
   line-height: 1.2em;
 }
-.page.page-id-14 main .contents .container.annual-event .modal .container h5.leading-square-header {
+.page main .contents .container.annual-event .modal .container h5.leading-square-header {
   margin-bottom: 20px;
 }
-.page.page-id-14 main .contents .container.annual-event .modal .container h5.leading-square-header:not(:first-of-type) {
+.page main .contents .container.annual-event .modal .container h5.leading-square-header:not(:first-of-type) {
   margin-top: 30px;
 }
-.page.page-id-14 main .contents .container.annual-event .modal .container h5.leading-square-header.two-line {
+.page main .contents .container.annual-event .modal .container h5.leading-square-header.two-line {
   line-height: 1.2em;
 }
-.page.page-id-14 main .contents .container.annual-event .modal .container h5.leading-square-header.two-line::before {
+.page main .contents .container.annual-event .modal .container h5.leading-square-header.two-line::before {
   height: 3rem;
 }
-.page.page-id-14 main .contents .container.annual-event .modal .container p {
+.page main .contents .container.annual-event .modal .container p {
   font-size: 1.15rem;
   line-height: 1.75em;
 }
-.page.page-id-14 main .contents .container.annual-event .modal .container p + p {
+.page main .contents .container.annual-event .modal .container p + p {
   margin-top: 0.75em;
 }
-.page.page-id-14 main .contents .container.annual-event .modal .container p.attention {
+.page main .contents .container.annual-event .modal .container p.attention {
   margin-top: 25px;
 }
-.page.page-id-14 main .contents .container.annual-event .modal .container img {
+.page main .contents .container.annual-event .modal .container img {
   width: 100%;
 }
-.page.page-id-14 main .contents .container.annual-event .modal .container .left-side-caption:not(first-of-type) {
+.page main .contents .container.annual-event .modal .container .left-side-caption:not(first-of-type) {
   margin-top: 20px;
 }
-.page.page-id-14 main .contents .container.annual-event .modal .container .flex-grid {
+.page main .contents .container.annual-event .modal .container .flex-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
-.page.page-id-14 main .contents .container.annual-event .modal .container .flex-grid .photo-frame {
+.page main .contents .container.annual-event .modal .container .flex-grid .photo-frame {
   width: 100%;
   aspect-ratio: 3/2;
 }
-.page.page-id-14 main .contents .container.annual-event .modal .container .flex-grid .photo-frame img {
+.page main .contents .container.annual-event .modal .container .flex-grid .photo-frame img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.page.page-id-14 main .contents .container.annual-event .modal .container .flex-grid figure figcaption {
+.page main .contents .container.annual-event .modal .container .flex-grid figure figcaption {
   padding-top: 10px;
   text-align: center;
 }
-.page.page-id-14 main .contents .container.annual-event .modal .container .photos {
+.page main .contents .container.annual-event .modal .container .photos {
   display: flex;
   gap: 30px;
   width: 100%;
 }
-.page.page-id-14 main .contents .container.annual-event .modal .container .photos .photo-frame {
+.page main .contents .container.annual-event .modal .container .photos .photo-frame {
   width: 100%;
 }
-.page.page-id-14 main .contents .container.annual-event .modal .container .photos .photo-frame img {
+.page main .contents .container.annual-event .modal .container .photos .photo-frame img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.page.page-id-14 main .contents .container.annual-event .modal .container ul {
+.page main .contents .container.annual-event .modal .container ul {
   margin: 50px 0;
 }
-.page.page-id-14 main .contents .container.annual-event .modal .container ul li {
+.page main .contents .container.annual-event .modal .container ul li {
   position: relative;
   padding-left: 1.15rem;
   font-size: 1.15rem;
   line-height: 1.25rem;
 }
-.page.page-id-14 main .contents .container.annual-event .modal .container ul li::before {
+.page main .contents .container.annual-event .modal .container ul li::before {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 0;
   content: "・";
 }
-.page.page-id-14 main .contents .container.annual-event .modal .container ul li + li {
+.page main .contents .container.annual-event .modal .container ul li + li {
   margin-top: 15px;
 }
 
-.page.page-id-14 main .contents .container.annual-event .modal.apl-14 .container .annual-event-modal-header::before, .page.page-id-14 main .contents .container.annual-event .modal.apl-14 .container .annual-event-modal-header::after {
+.page main .contents .container.annual-event .modal.apl-14 .container .annual-event-modal-header::before, .page main .contents .container.annual-event .modal.apl-14 .container .annual-event-modal-header::after {
   width: calc(50% - 215px);
 }
-.page.page-id-14 main .contents .container.annual-event .modal.may-05-01 .container .annual-event-modal-header::before, .page.page-id-14 main .contents .container.annual-event .modal.may-05-01 .container .annual-event-modal-header::after {
+.page main .contents .container.annual-event .modal.may-05-01 .container .annual-event-modal-header::before, .page main .contents .container.annual-event .modal.may-05-01 .container .annual-event-modal-header::after {
   width: calc(50% - 230px);
 }
-.page.page-id-14 main .contents .container.annual-event .modal.may-05-02 .container .annual-event-modal-header::before, .page.page-id-14 main .contents .container.annual-event .modal.may-05-02 .container .annual-event-modal-header::after {
+.page main .contents .container.annual-event .modal.may-05-02 .container .annual-event-modal-header::before, .page main .contents .container.annual-event .modal.may-05-02 .container .annual-event-modal-header::after {
   width: calc(50% - 240px);
 }
-.page.page-id-14 main .contents .container.annual-event .modal.jun-30 .container .annual-event-modal-header::before, .page.page-id-14 main .contents .container.annual-event .modal.jun-30 .container .annual-event-modal-header::after {
+.page main .contents .container.annual-event .modal.jun-30 .container .annual-event-modal-header::before, .page main .contents .container.annual-event .modal.jun-30 .container .annual-event-modal-header::after {
   width: calc(50% - 165px);
 }
-.page.page-id-14 main .contents .container.annual-event .modal.july-07-01 .container .annual-event-modal-header::before, .page.page-id-14 main .contents .container.annual-event .modal.july-07-01 .container .annual-event-modal-header::after {
+.page main .contents .container.annual-event .modal.july-07-01 .container .annual-event-modal-header::before, .page main .contents .container.annual-event .modal.july-07-01 .container .annual-event-modal-header::after {
   width: calc(50% - 270px);
 }
-.page.page-id-14 main .contents .container.annual-event .modal.july-07-02 .container .annual-event-modal-header::before, .page.page-id-14 main .contents .container.annual-event .modal.july-07-02 .container .annual-event-modal-header::after {
+.page main .contents .container.annual-event .modal.july-07-02 .container .annual-event-modal-header::before, .page main .contents .container.annual-event .modal.july-07-02 .container .annual-event-modal-header::after {
   width: calc(50% - 275px);
 }
-.page.page-id-14 main .contents .container.annual-event .modal.sep-21 .container .annual-event-modal-header::before, .page.page-id-14 main .contents .container.annual-event .modal.sep-21 .container .annual-event-modal-header::after {
+.page main .contents .container.annual-event .modal.sep-21 .container .annual-event-modal-header::before, .page main .contents .container.annual-event .modal.sep-21 .container .annual-event-modal-header::after {
   width: calc(50% - 210px);
 }
-.page.page-id-14 main .contents .container.annual-event .modal.oct-full-moon .container .annual-event-modal-header::before, .page.page-id-14 main .contents .container.annual-event .modal.oct-full-moon .container .annual-event-modal-header::after {
+.page main .contents .container.annual-event .modal.oct-full-moon .container .annual-event-modal-header::before, .page main .contents .container.annual-event .modal.oct-full-moon .container .annual-event-modal-header::after {
   width: calc(50% - 180px);
 }
 
-.page.page-id-14 main .contents .container.annual-event .modal.jun-30 .container .flex-grid .photo-frame.one {
+.page main .contents .container.annual-event .modal.jun-30 .container .flex-grid .photo-frame.one {
   grid-column: 1/3;
   grid-row: 1/2;
 }
-.page.page-id-14 main .contents .container.annual-event .modal.jun-30 .container .flex-grid .photo-frame.two, .page.page-id-14 main .contents .container.annual-event .modal.jun-30 .container .flex-grid .photo-frame.three {
+.page main .contents .container.annual-event .modal.jun-30 .container .flex-grid .photo-frame.two, .page main .contents .container.annual-event .modal.jun-30 .container .flex-grid .photo-frame.three {
   grid-row: 2/3;
 }
-.page.page-id-14 main .contents .container.annual-event .modal.jun-30 .container .flex-grid .photo-frame.two {
+.page main .contents .container.annual-event .modal.jun-30 .container .flex-grid .photo-frame.two {
   grid-column: 1/2;
 }
-.page.page-id-14 main .contents .container.annual-event .modal.jun-30 .container .flex-grid .photo-frame.three {
+.page main .contents .container.annual-event .modal.jun-30 .container .flex-grid .photo-frame.three {
   grid-column: 2/3;
 }
-.page.page-id-14 main .contents .container.annual-event .modal.jun-30 .container a {
+.page main .contents .container.annual-event .modal.jun-30 .container a {
   color: red;
 }
 
 @media (width < 768px) {
-  .page.page-id-14 main .contents .container.annual-event .modal.jun-30 .container .flex-grid .photo-frame.one {
+  .page main .contents .container.annual-event .modal.jun-30 .container .flex-grid .photo-frame.one {
     grid-column: unset;
     grid-row: unset;
   }
-  .page.page-id-14 main .contents .container.annual-event .modal.jun-30 .container .flex-grid .photo-frame.two, .page.page-id-14 main .contents .container.annual-event .modal.jun-30 .container .flex-grid .photo-frame.three {
+  .page main .contents .container.annual-event .modal.jun-30 .container .flex-grid .photo-frame.two, .page main .contents .container.annual-event .modal.jun-30 .container .flex-grid .photo-frame.three {
     grid-row: unset;
   }
-  .page.page-id-14 main .contents .container.annual-event .modal.jun-30 .container .flex-grid .photo-frame.two {
+  .page main .contents .container.annual-event .modal.jun-30 .container .flex-grid .photo-frame.two {
     grid-column: unset;
   }
-  .page.page-id-14 main .contents .container.annual-event .modal.jun-30 .container .flex-grid .photo-frame.three {
+  .page main .contents .container.annual-event .modal.jun-30 .container .flex-grid .photo-frame.three {
     grid-column: unset;
   }
 }
 
-.page.page-id-14 main .contents .container.annual-event .modal.july-07-01 .container .flex-grid {
+.page main .contents .container.annual-event .modal.july-07-01 .container .flex-grid {
   margin-top: 20px;
 }
-.page.page-id-14 main .contents .container.annual-event .modal.july-07-01 .container .flex-grid .photo-frame.one {
+.page main .contents .container.annual-event .modal.july-07-01 .container .flex-grid .photo-frame.one {
   grid-column: 1/3;
   grid-row: 1/2;
   aspect-ratio: 3/1;
 }
-.page.page-id-14 main .contents .container.annual-event .modal.july-07-01 .container .flex-grid .photo-frame.two, .page.page-id-14 main .contents .container.annual-event .modal.july-07-01 .container .flex-grid .photo-frame.three {
+.page main .contents .container.annual-event .modal.july-07-01 .container .flex-grid .photo-frame.two, .page main .contents .container.annual-event .modal.july-07-01 .container .flex-grid .photo-frame.three {
   grid-row: 2/3;
 }
-.page.page-id-14 main .contents .container.annual-event .modal.july-07-01 .container .flex-grid .photo-frame.two {
+.page main .contents .container.annual-event .modal.july-07-01 .container .flex-grid .photo-frame.two {
   grid-column: 1/2;
 }
-.page.page-id-14 main .contents .container.annual-event .modal.july-07-01 .container .flex-grid .photo-frame.three {
+.page main .contents .container.annual-event .modal.july-07-01 .container .flex-grid .photo-frame.three {
   grid-column: 2/3;
 }
-.page.page-id-14 main .contents .container.annual-event .modal.july-07-01 .container .flex-grid .photo-frame.four {
+.page main .contents .container.annual-event .modal.july-07-01 .container .flex-grid .photo-frame.four {
   grid-column: 1/3;
   grid-row: 3/3;
 }
-.page.page-id-14 main .contents .container.annual-event .modal.july-07-01 .container a {
+.page main .contents .container.annual-event .modal.july-07-01 .container a {
   color: red;
 }
 
 @media (width < 768px) {
-  .page.page-id-14 main .contents .container.annual-event .modal.july-07-01 .container .flex-grid .photo-frame.one {
+  .page main .contents .container.annual-event .modal.july-07-01 .container .flex-grid .photo-frame.one {
     grid-column: unset;
     grid-row: unset;
     aspect-ratio: 4/3;
   }
-  .page.page-id-14 main .contents .container.annual-event .modal.july-07-01 .container .flex-grid .photo-frame.two, .page.page-id-14 main .contents .container.annual-event .modal.july-07-01 .container .flex-grid .photo-frame.three {
+  .page main .contents .container.annual-event .modal.july-07-01 .container .flex-grid .photo-frame.two, .page main .contents .container.annual-event .modal.july-07-01 .container .flex-grid .photo-frame.three {
     grid-row: unset;
   }
-  .page.page-id-14 main .contents .container.annual-event .modal.july-07-01 .container .flex-grid .photo-frame.two {
+  .page main .contents .container.annual-event .modal.july-07-01 .container .flex-grid .photo-frame.two {
     grid-column: unset;
   }
-  .page.page-id-14 main .contents .container.annual-event .modal.july-07-01 .container .flex-grid .photo-frame.three {
+  .page main .contents .container.annual-event .modal.july-07-01 .container .flex-grid .photo-frame.three {
     grid-column: unset;
   }
-  .page.page-id-14 main .contents .container.annual-event .modal.july-07-01 .container .flex-grid .photo-frame.four {
+  .page main .contents .container.annual-event .modal.july-07-01 .container .flex-grid .photo-frame.four {
     grid-column: unset;
     grid-row: unset;
   }
 }
 
 @media (width < 768px) {
-  .page.page-id-14 main .contents .container.annual-event .modal.july-07-02 .container .flex-grid {
+  .page main .contents .container.annual-event .modal.july-07-02 .container .flex-grid {
     display: block;
   }
-  .page.page-id-14 main .contents .container.annual-event .modal.july-07-02 .container .flex-grid .photos {
+  .page main .contents .container.annual-event .modal.july-07-02 .container .flex-grid .photos {
     display: block;
   }
-  .page.page-id-14 main .contents .container.annual-event .modal.july-07-02 .container .flex-grid .photo-frame {
+  .page main .contents .container.annual-event .modal.july-07-02 .container .flex-grid .photo-frame {
     margin: 10px 0 20px;
   }
-  .page.page-id-14 main .contents .container.annual-event .modal.july-07-02 .container .flex-grid:nth-of-type(2) .photo-frame {
+  .page main .contents .container.annual-event .modal.july-07-02 .container .flex-grid:nth-of-type(2) .photo-frame {
     grid-column: unset;
   }
-  .page.page-id-14 main .contents .container.annual-event .modal.july-07-02 .container .flex-grid:last-of-type {
+  .page main .contents .container.annual-event .modal.july-07-02 .container .flex-grid:last-of-type {
     grid-template-columns: repeat(6, 1fr);
   }
-  .page.page-id-14 main .contents .container.annual-event .modal.july-07-02 .container .flex-grid:last-of-type .paragraph {
+  .page main .contents .container.annual-event .modal.july-07-02 .container .flex-grid:last-of-type .paragraph {
     grid-column: unset;
   }
-  .page.page-id-14 main .contents .container.annual-event .modal.july-07-02 .container .flex-grid:last-of-type .photo-frame.one {
+  .page main .contents .container.annual-event .modal.july-07-02 .container .flex-grid:last-of-type .photo-frame.one {
     grid-column: unset;
   }
-  .page.page-id-14 main .contents .container.annual-event .modal.july-07-02 .container .flex-grid:last-of-type .photo-frame.two {
-    grid-column: unset;
-    grid-row: unset;
-  }
-  .page.page-id-14 main .contents .container.annual-event .modal.july-07-02 .container .flex-grid:last-of-type .photo-frame.three {
+  .page main .contents .container.annual-event .modal.july-07-02 .container .flex-grid:last-of-type .photo-frame.two {
     grid-column: unset;
     grid-row: unset;
   }
-  .page.page-id-14 main .contents .container.annual-event .modal.july-07-02 .container .flex-grid:last-of-type .photo-frame.four {
+  .page main .contents .container.annual-event .modal.july-07-02 .container .flex-grid:last-of-type .photo-frame.three {
+    grid-column: unset;
+    grid-row: unset;
+  }
+  .page main .contents .container.annual-event .modal.july-07-02 .container .flex-grid:last-of-type .photo-frame.four {
     grid-column: unset;
     grid-row: unset;
   }
 }
 
-.page.page-id-14 main .contents .container.annual-event .modal.july-07-02 .container .flex-grid .photos {
+.page main .contents .container.annual-event .modal.july-07-02 .container .flex-grid .photos {
   flex-direction: column;
 }
-.page.page-id-14 main .contents .container.annual-event .modal.july-07-02 .container .flex-grid:nth-of-type(2) .photo-frame {
+.page main .contents .container.annual-event .modal.july-07-02 .container .flex-grid:nth-of-type(2) .photo-frame {
   grid-column: 1/3;
 }
-.page.page-id-14 main .contents .container.annual-event .modal.july-07-02 .container .flex-grid:last-of-type {
+.page main .contents .container.annual-event .modal.july-07-02 .container .flex-grid:last-of-type {
   grid-template-columns: repeat(6, 1fr);
 }
-.page.page-id-14 main .contents .container.annual-event .modal.july-07-02 .container .flex-grid:last-of-type .paragraph {
+.page main .contents .container.annual-event .modal.july-07-02 .container .flex-grid:last-of-type .paragraph {
   grid-column: 1/4;
 }
-.page.page-id-14 main .contents .container.annual-event .modal.july-07-02 .container .flex-grid:last-of-type .photo-frame.one {
+.page main .contents .container.annual-event .modal.july-07-02 .container .flex-grid:last-of-type .photo-frame.one {
   grid-column: 4/7;
 }
-.page.page-id-14 main .contents .container.annual-event .modal.july-07-02 .container .flex-grid:last-of-type .photo-frame.two {
+.page main .contents .container.annual-event .modal.july-07-02 .container .flex-grid:last-of-type .photo-frame.two {
   grid-column: 1/3;
   grid-row: 2/3;
 }
-.page.page-id-14 main .contents .container.annual-event .modal.july-07-02 .container .flex-grid:last-of-type .photo-frame.three {
+.page main .contents .container.annual-event .modal.july-07-02 .container .flex-grid:last-of-type .photo-frame.three {
   grid-column: 3/5;
   grid-row: 2/3;
 }
-.page.page-id-14 main .contents .container.annual-event .modal.july-07-02 .container .flex-grid:last-of-type .photo-frame.four {
+.page main .contents .container.annual-event .modal.july-07-02 .container .flex-grid:last-of-type .photo-frame.four {
   grid-column: 5/7;
   grid-row: 2/3;
 }
 
-.page.page-id-14 main .contents .container.annual-event .modal.sep-21 .container .flex-grid .photos {
+.page main .contents .container.annual-event .modal.sep-21 .container .flex-grid .photos {
   flex-direction: column;
 }
-.page.page-id-14 main .contents .container.annual-event .modal.sep-21 .container .flex-grid .photo-frame {
+.page main .contents .container.annual-event .modal.sep-21 .container .flex-grid .photo-frame {
   grid-column: 1/3;
   aspect-ratio: 3/1;
 }
 
 @media (width < 768px) {
-  .page.page-id-14 main .contents .container.annual-event .modal.sep-21 .container .flex-grid .photos {
+  .page main .contents .container.annual-event .modal.sep-21 .container .flex-grid .photos {
     flex-direction: column;
   }
-  .page.page-id-14 main .contents .container.annual-event .modal.sep-21 .container .flex-grid .photo-frame {
+  .page main .contents .container.annual-event .modal.sep-21 .container .flex-grid .photo-frame {
     grid-column: unset;
     aspect-ratio: 4/3;
   }
 }
 
-.page.page-id-14 main .contents .container.annual-event .modal.oct-full-moon .container .flex-grid .photos {
+.page main .contents .container.annual-event .modal.oct-full-moon .container .flex-grid .photos {
   flex-direction: column;
 }
-.page.page-id-14 main .contents .container.annual-event .modal.oct-full-moon .container .flex-grid .photo-frame {
+.page main .contents .container.annual-event .modal.oct-full-moon .container .flex-grid .photo-frame {
   grid-column: 1/3;
   aspect-ratio: 3/2;
 }
 
 @media (width < 768px) {
-  .page.page-id-14 main .contents .container.annual-event .modal.oct-full-moon .container .flex-grid .photos {
+  .page main .contents .container.annual-event .modal.oct-full-moon .container .flex-grid .photos {
     flex-direction: column;
   }
-  .page.page-id-14 main .contents .container.annual-event .modal.oct-full-moon .container .flex-grid .photo-frame {
+  .page main .contents .container.annual-event .modal.oct-full-moon .container .flex-grid .photo-frame {
     grid-column: unset;
     aspect-ratio: unset;
   }
 }
 
-.page.page-id-14 main .contents .container.annual-event .modal.nov-15 .container .flex-grid:first-of-type {
+.page main .contents .container.annual-event .modal.nov-15 .container .flex-grid:first-of-type {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-.page.page-id-14 main .contents .container.annual-event .modal.nov-15 .container .flex-grid:first-of-type .paragraph {
+.page main .contents .container.annual-event .modal.nov-15 .container .flex-grid:first-of-type .paragraph {
   grid-column: 1/3;
 }
-.page.page-id-14 main .contents .container.annual-event .modal.nov-15 .container .flex-grid:first-of-type .paragraph ul {
+.page main .contents .container.annual-event .modal.nov-15 .container .flex-grid:first-of-type .paragraph ul {
   margin: 20px 0;
   width: -moz-fit-content;
   width: fit-content;
 }
-.page.page-id-14 main .contents .container.annual-event .modal.nov-15 .container .flex-grid:first-of-type .paragraph ul li {
+.page main .contents .container.annual-event .modal.nov-15 .container .flex-grid:first-of-type .paragraph ul li {
   margin: 0;
   padding: 0.75rem 2rem;
   line-height: 1;
@@ -2510,20 +2546,20 @@ span.color-gold {
   border-bottom: 1px solid #333;
   list-style: none;
 }
-.page.page-id-14 main .contents .container.annual-event .modal.nov-15 .container .flex-grid:first-of-type .paragraph ul li::before {
+.page main .contents .container.annual-event .modal.nov-15 .container .flex-grid:first-of-type .paragraph ul li::before {
   position: unset;
   content: "";
 }
-.page.page-id-14 main .contents .container.annual-event .modal.nov-15 .container .flex-grid:first-of-type .paragraph ul li:first-of-type {
+.page main .contents .container.annual-event .modal.nov-15 .container .flex-grid:first-of-type .paragraph ul li:first-of-type {
   border-top: 1px solid #333;
 }
-.page.page-id-14 main .contents .container.annual-event .modal.nov-15 .container .flex-grid:first-of-type .photo-frame {
+.page main .contents .container.annual-event .modal.nov-15 .container .flex-grid:first-of-type .photo-frame {
   aspect-ratio: 1;
 }
-.page.page-id-14 main .contents .container.annual-event .modal.nov-15 .container .irregular-para {
+.page main .contents .container.annual-event .modal.nov-15 .container .irregular-para {
   padding: 4rem 10rem;
 }
-.page.page-id-14 main .contents .container.annual-event .modal.nov-15 .container .in-modal-info {
+.page main .contents .container.annual-event .modal.nov-15 .container .in-modal-info {
   width: -moz-fit-content;
   width: fit-content;
   margin: 4rem auto 0;
@@ -2531,36 +2567,36 @@ span.color-gold {
   padding: 3rem 8rem;
   border: 1px solid #BB9A01;
 }
-.page.page-id-14 main .contents .container.annual-event .modal.nov-15 .container .in-modal-info > h1 {
+.page main .contents .container.annual-event .modal.nov-15 .container .in-modal-info > h1 {
   font-size: 1.75rem;
   line-height: 1em;
   margin-bottom: 2rem;
 }
-.page.page-id-14 main .contents .container.annual-event .modal.nov-15 .container .in-modal-info p:last-of-type {
+.page main .contents .container.annual-event .modal.nov-15 .container .in-modal-info p:last-of-type {
   font-size: 1.75rem;
   font-weight: 600;
   line-height: 1em;
 }
-.page.page-id-14 main .contents .container.annual-event .modal.nov-15 .container .in-modal-info p:last-of-type span {
+.page main .contents .container.annual-event .modal.nov-15 .container .in-modal-info p:last-of-type span {
   font-size: 1rem;
   font-weight: 400;
 }
 
 @media (width < 768px) {
-  .page.page-id-14 main .contents .container.annual-event .modal.nov-15 .container .flex-grid:first-of-type {
+  .page main .contents .container.annual-event .modal.nov-15 .container .flex-grid:first-of-type {
     display: block;
     grid-template-columns: repeat(1, 1fr);
   }
-  .page.page-id-14 main .contents .container.annual-event .modal.nov-15 .container .flex-grid:first-of-type .paragraph {
+  .page main .contents .container.annual-event .modal.nov-15 .container .flex-grid:first-of-type .paragraph {
     grid-column: unset;
   }
-  .page.page-id-14 main .contents .container.annual-event .modal.nov-15 .container .flex-grid:first-of-type .photo-frame:not(:first-of-type) {
+  .page main .contents .container.annual-event .modal.nov-15 .container .flex-grid:first-of-type .photo-frame:not(:first-of-type) {
     margin-top: 20px;
   }
-  .page.page-id-14 main .contents .container.annual-event .modal.nov-15 .container .irregular-para {
+  .page main .contents .container.annual-event .modal.nov-15 .container .irregular-para {
     padding: 2rem 2rem 3rem;
   }
-  .page.page-id-14 main .contents .container.annual-event .modal.nov-15 .container .in-modal-info {
+  .page main .contents .container.annual-event .modal.nov-15 .container .in-modal-info {
     width: -moz-fit-content;
     width: fit-content;
     margin: 4rem auto 0;
@@ -2568,43 +2604,43 @@ span.color-gold {
     padding: 3rem 1rem;
     border: 1px solid #BB9A01;
   }
-  .page.page-id-14 main .contents .container.annual-event .modal.nov-15 .container .in-modal-info > h1 {
+  .page main .contents .container.annual-event .modal.nov-15 .container .in-modal-info > h1 {
     font-size: 1.75rem;
     line-height: 1em;
     margin-bottom: 2rem;
   }
-  .page.page-id-14 main .contents .container.annual-event .modal.nov-15 .container .in-modal-info p:last-of-type {
+  .page main .contents .container.annual-event .modal.nov-15 .container .in-modal-info p:last-of-type {
     font-size: 1.75rem;
     font-weight: 600;
     line-height: 1em;
   }
-  .page.page-id-14 main .contents .container.annual-event .modal.nov-15 .container .in-modal-info p:last-of-type span {
+  .page main .contents .container.annual-event .modal.nov-15 .container .in-modal-info p:last-of-type span {
     font-size: 1rem;
     font-weight: 400;
   }
 }
 
 @media (width < 1100px) {
-  .page.page-id-14 main .contents .container.annual-event .modal.nov-15 .container {
+  .page main .contents .container.annual-event .modal.nov-15 .container {
     padding: 5rem 2rem;
   }
-  .page.page-id-14 main .contents .container.annual-event .modal.nov-15 .container .flex-grid:first-of-type {
+  .page main .contents .container.annual-event .modal.nov-15 .container .flex-grid:first-of-type {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
-  .page.page-id-14 main .contents .container.annual-event .modal.nov-15 .container .flex-grid:first-of-type .paragraph {
+  .page main .contents .container.annual-event .modal.nov-15 .container .flex-grid:first-of-type .paragraph {
     grid-column: 1/2;
   }
 }
 @media (width < 1700px) {
-  .page.page-id-14 main .contents .container.annual-event .modal.nov-15 .container {
+  .page main .contents .container.annual-event .modal.nov-15 .container {
     padding: 5rem 2rem;
   }
-  .page.page-id-14 main .contents .container.annual-event .modal.nov-15 .container .flex-grid:first-of-type {
+  .page main .contents .container.annual-event .modal.nov-15 .container .flex-grid:first-of-type {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
-  .page.page-id-14 main .contents .container.annual-event .modal.nov-15 .container .flex-grid:first-of-type .paragraph {
+  .page main .contents .container.annual-event .modal.nov-15 .container .flex-grid:first-of-type .paragraph {
     grid-column: 1/2;
   }
 }
@@ -2637,62 +2673,62 @@ span.color-gold {
 }
 
 @media (width < 768px) {
-  .page.page-id-14 main .contents .container.annual-event .modal .container {
+  .page main .contents .container.annual-event .modal .container {
     margin: 0;
     padding: 15px;
     width: 100%;
   }
-  .page.page-id-14 main .contents .container.annual-event .modal .container .modal-close-btn {
+  .page main .contents .container.annual-event .modal .container .modal-close-btn {
     top: 15px;
     right: 15px;
   }
-  .page.page-id-14 main .contents .container.annual-event .modal .container .annual-event-modal-header {
+  .page main .contents .container.annual-event .modal .container .annual-event-modal-header {
     margin: 45px 0 30px;
     font-size: 1.5rem;
   }
-  .page.page-id-14 main .contents .container.annual-event .modal .container .annual-event-modal-header::before, .page.page-id-14 main .contents .container.annual-event .modal .container .annual-event-modal-header::after {
+  .page main .contents .container.annual-event .modal .container .annual-event-modal-header::before, .page main .contents .container.annual-event .modal .container .annual-event-modal-header::after {
     width: calc(50% - 75px);
   }
 }
 
 @media (width < 768px) {
-  .page.page-id-14 main .contents .container.annual-event .media-screen-md {
+  .page main .contents .container.annual-event .media-screen-md {
     display: inline-block;
   }
-  .page.page-id-14 main .contents .container.annual-event .bg section .contents.chart {
-    padding: 0;
+  .page main .contents .container.annual-event .bg section .contents.chart {
+    padding: 60px 0;
   }
-  .page.page-id-14 main .contents .container.annual-event .bg section .contents.chart .gradually-appear header h3::before, .page.page-id-14 main .contents .container.annual-event .bg section .contents.chart .gradually-appear header h3::after {
+  .page main .contents .container.annual-event .bg section .contents.chart .gradually-appear header h3::before, .page main .contents .container.annual-event .bg section .contents.chart .gradually-appear header h3::after {
     width: calc(50% - 110px);
   }
-  .page.page-id-14 main .contents .container.annual-event .bg section .contents.chart .gradually-appear-long .note {
+  .page main .contents .container.annual-event .bg section .contents.chart .gradually-appear-long .note {
     padding: 0 2rem;
   }
-  .page.page-id-14 main .contents .container.annual-event .bg section .contents.chart .gradually-appear-long .list-contents {
+  .page main .contents .container.annual-event .bg section .contents.chart .gradually-appear-long .list-contents {
     margin: 10px 1rem 4rem;
   }
-  .page.page-id-14 main .contents .container.annual-event .bg section .contents.chart .gradually-appear-long .list-contents li .subject {
+  .page main .contents .container.annual-event .bg section .contents.chart .gradually-appear-long .list-contents li .subject {
     text-align: center;
   }
 }
 
 @media (width < 768px) {
-  .page.page-id-14 main .contents .container.annual-event .modal .container .annual-event-modal-header {
+  .page main .contents .container.annual-event .modal .container .annual-event-modal-header {
     font-size: 1.4rem;
   }
-  .page.page-id-14 main .contents .container.annual-event .modal .container .annual-event-modal-header::before, .page.page-id-14 main .contents .container.annual-event .modal .container .annual-event-modal-header::after {
+  .page main .contents .container.annual-event .modal .container .annual-event-modal-header::before, .page main .contents .container.annual-event .modal .container .annual-event-modal-header::after {
     position: unset;
   }
-  .page.page-id-14 main .contents .container.annual-event .modal .container .leading-square-header {
+  .page main .contents .container.annual-event .modal .container .leading-square-header {
     font-size: 1.2rem;
   }
-  .page.page-id-14 main .contents .container.annual-event .modal .container .flex-grid {
+  .page main .contents .container.annual-event .modal .container .flex-grid {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
 @media (width < 768px) {
-  .page.page-id-14 main .contents .container.annual-event .bg section .contents.chart .gradually-appear h3::before, .page.page-id-14 main .contents .container.annual-event .bg section .contents.chart .gradually-appear h3::after {
+  .page main .contents .container.annual-event .bg section .contents.chart .gradually-appear h3::before, .page main .contents .container.annual-event .bg section .contents.chart .gradually-appear h3::after {
     width: calc(50% - 114px);
   }
 }
@@ -2700,7 +2736,7 @@ span.color-gold {
 .page main .contents .frame.contact {
   background-image: url(./img/contact-top.jpg);
 }
-.page main .contents .container.contact .bg section .contents.contact .gradually-appear, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long {
+.page main .contents .container.contact .bg section .contents.contact .gradually-appear {
   margin-top: 0;
 }
 
@@ -4137,22 +4173,70 @@ span.color-gold {
   color: #fff;
   border: 1px solid #fff;
 }
-.single main .content {
+.single main .container {
+  position: relative;
+  padding: 0 10%;
+}
+.single main .container .bread-crumb {
+  position: absolute;
+  top: -80px;
+  left: 80px;
+  display: flex;
+  gap: 10px;
+  z-index: 103;
+}
+.single main .container .flex-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 100px;
+}
+.single main .container .flex-wrapper .menu-list {
+  grid-column: 1/2;
+  height: 80vh;
+  overflow: auto;
+}
+.single main .container .flex-wrapper .contents {
+  grid-column: 2/5;
+}
+.single main .container .flex-wrapper .contents h1.part-title {
+  position: relative;
   width: 100%;
-  margin: 0 auto;
-  padding: 3rem 0;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.1em;
+  border-bottom: unset;
 }
-.single main .content .post-content .post-item .content {
-  margin: 0;
-  padding: 0;
+.single main .container .flex-wrapper .contents h1.part-title::before, .single main .container .flex-wrapper .contents h1.part-title::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  width: calc(50% - 110px);
+  height: 1px;
+  background-color: #333;
 }
-.single main .content .post-content .post-item p, .single main .content .post-content .post-item li {
+.single main .container .flex-wrapper .contents h1.part-title::before {
+  left: 0;
+}
+.single main .container .flex-wrapper .contents h1.part-title::after {
+  right: 0;
+}
+.single main .container .flex-wrapper .contents h1.part-title.date::before, .single main .container .flex-wrapper .contents h1.part-title.date::after {
+  width: calc(50% - 170px);
+}
+.single main .container .flex-wrapper .contents .post-contents {
+  margin-top: 30px;
+}
+.single main .container .flex-wrapper .contents .post-contents .post-item p, .single main .container .flex-wrapper .contents .post-contents .post-item li {
   font-size: 1.15rem;
   line-height: 1.75em;
 }
-.single main .content .post-content .post-item .post-title {
+.single main .container .flex-wrapper .contents .post-contents .post-item .post-title {
   position: relative;
-  margin-bottom: 2rem;
+  margin: 3rem 0 0.75rem;
   padding: 0 0 0.8rem 1.55rem;
   font-size: 1.75rem;
   line-height: 1.2em;
@@ -4160,7 +4244,7 @@ span.color-gold {
   letter-spacing: 0;
   border-bottom: 1px solid #BB9A01;
 }
-.single main .content .post-content .post-item .post-title::before {
+.single main .container .flex-wrapper .contents .post-contents .post-item .post-title::before {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -4170,106 +4254,106 @@ span.color-gold {
   height: 3rem;
   background-color: #BB9A01;
 }
-.single main .content .post-content .post-item .post-title::after {
+.single main .container .flex-wrapper .contents .post-contents .post-item .post-title::after {
   position: unset;
 }
-.single main .content .post-content .post-item .post-title > a {
+.single main .container .flex-wrapper .contents .post-contents .post-item .post-title > a {
   color: black;
   border-bottom: unset;
 }
-.single main .content .post-content .post-item h1, .single main .content .post-content .post-item h2, .single main .content .post-content .post-item h3, .single main .content .post-content .post-item h4, .single main .content .post-content .post-item h5, .single main .content .post-content .post-item h6 {
+.single main .container .flex-wrapper .contents .post-contents .post-item h1, .single main .container .flex-wrapper .contents .post-contents .post-item h2, .single main .container .flex-wrapper .contents .post-contents .post-item h3, .single main .container .flex-wrapper .contents .post-contents .post-item h4, .single main .container .flex-wrapper .contents .post-contents .post-item h5, .single main .container .flex-wrapper .contents .post-contents .post-item h6 {
   margin: 1.5em 0 0.8em;
   line-height: 1.25em;
   font-weight: 600;
   text-align: left;
 }
-.single main .content .post-content .post-item h1 {
+.single main .container .flex-wrapper .contents .post-contents .post-item h1 {
   font-size: 1.65rem;
 }
-.single main .content .post-content .post-item h2 {
+.single main .container .flex-wrapper .contents .post-contents .post-item h2 {
   position: unset;
   padding-bottom: 0;
   font-size: 1.55rem;
 }
-.single main .content .post-content .post-item h2::after {
+.single main .container .flex-wrapper .contents .post-contents .post-item h2::after {
   position: unset;
 }
-.single main .content .post-content .post-item h3 {
+.single main .container .flex-wrapper .contents .post-contents .post-item h3 {
   font-size: 1.4rem;
 }
-.single main .content .post-content .post-item h4 {
+.single main .container .flex-wrapper .contents .post-contents .post-item h4 {
   font-size: 1.25rem;
 }
-.single main .content .post-content .post-item h5 {
+.single main .container .flex-wrapper .contents .post-contents .post-item h5 {
   font-size: 1.15rem;
   font-weight: 700;
 }
-.single main .content .post-content .post-item h6 {
+.single main .container .flex-wrapper .contents .post-contents .post-item h6 {
   font-size: 1.1rem;
   font-weight: 700;
 }
-.single main .content .post-content .post-item ul {
+.single main .container .flex-wrapper .contents .post-contents .post-item ul {
   margin: 1.25rem;
 }
-.single main .content .post-content .post-item ul li {
+.single main .container .flex-wrapper .contents .post-contents .post-item ul li {
   position: relative;
   line-height: 1.5em;
   padding-left: 1em;
 }
-.single main .content .post-content .post-item ul li::before {
+.single main .container .flex-wrapper .contents .post-contents .post-item ul li::before {
   position: absolute;
   top: 0;
   left: 0;
   content: "⚫︎";
   color: #999;
 }
-.single main .content .post-content .post-item ol {
+.single main .container .flex-wrapper .contents .post-contents .post-item ol {
   margin: 1.25rem;
   counter-reset: count 0;
 }
-.single main .content .post-content .post-item ol li {
+.single main .container .flex-wrapper .contents .post-contents .post-item ol li {
   position: relative;
   line-height: 1.5em;
   padding-left: 1em;
 }
-.single main .content .post-content .post-item ol li::before {
+.single main .container .flex-wrapper .contents .post-contents .post-item ol li::before {
   position: absolute;
   top: 0;
   left: 0;
   content: counter(count) ". ";
   counter-increment: count 1;
 }
-.single main .content .post-content .post-item ul > li + li, .single main .content .post-content .post-item ol > li + li {
+.single main .container .flex-wrapper .contents .post-contents .post-item ul > li + li, .single main .container .flex-wrapper .contents .post-contents .post-item ol > li + li {
   margin-top: 0.75em;
 }
-.single main .content .post-content .post-item a {
+.single main .container .flex-wrapper .contents .post-contents .post-item a {
   color: red;
   border-bottom: 1px solid red;
 }
-.single main .content .post-content .post-item hr {
+.single main .container .flex-wrapper .contents .post-contents .post-item hr {
   margin: 2rem 0;
   border: 3px solid #eee;
 }
-.single main .content .post-content .post-item .wp-block-table table tbody tr {
+.single main .container .flex-wrapper .contents .post-contents .post-item .wp-block-table table tbody tr {
   font-size: 1.15rem;
   line-height: 1.4em;
 }
-.single main .content .post-content .post-item .wp-block-table table tbody tr td {
+.single main .container .flex-wrapper .contents .post-contents .post-item .wp-block-table table tbody tr td {
   border-left: unset;
   border-right: unset;
 }
-.single main .content .post-content .post-item .wp-block-table table tbody tr td:first-of-type {
+.single main .container .flex-wrapper .contents .post-contents .post-item .wp-block-table table tbody tr td:first-of-type {
   background-color: #F5F6FA;
 }
-.single main .content .post-content .post-item .wp-block-table .wp-element-caption {
+.single main .container .flex-wrapper .contents .post-contents .post-item .wp-block-table .wp-element-caption {
   margin-top: 10px;
   font-size: 0.95rem;
   line-height: 1.2em;
 }
-.single main .content .post-content .post-item .wp-block-image {
+.single main .container .flex-wrapper .contents .post-contents .post-item .wp-block-image {
   margin: 1rem 0;
 }
-.single main .content .post-content .post-item .date-category {
+.single main .container .flex-wrapper .contents .post-contents .post-item .date-category {
   display: flex;
   gap: 7px;
   margin-top: 30px;
@@ -4277,39 +4361,39 @@ span.color-gold {
   font-size: 0.9rem;
   line-height: 1em;
 }
-.single main .content .post-content .post-item .date-category .category {
+.single main .container .flex-wrapper .contents .post-contents .post-item .date-category .category {
   color: red;
 }
 
 @media (width < 768px) {
-  .archive main .container .flex-wrapper h2 {
+  .single main .container .flex-wrapper h2 {
     font-size: 1.65rem;
     line-height: 1.25em;
     letter-spacing: 0.2em;
   }
-  .archive main .container .flex-wrapper h2 br {
+  .single main .container .flex-wrapper h2 br {
     display: block;
   }
-  .archive main .container .flex-wrapper h2 .bottom-up-90px {
+  .single main .container .flex-wrapper h2 .bottom-up-90px {
     bottom: 90px;
   }
 }
 
-.archive main .container .flex-wrapper .menu-list .headline-title {
+.single main .container .flex-wrapper .menu-list .headline-title {
   padding: 0.65rem 1.5rem;
   color: #fff;
   background-color: #999;
 }
-.archive main .container .flex-wrapper .menu-list ul {
+.single main .container .flex-wrapper .menu-list ul {
   border-bottom: 1px solid #BB9A01;
 }
-.archive main .container .flex-wrapper .menu-list ul li {
+.single main .container .flex-wrapper .menu-list ul li {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   position: relative;
 }
-.archive main .container .flex-wrapper .menu-list ul li::before {
+.single main .container .flex-wrapper .menu-list ul li::before {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -4321,31 +4405,31 @@ span.color-gold {
   color: red;
   transition: 0.5s;
 }
-.archive main .container .flex-wrapper .menu-list ul li a {
+.single main .container .flex-wrapper .menu-list ul li a {
   display: block;
   width: -moz-fit-content;
   width: fit-content;
   padding: 0.5rem 0 0.5rem 1.5rem;
 }
-.archive main .container .flex-wrapper .menu-list ul li:hover::before {
+.single main .container .flex-wrapper .menu-list ul li:hover::before {
   left: 0.5rem;
 }
-.archive main .container .flex-wrapper .menu-list ul li + li {
+.single main .container .flex-wrapper .menu-list ul li + li {
   border-top: 1px solid #BB9A01;
 }
-.archive main .container .flex-wrapper .menu-list .year-monthry-archive {
+.single main .container .flex-wrapper .menu-list .year-monthry-archive {
   margin-top: 30px;
 }
 
 @media (width < 768px) {
-  .archive main .frame {
+  .single main .frame {
     background-image: url(./img/information-top-portrait.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 50vh;
   }
-  .archive main .frame h1.part-main-title {
+  .single main .frame h1.part-main-title {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -4356,10 +4440,10 @@ span.color-gold {
     background-color: rgba(0, 0, 0, 0.5);
     border: unset;
   }
-  .archive main .container {
+  .single main .container {
     padding: 0 1rem;
   }
-  .archive main .container .bread-crumb {
+  .single main .container .bread-crumb {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -4368,18 +4452,296 @@ span.color-gold {
     justify-content: center;
     font-size: 0.8rem;
   }
-  .archive main .container .flex-wrapper {
+  .single main .container .flex-wrapper {
     display: flex;
     flex-direction: column-reverse;
     margin-top: 70px;
   }
-  .archive main .container .flex-wrapper .contents h1.part-title::before, .archive main .container .flex-wrapper .contents h1.part-title::after {
+  .single main .container .flex-wrapper .contents h1.part-title::before, .single main .container .flex-wrapper .contents h1.part-title::after {
     width: calc(50% - 75px);
   }
-  .archive main .container .flex-wrapper .contents h1.part-title::before {
+  .single main .container .flex-wrapper .contents h1.part-title::before {
     left: -1rem;
   }
-  .archive main .container .flex-wrapper .contents h1.part-title::after {
+  .single main .container .flex-wrapper .contents h1.part-title::after {
     right: -1rem;
+  }
+}
+
+.single footer {
+  width: 100%;
+  font-size: 0.875rem;
+}
+.single footer .logo-space {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 8%;
+}
+.single footer .logo-space .logo {
+  width: 51px;
+  aspect-ratio: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.single footer .logo-space p {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.single footer .logo-space p span {
+  font-size: 1.85rem;
+  line-height: 1em;
+}
+.single footer .wrapper {
+  background-color: #f6f6f6;
+  width: min(1680px, 100%);
+  margin: 0 auto;
+  padding: 60px 0;
+}
+.single footer .wrapper .wrapper-grid {
+  display: grid;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  padding: 0 7%;
+}
+.single footer .wrapper .wrapper-grid .footer-left-links {
+  padding-left: 70px;
+}
+.single footer .wrapper .wrapper-grid .footer-left-links ul + ul {
+  margin-top: 15px;
+}
+.single footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax {
+  font-size: 1.75rem;
+  line-height: 1.25em;
+  letter-spacing: 0.1em;
+}
+.single footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span {
+  font-size: 1.65rem;
+}
+.single footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span.en-tume01 {
+  letter-spacing: 0.075em;
+}
+.single footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(1) {
+  line-height: 1.5em;
+}
+.single footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(2), .single footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) {
+  display: flex;
+  gap: 10px;
+}
+.single footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+.single footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+}
+.single footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a {
+  display: block;
+  height: 100%;
+}
+.single footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-instagram::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "\f16d";
+  font-size: 2rem;
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 900;
+}
+.single footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-twitter::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  background: url(./img/x-twitter.svg) no-repeat;
+  background-size: 100%;
+  opacity: 0.7;
+}
+.single footer .wrapper .wrapper-grid .footer-center-links {
+  display: flex;
+}
+.single footer .wrapper .wrapper-grid .footer-center-links > ul > li + li {
+  margin-top: 2rem;
+}
+.single footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2 {
+  position: unset;
+  padding-bottom: 0;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: left;
+}
+.single footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2::after {
+  display: none;
+}
+.single footer .wrapper .wrapper-grid .footer-center-links > ul > li div {
+  width: 100%;
+  position: relative;
+  padding: 1em 0 0 2em;
+  line-height: 1.2;
+}
+.single footer .wrapper .wrapper-grid .footer-center-links > ul > li div::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  top: 22px;
+  left: 0.5rem;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 9px solid #D9341C;
+  border-right: 0;
+  transition: 0.5s;
+}
+.single footer .wrapper .wrapper-grid .footer-center-links > ul > li div:hover::before {
+  left: 1rem;
+  opacity: 0.5;
+}
+.single footer .wrapper .wrapper-grid .footer-center-links > ul > li div a {
+  display: block;
+  height: 100%;
+}
+.single footer .wrapper .wrapper-grid .footer-right-links .banner li + li {
+  margin-top: 30px;
+}
+.single footer .wrapper .wrapper-grid .footer-right-links .banner li a {
+  display: block;
+  width: 100%;
+}
+.single footer .wrapper .wrapper-grid .footer-right-links .banner li a img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.single footer .wrapper .copyright {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.single .english-page-footer .wrapper {
+  padding: 30px 0;
+}
+.single .english-page-footer .wrapper .copyright {
+  margin-top: 0;
+}
+@media (width >= 375px) {
+  .single footer .wrapper .logo-space {
+    justify-content: center;
+    margin: 0 0 10px -70px;
+  }
+  .single footer .wrapper .wrapper-grid {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 80px;
+  }
+  .single footer .wrapper .wrapper-grid .footer-left-links {
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  .single footer .wrapper .wrapper-grid .footer-center-links {
+    justify-content: center;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  .single footer .wrapper .wrapper-grid .footer-right-links .banner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .single footer .wrapper .wrapper-grid .footer-right-links .banner li + li {
+    margin-top: 0;
+  }
+}
+@media (width < 768px) {
+  .single footer .wrapper .logo-space {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto 10px;
+  }
+  .single footer .wrapper .wrapper-grid {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 80px;
+  }
+  .single footer .wrapper .wrapper-grid .footer-left-links {
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  .single footer .wrapper .wrapper-grid .footer-center-links {
+    justify-content: center;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  .single footer .wrapper .wrapper-grid .footer-right-links .banner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .single footer .wrapper .wrapper-grid .footer-right-links .banner li + li {
+    margin-top: 0;
+  }
+}
+@media (width >= 768px) {
+  .single footer .wrapper .wrapper-grid .footer-center-links {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
+@media (width >= 1100px) {
+  .single footer .wrapper .logo-space {
+    justify-content: flex-start;
+    margin: 0 0 10px 8%;
+  }
+  .single footer .wrapper .wrapper-grid {
+    grid-template-columns: 1.5fr 1.2fr 0.8fr;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  .single footer .wrapper .wrapper-grid .footer-left-links {
+    margin: 0 0 0 75px;
+  }
+  .single footer .wrapper .wrapper-grid .footer-center-links {
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  .single footer .wrapper .wrapper-grid .footer-right-links .banner {
+    display: block;
+    gap: 20px;
+  }
+  .single footer .wrapper .wrapper-grid .footer-right-links .banner li + li {
+    margin-top: 20px;
+  }
+}
+@media (width >= 1700px) {
+  .single footer .wrapper .wrapper-grid {
+    grid-template-columns: 1.5fr 2fr 1fr;
+  }
+  .single footer .wrapper .wrapper-grid .footer-center-links {
+    -moz-column-gap: 100px;
+         column-gap: 100px;
+  }
+}
+@media (width < 1100px) {
+  .single footer .wrapper .wrapper-grid .footer-right-links .banner {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 60px;
+  }
+}
+@media (width < 768px) {
+  .single footer .wrapper .wrapper-grid .footer-right-links .banner {
+    grid-template-columns: 1fr;
+    width: min(450px, 100%);
+    margin: 0 auto;
+    padding: 0;
   }
 }/*# sourceMappingURL=style.css.map */

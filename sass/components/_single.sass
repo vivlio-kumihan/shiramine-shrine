@@ -22,123 +22,160 @@
         letter-spacing: .3em
         color: #fff
         border: 1px solid #fff
-    .content
-      width: 100%
-      margin: 0 auto
-      padding: 3rem 0
-      .post-content
-        .post-item
-          .content
-            margin: 0
-            padding: 0
-          p, li
-            font-size: 1.15rem
-            line-height: 1.75em
-          .post-title
-            position: relative
-            margin-bottom: 2rem
-            padding: 0 0 .8rem 1.55rem
-            font-size: 1.75rem
-            line-height: 1.2em
-            text-align: left
-            letter-spacing: 0
-            border-bottom: 1px solid fw.$gold
-            &::before
-              +fw.positionAbsoluteCTL($top: true)
-              left: 0
-              content: ""
-              width: 10px
-              height: 3rem
-              background-color: fw.$gold
-            &::after
-              position: unset
-            > a
-              color: black
-              border-bottom: unset
-          h1, h2, h3, h4, h5, h6
-            margin: 1.5em 0 0.8em
-            line-height: 1.25em
-            font-weight: 600
-            text-align: left
-          h1
-            font-size: 1.65rem
-          h2
-            position: unset
-            padding-bottom: 0
-            font-size: 1.55rem
-            &::after
-              position: unset
-          h3
-            font-size: 1.4rem
-          h4
-            font-size: 1.25rem
-          h5
-            font-size: 1.15rem
-            font-weight: 700
-          h6
-            font-size: 1.1rem
-            font-weight: 700
-          ul
-            margin: 1.25rem
-            li
-              position: relative
-              line-height: 1.5em
-              padding-left: 1em
-              &::before
-                position: absolute
-                top: 0
-                left: 0
-                content: "⚫︎"
-                color: #999
-          ol
-            margin: 1.25rem
-            counter-reset: count 0
-            li
-              position: relative
-              line-height: 1.5em
-              padding-left: 1em
-              &::before
-                position: absolute
-                top: 0
-                left: 0
-                content: counter(count) ". "
-                counter-increment: count 1
-          ul > li + li, ol > li + li
-            margin-top: .75em
-          a
-            color: red
-            border-bottom: 1px solid red
-          hr
-            margin: 2rem 0
-            border: 3px solid #eee
-          .wp-block-table
-            table
-              tbody
-                tr
-                  font-size: 1.15rem 
-                  line-height: 1.4em
-                  td
-                    border-left: unset
-                    border-right: unset
-                  td:first-of-type
-                    background-color: fw.$purple-light
-            .wp-element-caption
-              margin-top: 10px
-              font-size: .95rem
-              line-height: 1.2em
-          .wp-block-image
-            margin: 1rem 0
-          .date-category
-            display: flex
-            gap: 7px
-            margin-top: 30px
-            font-family: fw.$noto-gth
-            font-size: .9rem
-            line-height: 1em
-            .category
-              color: red
 
-.archive
+    .container
+      position: relative
+      padding: 0 10%
+      .bread-crumb
+        position: absolute
+        top: -80px
+        left: 80px
+        display: flex
+        gap: 10px
+        z-index: fw.get_index(bread-crumb)
+      .flex-wrapper 
+        display: grid
+        grid-template-columns: repeat(4, 1fr) 
+        gap: 2rem 
+        margin-top: 100px     
+        .menu-list
+          grid-column: 1/2
+          height: 80vh
+          overflow: auto
+        .contents
+          grid-column: 2/5
+          h1.part-title
+            position: relative
+            width: 100%            
+            font-size: 2rem
+            font-weight: 600
+            line-height: 1
+            text-align: center
+            letter-spacing: .1em
+            border-bottom: unset
+            &::before, &::after
+              +fw.positionAbsoluteCTL($top: true)
+              content: ""
+              width: calc(50% - 110px)
+              height: 1px
+              background-color: #333
+            &::before
+              left: 0
+            &::after
+              right: 0
+            &.date::before, &.date::after
+              width: calc(50% - 170px)
+          .post-contents
+            margin-top: 30px
+            .post-item
+              p, li
+                font-size: 1.15rem
+                line-height: 1.75em
+              .post-title
+                position: relative
+                margin: 3rem 0 .75rem
+                padding: 0 0 .8rem 1.55rem
+                font-size: 1.75rem
+                line-height: 1.2em
+                text-align: left
+                letter-spacing: 0
+                border-bottom: 1px solid fw.$gold
+                &::before
+                  +fw.positionAbsoluteCTL($top: true)
+                  left: 0
+                  content: ""
+                  width: 10px
+                  height: 3rem
+                  background-color: fw.$gold
+                &::after
+                  position: unset
+                > a
+                  color: black
+                  border-bottom: unset
+              h1, h2, h3, h4, h5, h6
+                margin: 1.5em 0 0.8em
+                line-height: 1.25em
+                font-weight: 600
+                text-align: left
+              h1
+                font-size: 1.65rem
+              h2
+                position: unset
+                padding-bottom: 0
+                font-size: 1.55rem
+                &::after
+                  position: unset
+              h3
+                font-size: 1.4rem
+              h4
+                font-size: 1.25rem
+              h5
+                font-size: 1.15rem
+                font-weight: 700
+              h6
+                font-size: 1.1rem
+                font-weight: 700
+              ul
+                margin: 1.25rem
+                li
+                  position: relative
+                  line-height: 1.5em
+                  padding-left: 1em
+                  &::before
+                    position: absolute
+                    top: 0
+                    left: 0
+                    content: "⚫︎"
+                    color: #999
+              ol
+                margin: 1.25rem
+                counter-reset: count 0
+                li
+                  position: relative
+                  line-height: 1.5em
+                  padding-left: 1em
+                  &::before
+                    position: absolute
+                    top: 0
+                    left: 0
+                    content: counter(count) ". "
+                    counter-increment: count 1
+              ul > li + li, ol > li + li
+                margin-top: .75em
+              a
+                color: red
+                border-bottom: 1px solid red
+              hr
+                margin: 2rem 0
+                border: 3px solid #eee
+              .wp-block-table
+                table
+                  tbody
+                    tr
+                      font-size: 1.15rem 
+                      line-height: 1.4em
+                      td
+                        border-left: unset
+                        border-right: unset
+                      td:first-of-type
+                        background-color: fw.$purple-light
+                .wp-element-caption
+                  margin-top: 10px
+                  font-size: .95rem
+                  line-height: 1.2em
+              .wp-block-image
+                margin: 1rem 0
+              .date-category
+                display: flex
+                gap: 7px
+                margin-top: 30px
+                font-family: fw.$noto-gth
+                font-size: .9rem
+                line-height: 1em
+                .category
+                  color: red
+
+.single
   main
     .container
       +max(md)
@@ -152,7 +189,7 @@
             .bottom-up-90px
               bottom: 90px
 
-.archive
+.single
   main
     .container
       .flex-wrapper
@@ -185,7 +222,7 @@
           .year-monthry-archive
             margin-top: 30px
 
-.archive
+.single
   main
     +max(md)
       .frame 
@@ -219,13 +256,488 @@
             h1.part-title::after
               right: -1rem
 
-.archive
-  +min(sm)
-  +min(md)
-  +min(lg)
-  +min(xl) 
+
+
 .single
+  footer
+    width: 100%
+    font-size: .875rem
+    .logo-space
+      display: flex
+      align-items: center
+      gap: 10px
+      margin-left: 8%
+      .logo
+        width: calc(60px * 0.85)
+        aspect-ratio: 1
+        object-fit: contain
+      p
+        font-size: .75rem
+        font-weight: 600
+        line-height: 1.5
+        span
+          font-size: 1.85rem
+          line-height: 1em
+
+    .wrapper
+      background-color: #f6f6f6
+      width: min(1680px, 100%)
+      margin: 0 auto
+      padding: 60px 0
+
+      .wrapper-grid
+        display: grid
+        column-gap: 20px
+        padding: 0 7%
+        .footer-left-links
+          padding-left: 70px
+          ul
+            + ul
+              margin-top: 15px
+            .access-tel-fax
+              font-size: 1.75rem
+              line-height: 1.25em
+              letter-spacing: .1em
+              span
+                font-size: 1.65rem
+                &.en-tume01
+                  letter-spacing: 0.075em
+            &:nth-of-type(1)
+              line-height: 1.5em
+            &:nth-of-type(2), &:nth-of-type(3)
+              display: flex
+              gap: 10px
+            &:nth-of-type(3)
+              display: flex
+              gap: 30px
+              margin-top: 50px
+              li
+                position: relative
+                width: 2rem
+                height: 2rem
+                a
+                  display: block
+                  height: 100%
+                  &.icon-instagram 
+                    &::before
+                      +fw.positionAbsoluteCTL($top: true, $left: true)
+                      +fw.fontAwesome("\f16d", $fontSize: 2rem, $fontFamily: Brands)
+                  &.icon-twitter 
+                    &::before
+                      +fw.positionAbsoluteCTL($top: true, $left: true)
+                      content: ""
+                      width: 2rem
+                      height: 2rem
+                      background: url(./img/x-twitter.svg) no-repeat
+                      background-size: 100%
+                      opacity: .7
+                      // なぜか表示しない
+                      // +fw.positionAbsoluteCTL($top: true)
+                      // left: 50px
+                      // +fw.fontAwesome("\e61b", $fontSize: 2rem, $fontFamily: Brands, $fontWeight: 400)
+        .footer-center-links
+          display: flex
+          // column-gap: 160px
+          > ul
+            > li
+              + li
+                margin-top: 2rem
+              > h2
+                position: unset
+                padding-bottom: 0
+                font-size: .875rem
+                font-weight: 500
+                text-align: left
+                &::after
+                  display: none
+                  
+              div
+                width: 100%
+                position: relative
+                padding: 1em 0 0 2em
+                line-height: 1.2
+                &::before
+                  +fw.positionAbsoluteCTL($top: true)
+                  top: 22px
+                  left: .5rem
+                  content: ""
+                  width: 0
+                  height: 0
+                  border-style: solid
+                  border-top: 7px solid transparent
+                  border-bottom: 7px solid transparent
+                  border-left: 9px solid #D9341C
+                  border-right: 0
+                  transition: .5s
+                &:hover
+                  &::before
+                    left: 1rem
+                    opacity: .5
+                a
+                  display: block
+                  height: 100%
+        .footer-right-links
+          .banner
+            li
+              + li
+                margin-top: 30px
+              a
+                display: block
+                width: 100%
+                img
+                  width: 100%
+                  object-fit: cover
+
+      .copyright
+        margin-top: 80px
+        text-align: center
+        font-size: .8rem
+
+.single
+  .english-page-footer
+    .wrapper
+      padding: 30px 0
+      .copyright
+        margin-top: 0
+
   +min(sm)
+    footer
+      .wrapper
+        .logo-space
+          justify-content: center
+          margin: 0 0 10px -70px
+        .wrapper-grid
+          grid-template-columns: repeat(1, 1fr)
+          row-gap: 80px
+          .footer-left-links
+            margin: 0 auto
+            padding-left: 0
+          .footer-center-links
+            justify-content: center
+            column-gap: 10px
+          .footer-right-links
+            .banner
+              display: grid
+              grid-template-columns: 1fr
+              gap: 20px
+              li + li
+                margin-top: 0   
+  +max(md)
+    footer
+      .wrapper
+        .logo-space
+          flex-direction: column
+          align-items: flex-start
+          gap: 5px
+          width: fit-content
+          margin: 0 auto 10px
+        .wrapper-grid
+          grid-template-columns: repeat(1, 1fr)
+          row-gap: 80px
+          .footer-left-links
+            margin: 0 auto
+            padding-left: 0
+          .footer-center-links
+            justify-content: center
+            column-gap: 10px
+          .footer-right-links
+            .banner
+              display: grid
+              grid-template-columns: 1fr
+              gap: 20px
+              li + li
+                margin-top: 0   
+
   +min(md)
+    footer
+      .wrapper
+        .wrapper-grid
+          .footer-center-links
+            column-gap: 20px
+
   +min(lg)
+    footer
+      .wrapper
+        .logo-space
+          justify-content: flex-start
+          margin: 0 0 10px 8%
+        .wrapper-grid
+          grid-template-columns: 1.5fr 1.2fr .8fr
+          column-gap: 30px
+          .footer-left-links
+            margin: 0 0 0 75px
+          .footer-center-links
+            column-gap: 30px
+          .footer-right-links
+            .banner
+              display: block
+              // grid-template-columns: unset
+              gap: 20px
+              li + li
+                margin-top: 20px
   +min(xl)
+    footer
+      .wrapper
+        .wrapper-grid
+          grid-template-columns: 1.5fr 2fr 1fr
+          .footer-center-links
+            column-gap: 100px
+
+  // banner
+  +max(lg)
+    footer
+      .wrapper
+        .wrapper-grid
+          .footer-right-links
+            .banner
+              grid-template-columns: repeat(2, 1fr)
+              padding: 0 60px
+  +max(md)
+    footer
+      .wrapper
+        .wrapper-grid
+          .footer-right-links
+            .banner
+              grid-template-columns: 1fr
+              width: min(450px, 100%)
+              margin: 0 auto
+              padding: 0
+// .single
+//   +min(sm)
+//   +min(md)
+//   +min(lg)
+//   +min(xl) 
+
+
+
+  // @use '../forwards' as fw
+// @use '../media-query' as *
+
+// .single
+//   main
+//     width: min(1680px, 100%)
+//     margin: 0 auto
+//     .frame
+//       +fw.background-image("./img/information-top.jpg")
+//       position: relative
+//       height: 500px
+//       img
+//         width: 100%
+//         height: 100%
+//         object-fit: cover
+//       h1.part-main-title
+//         +fw.positionAbsoluteCTL($left: ture)
+//         top: 55%
+//         padding: 25px 120px
+//         font-size: 1.85rem
+//         font-weight: 300
+//         letter-spacing: .3em
+//         color: #fff
+//         border: 1px solid #fff
+//     .content
+//       width: 100%
+//       margin: 0 auto
+//       padding: 3rem 0
+//       .post-content
+//         .post-item
+//           .content
+//             margin: 0
+//             padding: 0
+//           p, li
+//             font-size: 1.15rem
+//             line-height: 1.75em
+//           .post-title
+//             position: relative
+//             margin-bottom: 2rem
+//             padding: 0 0 .8rem 1.55rem
+//             font-size: 1.75rem
+//             line-height: 1.2em
+//             text-align: left
+//             letter-spacing: 0
+//             border-bottom: 1px solid fw.$gold
+//             &::before
+//               +fw.positionAbsoluteCTL($top: true)
+//               left: 0
+//               content: ""
+//               width: 10px
+//               height: 3rem
+//               background-color: fw.$gold
+//             &::after
+//               position: unset
+//             > a
+//               color: black
+//               border-bottom: unset
+//           h1, h2, h3, h4, h5, h6
+//             margin: 1.5em 0 0.8em
+//             line-height: 1.25em
+//             font-weight: 600
+//             text-align: left
+//           h1
+//             font-size: 1.65rem
+//           h2
+//             position: unset
+//             padding-bottom: 0
+//             font-size: 1.55rem
+//             &::after
+//               position: unset
+//           h3
+//             font-size: 1.4rem
+//           h4
+//             font-size: 1.25rem
+//           h5
+//             font-size: 1.15rem
+//             font-weight: 700
+//           h6
+//             font-size: 1.1rem
+//             font-weight: 700
+//           ul
+//             margin: 1.25rem
+//             li
+//               position: relative
+//               line-height: 1.5em
+//               padding-left: 1em
+//               &::before
+//                 position: absolute
+//                 top: 0
+//                 left: 0
+//                 content: "⚫︎"
+//                 color: #999
+//           ol
+//             margin: 1.25rem
+//             counter-reset: count 0
+//             li
+//               position: relative
+//               line-height: 1.5em
+//               padding-left: 1em
+//               &::before
+//                 position: absolute
+//                 top: 0
+//                 left: 0
+//                 content: counter(count) ". "
+//                 counter-increment: count 1
+//           ul > li + li, ol > li + li
+//             margin-top: .75em
+//           a
+//             color: red
+//             border-bottom: 1px solid red
+//           hr
+//             margin: 2rem 0
+//             border: 3px solid #eee
+//           .wp-block-table
+//             table
+//               tbody
+//                 tr
+//                   font-size: 1.15rem 
+//                   line-height: 1.4em
+//                   td
+//                     border-left: unset
+//                     border-right: unset
+//                   td:first-of-type
+//                     background-color: fw.$purple-light
+//             .wp-element-caption
+//               margin-top: 10px
+//               font-size: .95rem
+//               line-height: 1.2em
+//           .wp-block-image
+//             margin: 1rem 0
+//           .date-category
+//             display: flex
+//             gap: 7px
+//             margin-top: 30px
+//             font-family: fw.$noto-gth
+//             font-size: .9rem
+//             line-height: 1em
+//             .category
+//               color: red
+
+// .archive
+//   main
+//     .container
+//       +max(md)
+//         .flex-wrapper
+//           h2
+//             font-size: 1.65rem
+//             line-height: 1.25em
+//             letter-spacing: .2em
+//             br
+//               display: block
+//             .bottom-up-90px
+//               bottom: 90px
+
+// .archive
+//   main
+//     .container
+//       .flex-wrapper
+//         .menu-list 
+//           .headline-title
+//             padding: .65rem 1.5rem
+//             color: #fff
+//             background-color: #999
+//           ul
+//             border-bottom: 1px solid fw.$gold
+//             li
+//               display: flex
+//               justify-content: flex-start
+//               align-items: center
+//               position: relative
+//               &::before
+//                 +fw.positionAbsoluteCTL($top: true)
+//                 +fw.fontAwesome("\f105", $fontSize: 1rem)
+//                 left: 0
+//                 color: red
+//                 transition: .5s
+//               a
+//                 display: block
+//                 width: fit-content
+//                 padding: .5rem 0 .5rem 1.5rem
+//               &:hover::before
+//                 left: .5rem
+//               + li
+//                 border-top: 1px solid fw.$gold
+//           .year-monthry-archive
+//             margin-top: 30px
+
+// .archive
+//   main
+//     +max(md)
+//       .frame 
+//         +fw.background-image("./img/information-top-portrait.jpg")
+//         height: 50vh
+//         h1.part-main-title
+//           +fw.positionAbsoluteCTL($left: true)
+//           top: 50%
+//           padding: 12px 30px
+//           font-size: 1.65rem
+//           letter-spacing: 0
+//           background-color: rgba(0, 0, 0, .5)
+//           border: unset
+//       .container
+//         padding: 0 1rem
+//         .bread-crumb
+//           +fw.positionAbsoluteCTL($left: true)
+//           top: -50px
+//           width: 100%
+//           justify-content: center
+//           font-size: .8rem
+//         .flex-wrapper
+//           display: flex
+//           flex-direction: column-reverse
+//           margin-top: 70px
+//           .contents
+//             h1.part-title::before, h1.part-title::after
+//               width: calc(50% - 75px)
+//             h1.part-title::before
+//               left: -1rem
+//             h1.part-title::after
+//               right: -1rem
+
+// .archive
+//   +min(sm)
+//   +min(md)
+//   +min(lg)
+//   +min(xl) 
+// .single
+//   +min(sm)
+//   +min(md)
+//   +min(lg)
+//   +min(xl)

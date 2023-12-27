@@ -46,7 +46,7 @@
                   <div class="date">2月節分</div>
                   <div class="subject">
                     <div>節分祭（鬼遣い豆まき神事）<br class="media-screen-md" />柊大明神例祭&emsp;16：00</div>
-                    <div>『柊護符』特別頒布&emsp;<a class="from-annual-event-to-post" href="" target="_blank">期間限定</a></div>
+                    <div>『柊護符』特別頒布&emsp;<a class="from-annual-event-to-post" href="https://shiraminejingu.or.jp/2023/01/21/%e7%af%80%e5%88%86%e7%a5%ad%e3%80%80%e8%bf%bd%e5%84%ba%e3%81%ae%e5%84%80%e3%80%80%e7%89%b9%e8%a3%bd%e3%80%8c%e6%9f%8a%e8%ad%b7%e7%ac%a6%e3%80%8d%e9%a0%92%e5%b8%83%e9%96%8b%e5%a7%8b%e3%81%ab%e3%81%a4/" target="_blank">期間限定</a></div>
                   </div>
                 </li>
                 <li>
@@ -83,7 +83,7 @@
                   <div class="date">6月30日</div>
                   <div class="subject">
                     <div>夏越大祓式（<span class="modal-open-trigger jun-30">茅の輪くぐり神事</span>）&emsp;17：00</div>
-                    <div>※『茅の輪護符』特別頒布&emsp;<a class="from-annual-event-to-post" href="" target="_blank">期間限定</a></div>
+                    <div>※『茅の輪護符』特別頒布&emsp;<a class="from-annual-event-to-post" href="https://shiraminejingu.or.jp/2023/06/15/%e6%9c%ac%e6%97%a5%e3%82%88%e3%82%8a%e3%80%8e%e8%8c%85%e3%81%ae%e8%bc%aa%e8%ad%b7%e7%ac%a6%e3%80%8f%e6%8e%88%e4%b8%8e%e5%a7%8b%e3%82%81%e3%81%be%e3%81%97%e3%81%9f-2/" target="_blank">期間限定</a></div>
                   </div>
                 </li>
                 <li>
@@ -314,8 +314,8 @@
             </div>
             <div>
               <ul>
-                <li><a href="https://shiraminejingu.or.jp/file/chi-no-wa-gofu-entry.pdf">『茅の輪護符』&emsp;申込用紙（PDF）</a></li>
-                <li><a href="https://shiraminejingu.or.jp/file/chi-no-wa-gofu-form.pdf">『茅の輪護符』&emsp;記入例（PDF）</a></li>
+                <li><a href="https://shiraminejingu.or.jp/files/chi-no-wa-gofu-entry.pdf" target="_brank">『茅の輪護符』&emsp;申込用紙（PDF）</a></li>
+                <li><a href="https://shiraminejingu.or.jp/files/chi-no-wa-gofu-form.pdf" target="_brank">『茅の輪護符』&emsp;記入例（PDF）</a></li>
               </ul>
             </div>
           </div>
