@@ -55,8 +55,7 @@
         </div>
         <div class="sns-post">
           <div class="instagram-post">
-            {[instagram-feed feed=1]}
-
+			  <?php echo do_shortcode('[instagram-feed feed=1]'); ?>
           </div>
           <div class="twitter-post">
             <!-- <a class="twitter-timeline" data-width="335" data-height="400" href="https://twitter.com/shiramine_jingu?ref_src=twsrc%5Etfw">Tweets by shiramine_jingu</a>

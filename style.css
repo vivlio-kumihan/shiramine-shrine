@@ -1022,8 +1022,6 @@ body .page-top-arrow {
 }
 .home.blog main .contents .bg section.information .sns-post .instagram-post, .page main .contents .bg section.information .sns-post .instagram-post {
   width: 100%;
-  aspect-ratio: 4/3;
-  overflow: auto;
 }
 .home.blog main .contents .bg section.information .sns-post .twitter-post, .page main .contents .bg section.information .sns-post .twitter-post {
   width: 100%;
