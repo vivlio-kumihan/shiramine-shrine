@@ -51,7 +51,7 @@
               </div>
             </div>
           </div>
-          <a class="to-contents-page" href="">お知らせ／トピックス</a>
+          <a class="to-contents-page" href="<?php echo esc_url(home_url('/information/')); ?>">お知らせ／トピックス</a>
         </div>
         <div class="sns-post">
           <div class="instagram-post">

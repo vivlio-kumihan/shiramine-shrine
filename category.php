@@ -92,8 +92,8 @@
       <?php
               // Previous/next page navigation.
               the_posts_pagination(array(
-                'prev_text'        => __('前のページ'),
-                'next_text'        => __('次のページ'),
+                'prev_text' => __('前のページ'),
+                'next_text' => __('次のページ'),
               ));
             endif; ?>
       </div>

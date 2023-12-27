@@ -86,14 +86,10 @@
       <?php endif; ?>
       <div class="breadcrumbs">
         <?php
-        $args = array(
-          'type' => 'list',
-          'current' => $recent_page,
-          'total' => $my_query->max_num_pages,
-          'prev_text' => '前のページ',
-          'next_text' => '次のページ',
-        );
-        echo paginate_links($args);
+        the_posts_pagination(array(
+          'prev_text' => __('前のページ'),
+          'next_text' => __('次のページ'),
+        ));
         ?>
       </div>
       </div>
@@ -103,9 +99,13 @@
 
 <?php get_footer(); ?>
 
-
-<!-- // Previous/next page navigation.
-the_posts_pagination(array(
-'prev_text' => __('前のページ'),
-'next_text' => __('次のページ'),
-)); -->
+<!-- <?php
+$args = array(
+  'type' => 'list',
+  'current' => $recent_page,
+  'total' => $my_query->max_num_pages,
+  'prev_text' => '前のページ',
+  'next_text' => '次のページ',
+);
+echo paginate_links($args);
+?> -->
