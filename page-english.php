@@ -85,7 +85,7 @@
                         <p>On the other hand he was good at making WAKA(和歌) poems , and he made a lot of famous poetry,and also he was a good musician of GAGAKU(雅楽).</p>
                       </div>
                       <div class="wrapper">
-                        <p><em>“A cascading brook once cloven by midstream rock<span class="half-font-size-raise">..</span>is destined finally to flow again as once.”</em> is a famous WAKA in HYAKUNINISSYU(百人一首) whitch was wrote of him.</p>
+                        <p class="align-left"><em>“A cascading brook once cloven by midstream rock<span class="half-font-size-raise">..</span>is destined finally to flow again as once.”</em> is a famous WAKA in HYAKUNINISSYU(百人一首) whitch was wrote of him.</p>
                       </div>
                     </div>
                   </div>
@@ -202,12 +202,12 @@
     </div>
   </main>
 
-<footer class="english-page-footer">
-  <div class="wrapper">
-    <div class="copyright">Copyright &#169; SHIRAMINE JINGU SHRINE All Rights Reserved.</div>
-  </div>
-</footer>
-<?php wp_footer(); ?>
+  <footer class="english-page-footer">
+    <div class="wrapper">
+      <div class="copyright">Copyright &#169; SHIRAMINE JINGU SHRINE All Rights Reserved.</div>
+    </div>
+  </footer>
+  <?php wp_footer(); ?>
 </body>
 
 </html>

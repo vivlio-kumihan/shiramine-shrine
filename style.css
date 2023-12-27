@@ -1732,8 +1732,15 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   padding: 70px 15% 0;
   background-color: #fff;
+}
+.page main .container .bg section .contents:first-of-type, .page main .container .bg section .contents:last-of-type {
+  width: 100%;
+}
+.page main .container .bg section .contents:last-of-type {
+  padding-bottom: 100px;
 }
 .page main .container .bg section .contents:first-of-type {
   margin-top: 100px;
@@ -2962,6 +2969,10 @@ span.color-gold {
   .page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container .photos.ema, .page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container.reverse-irregularity-history .photos.ema, .page main .container.english .bg section .contents .gradually-appear .inner-contents .flex-container.irregularity-gosaizin .photos.ema, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container .photos.ema, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container.reverse-irregularity-history .photos.ema, .page main .container.english .bg section .contents .gradually-appear-long .inner-contents .flex-container.irregularity-gosaizin .photos.ema {
     flex-direction: column;
   }
+}
+
+.page main .container .bg section .contents .gradually-appear-long .inner-contents .flex-container div p.align-left {
+  text-align: left;
 }
 
 @media (width < 768px) {
