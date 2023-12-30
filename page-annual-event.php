@@ -123,7 +123,7 @@
                 <li>
                   <div class="date">11月15日</div>
                   <div class="subject">
-                    <div>伴緒社祭（御弓神事）&emsp;11：00</div>
+                    <div><span class="modal-open-trigger nov-15-tomonou">伴緒社祭（御弓神事）&emsp;11：00</span></div>
                     <div><span class="modal-open-trigger nov-15">七五三詣</span></div>
                   </div>
                 </li>
@@ -517,6 +517,34 @@
         </div>
       </div>
 
+      <div class="modal nov-15-tomonou">
+        <div class="container">
+          <button class="modal-close-btn">
+            <span></span>
+            <span></span>
+          </button>
+          <h4 class="annual-event-modal-header">伴緒社祭（御弓神事）</h4>
+          <h5 class="leading-square-header">11月15日&emsp;伴緒社祭（御弓神事）（午前11時）</h5>
+          <div class="flex-grid">
+            <div class="paragraph">
+              <p>保元の乱に崇徳天皇に馳せ参じた源為義（源氏の棟梁）と弓で名高い鎮西八郎為朝父子の二公をお祀りしています。11月15日の祭日には、御弓神事があります。なお、為朝公は琉球王家の祖となったという伝説があります。</p>
+            </div>
+            <div class="photo-frame">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/annual-event-1115-00-01.jpg" alt="">
+            </div>
+            <div class="photo-frame">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/annual-event-1115-00-02.jpg" alt="">
+            </div>
+            <div class="photo-frame">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/annual-event-1115-00-03.jpg" alt="">
+            </div>
+            <div class="photo-frame">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/annual-event-1115-00-04.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="modal nov-15">
         <div class="container">
           <button class="modal-close-btn">
@@ -631,7 +659,6 @@
         </div>
       </div>
     </div>
-  </div>
   </div>
 </main>
 

@@ -75,8 +75,8 @@
             background: url(./img/bg.jpg) repeat
             .modal-close-btn
               position: absolute
-              top: 60px
-              right: 60px
+              top: 30px
+              right: 40px
               width: 40px
               height: 40px
               border-radius: 50%
@@ -402,7 +402,34 @@
                   flex-direction: column
                 .photo-frame
                   grid-column: unset
-                  aspect-ratio: unset
+                  aspect-ratio: unset  
+
+// nov-15-00
+.page
+  main 
+    .contents
+      .container.annual-event
+        .modal.nov-15-tomonou
+          .container
+            padding: 5rem 4rem
+            .flex-grid
+              display: grid
+              grid-template-columns: repeat(2, 1fr)
+              .photo-frame:last-of-type
+                grid-column: 1/3
+.page
+  main 
+    .contents
+      +max(md)
+        .container.annual-event
+          .modal.nov-15-tomonou
+            .container
+              padding: 15px
+              .flex-grid
+                grid-template-columns: 1fr
+                .photo-frame:last-of-type
+                  grid-column: unset
+
 // nov-15
 .page
   main 
@@ -450,6 +477,30 @@
                 span
                   font-size: 1rem
                   font-weight: 400
+
+.page
+  main 
+    .contents
+      +max(lg)
+        .container.annual-event
+          .modal.nov-15
+            .container
+              padding: 5rem 2rem
+              .flex-grid:first-of-type
+                display: grid
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+                .paragraph
+                  grid-column: 1/2
+      +max(xl)
+        .container.annual-event
+          .modal.nov-15
+            .container
+              padding: 5rem 2rem
+              .flex-grid:first-of-type
+                display: grid
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+                .paragraph
+                  grid-column: 1/2
 .page
   main 
     .contents
@@ -457,6 +508,7 @@
         .container.annual-event
           .modal.nov-15
             .container
+              padding: 15px
               .flex-grid:first-of-type
                 display: block
                 grid-template-columns: repeat(1, 1fr)
@@ -484,40 +536,6 @@
                   span
                     font-size: 1rem
                     font-weight: 400
-
-.page
-  main 
-    .contents
-      +max(lg)
-        .container.annual-event
-          .modal.nov-15
-            .container
-              padding: 5rem 2rem
-              .flex-grid:first-of-type
-                display: grid
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
-                .paragraph
-                  grid-column: 1/2
-      +max(xl)
-        .container.annual-event
-          .modal.nov-15
-            .container
-              padding: 5rem 2rem
-              .flex-grid:first-of-type
-                display: grid
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
-                .paragraph
-                  grid-column: 1/2
-          
-          
-          
-
-
-
-
-
-
-
 
 // nov-23-01
 .page
@@ -552,6 +570,8 @@
                 margin-top: 20px
                 .photo-frame:last-of-type
                   grid-column: unset
+
+// smp全体の設定
 .media-screen-md
   display: none
 .page
