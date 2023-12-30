@@ -2,7 +2,7 @@
 
 <main>
   <?php if (is_home() || is_front_page()) : ?>
-    <video width="100%" height="100vh" autoplay loop muted playinline src="<?php echo get_template_directory_uri(); ?>/img/shiramine_imgmov3.mp4"></video>
+    <video width="100%" height="100vh" autoplay muted playsinline loop src="<?php echo get_template_directory_uri(); ?>/img/shiramine_imgmov3.mp4"></video>
   <?php else : ?>
     //トップページ以外に表示させたい内容を記述
     other contents
@@ -14,7 +14,7 @@
       <p class="scroll-down-mark blink">scroll</p>
     </section>
     <div class="bg">
-      <section class="information gradually-appear">
+      <section class="information gradually-appear-long">
         <div class="topics">
           <h2>お知らせ／トピックス</h2>
           <div class="wrapper">
@@ -55,11 +55,9 @@
         </div>
         <div class="sns-post">
           <div class="instagram-post">
-			  <?php echo do_shortcode('[instagram-feed feed=1]'); ?>
+            <?php echo do_shortcode('[instagram-feed feed=1]'); ?>
           </div>
           <div class="twitter-post">
-            <!-- <a class="twitter-timeline" data-width="335" data-height="400" href="https://twitter.com/shiramine_jingu?ref_src=twsrc%5Etfw">Tweets by shiramine_jingu</a>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
             <a class="twitter-timeline" data-lang="ja" href="https://twitter.com/shiramine_jingu?ref_src=twsrc%5Etfw"></a>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             <!-- <a class="twitter-timeline" data-lang="ja" data-width="400" data-height="300" href="https://twitter.com/shiramine_jingu?ref_src=twsrc%5Etfw">Tweets by shiramine_jingu</a> -->

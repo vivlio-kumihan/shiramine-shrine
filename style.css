@@ -913,6 +913,7 @@ body .page-top-arrow {
   transform: translate(-50%, -50%);
   -o-object-fit: contain;
      object-fit: contain;
+  width: 100%;
 }
 .home.blog main .contents .title .scroll-down-mark, .page main .contents .title .scroll-down-mark {
   position: absolute;
@@ -1537,6 +1538,9 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   .home header .wrapper .logo-space div p:first-of-type, .page header .wrapper .logo-space div p:first-of-type, .single header .wrapper .logo-space div p:first-of-type, .archive header .wrapper .logo-space div p:first-of-type {
     display: none;
   }
+  .home header .wrapper .logo-space div p.shrine-name, .page header .wrapper .logo-space div p.shrine-name, .single header .wrapper .logo-space div p.shrine-name, .archive header .wrapper .logo-space div p.shrine-name {
+    font-size: 1.35rem;
+  }
   .home header .wrapper .logo-space .logo, .page header .wrapper .logo-space .logo, .single header .wrapper .logo-space .logo, .archive header .wrapper .logo-space .logo {
     width: 45px;
   }
@@ -1550,7 +1554,6 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   }
   .home header .wrapper, .page header .wrapper, .single header .wrapper, .archive header .wrapper {
     display: block;
-    position: relative;
   }
   .home header .wrapper .logo-space, .page header .wrapper .logo-space, .single header .wrapper .logo-space, .archive header .wrapper .logo-space {
     position: absolute;
@@ -3010,7 +3013,7 @@ span.color-gold {
 }
 .page main .contents .container.guide-shrine .bg section .contents.guide-map .header {
   width: 100%;
-  padding: 100px 100px 0;
+  padding: 140px 100px 0;
 }
 .page main .contents .container.guide-shrine .bg section .contents.guide-map .header h3 {
   letter-spacing: 0.1em;

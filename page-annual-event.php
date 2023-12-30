@@ -190,7 +190,7 @@
             <span></span>
             <span></span>
           </button>
-          <h4 class="annual-event-modal-header">子供の日&emsp;武道繁栄奨励祭</h4>
+          <h4 id="children-day" class="annual-event-modal-header">子供の日&emsp;武道繁栄奨励祭</h4>
           <p class="left-side-caption">斎行&emsp;8時30分～</p>
           <div class="flex-grid">
             <div class="photo-frame">

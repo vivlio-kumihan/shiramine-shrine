@@ -12,9 +12,9 @@
           <li class="access-tel-fax"><span class="en-tume01">FAX</span>：075-441-3820</li>
         </ul>
         <ul>
-          <li>交通（アクセス）</li>
-          <li>|</li>
-          <li>お問い合わせ</li>
+          <li><a href="<?php echo esc_url(home_url('/access/')); ?>">交通（アクセス）</a></li>
+          <!-- <li>|</li>
+          <li><a href="<?php echo esc_url(home_url('/contact/')); ?>">お問い合わせ</a></li> -->
         </ul>
         <ul>
           <li><a href="https://www.instagram.com/shiramine_jingu/" class="icon-instagram"></a></li>
