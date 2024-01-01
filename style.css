@@ -2792,18 +2792,22 @@ span.color-gold {
   bottom: -490%;
 }
 
+.page main .contents .container.contact.ireg .bg section .contents.contact .gradually-appear .wpcf7.js #wpcf7cpcnf .wpcf7cp-btns > .wpcf7-form-control {
+  padding: 1rem 2rem;
+}
+
 @media (width < 768px) {
-  .page main .contents .container.contact .bg section .contents.contact {
+  .page main .contents .container.contact.ireg .bg section .contents.contact {
     margin-top: 0;
     padding: 70px 0 80px;
   }
-  .page main .contents .container.contact .bg section .contents.contact .gradually-appear, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long {
+  .page main .contents .container.contact.ireg .bg section .contents.contact .gradually-appear, .page main .contents .container.contact.ireg .bg section .contents.contact .gradually-appear-long {
     margin-top: 0;
   }
-  .page main .contents .container.contact .bg section .contents.contact .gradually-appear h3::before, .page main .contents .container.contact .bg section .contents.contact .gradually-appear h3::after, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long h3::before, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long h3::after {
+  .page main .contents .container.contact.ireg .bg section .contents.contact .gradually-appear h3::before, .page main .contents .container.contact.ireg .bg section .contents.contact .gradually-appear h3::after, .page main .contents .container.contact.ireg .bg section .contents.contact .gradually-appear-long h3::before, .page main .contents .container.contact.ireg .bg section .contents.contact .gradually-appear-long h3::after {
     width: calc(50% - 95px);
   }
-  .page main .contents .container.contact .bg section .contents.contact .gradually-appear p, .page main .contents .container.contact .bg section .contents.contact .gradually-appear .wrapper, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long p, .page main .contents .container.contact .bg section .contents.contact .gradually-appear-long .wrapper {
+  .page main .contents .container.contact.ireg .bg section .contents.contact .gradually-appear p, .page main .contents .container.contact.ireg .bg section .contents.contact .gradually-appear .wrapper, .page main .contents .container.contact.ireg .bg section .contents.contact .gradually-appear-long p, .page main .contents .container.contact.ireg .bg section .contents.contact .gradually-appear-long .wrapper {
     padding: 0 1rem;
   }
 }
@@ -3836,6 +3840,7 @@ span.color-gold {
   border: 1px solid #333;
 }
 .page main .contents .container.prayer .form div dd p span textarea, .page main .contents .container.contact .form div dd p span textarea, .page main .contents .container.access .form div dd p span textarea {
+  padding: 0.5rem 1rem;
   width: 100%;
   height: 15rem;
   border: 1px solid #333;

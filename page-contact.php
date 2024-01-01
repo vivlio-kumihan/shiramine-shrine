@@ -10,7 +10,7 @@
       </div>
     <?php endif; ?>
 
-    <div class="container contact">
+    <div class="container contact ireg">
       <div class="bg">
         <section>
           <ul class="bread-crumb">

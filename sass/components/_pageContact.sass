@@ -34,12 +34,28 @@
                   span
                     .wpcf7-not-valid-tip
                       bottom: -490%
+
+// お問い合わせの送信時のボタン
+.page 
+  main 
+    .contents
+      .container.contact.ireg
+        .bg
+          section
+            .contents.contact
+              .gradually-appear
+                .wpcf7.js
+                  #wpcf7cpcnf
+                    .wpcf7cp-btns
+                      > .wpcf7-form-control
+                        padding: 1rem 2rem           
+
 // for sm
 .page
   main
     .contents
       +max(md)
-        .container.contact
+        .container.contact.ireg
           .bg
             section
               .contents.contact
