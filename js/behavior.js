@@ -12,7 +12,10 @@ if (document.querySelector('body.home')) {
 }
 
 // スクリーンサイズに応じて文言を変更する
-if (document.querySelector('.page')) {
+// ローカル
+// if (document.querySelector('.page.page-id-10')) {
+// 本サイト
+if (document.querySelector('.page.page-id-23')) {
   const handleUpdateText = () => {
     const changeWord = document.querySelector(".changeWord");
     if (window.innerWidth < 768) {
