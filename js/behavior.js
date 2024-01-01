@@ -12,7 +12,7 @@ if (document.querySelector('body.home')) {
 }
 
 // スクリーンサイズに応じて文言を変更する
-if (document.querySelector('body.page-id-10')) {
+if (document.querySelector('.page')) {
   const handleUpdateText = () => {
     const changeWord = document.querySelector(".changeWord");
     if (window.innerWidth < 768) {

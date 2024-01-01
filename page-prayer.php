@@ -51,7 +51,7 @@
               <p>FAXでのお申込みができない方は、下記フォームよりお申込みできます。</p>
               <p>ご記入いただいたメールアドレスにEメールが届きますので、</p>
               <p>撮影した郵便振込用紙を添付のうえご返信ください。</p>
-              <?php echo do_shortcode('[contact-form-7 id="1692886" title="prayer-form"]') ?>
+              <?php echo do_shortcode('[contact-form-7 id="a044f99" title="prayer-form"]') ?>
             </div>
           </div>
 
