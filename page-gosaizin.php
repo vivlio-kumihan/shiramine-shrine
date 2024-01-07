@@ -71,7 +71,7 @@
               <h3 class="none-letter-space">崇敬の意義</h3>
               <div class="inner-contents">
                 <div class="flex-container reverse-irregularity-gosaizin">
-                  <div class="size-small">
+                  <div class="size-small card">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/about-gosaizin-card03.png" alt="">
                   </div>
                   <div class="paragraph">

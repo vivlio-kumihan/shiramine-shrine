@@ -297,3 +297,79 @@
                 +max(md)
                   .flex-container
                     // margin-top: 30px
+
+.page
+  main
+    .container
+      .bg
+        section
+          .contents
+            .gradually-appear, .gradually-appear-long
+              .inner-contents
+                +max(lg)
+                  .flex-container, .flex-container.reverse-irregularity-history         
+                    display: block
+                    div
+                      p
+                        margin-top: 30px
+.page
+  main
+    .container
+      .bg
+        +max(lg)
+          section.chronology
+            .contents  
+              margin-top: 60px
+              padding: 0 0 80px                               
+.page
+  main
+    .container
+      .bg
+        section
+          .contents
+            .gradually-appear-long
+              .inner-contents
+                .flex-container.irregularity-gosaizin
+                  .size-small
+                    +max(lg)
+                      img
+                        width: 50%
+.page
+  main
+    .container
+      .bg
+        section
+          .contents
+            .gradually-appear-long
+              .inner-contents
+                .flex-container.reverse-irregularity-gosaizin
+                  +max(lg)
+                    .size-small.card
+                      padding-top: 0
+                      img
+                        width: 60%
+
+.page
+  main
+    .container.gobyo
+      .bg
+        section
+          +max(lg)
+            .contents
+              .gradually-appear-long
+                .inner-contents
+                  .flex-container
+                    div
+                      h4
+                        margin: 10px 0 0
+                      p
+                        margin-top: 0
+                        &.lead-copy-gobyo
+                          margin: 20px 0 0
+              &:last-of-type
+                .gradually-appear-long
+                  .inner-contents
+                    .flex-container
+                      div
+                        p
+                          margin-top: 20px
