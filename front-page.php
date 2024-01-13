@@ -67,7 +67,7 @@
       </section>
       <section class="about">
         <div class="frame gradually-appear">
-          <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/information-appearance@2x.png" alt="">
+          <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/information-appearance@2x.png" alt="白峯神宮拝殿">
         </div>
         <div class="catch-copy ">
           <h2>
@@ -82,7 +82,7 @@
 
       <section class="annual-event">
         <div class="frame gradually-appear">
-          <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/annual-event-play-kemari@2x.png" alt="">
+          <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/annual-event-play-kemari@2x.png" alt="蹴鞠をしている様子">
         </div>
         <div class="gradually-appear">
           <div class="catch-copy">
@@ -109,13 +109,13 @@
         <ul class="hover-bright">
           <li>
             <a href="<?php echo esc_url(home_url('/prayer/')); ?>">
-              <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/index-page-link-to-prayer-image.jpg" alt="">
+              <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/index-page-link-to-prayer-image.jpg" alt="祈祷をしている様子">
               <div class="catch">ご&emsp;祈&emsp;祷</div>
             </a>
           </li>
           <li>
             <a href="https://shiraminejingu.or.jp/omamori/">
-              <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/index-page-link-to-omamori-image.jpg" alt="">
+              <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/index-page-link-to-omamori-image.jpg" alt="授与品のイメージ画像">
               <div class="catch">お守り・授与品</div>
             </a>
           </li>

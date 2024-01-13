@@ -1,7 +1,7 @@
 <footer>
   <div class="wrapper">
     <a class="logo-space" href="<?php echo esc_url(home_url()); ?>">
-      <img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="">
+      <img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="白峯神宮のロゴ">
       <p>スポーツの守護神・武道上達の神・上昇気運氣運の神<br /><span>白峯神宮</span></p>
     </a>
     <div class="wrapper-grid">
@@ -73,10 +73,10 @@
 
       <div class="footer-right-links">
         <ul class="banner">
-          <li><a href="http://www.arimura.tv/" target="_blank"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/banner-03.png" alt=""></a></li>
-          <li><a href="https://www.eonet.ne.jp/~hakamaya/" target="_blank"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/banner-01.png" alt=""></a></li>
-          <li><a href="https://www.oe-co.jp/" target="_blank"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/banner-02.png" alt=""></a></li>
-          <li><a href="https://www.kodama-sekizai.net/" target="_blank"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/banner-04.png" alt=""></a></li>
+          <li><a href="http://www.arimura.tv/" target="_blank"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/banner-03.png" alt="ありむら治子WEBサイトバナーのイメージ"></a></li>
+          <li><a href="https://www.eonet.ne.jp/~hakamaya/" target="_blank"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/banner-01.png" alt="神社のはかま屋WEBサイトバナーのイメージ"></a></li>
+          <li><a href="https://www.oe-co.jp/" target="_blank"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/banner-02.png" alt="ブライダルハウスオエWEBサイトバナーのイメージ"></a></li>
+          <li><a href="https://www.kodama-sekizai.net/" target="_blank"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/banner-04.png" alt="児玉石材WEBサイトバナーのイメージ"></a></li>
         </ul>
       </div>
     </div>

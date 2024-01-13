@@ -129,8 +129,8 @@
             background: url(./img/bg.jpg) repeat
             .modal-close-btn
               position: absolute
-              top: 60px
-              right: 60px
+              top: 30px
+              right: 30px
               width: 40px
               height: 40px
               border-radius: 50%
@@ -650,3 +650,50 @@
                       object-fit: cover
                     figcaption
                       padding-top: 10px
+
+.page
+  main
+    .contents
+      .container.guide-shrine
+        .modal.ogatama-no-ki
+          .container
+            .flex-grid
+              display: block
+              .photo-frame
+                margin: 20px 0
+            ul
+              margin: 30px 0
+// ganshyug              
+.page
+  main
+    .contents
+      .container.guide-shrine
+        +max(lg)
+          .modal.ganshyug
+            .container
+              .flex-grid
+                display: block
+                .photo-frame
+                  margin: 20px 0
+.page
+  main
+    .contents
+      .container.guide-shrine
+        +max(lg)
+          .modal.kaji-no-ki
+            .container
+              .flex-grid
+                grid-template-columns: 1fr
+                .photos
+                  flex-direction: row
+                  > .photo-frame
+                    height: 100%
+.page
+  main
+    .contents
+      .container.guide-shrine
+        +max(lg)
+          .modal.sanyo-no-matsu
+            .container
+              .flex-grid
+                grid-template-columns: 1fr

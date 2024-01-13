@@ -32,7 +32,7 @@
                 <p class="note">※<span class="changeWord"></span>の項目からお選びください。</p>
               </div>
               <div class="Illustrative-map">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/guide-map.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/guide-map.jpg" alt="白峰神社外観図">
                 <ul>
                   <li>
                     <div class="modal-open-trigger jisyushya">地主社（じしゅしゃ）</div>
@@ -61,7 +61,7 @@
                 <li>
                   <div class="modal-open-trigger ogatama-no-ki">
                     <div class="photo-frame">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-01.jpg" alt="">
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-01.jpg" alt="小賀玉の木の枝と実">
                     </div>
                     <h4>小賀玉の木</h4>
                     <p>その名は招霊（おぎたま、霊を招くの意）が、なまったものとも言われるところから、神社の境内によく植えられています。</p>
@@ -70,7 +70,7 @@
                 <li>
                   <div class="modal-open-trigger ganshyuge">
                     <div class="photo-frame">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-02.jpg" alt="">
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-02.jpg" alt="含笑花の花">
                     </div>
                     <h4 class="header-ganshyuge"><ruby>含笑花<rt>ガンシュウゲ</rt></ruby></h4>
 
@@ -80,7 +80,7 @@
                 <li>
                   <div class="modal-open-trigger mukuroji-no-ki">
                     <div class="photo-frame">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-03.jpg" alt="">
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-03.jpg" alt="ムクロジの木の実">
                     </div>
                     <h4>ムクロジの木</h4>
                     <p>無患子・無患樹・木患子、子が患うこの無い樹の意味です。山地に生え、15m～20mになる落葉高木。</p>
@@ -89,7 +89,7 @@
                 <li>
                   <div class="modal-open-trigger kaji-no-ki">
                     <div class="photo-frame">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-04.jpg" alt="">
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-04.jpg" alt="梶の木のイメージ画像">
                     </div>
                     <h4>梶の木</h4>
                     <p>梶の木古代から、神に捧げる神木として尊ばれ、七夕祭に「歌」を葉に直接ヘラなどで書きお供えしました。</p>
@@ -98,7 +98,7 @@
                 <li>
                   <div class="modal-open-trigger ukon-no-tachibana">
                     <div class="photo-frame">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-05.jpg" alt="">
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-05.jpg" alt="右近の橘の花">
                     </div>
                     <h4>右近の橘</h4>
                   </div>
@@ -106,7 +106,7 @@
                 <li>
                   <div class="modal-open-trigger ukon-no-sakura">
                     <div class="photo-frame">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-06.jpg" alt="">
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-06.jpg" alt="鬱金の桜の花">
                     </div>
                     <h4>鬱金の桜（黄桜）</h4>
                   </div>
@@ -114,7 +114,7 @@
                 <li>
                   <div class="modal-open-trigger sanyo-no-matsu">
                     <div class="photo-frame">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-07.jpg" alt="">
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-07.jpg" alt="三葉の松の葉">
                     </div>
                     <h4>三葉の松</h4>
                     <p>昔から日本では、豊饒と平安をもたらす神霊が、松を伝って地上に降臨すると信じられ、昔物語や伝説に登場し、神聖な木として崇めていて、新年の家門に飾る門松は同じ意味で神の降臨を願ってのことです。</p>
@@ -123,7 +123,7 @@
                 <li>
                   <div class="modal-open-trigger four-seasons">
                     <div class="photo-frame">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-08.jpg" alt="">
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-08.jpg" alt="珊瑚樹の実">
                     </div>
                     <h4>季節の花</h4>
                   </div>
@@ -144,28 +144,28 @@
           <h4 class="guide-shrine-modal-header">地主社</h4>
           <div class="flex-grid">
             <div class="photo-frame">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-jisyusya-01.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-jisyusya-01.jpg" alt="地主社本殿">
             </div>
             <div class="photo-frame">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-jisyusya-02.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-jisyusya-02.jpg" alt="地主社への捧げ物">
             </div>
           </div>
           <h5 class="leading-square-header">あらゆるスポーツの神様です。</h5>
           <div class="flex-grid">
             <div class="photo-frame">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-jisyusya-03.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-jisyusya-03.jpg" alt="地主社への捧げ物のサッカーボール">
             </div>
             <div class="photo-frame">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-jisyusya-04.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-jisyusya-04.jpg" alt="地主社への捧げ物のサッカーボール">
             </div>
             <div class="photo-frame">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-jisyusya-05.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-jisyusya-05.jpg" alt="神額">
             </div>
             <div class="photo-frame">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-jisyusya-06.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-jisyusya-06.jpg" alt="地主社への捧げ物のバレーボール">
             </div>
             <div class="photo-frame">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-jisyusya-07.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-jisyusya-07.jpg" alt="地主社への捧げ物のラグビーボール">
             </div>
           </div>
           <dl>
@@ -214,7 +214,7 @@
               <p>当社は昭和30年11月23日に本殿にて御火焚祭斎行中、火炎の中に出現せられたのをもって、水神(潜龍大神)として御宮を創建、翌年より今日に至るまで11月23日には毎年潜龍講大祭が斎行されています。</p>
             </div>
             <div class="photo-frame">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-senryusya.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-senryusya.jpg" alt="潜龍大神のお宮">
             </div>
           </div>
           <p>この御祭神の鎮まり坐す潜龍井から湧き出でています。ご利益は家系にまつわる諸々の悪縁を断ち、盗難災難除、病気平癒、事業隆昌に霊験あらたかな神で崇敬も篤く崇められて来ました。</p>
@@ -232,14 +232,14 @@
           <h4 class="guide-shrine-modal-header">伴緒社</h4>
           <div class="flex-grid">
             <figure>
-              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-tomonosha-01.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-tomonosha-01.jpg" alt="源為朝公の肖像">
               <figcaption>源為朝公</figcaption>
             </figure>
             <div class="photo-frame">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-tomonosha-02.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-tomonosha-02.jpg" alt="伴緒社のお宮">
             </div>
             <figure>
-              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-tomonosha-03.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-tomonosha-03.jpg" alt="源為義公の肖像">
               <figcaption>源為義公</figcaption>
             </figure>
           </div>
@@ -250,11 +250,11 @@
           <p>伴緒社祭（武道・弓道上達）小笠原教場による御弓神事&emsp;11月15日</p>
           <div class="flex-grid">
             <figure>
-              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-tomonosha-04.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-tomonosha-04.jpg" alt="古武道奉納演武の実演風景">
               <figcaption>古武道奉納演武</figcaption>
             </figure>
             <figure>
-              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-tomonosha-05.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-tomonosha-05.jpg" alt="御弓神事で矢を射ている風景">
               <figcaption>御弓神事</figcaption>
             </figure>
           </div>
@@ -275,7 +275,7 @@
               <p><em>清少納言は『枕草子』168段</em>に『飛鳥井は、ほりかねの井。走り井は逢坂なるがをかしき。山の井、さしも浅きためしになりはじめけむ。<em>飛鳥井「みもひも寒し」と、ほめたるこそをかしけれ。</em>玉の井、少将ノ井、櫻井、后町の井。千貫の井。』と九つの名水をあげていますが、明確に現存するのは本井戸だけです。</p>
             </div>
             <div class="photo-frame">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-temizusya-01.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-temizusya-01.jpg" alt="手水舎の飛鳥井">
             </div>
           </div>
           <p>当時の清少納言も楽しんだ名水です。</p>
@@ -284,7 +284,7 @@
           <h5 class="leading-square-header">潜龍井（笑い龍）</h5>
           <div class="flex-grid">
             <div class="photo-frame">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-temizusya-02.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-temizusya-02.jpg" alt="手水舎の潜龍井">
             </div>
             <div class="paragraph">
               <p><em>潜龍大明神の御神体</em>とされる本井戸は、飛鳥井からほんの50mほど離れているだけですが、同じ地所でも深さが違うと、全く違った水脈源になり、水温も異なっています。</p>
@@ -317,7 +317,7 @@
               <p>この木が京都では最大のもので、京都市指定天然記念物に指定されています。</p>
             </div>
             <div class="photo-frame">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-ogatama-01.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-ogatama-01.jpg" alt="小賀玉の木">
             </div>
           </div>
           <ul>
@@ -327,13 +327,13 @@
           </ul>
           <div class="photos">
             <div class="photo-frame">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-ogatama-02.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-ogatama-02.jpg" alt="小賀玉の木">
             </div>
             <div class="photo-frame">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-ogatama-03.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-ogatama-03.jpg" alt="小賀玉の木と手水舎">
             </div>
             <div class="photo-frame">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-ogatama-04.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-ogatama-04.jpg" alt="小賀玉の木の実">
             </div>
           </div>
         </div>
@@ -366,7 +366,7 @@
               </div>
             </div>
             <div class="photo-frame">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-gansyouge.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-gansyouge.jpg" alt="含笑花が咲いている様子">
             </div>
           </div>
           <p>和名の「トウオガタマ（唐招魂）」は、日本自生の「オガタマノキ（招魂の木）」と区別して中国のオガタマノキという意味から、この名前がつけられたと思われます。</p>
@@ -399,13 +399,13 @@
             </div>
             <div class="photos">
               <div class="photo-frame">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-mukuroji-01.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-mukuroji-01.jpg" alt="ムクロジの木">
               </div>
               <div class="photo-frame">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-mukuroji-02.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-mukuroji-02.jpg" alt="ムクロジの木の実">
               </div>
               <div class="photo-frame">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-mukuroji-03.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-mukuroji-03.jpg" alt="ムクロジの木の実がなっている様子">
               </div>
             </div>
           </div>
@@ -438,10 +438,10 @@
             </div>
             <div class="photos">
               <div class="photo-frame">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-kajinoki-01.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-kajinoki-01.jpg" alt="梶の木">
               </div>
               <div class="photo-frame">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-kajinoki-02.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-kajinoki-02.jpg" alt="梶の木の葉">
               </div>
             </div>
           </div>
@@ -468,11 +468,11 @@
                 </div>
               </dl>
               <div class="photo-frame">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-ukontachibana-01.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-ukontachibana-01.jpg" alt="右近の橘の実がなっている様子">
               </div>
             </div>
             <div class="photo-frame">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-ukontachibana-02.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-ukontachibana-02.jpg" alt="右近の橘の花が咲いている様子">
             </div>
           </div>
         </div>
@@ -498,11 +498,11 @@
                 </div>
               </dl>
               <div class="photo-frame">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-ukonsakura-01.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-ukonsakura-01.jpg" alt="鬱金の桜の花が咲いている様子">
               </div>
             </div>
             <div class="photo-frame">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-ukonsakura-02.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-ukonsakura-02.jpg" alt="鬱金の桜">
             </div>
           </div>
         </div>
@@ -534,10 +534,10 @@
             </div>
             <div class="photos">
               <div class="photo-frame">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-sanyomatsu-01.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-sanyomatsu-01.jpg" alt="社務所の前に植えられている三葉の松">
               </div>
               <div class="photo-frame">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-sanyomatsu-02.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-sanyomatsu-02.png" alt="三葉の松と葉">
               </div>
             </div>
           </div>
@@ -553,15 +553,15 @@
           <h4 class="guide-shrine-modal-header">季節の花</h4>
           <div>
             <figure>
-              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-fourseason-01.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-fourseason-01.jpg" alt="花が咲いている椿">
               <figcaption>椿</figcaption>
             </figure>
             <figure>
-              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-fourseason-02.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-fourseason-02.jpg" alt="実のなった珊瑚樹">
               <figcaption>珊瑚樹</figcaption>
             </figure>
             <figure>
-              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-fourseason-03.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/guide-reiboku-fourseason-03.jpg" alt="花が咲いている百日紅">
               <figcaption>百日紅</figcaption>
             </figure>
           </div>

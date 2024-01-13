@@ -51,7 +51,7 @@
   <header id="header">
     <div class="wrapper">
       <a class="logo-space" href="<?php echo esc_url(home_url()); ?>">
-        <img class="logo header" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="">
+        <img class="logo header" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="白峯神宮のロゴ">
         <div>
           <p>スポーツの守護神<span>・</span><br />武道上達の神<span>・</span><br />上昇気運の神</p>
           <p class="shrine-name">白峯神宮</p>
@@ -66,7 +66,7 @@
             <li class="language">
               <button id="language" type="button">
                 <span>
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/icon-global-middle.png" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/icon-global-middle.png" alt="グローバルなイメージを想起させるピクトグラム">
                 </span>
                 Language
               </button>

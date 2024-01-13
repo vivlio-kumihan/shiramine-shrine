@@ -28,7 +28,7 @@
             </li>
           </ul>
           <h2>
-            <img class="bottom-up-90px" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="">
+            <img class="bottom-up-90px" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="白峯神宮のロゴ">
             御祭神と<br />御聖徳崇敬の意義
           </h2>
           <div class="contents">
@@ -37,7 +37,7 @@
               <div class="inner-contents">
                 <div class="flex-container irregularity-gosaizin">
                   <div class="size-small">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/about-gosaizin-emperor01.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/about-gosaizin-emperor01.png" alt="崇徳天皇の肖像">
                   </div>
                   <div class="paragraph">
                     <p>平安時代末の元永2年（1119）に鳥羽天皇の皇子として御降誕になりました。保安4年（1123）に第75代の天皇に御即位あそばされましたが、保元の乱（1156）に遭われて讃岐国へ配流遷奉され、同国に在られること8年の長寛2年（1164）8月に、45歳の聖寿を以って崩御なさいまして、その地の白峰山陵に奉葬されました。</p>
@@ -55,7 +55,7 @@
               <div class="inner-contents">
                 <div class="flex-container irregularity-gosaizin">
                   <div class="size-small">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/about-gosaizin-emperor02.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/about-gosaizin-emperor02.png" alt="淳仁天皇の肖像">
                   </div>
                   <div class="paragraph">
                     <p>『日本書紀』編纂の舎人親王の王子として、天平5年（733）御降誕になり、孝謙天皇（女帝）の皇太子として、続いて第47代の天皇に御即位あそばされました。</p>
@@ -72,7 +72,7 @@
               <div class="inner-contents">
                 <div class="flex-container reverse-irregularity-gosaizin">
                   <div class="size-small card">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/about-gosaizin-card03.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/about-gosaizin-card03.png" alt="御祭神由緒">
                   </div>
                   <div class="paragraph">
                     <p>当神宮は、かような歴史上御非運に会われた御二方の天皇の御神霊をお祀り申し上げております。しかしながら、両天皇の御治績をうかがう時、わが国の発展に示された御聖徳はまことに偉大でありながら、かつ御無念な御生涯であられたことを悲しむものです。かかる場合は、後世の人々がその聖徳を偲び、御霊を慰め奉ることが大切です。</p>
@@ -89,25 +89,25 @@
         <ul class="hover-bright">
           <li>
             <a href="<?php echo esc_url(home_url('/about/history/')); ?>">
-              <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/about-link-01-history.jpg" alt="">
+              <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/about-link-01-history.jpg" alt="白峯神宮本殿と拝殿">
               <div class="catch">白峯神宮&emsp;由緒</div>
             </a>
           </li>
           <li class="hover">
             <a href="<?php echo esc_url(home_url('/about/gosaizin/')); ?>">
-              <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/about-link-02-gosaizin.jpg" alt="">
+              <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/about-link-02-gosaizin.jpg" alt="崇徳天皇欽仰の碑">
               <div class="catch">御祭神と<br />御聖徳崇敬の意義</div>
             </a>
           </li>
           <li>
             <a href="<?php echo esc_url(home_url('/about/gobyo/')); ?>">
-              <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/about-link-03-gobyo.jpg" alt="">
+              <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/about-link-03-gobyo.jpg" alt="崇徳天皇御廟">
               <div class="catch">崇徳天皇<br />御廟所</div>
             </a>
           </li>
           <li>
             <a href="<?php echo esc_url(home_url('/about/chronology/')); ?>">
-              <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/about-link-04-chronology.jpg" alt="">
+              <img class="image" src="<?php echo get_template_directory_uri(); ?>/img/about-link-04-chronology.jpg" alt="白峯神宮にまつわるイラスト">
               <div class="catch">略&emsp;年&emsp;表</div>
             </a>
           </li>
