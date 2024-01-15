@@ -43,7 +43,7 @@
               <h3>FAXでのお申込み</h3>
               <p class="add-space-margin-bottom">FAX申込み後の御祈祷は、社務所到着後、翌日の午前中に執り行います。</p>
               <p>申込み用紙の印刷ができない方は、FAX申込み用紙の必要事項をご確認のうえ<br />他の紙に記載したものでも代用可能です。</p>
-              <button class="dl-pdf-btn"><a href="http://shiraminejingu.or.jp/files/fax_entry.pdf" target="_blank">ご祈祷ご案内FAX申込み用紙ダウンロード</a></button>
+              <button class="dl-pdf-btn"><a href="<?php echo get_theme_file_uri('/files/fax_entry_2024.pdf'); ?>" target="_blank">ご祈祷ご案内FAX申込み用紙ダウンロード</a></button>
             </div>
             <div class="gradually-appear-long mail-send">
               <h3>メールでのお申込み</h3>
