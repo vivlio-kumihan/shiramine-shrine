@@ -604,82 +604,82 @@ body .page-top-arrow {
   }
 }
 
-.home footer, .page footer, .archive footer {
+.home footer, .page footer, .archive footer, .error404 footer {
   width: 100%;
   font-size: 0.875rem;
 }
-.home footer .logo-space, .page footer .logo-space, .archive footer .logo-space {
+.home footer .logo-space, .page footer .logo-space, .archive footer .logo-space, .error404 footer .logo-space {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-left: 8%;
 }
-.home footer .logo-space .logo, .page footer .logo-space .logo, .archive footer .logo-space .logo {
+.home footer .logo-space .logo, .page footer .logo-space .logo, .archive footer .logo-space .logo, .error404 footer .logo-space .logo {
   width: 51px;
   aspect-ratio: 1;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.home footer .logo-space p, .page footer .logo-space p, .archive footer .logo-space p {
+.home footer .logo-space p, .page footer .logo-space p, .archive footer .logo-space p, .error404 footer .logo-space p {
   font-size: 0.75rem;
   font-weight: 600;
   line-height: 1.5;
 }
-.home footer .logo-space p span, .page footer .logo-space p span, .archive footer .logo-space p span {
+.home footer .logo-space p span, .page footer .logo-space p span, .archive footer .logo-space p span, .error404 footer .logo-space p span {
   font-size: 1.85rem;
   line-height: 1em;
 }
-.home footer .wrapper, .page footer .wrapper, .archive footer .wrapper {
+.home footer .wrapper, .page footer .wrapper, .archive footer .wrapper, .error404 footer .wrapper {
   background-color: #f6f6f6;
   width: 100%;
   margin: 0 auto;
   padding: 60px 0;
 }
-.home footer .wrapper .wrapper-grid, .page footer .wrapper .wrapper-grid, .archive footer .wrapper .wrapper-grid {
+.home footer .wrapper .wrapper-grid, .page footer .wrapper .wrapper-grid, .archive footer .wrapper .wrapper-grid, .error404 footer .wrapper .wrapper-grid {
   display: grid;
   -moz-column-gap: 20px;
        column-gap: 20px;
   padding: 0 7%;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links, .page footer .wrapper .wrapper-grid .footer-left-links, .archive footer .wrapper .wrapper-grid .footer-left-links {
+.home footer .wrapper .wrapper-grid .footer-left-links, .page footer .wrapper .wrapper-grid .footer-left-links, .archive footer .wrapper .wrapper-grid .footer-left-links, .error404 footer .wrapper .wrapper-grid .footer-left-links {
   padding-left: 70px;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links ul + ul, .page footer .wrapper .wrapper-grid .footer-left-links ul + ul, .archive footer .wrapper .wrapper-grid .footer-left-links ul + ul {
+.home footer .wrapper .wrapper-grid .footer-left-links ul + ul, .page footer .wrapper .wrapper-grid .footer-left-links ul + ul, .archive footer .wrapper .wrapper-grid .footer-left-links ul + ul, .error404 footer .wrapper .wrapper-grid .footer-left-links ul + ul {
   margin-top: 15px;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax, .page footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax, .archive footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax {
+.home footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax, .page footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax, .archive footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax, .error404 footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax {
   font-size: 1.75rem;
   line-height: 1.25em;
   letter-spacing: 0.1em;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span, .page footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span, .archive footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span {
+.home footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span, .page footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span, .archive footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span, .error404 footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span {
   font-size: 1.65rem;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span.en-tume01, .page footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span.en-tume01, .archive footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span.en-tume01 {
+.home footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span.en-tume01, .page footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span.en-tume01, .archive footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span.en-tume01, .error404 footer .wrapper .wrapper-grid .footer-left-links ul .access-tel-fax span.en-tume01 {
   letter-spacing: 0.075em;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(1), .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(1), .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(1) {
+.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(1), .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(1), .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(1), .error404 footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(1) {
   line-height: 1.5em;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(2), .home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3), .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(2), .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3), .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(2), .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) {
+.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(2), .home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3), .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(2), .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3), .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(2), .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3), .error404 footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(2), .error404 footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) {
   display: flex;
   gap: 10px;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3), .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3), .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) {
+.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3), .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3), .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3), .error404 footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) {
   display: flex;
   gap: 30px;
   margin-top: 50px;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li, .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li, .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li {
+.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li, .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li, .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li, .error404 footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li {
   position: relative;
   width: 2rem;
   height: 2rem;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a, .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a, .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a {
+.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a, .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a, .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a, .error404 footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a {
   display: block;
   height: 100%;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-instagram::before, .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-instagram::before, .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-instagram::before {
+.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-instagram::before, .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-instagram::before, .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-instagram::before, .error404 footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-instagram::before {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -688,7 +688,7 @@ body .page-top-arrow {
   font-family: "Font Awesome 6 Brands";
   font-weight: 900;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-twitter::before, .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-twitter::before, .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-twitter::before {
+.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-twitter::before, .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-twitter::before, .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-twitter::before, .error404 footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-twitter::before {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -699,29 +699,29 @@ body .page-top-arrow {
   background-size: 100%;
   opacity: 0.7;
 }
-.home footer .wrapper .wrapper-grid .footer-center-links, .page footer .wrapper .wrapper-grid .footer-center-links, .archive footer .wrapper .wrapper-grid .footer-center-links {
+.home footer .wrapper .wrapper-grid .footer-center-links, .page footer .wrapper .wrapper-grid .footer-center-links, .archive footer .wrapper .wrapper-grid .footer-center-links, .error404 footer .wrapper .wrapper-grid .footer-center-links {
   display: flex;
 }
-.home footer .wrapper .wrapper-grid .footer-center-links > ul > li + li, .page footer .wrapper .wrapper-grid .footer-center-links > ul > li + li, .archive footer .wrapper .wrapper-grid .footer-center-links > ul > li + li {
+.home footer .wrapper .wrapper-grid .footer-center-links > ul > li + li, .page footer .wrapper .wrapper-grid .footer-center-links > ul > li + li, .archive footer .wrapper .wrapper-grid .footer-center-links > ul > li + li, .error404 footer .wrapper .wrapper-grid .footer-center-links > ul > li + li {
   margin-top: 2rem;
 }
-.home footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2, .page footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2, .archive footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2 {
+.home footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2, .page footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2, .archive footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2, .error404 footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2 {
   position: unset;
   padding-bottom: 0;
   font-size: 0.875rem;
   font-weight: 500;
   text-align: left;
 }
-.home footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2::after, .page footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2::after, .archive footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2::after {
+.home footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2::after, .page footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2::after, .archive footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2::after, .error404 footer .wrapper .wrapper-grid .footer-center-links > ul > li > h2::after {
   display: none;
 }
-.home footer .wrapper .wrapper-grid .footer-center-links > ul > li div, .page footer .wrapper .wrapper-grid .footer-center-links > ul > li div, .archive footer .wrapper .wrapper-grid .footer-center-links > ul > li div {
+.home footer .wrapper .wrapper-grid .footer-center-links > ul > li div, .page footer .wrapper .wrapper-grid .footer-center-links > ul > li div, .archive footer .wrapper .wrapper-grid .footer-center-links > ul > li div, .error404 footer .wrapper .wrapper-grid .footer-center-links > ul > li div {
   width: 100%;
   position: relative;
   padding: 1em 0 0 2em;
   line-height: 1.2;
 }
-.home footer .wrapper .wrapper-grid .footer-center-links > ul > li div::before, .page footer .wrapper .wrapper-grid .footer-center-links > ul > li div::before, .archive footer .wrapper .wrapper-grid .footer-center-links > ul > li div::before {
+.home footer .wrapper .wrapper-grid .footer-center-links > ul > li div::before, .page footer .wrapper .wrapper-grid .footer-center-links > ul > li div::before, .archive footer .wrapper .wrapper-grid .footer-center-links > ul > li div::before, .error404 footer .wrapper .wrapper-grid .footer-center-links > ul > li div::before {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -737,27 +737,27 @@ body .page-top-arrow {
   border-right: 0;
   transition: 0.5s;
 }
-.home footer .wrapper .wrapper-grid .footer-center-links > ul > li div:hover::before, .page footer .wrapper .wrapper-grid .footer-center-links > ul > li div:hover::before, .archive footer .wrapper .wrapper-grid .footer-center-links > ul > li div:hover::before {
+.home footer .wrapper .wrapper-grid .footer-center-links > ul > li div:hover::before, .page footer .wrapper .wrapper-grid .footer-center-links > ul > li div:hover::before, .archive footer .wrapper .wrapper-grid .footer-center-links > ul > li div:hover::before, .error404 footer .wrapper .wrapper-grid .footer-center-links > ul > li div:hover::before {
   left: 1rem;
   opacity: 0.5;
 }
-.home footer .wrapper .wrapper-grid .footer-center-links > ul > li div a, .page footer .wrapper .wrapper-grid .footer-center-links > ul > li div a, .archive footer .wrapper .wrapper-grid .footer-center-links > ul > li div a {
+.home footer .wrapper .wrapper-grid .footer-center-links > ul > li div a, .page footer .wrapper .wrapper-grid .footer-center-links > ul > li div a, .archive footer .wrapper .wrapper-grid .footer-center-links > ul > li div a, .error404 footer .wrapper .wrapper-grid .footer-center-links > ul > li div a {
   display: block;
   height: 100%;
 }
-.home footer .wrapper .wrapper-grid .footer-right-links .banner li + li, .page footer .wrapper .wrapper-grid .footer-right-links .banner li + li, .archive footer .wrapper .wrapper-grid .footer-right-links .banner li + li {
+.home footer .wrapper .wrapper-grid .footer-right-links .banner li + li, .page footer .wrapper .wrapper-grid .footer-right-links .banner li + li, .archive footer .wrapper .wrapper-grid .footer-right-links .banner li + li, .error404 footer .wrapper .wrapper-grid .footer-right-links .banner li + li {
   margin-top: 30px;
 }
-.home footer .wrapper .wrapper-grid .footer-right-links .banner li a, .page footer .wrapper .wrapper-grid .footer-right-links .banner li a, .archive footer .wrapper .wrapper-grid .footer-right-links .banner li a {
+.home footer .wrapper .wrapper-grid .footer-right-links .banner li a, .page footer .wrapper .wrapper-grid .footer-right-links .banner li a, .archive footer .wrapper .wrapper-grid .footer-right-links .banner li a, .error404 footer .wrapper .wrapper-grid .footer-right-links .banner li a {
   display: block;
   width: 100%;
 }
-.home footer .wrapper .wrapper-grid .footer-right-links .banner li a img, .page footer .wrapper .wrapper-grid .footer-right-links .banner li a img, .archive footer .wrapper .wrapper-grid .footer-right-links .banner li a img {
+.home footer .wrapper .wrapper-grid .footer-right-links .banner li a img, .page footer .wrapper .wrapper-grid .footer-right-links .banner li a img, .archive footer .wrapper .wrapper-grid .footer-right-links .banner li a img, .error404 footer .wrapper .wrapper-grid .footer-right-links .banner li a img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.home footer .wrapper .copyright, .page footer .wrapper .copyright, .archive footer .wrapper .copyright {
+.home footer .wrapper .copyright, .page footer .wrapper .copyright, .archive footer .wrapper .copyright, .error404 footer .wrapper .copyright {
   margin-top: 80px;
   text-align: center;
   font-size: 0.8rem;
@@ -1282,7 +1282,7 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   border: 1px solid #666;
 }
 
-.home header, .page header, .single header, .archive header {
+.home header, .page header, .single header, .archive header, .error404 header {
   display: flex;
   justify-content: center;
   position: fixed;
@@ -1295,7 +1295,7 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   opacity: 0.95;
   z-index: 104;
 }
-.home header .wrapper, .page header .wrapper, .single header .wrapper, .archive header .wrapper {
+.home header .wrapper, .page header .wrapper, .single header .wrapper, .archive header .wrapper, .error404 header .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1303,53 +1303,53 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   height: 120px;
   padding: 0 50px;
 }
-.home header .wrapper .logo-space, .page header .wrapper .logo-space, .single header .wrapper .logo-space, .archive header .wrapper .logo-space {
+.home header .wrapper .logo-space, .page header .wrapper .logo-space, .single header .wrapper .logo-space, .archive header .wrapper .logo-space, .error404 header .wrapper .logo-space {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.home header .wrapper .logo-space .logo, .page header .wrapper .logo-space .logo, .single header .wrapper .logo-space .logo, .archive header .wrapper .logo-space .logo {
+.home header .wrapper .logo-space .logo, .page header .wrapper .logo-space .logo, .single header .wrapper .logo-space .logo, .archive header .wrapper .logo-space .logo, .error404 header .wrapper .logo-space .logo {
   width: 60px;
   aspect-ratio: 1;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.home header .wrapper .logo-space p, .page header .wrapper .logo-space p, .single header .wrapper .logo-space p, .archive header .wrapper .logo-space p {
+.home header .wrapper .logo-space p, .page header .wrapper .logo-space p, .single header .wrapper .logo-space p, .archive header .wrapper .logo-space p, .error404 header .wrapper .logo-space p {
   font-size: 0.75rem;
   font-weight: 600;
   line-height: 1.5;
 }
-.home header .wrapper .logo-space p.shrine-name, .page header .wrapper .logo-space p.shrine-name, .single header .wrapper .logo-space p.shrine-name, .archive header .wrapper .logo-space p.shrine-name {
+.home header .wrapper .logo-space p.shrine-name, .page header .wrapper .logo-space p.shrine-name, .single header .wrapper .logo-space p.shrine-name, .archive header .wrapper .logo-space p.shrine-name, .error404 header .wrapper .logo-space p.shrine-name {
   font-size: 1.85rem;
   line-height: 1em;
 }
-.home header .wrapper .global-menu, .page header .wrapper .global-menu, .single header .wrapper .global-menu, .archive header .wrapper .global-menu {
+.home header .wrapper .global-menu, .page header .wrapper .global-menu, .single header .wrapper .global-menu, .archive header .wrapper .global-menu, .error404 header .wrapper .global-menu {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
   margin-left: auto;
 }
-.home header .wrapper .global-menu .upper ul, .home header .wrapper .global-menu .lower ul, .page header .wrapper .global-menu .upper ul, .page header .wrapper .global-menu .lower ul, .single header .wrapper .global-menu .upper ul, .single header .wrapper .global-menu .lower ul, .archive header .wrapper .global-menu .upper ul, .archive header .wrapper .global-menu .lower ul {
+.home header .wrapper .global-menu .upper ul, .home header .wrapper .global-menu .lower ul, .page header .wrapper .global-menu .upper ul, .page header .wrapper .global-menu .lower ul, .single header .wrapper .global-menu .upper ul, .single header .wrapper .global-menu .lower ul, .archive header .wrapper .global-menu .upper ul, .archive header .wrapper .global-menu .lower ul, .error404 header .wrapper .global-menu .upper ul, .error404 header .wrapper .global-menu .lower ul {
   display: flex;
   justify-content: space-between;
   gap: 40px;
   font-size: 0.9rem;
   font-weight: 600;
 }
-.home header .wrapper .global-menu .upper ul li.menu-item, .home header .wrapper .global-menu .lower ul li.menu-item, .page header .wrapper .global-menu .upper ul li.menu-item, .page header .wrapper .global-menu .lower ul li.menu-item, .single header .wrapper .global-menu .upper ul li.menu-item, .single header .wrapper .global-menu .lower ul li.menu-item, .archive header .wrapper .global-menu .upper ul li.menu-item, .archive header .wrapper .global-menu .lower ul li.menu-item {
+.home header .wrapper .global-menu .upper ul li.menu-item, .home header .wrapper .global-menu .lower ul li.menu-item, .page header .wrapper .global-menu .upper ul li.menu-item, .page header .wrapper .global-menu .lower ul li.menu-item, .single header .wrapper .global-menu .upper ul li.menu-item, .single header .wrapper .global-menu .lower ul li.menu-item, .archive header .wrapper .global-menu .upper ul li.menu-item, .archive header .wrapper .global-menu .lower ul li.menu-item, .error404 header .wrapper .global-menu .upper ul li.menu-item, .error404 header .wrapper .global-menu .lower ul li.menu-item {
   position: relative;
   transition: 0.3s;
 }
-.home header .wrapper .global-menu .upper ul li.menu-item a, .home header .wrapper .global-menu .lower ul li.menu-item a, .page header .wrapper .global-menu .upper ul li.menu-item a, .page header .wrapper .global-menu .lower ul li.menu-item a, .single header .wrapper .global-menu .upper ul li.menu-item a, .single header .wrapper .global-menu .lower ul li.menu-item a, .archive header .wrapper .global-menu .upper ul li.menu-item a, .archive header .wrapper .global-menu .lower ul li.menu-item a {
+.home header .wrapper .global-menu .upper ul li.menu-item a, .home header .wrapper .global-menu .lower ul li.menu-item a, .page header .wrapper .global-menu .upper ul li.menu-item a, .page header .wrapper .global-menu .lower ul li.menu-item a, .single header .wrapper .global-menu .upper ul li.menu-item a, .single header .wrapper .global-menu .lower ul li.menu-item a, .archive header .wrapper .global-menu .upper ul li.menu-item a, .archive header .wrapper .global-menu .lower ul li.menu-item a, .error404 header .wrapper .global-menu .upper ul li.menu-item a, .error404 header .wrapper .global-menu .lower ul li.menu-item a {
   display: block;
   line-height: 1.25;
   cursor: pointer;
 }
-.home header .wrapper .global-menu .upper ul li.menu-item:hover, .home header .wrapper .global-menu .lower ul li.menu-item:hover, .page header .wrapper .global-menu .upper ul li.menu-item:hover, .page header .wrapper .global-menu .lower ul li.menu-item:hover, .single header .wrapper .global-menu .upper ul li.menu-item:hover, .single header .wrapper .global-menu .lower ul li.menu-item:hover, .archive header .wrapper .global-menu .upper ul li.menu-item:hover, .archive header .wrapper .global-menu .lower ul li.menu-item:hover {
+.home header .wrapper .global-menu .upper ul li.menu-item:hover, .home header .wrapper .global-menu .lower ul li.menu-item:hover, .page header .wrapper .global-menu .upper ul li.menu-item:hover, .page header .wrapper .global-menu .lower ul li.menu-item:hover, .single header .wrapper .global-menu .upper ul li.menu-item:hover, .single header .wrapper .global-menu .lower ul li.menu-item:hover, .archive header .wrapper .global-menu .upper ul li.menu-item:hover, .archive header .wrapper .global-menu .lower ul li.menu-item:hover, .error404 header .wrapper .global-menu .upper ul li.menu-item:hover, .error404 header .wrapper .global-menu .lower ul li.menu-item:hover {
   color: #235180;
   opacity: 0.9;
 }
-.home header .wrapper .global-menu .upper ul, .page header .wrapper .global-menu .upper ul, .single header .wrapper .global-menu .upper ul, .archive header .wrapper .global-menu .upper ul {
+.home header .wrapper .global-menu .upper ul, .page header .wrapper .global-menu .upper ul, .single header .wrapper .global-menu .upper ul, .archive header .wrapper .global-menu .upper ul, .error404 header .wrapper .global-menu .upper ul {
   justify-content: flex-end;
   align-items: center;
   gap: 5px;
@@ -1357,10 +1357,10 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   padding-right: 140px;
   font-size: 0.9rem;
 }
-.home header .wrapper .global-menu .upper ul li:nth-of-type(3), .page header .wrapper .global-menu .upper ul li:nth-of-type(3), .single header .wrapper .global-menu .upper ul li:nth-of-type(3), .archive header .wrapper .global-menu .upper ul li:nth-of-type(3) {
+.home header .wrapper .global-menu .upper ul li:nth-of-type(3), .page header .wrapper .global-menu .upper ul li:nth-of-type(3), .single header .wrapper .global-menu .upper ul li:nth-of-type(3), .archive header .wrapper .global-menu .upper ul li:nth-of-type(3), .error404 header .wrapper .global-menu .upper ul li:nth-of-type(3) {
   margin-left: 5px;
 }
-.home header .wrapper .global-menu .upper ul .language, .page header .wrapper .global-menu .upper ul .language, .single header .wrapper .global-menu .upper ul .language, .archive header .wrapper .global-menu .upper ul .language {
+.home header .wrapper .global-menu .upper ul .language, .page header .wrapper .global-menu .upper ul .language, .single header .wrapper .global-menu .upper ul .language, .archive header .wrapper .global-menu .upper ul .language, .error404 header .wrapper .global-menu .upper ul .language {
   position: absolute;
   top: -8px;
   right: 0;
@@ -1372,22 +1372,22 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   box-shadow: 0 2px 5px #aaa;
   z-index: 105;
 }
-.home header .wrapper .global-menu .upper ul .language > button, .page header .wrapper .global-menu .upper ul .language > button, .single header .wrapper .global-menu .upper ul .language > button, .archive header .wrapper .global-menu .upper ul .language > button {
+.home header .wrapper .global-menu .upper ul .language > button, .page header .wrapper .global-menu .upper ul .language > button, .single header .wrapper .global-menu .upper ul .language > button, .archive header .wrapper .global-menu .upper ul .language > button, .error404 header .wrapper .global-menu .upper ul .language > button {
   position: relative;
   width: 100%;
   padding: 5px 20px 3px 30px;
 }
-.home header .wrapper .global-menu .upper ul .language > button span, .page header .wrapper .global-menu .upper ul .language > button span, .single header .wrapper .global-menu .upper ul .language > button span, .archive header .wrapper .global-menu .upper ul .language > button span {
+.home header .wrapper .global-menu .upper ul .language > button span, .page header .wrapper .global-menu .upper ul .language > button span, .single header .wrapper .global-menu .upper ul .language > button span, .archive header .wrapper .global-menu .upper ul .language > button span, .error404 header .wrapper .global-menu .upper ul .language > button span {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   top: 60%;
   left: 10px;
 }
-.home header .wrapper .global-menu .upper ul .language > button span img, .page header .wrapper .global-menu .upper ul .language > button span img, .single header .wrapper .global-menu .upper ul .language > button span img, .archive header .wrapper .global-menu .upper ul .language > button span img {
+.home header .wrapper .global-menu .upper ul .language > button span img, .page header .wrapper .global-menu .upper ul .language > button span img, .single header .wrapper .global-menu .upper ul .language > button span img, .archive header .wrapper .global-menu .upper ul .language > button span img, .error404 header .wrapper .global-menu .upper ul .language > button span img {
   width: 17px;
 }
-.home header .wrapper .global-menu .upper ul .language > button::after, .page header .wrapper .global-menu .upper ul .language > button::after, .single header .wrapper .global-menu .upper ul .language > button::after, .archive header .wrapper .global-menu .upper ul .language > button::after {
+.home header .wrapper .global-menu .upper ul .language > button::after, .page header .wrapper .global-menu .upper ul .language > button::after, .single header .wrapper .global-menu .upper ul .language > button::after, .archive header .wrapper .global-menu .upper ul .language > button::after, .error404 header .wrapper .global-menu .upper ul .language > button::after {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -1398,7 +1398,7 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   top: 60%;
   right: 12px;
 }
-.home header .wrapper .global-menu .upper ul .language > ul, .page header .wrapper .global-menu .upper ul .language > ul, .single header .wrapper .global-menu .upper ul .language > ul, .archive header .wrapper .global-menu .upper ul .language > ul {
+.home header .wrapper .global-menu .upper ul .language > ul, .page header .wrapper .global-menu .upper ul .language > ul, .single header .wrapper .global-menu .upper ul .language > ul, .archive header .wrapper .global-menu .upper ul .language > ul, .error404 header .wrapper .global-menu .upper ul .language > ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1409,23 +1409,23 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   overflow: hidden;
   transition: 0.5s;
 }
-.home header .wrapper .global-menu .upper ul .language > ul li:first-of-type, .page header .wrapper .global-menu .upper ul .language > ul li:first-of-type, .single header .wrapper .global-menu .upper ul .language > ul li:first-of-type, .archive header .wrapper .global-menu .upper ul .language > ul li:first-of-type {
+.home header .wrapper .global-menu .upper ul .language > ul li:first-of-type, .page header .wrapper .global-menu .upper ul .language > ul li:first-of-type, .single header .wrapper .global-menu .upper ul .language > ul li:first-of-type, .archive header .wrapper .global-menu .upper ul .language > ul li:first-of-type, .error404 header .wrapper .global-menu .upper ul .language > ul li:first-of-type {
   padding-top: 2px;
 }
-.home header .wrapper .global-menu .upper ul .language > ul li:last-of-type, .page header .wrapper .global-menu .upper ul .language > ul li:last-of-type, .single header .wrapper .global-menu .upper ul .language > ul li:last-of-type, .archive header .wrapper .global-menu .upper ul .language > ul li:last-of-type {
+.home header .wrapper .global-menu .upper ul .language > ul li:last-of-type, .page header .wrapper .global-menu .upper ul .language > ul li:last-of-type, .single header .wrapper .global-menu .upper ul .language > ul li:last-of-type, .archive header .wrapper .global-menu .upper ul .language > ul li:last-of-type, .error404 header .wrapper .global-menu .upper ul .language > ul li:last-of-type {
   padding-bottom: 6px;
 }
-.home header .wrapper .global-menu .upper ul .language > ul li a, .page header .wrapper .global-menu .upper ul .language > ul li a, .single header .wrapper .global-menu .upper ul .language > ul li a, .archive header .wrapper .global-menu .upper ul .language > ul li a {
+.home header .wrapper .global-menu .upper ul .language > ul li a, .page header .wrapper .global-menu .upper ul .language > ul li a, .single header .wrapper .global-menu .upper ul .language > ul li a, .archive header .wrapper .global-menu .upper ul .language > ul li a, .error404 header .wrapper .global-menu .upper ul .language > ul li a {
   display: block;
   width: 100%;
   padding: 8px 0 0;
   white-space: nowrap;
 }
-.home header .wrapper .global-menu .lower ul.menu li.menu-item.active .sub-menu, .page header .wrapper .global-menu .lower ul.menu li.menu-item.active .sub-menu, .single header .wrapper .global-menu .lower ul.menu li.menu-item.active .sub-menu, .archive header .wrapper .global-menu .lower ul.menu li.menu-item.active .sub-menu {
+.home header .wrapper .global-menu .lower ul.menu li.menu-item.active .sub-menu, .page header .wrapper .global-menu .lower ul.menu li.menu-item.active .sub-menu, .single header .wrapper .global-menu .lower ul.menu li.menu-item.active .sub-menu, .archive header .wrapper .global-menu .lower ul.menu li.menu-item.active .sub-menu, .error404 header .wrapper .global-menu .lower ul.menu li.menu-item.active .sub-menu {
   visibility: visible;
   opacity: 1;
 }
-.home header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu, .page header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu, .single header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu, .archive header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu {
+.home header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu, .page header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu, .single header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu, .archive header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu, .error404 header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu {
   display: flex;
   flex-direction: column;
   row-gap: 8px;
@@ -1437,95 +1437,95 @@ section.about-visual-links ul.hover-bright li a .catch .letter-space-emsp {
   visibility: hidden;
   opacity: 0;
 }
-.home header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li, .page header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li, .single header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li, .archive header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li {
+.home header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li, .page header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li, .single header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li, .archive header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li, .error404 header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li {
   left: 0;
   width: 13rem;
   text-align: center;
   background-color: #fff;
 }
-.home header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li a, .page header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li a, .single header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li a, .archive header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li a {
+.home header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li a, .page header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li a, .single header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li a, .archive header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li a, .error404 header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li a {
   height: auto;
   padding: 8px 16px;
   overflow: hidden;
 }
-.home header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li:hover, .page header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li:hover, .single header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li:hover, .archive header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li:hover {
+.home header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li:hover, .page header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li:hover, .single header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li:hover, .archive header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li:hover, .error404 header .wrapper .global-menu .lower ul.menu li.menu-item .sub-menu li:hover {
   opacity: 0.6;
 }
 @media (width >= 375px) {
-  .home header, .page header, .single header, .archive header {
+  .home header, .page header, .single header, .archive header, .error404 header {
     padding: 0;
   }
-  .home header .wrapper, .page header .wrapper, .single header .wrapper, .archive header .wrapper {
+  .home header .wrapper, .page header .wrapper, .single header .wrapper, .archive header .wrapper, .error404 header .wrapper {
     padding: 0 20px;
   }
-  .home header .wrapper .logo-space, .page header .wrapper .logo-space, .single header .wrapper .logo-space, .archive header .wrapper .logo-space {
+  .home header .wrapper .logo-space, .page header .wrapper .logo-space, .single header .wrapper .logo-space, .archive header .wrapper .logo-space, .error404 header .wrapper .logo-space {
     flex-direction: column;
     gap: 5px;
     padding-top: 50px;
   }
-  .home header .wrapper .logo-space div p, .page header .wrapper .logo-space div p, .single header .wrapper .logo-space div p, .archive header .wrapper .logo-space div p {
+  .home header .wrapper .logo-space div p, .page header .wrapper .logo-space div p, .single header .wrapper .logo-space div p, .archive header .wrapper .logo-space div p, .error404 header .wrapper .logo-space div p {
     text-align: center;
     font-size: 0.65rem;
     line-height: 1.3em;
   }
-  .home header .wrapper .logo-space div p span, .page header .wrapper .logo-space div p span, .single header .wrapper .logo-space div p span, .archive header .wrapper .logo-space div p span {
+  .home header .wrapper .logo-space div p span, .page header .wrapper .logo-space div p span, .single header .wrapper .logo-space div p span, .archive header .wrapper .logo-space div p span, .error404 header .wrapper .logo-space div p span {
     display: none;
   }
-  .home header .wrapper .logo-space div p:first-of-type, .page header .wrapper .logo-space div p:first-of-type, .single header .wrapper .logo-space div p:first-of-type, .archive header .wrapper .logo-space div p:first-of-type {
+  .home header .wrapper .logo-space div p:first-of-type, .page header .wrapper .logo-space div p:first-of-type, .single header .wrapper .logo-space div p:first-of-type, .archive header .wrapper .logo-space div p:first-of-type, .error404 header .wrapper .logo-space div p:first-of-type {
     margin-bottom: 5px;
   }
-  .home header .wrapper .logo-space div p.shrine-name, .page header .wrapper .logo-space div p.shrine-name, .single header .wrapper .logo-space div p.shrine-name, .archive header .wrapper .logo-space div p.shrine-name {
+  .home header .wrapper .logo-space div p.shrine-name, .page header .wrapper .logo-space div p.shrine-name, .single header .wrapper .logo-space div p.shrine-name, .archive header .wrapper .logo-space div p.shrine-name, .error404 header .wrapper .logo-space div p.shrine-name {
     font-size: 1.4rem;
     text-shadow: 0 5px 20px rgba(255, 255, 255, 0.8);
   }
-  .home header .wrapper .global-menu .lower ul.menu, .page header .wrapper .global-menu .lower ul.menu, .single header .wrapper .global-menu .lower ul.menu, .archive header .wrapper .global-menu .lower ul.menu {
+  .home header .wrapper .global-menu .lower ul.menu, .page header .wrapper .global-menu .lower ul.menu, .single header .wrapper .global-menu .lower ul.menu, .archive header .wrapper .global-menu .lower ul.menu, .error404 header .wrapper .global-menu .lower ul.menu {
     gap: 25px;
   }
 }
 @media (width >= 768px) {
-  .home header .wrapper .global-menu .lower ul.menu, .page header .wrapper .global-menu .lower ul.menu, .single header .wrapper .global-menu .lower ul.menu, .archive header .wrapper .global-menu .lower ul.menu {
+  .home header .wrapper .global-menu .lower ul.menu, .page header .wrapper .global-menu .lower ul.menu, .single header .wrapper .global-menu .lower ul.menu, .archive header .wrapper .global-menu .lower ul.menu, .error404 header .wrapper .global-menu .lower ul.menu {
     font-size: 0.95rem;
   }
 }
 @media (width >= 1100px) {
-  .home header, .page header, .single header, .archive header {
+  .home header, .page header, .single header, .archive header, .error404 header {
     padding: 0 50px;
   }
-  .home header .wrapper .logo-space, .page header .wrapper .logo-space, .single header .wrapper .logo-space, .archive header .wrapper .logo-space {
+  .home header .wrapper .logo-space, .page header .wrapper .logo-space, .single header .wrapper .logo-space, .archive header .wrapper .logo-space, .error404 header .wrapper .logo-space {
     flex-direction: row;
     gap: 10px;
     padding-top: 0;
   }
-  .home header .wrapper .logo-space div p, .page header .wrapper .logo-space div p, .single header .wrapper .logo-space div p, .archive header .wrapper .logo-space div p {
+  .home header .wrapper .logo-space div p, .page header .wrapper .logo-space div p, .single header .wrapper .logo-space div p, .archive header .wrapper .logo-space div p, .error404 header .wrapper .logo-space div p {
     text-align: left;
     font-size: 0.75rem;
     line-height: 1em;
   }
-  .home header .wrapper .logo-space div p span, .page header .wrapper .logo-space div p span, .single header .wrapper .logo-space div p span, .archive header .wrapper .logo-space div p span {
+  .home header .wrapper .logo-space div p span, .page header .wrapper .logo-space div p span, .single header .wrapper .logo-space div p span, .archive header .wrapper .logo-space div p span, .error404 header .wrapper .logo-space div p span {
     display: inline;
   }
-  .home header .wrapper .logo-space div p br, .page header .wrapper .logo-space div p br, .single header .wrapper .logo-space div p br, .archive header .wrapper .logo-space div p br {
+  .home header .wrapper .logo-space div p br, .page header .wrapper .logo-space div p br, .single header .wrapper .logo-space div p br, .archive header .wrapper .logo-space div p br, .error404 header .wrapper .logo-space div p br {
     display: none;
   }
-  .home header .wrapper .logo-space div p:first-of-type, .page header .wrapper .logo-space div p:first-of-type, .single header .wrapper .logo-space div p:first-of-type, .archive header .wrapper .logo-space div p:first-of-type {
+  .home header .wrapper .logo-space div p:first-of-type, .page header .wrapper .logo-space div p:first-of-type, .single header .wrapper .logo-space div p:first-of-type, .archive header .wrapper .logo-space div p:first-of-type, .error404 header .wrapper .logo-space div p:first-of-type {
     margin-bottom: 5px;
   }
-  .home header .wrapper .logo-space div p.shrine-name, .page header .wrapper .logo-space div p.shrine-name, .single header .wrapper .logo-space div p.shrine-name, .archive header .wrapper .logo-space div p.shrine-name {
+  .home header .wrapper .logo-space div p.shrine-name, .page header .wrapper .logo-space div p.shrine-name, .single header .wrapper .logo-space div p.shrine-name, .archive header .wrapper .logo-space div p.shrine-name, .error404 header .wrapper .logo-space div p.shrine-name {
     font-size: 1.55rem;
   }
-  .home header .wrapper .global-menu .lower ul.menu, .page header .wrapper .global-menu .lower ul.menu, .single header .wrapper .global-menu .lower ul.menu, .archive header .wrapper .global-menu .lower ul.menu {
+  .home header .wrapper .global-menu .lower ul.menu, .page header .wrapper .global-menu .lower ul.menu, .single header .wrapper .global-menu .lower ul.menu, .archive header .wrapper .global-menu .lower ul.menu, .error404 header .wrapper .global-menu .lower ul.menu {
     gap: 35px;
     font-size: 0.95rem;
   }
 }
 @media (width >= 1700px) {
-  .home header, .page header, .single header, .archive header {
+  .home header, .page header, .single header, .archive header, .error404 header {
     padding: 0 225px;
   }
-  .home header .wrapper .logo-space div p.shrine-name, .page header .wrapper .logo-space div p.shrine-name, .single header .wrapper .logo-space div p.shrine-name, .archive header .wrapper .logo-space div p.shrine-name {
+  .home header .wrapper .logo-space div p.shrine-name, .page header .wrapper .logo-space div p.shrine-name, .single header .wrapper .logo-space div p.shrine-name, .archive header .wrapper .logo-space div p.shrine-name, .error404 header .wrapper .logo-space div p.shrine-name {
     font-size: 1.85rem;
   }
-  .home header .wrapper .global-menu .lower ul.menu, .page header .wrapper .global-menu .lower ul.menu, .single header .wrapper .global-menu .lower ul.menu, .archive header .wrapper .global-menu .lower ul.menu {
+  .home header .wrapper .global-menu .lower ul.menu, .page header .wrapper .global-menu .lower ul.menu, .single header .wrapper .global-menu .lower ul.menu, .archive header .wrapper .global-menu .lower ul.menu, .error404 header .wrapper .global-menu .lower ul.menu {
     gap: 40px;
     font-size: 1rem;
   }
@@ -4894,4 +4894,18 @@ span.color-gold {
     margin: 0 auto;
     padding: 0;
   }
+}
+
+.error404 .wrapper main {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+.error404 .wrapper main section {
+  text-align: center;
+}
+.error404 .wrapper main section h1 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=style.css.map */
