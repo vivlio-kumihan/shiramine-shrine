@@ -46,7 +46,7 @@
                   <div class="date">2月節分</div>
                   <div class="subject">
                     <div>節分祭（鬼遣い豆まき神事）<br class="media-screen-md" />柊大明神例祭&emsp;16：00</div>
-                    <div>『柊護符』特別頒布&emsp;<a class="from-annual-event-to-post" href="https://shiraminejingu.or.jp/2023/01/21/%e7%af%80%e5%88%86%e7%a5%ad%e3%80%80%e8%bf%bd%e5%84%ba%e3%81%ae%e5%84%80%e3%80%80%e7%89%b9%e8%a3%bd%e3%80%8c%e6%9f%8a%e8%ad%b7%e7%ac%a6%e3%80%8d%e9%a0%92%e5%b8%83%e9%96%8b%e5%a7%8b%e3%81%ab%e3%81%a4/" target="_blank">期間限定</a></div>
+                    <div>『柊護符』特別頒布&emsp;<a class="from-annual-event-to-post" href="https://shiraminejingu.or.jp/2024/01/21/setsubun-sai-tsuina-no-gi/" target="_blank">期間限定</a></div>
                   </div>
                 </li>
                 <li>
