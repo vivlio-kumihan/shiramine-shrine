@@ -665,21 +665,21 @@ body .page-top-arrow {
   display: flex;
   gap: 10px;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3), .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3), .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3), .error404 footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) {
+.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(4), .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(4), .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(4), .error404 footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(4) {
   display: flex;
   gap: 30px;
   margin-top: 50px;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li, .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li, .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li, .error404 footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li {
+.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(4) li, .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(4) li, .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(4) li, .error404 footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(4) li {
   position: relative;
   width: 2rem;
   height: 2rem;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a, .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a, .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a, .error404 footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a {
+.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(4) li a, .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(4) li a, .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(4) li a, .error404 footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(4) li a {
   display: block;
   height: 100%;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-instagram::before, .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-instagram::before, .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-instagram::before, .error404 footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-instagram::before {
+.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(4) li a.icon-instagram::before, .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(4) li a.icon-instagram::before, .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(4) li a.icon-instagram::before, .error404 footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(4) li a.icon-instagram::before {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -688,7 +688,7 @@ body .page-top-arrow {
   font-family: "Font Awesome 6 Brands";
   font-weight: 900;
 }
-.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-twitter::before, .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-twitter::before, .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-twitter::before, .error404 footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(3) li a.icon-twitter::before {
+.home footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(4) li a.icon-twitter::before, .page footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(4) li a.icon-twitter::before, .archive footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(4) li a.icon-twitter::before, .error404 footer .wrapper .wrapper-grid .footer-left-links ul:nth-of-type(4) li a.icon-twitter::before {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -698,6 +698,12 @@ body .page-top-arrow {
   background: url(./img/x-twitter.svg) no-repeat;
   background-size: 100%;
   opacity: 0.7;
+}
+.home footer .wrapper .wrapper-grid .footer-left-links ul.open-close-time, .page footer .wrapper .wrapper-grid .footer-left-links ul.open-close-time, .archive footer .wrapper .wrapper-grid .footer-left-links ul.open-close-time, .error404 footer .wrapper .wrapper-grid .footer-left-links ul.open-close-time {
+  flex-direction: column;
+  row-gap: 10px;
+  margin-bottom: 20px;
+  font-size: 1.1em;
 }
 .home footer .wrapper .wrapper-grid .footer-center-links, .page footer .wrapper .wrapper-grid .footer-center-links, .archive footer .wrapper .wrapper-grid .footer-center-links, .error404 footer .wrapper .wrapper-grid .footer-center-links {
   display: flex;

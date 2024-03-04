@@ -11,10 +11,14 @@
           <li class="access-tel-fax"><span>電話</span>：<a href="tel:075-441-3810">075-441-3810</a></li>
           <li class="access-tel-fax"><span class="en-tume01">FAX</span>：075-441-3820</li>
         </ul>
+        <ul class="open-close-time">
+          <li>参拝時間： 8時から17時</li>
+          <li>授与所開所時間： 8時から16時30分</li>
+        </ul>
         <ul>
           <li><a href="<?php echo esc_url(home_url('/access/')); ?>">交通（アクセス）</a></li>
-          <!-- <li>|</li>
-          <li><a href="<?php echo esc_url(home_url('/contact/')); ?>">お問い合わせ</a></li> -->
+          <li>|</li>
+          <li><a href="<?php echo esc_url(home_url('/contact/')); ?>">お問い合わせ</a></li>
         </ul>
         <ul>
           <li><a href="https://www.instagram.com/shiramine_jingu/" class="icon-instagram"></a></li>
