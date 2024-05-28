@@ -1,0 +1,142 @@
+SetEnvIf Request_URI ".*" Ngx_Cache_NoCacheMode=off
+SetEnvIf Request_URI ".*" Ngx_Cache_AllCacheMode
+
+# # BEGIN WordPress
+# <IfModule mod_rewrite.c>
+#   RewriteEngine On
+#   RewriteBase /
+#   RewriteRule ^index\.php$ - [L]
+#   # Add the custom redirects before the WordPress directives
+#   RewriteCond %{REQUEST_URI} ^/prayer/?$
+#   RewriteRule ^(.*)$ /2024/05/27/attention240527/ [R=302,L]
+#   # The WordPress directives
+#   RewriteCond %{REQUEST_FILENAME} !-f
+#   RewriteCond %{REQUEST_FILENAME} !-d
+#   RewriteRule . /index.php [L]
+# </IfModule>
+# # END WordPress
+
+# <IfModule mod_rewrite.c>
+#   RewriteEngine On
+#   RewriteCond %{REQUEST_URI} ^/omamori/?$
+#   RewriteRule ^(.*)$ /2024/05/27/attention240527/ [R=302,L]
+# </IfModule>
+
+#SITEGUARD_PLUGIN_SETTINGS_START
+#==== SITEGUARD_RENAME_LOGIN_SETTINGS_START
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteBase /
+    RewriteRule ^wp-signup\.php 404-siteguard [L]
+    RewriteRule ^wp-activate\.php 404-siteguard [L]
+    RewriteRule ^login_89105(.*)$ wp-login.php$1 [L]
+</IfModule>
+#==== SITEGUARD_RENAME_LOGIN_SETTINGS_END
+#SITEGUARD_PLUGIN_SETTINGS_END
+
+# BEGIN WordPress
+# "BEGIN WordPress" から "END WordPress" までのディレクティブ (行) は
+# 動的に生成され、WordPress フィルターによってのみ修正が可能です。
+# これらのマーカー間にあるディレクティブへのいかなる変更も上書きされてしまいます。
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+    RewriteBase /
+    RewriteRule ^index\.php$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /index.php [L]
+</IfModule>
+# END WordPress
+
+# HTTPからHTTPSへのリダイレクト
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteCond %{HTTPS} off
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+# HTTPSリダイレクト
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+# 例2: 特定のURLへのリダイレクト
+# omomoriは上の『HTTPSリダイレクト』で解決しているので設定したら505エラーになるので記載できない。
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteRule ^history/$ https://shiraminejingu.or.jp/about/history/ [R=301,L]
+    RewriteRule ^history/gosaizin/$ https://shiraminejingu.or.jp/about/gosaizin/ [R=301,L]
+    RewriteRule ^history/gobyo/$ https://shiraminejingu.or.jp/about/gobyo/ [R=301,L]
+    RewriteRule ^history/history/$ https://shiraminejingu.or.jp/about/chronology/ [R=301,L]
+    RewriteRule ^history/kemari/$ https://shiraminejingu.or.jp/annual-event/ [R=301,L]
+    RewriteRule ^history/kemari/kemari-monument/$ https://shiraminejingu.or.jp/annual-event/ [R=301,L]
+    RewriteRule ^history/keidai/$ https://shiraminejingu.or.jp/guide-shrine/ [R=301,L]
+    RewriteRule ^history/keidai/zinushi/$ https://shiraminejingu.or.jp/guide-shrine/ [R=301,L]
+    RewriteRule ^history/keidai/senryo/$ https://shiraminejingu.or.jp/guide-shrine/ [R=301,L]
+    RewriteRule ^history/keidai/tomonoo/$ https://shiraminejingu.or.jp/guide-shrine/ [R=301,L]
+    RewriteRule ^history/keidai/water/$ https://shiraminejingu.or.jp/guide-shrine/ [R=301,L]
+    RewriteRule ^history/keidai/reiboku/$ https://shiraminejingu.or.jp/guide-shrine/ [R=301,L]
+    RewriteRule ^history/keidai/reiboku/ogatama/$ https://shiraminejingu.or.jp/guide-shrine/ [R=301,L]
+    RewriteRule ^history/keidai/reiboku/gansyouka/$ https://shiraminejingu.or.jp/guide-shrine/ [R=301,L]
+    RewriteRule ^history/keidai/reiboku/mukuroji/$ https://shiraminejingu.or.jp/guide-shrine/ [R=301,L]
+    RewriteRule ^history/keidai/reiboku/kajinoki/$ https://shiraminejingu.or.jp/guide-shrine/ [R=301,L]
+    RewriteRule ^history/keidai/reiboku/ukonnotachibana/$ https://shiraminejingu.or.jp/guide-shrine/ [R=301,L]
+    RewriteRule ^history/keidai/reiboku/ukonnosakura/$ https://shiraminejingu.or.jp/guide-shrine/ [R=301,L]
+    RewriteRule ^history/keidai/reiboku/sanyoumatsu/$ https://shiraminejingu.or.jp/guide-shrine/ [R=301,L]
+    RewriteRule ^history/keidai/reiboku/kisetsunohana/$ https://shiraminejingu.or.jp/guide-shrine/ [R=301,L]
+    RewriteRule ^omamori/shinsatsu/$ https://shiraminejingu.or.jp/omamori/ [R=301,L]
+    RewriteRule ^omamori/toukon-tukusuwa/$ https://shiraminejingu.or.jp/omamori/ [R=301,L]
+    RewriteRule ^omamori/toukon/$ https://shiraminejingu.or.jp/omamori/ [R=301,L]
+    RewriteRule ^omamori/inoriboshi/$ https://shiraminejingu.or.jp/omamori/ [R=301,L]
+    RewriteRule ^omamori/deauwa/$ https://shiraminejingu.or.jp/omamori/ [R=301,L]
+    RewriteRule ^omamori/mamoriya/$ https://shiraminejingu.or.jp/omamori/ [R=301,L]
+    RewriteRule ^omamori/hamaya/$ https://shiraminejingu.or.jp/omamori/ [R=301,L]
+    RewriteRule ^omamori/koutsuanzen/$ https://shiraminejingu.or.jp/omamori/ [R=301,L]
+    RewriteRule ^omamori/koutsuanzen-omamori/$ https://shiraminejingu.or.jp/omamori/ [R=301,L]
+    RewriteRule ^omamori/kanauwa/$ https://shiraminejingu.or.jp/omamori/ [R=301,L]
+    RewriteRule ^omamori/hairband/$ https://shiraminejingu.or.jp/omamori/ [R=301,L]
+    RewriteRule ^omamori/listband/$ https://shiraminejingu.or.jp/omamori/ [R=301,L]
+    RewriteRule ^omamori/towel/$ https://shiraminejingu.or.jp/omamori/ [R=301,L]
+    RewriteRule ^omamori/ema/$ https://shiraminejingu.or.jp/omamori/ [R=301,L]
+    RewriteRule ^omamori/kanauwa-hashi/$ https://shiraminejingu.or.jp/omamori/ [R=301,L]
+    RewriteRule ^omamori/syuintyou/$ https://shiraminejingu.or.jp/omamori/ [R=301,L]
+    RewriteRule ^omamori/eto-okimono/$ https://shiraminejingu.or.jp/omamori/ [R=301,L]
+    RewriteRule ^omamori/batei/$ https://shiraminejingu.or.jp/omamori/ [R=301,L]
+    RewriteRule ^omamori/yuisyo/$ https://shiraminejingu.or.jp/omamori/ [R=301,L]
+    RewriteRule ^fax/$ https://shiraminejingu.or.jp/omamori/ [R=301,L]
+    RewriteRule ^fax-print/$ https://shiraminejingu.or.jp/omamori/ [R=301,L]
+    # RewriteRule ^devotions/$ https://shiraminejingu.or.jp/prayer/ [R=301,L]
+    RewriteRule ^event/$ https://shiraminejingu.or.jp/annual-event/ [R=301,L]
+    RewriteRule ^event/jyun-nin-tennou-sai/$ https://shiraminejingu.or.jp/annual-event/ [R=301,L]
+    RewriteRule ^event/budo/$ https://shiraminejingu.or.jp/annual-event/ [R=301,L]
+    RewriteRule ^event/chinowa/$ https://shiraminejingu.or.jp/annual-event/ [R=301,L]
+    RewriteRule ^event/tanabata/$ https://shiraminejingu.or.jp/annual-event/ [R=301,L]
+    RewriteRule ^event/tanabata/#komachi$ https://shiraminejingu.or.jp/annual-event/ [R=301,L]
+    RewriteRule ^event/sutoku-tenno/$ https://shiraminejingu.or.jp/annual-event/ [R=301,L]
+    RewriteRule ^event/sutoku-tenno/#takigino$ https://shiraminejingu.or.jp/annual-event/ [R=301,L]
+    RewriteRule ^event/kangetsusai/$ https://shiraminejingu.or.jp/annual-event/ [R=301,L]
+    RewriteRule ^event/shichigosan/$ https://shiraminejingu.or.jp/annual-event/ [R=301,L]
+    RewriteRule ^event/kencha/$ https://shiraminejingu.or.jp/annual-event/ [R=301,L]
+    RewriteRule ^event/ohitaki-sai/$ https://shiraminejingu.or.jp/annual-event/ [R=301,L]
+    RewriteRule ^topics/$ https://shiraminejingu.or.jp/information/ [R=301,L]
+    RewriteRule ^news/$ https://shiraminejingu.or.jp/category/whats-new/ [R=301,L]
+    RewriteRule ^date/2014/07/$ https://shiraminejingu.or.jp/2014/07/ [R=301,L]
+</IfModule>
+
+# google search cosoleからリダイレクトできないと指摘されたので追加する。
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteCond %{HTTPS} off
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+    
+    RewriteRule ^history/gobyo/$ https://shiraminejingu.or.jp/about/gobyo/ [R=301,L]
+    # RewriteRule ^omamori/$ https://shiraminejingu.or.jp/omamori/ [R=301,L]
+    RewriteRule ^history/$ https://shiraminejingu.or.jp/about/history/ [R=301,L]
+    RewriteRule ^chronology/$ https://shiraminejingu.or.jp/about/chronology/ [R=301,L]
+    RewriteRule ^gosaizin/$ https://shiraminejingu.or.jp/about/gosaizin/ [R=301,L]
+    RewriteRule ^privacy-policy/$ https://shiraminejingu.or.jp/privacy-policy/ [R=301,L]
+    RewriteRule ^category/whats-new/$ https://shiraminejingu.or.jp/category/whats-new/ [R=301,L]
+</IfModule>

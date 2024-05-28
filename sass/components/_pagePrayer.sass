@@ -27,11 +27,30 @@
                   p
                     margin-bottom: 50px
                     text-align: left
+                  .reminder-line
+                    margin-top: 20px
+                    font-size: 1.15rem
+                    line-height: 1.5
                   ul
                     margin: 0 auto
-                    width: fit-content
-                    padding: 20px 100px
+                    width: 100%
+                    padding: 20px 25px
                     border: 1px solid #333
+                    &.anchor-in-page
+                      margin-top: 10px
+                      border: unset
+                      > li
+                        position: relative
+                        width: max-content
+                        margin: 0 auto
+                        font-size: 1.15rem
+                        // text-align: left
+                        margin-top: 20px
+                        & span
+                          color: #aaa
+                        & > a
+                          color: red
+                          border-bottom: 1px solid red
                     li
                       text-align: center
                       &.tel-num
@@ -39,6 +58,20 @@
                         letter-spacing: .3em
                       + li
                         margin-top: 10px
+                    .from-contact-form
+                      margin-top: 15px
+                      padding-top: 15px
+                      border-top: 1px solid #aaa
+                      &__btn > button
+                        margin-top: 15px
+                        padding: 7.5px 60px
+                        line-height: 1
+                        &:hover
+                          color: #fff
+                          background-color: #aaa
+                          border: 1px solid #aaa
+                          transform: translateY(0)
+                          box-shadow: 0 2px 5px #333
                 .dl-pdf-btn
                   margin-top: 60px
                   a
@@ -323,13 +356,6 @@
                   .wpcf7cp-btns
                     button
                       padding: 1rem 3rem
-
-
-
-
-
-
-
 
 .page
   main
